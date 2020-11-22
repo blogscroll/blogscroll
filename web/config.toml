@@ -4,4 +4,4 @@ title = "BlogScroll - Personal Blog & Site Directory"
 theme = "directory"
 
 [params]
-description = "This is an open directory of personal sites and blogs, maintained entirely on GitHub."
+description = "An open directory of personal sites and blogs, maintained entirely on GitHub."
