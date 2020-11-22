@@ -1,4 +1,4 @@
-baseURL = "http://blogscroll.com/"
+baseURL = "https://blogscroll.com/"
 languageCode = "en-us"
 title = "BlogScroll - Personal Blog & Site Directory"
 theme = "directory"
