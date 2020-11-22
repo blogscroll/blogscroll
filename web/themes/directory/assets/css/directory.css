@@ -1,4 +1,41 @@
 body {
     background-color: #003049;
     font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    color: #fcbf49;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    height: 32px;;
+}
+
+.blog-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.blog-link:link {
+    color: #eae2b7;
+}
+
+.blog-link:visited {
+    color: #f77f00;
+}
+
+.blog-link:hover {
+    color: #d62828;
+}
+
+.blog-link:active {
+    color: #d62828;
 }

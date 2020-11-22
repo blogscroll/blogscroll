@@ -12,9 +12,9 @@
                 
                 {{ range $blogkey, $blogval := $value }}
                     {{ range .blogs}}
-                        <div>
-                            <img src="{{ .favicon }}"></img>
-                            <p><a href="{{ .url }}">{{ .title }}</p>
+                        <div class="blog-item">
+                            <img class="blog-icon" src="{{ .favicon }}" />
+                            <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
                         </div>
                     {{ end}}
                 {{ end }}
