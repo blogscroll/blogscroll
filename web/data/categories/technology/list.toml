@@ -1,11 +1,11 @@
 [blogs]
     [blogs.dendev]
-    title = "den by default"
+    title = "Den Delimarsky"
     url = "https://den.dev"
     favicon = "https://cdn.den.dev/images/favicon.ico"
 
     [blogs.daringfireballnet]
-    title = "Daring Fireball"
+    title = "John Gruber"
     url = "https://daringfireball.net"
     favicon = "https://daringfireball.net/graphics/favicon.ico"
 
@@ -13,3 +13,53 @@
     title = "Philipp Cannons"
     url = "https://philippcannons.com"
     favicon = "https://philippcannons.com/wp-content/uploads/2020/04/cropped-favicon-32x32.png"
+
+    [blogs.hellomayukocom]
+    title = "Mayuko Inoue"
+    url = "https://www.hellomayuko.com/"
+    favicon = "https://images.squarespace-cdn.com/content/v1/5cc138a0c46f6d618fd63b4c/1590011027740-SKKDM5SVU995NU71SYLP/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKFSZnIIAPuX1C4iUTyn4Xd4-76gsgk4xgxAaWTBSRHt9w/favicon.ico?format=100w"
+
+    [blogs.paulirishcom]
+    title = "Paul Irish"
+    url = "https://www.paulirish.com/"
+    favicon = "https://www.paulirish.com/avatar150.jpg"
+
+    [blogs.paulstamatioucom]
+    title = "Paul Stamatiou"
+    url = "https://paulstamatiou.com/"
+    favicon = "https://paulstamatiou.com/touch-icon-192x192.png"
+
+    [blogs.jeffsandquistcom]
+    title = "Jeff Sandquist"
+    url = "https://www.jeffsandquist.com/"
+    favicon = "https://www.jeffsandquist.com/favicon.ico"
+
+    [blogs.fernandezlife]
+    title = "Dan Fernandez"
+    url = "https://fernandez.life/"
+    favicon = "https://fernandez.life/favicon.ico"
+
+    [blogs.codinghorrorcom]
+    title = "Jeff Atwood"
+    url = "https://blog.codinghorror.com/"
+    favicon = "https://blog.codinghorror.com/favicon.png"
+
+    [blogs.hanselmancom]
+    title = "Scott Hanselman"
+    url = "https://www.hanselman.com/"
+    favicon = "https://www.hanselman.com/favicon.ico"
+
+    [blogs.matvellosocom]
+    title = "Mat Velloso"
+    url = "https://www.matvelloso.com/"
+    favicon = "/generic.ico"
+
+    [blogs.tiraniaorg]
+    title = "Miguel de Icaza"
+    url = "https://tirania.org/blog/"
+    favicon = "/generic.ico"
+
+    [blogs.sasharosenbaumcom]
+    title = "Sasha Rosenbaum"
+    url = "https://www.sasharosenbaum.com/"
+    favicon = "https://www.sasharosenbaum.com/images/favicon.png"

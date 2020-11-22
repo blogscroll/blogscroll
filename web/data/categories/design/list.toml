@@ -1,0 +1,5 @@
+[blogs]
+    [blogs.dendev]
+    title = "Courtny Cotten"
+    url = "https://courtny.co/"
+    favicon = "https://courtny.co/images/favicon.png"
