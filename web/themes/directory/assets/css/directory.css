@@ -26,6 +26,7 @@ h3 {
 
 .blog-link:link {
     color: #eae2b7;
+    text-decoration-style: dotted;
 }
 
 .blog-link:visited {
