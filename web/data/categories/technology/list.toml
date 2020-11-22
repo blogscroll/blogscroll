@@ -132,7 +132,7 @@
     [blogs.jessdev]
     title = "Jessie Frazelle"
     url = "https://jess.dev/"
-    favicon = "https://www.duncanmackenzie.net/favicon.ico"
+    favicon = "https://blog.jessfraz.com/favicon.ico"
 
     [blogs.salmanio]
     title = "Salman Ansari"
@@ -223,3 +223,8 @@
     title = "April Speight"
     url = "https://www.vogueandcode.com/"
     favicon = "https://uploads-ssl.webflow.com/5ecc3028a06918401a9a27e2/5f5fb5cdca03cb1622f077c8_vogueandcodebig.png"
+
+    [blogs.cassidooco]
+    title = "Cassidy Williams"
+    url = "https://cassidoo.co/"
+    favicon = "https://cassidoo.co/img/favicon-16x16.png"
