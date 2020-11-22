@@ -1,0 +1,10 @@
+[blogs]
+    [blogs.dendev]
+    title = "den by default"
+    url = "https://den.dev"
+    favicon = "https://cdn.den.dev/images/favicon.ico"
+
+    [blogs.daringfireballnet]
+    title = "Daring Fireball"
+    url = "https://daringfireball.net"
+    favicon = "https://daringfireball.net/graphics/favicon.ico" 
