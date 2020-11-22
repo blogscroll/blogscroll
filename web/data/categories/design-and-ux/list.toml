@@ -58,3 +58,8 @@
     title = "Allison Grayce Marshall"
     url = "https://www.allisongrayce.com/"
     favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"
+
+    [blogs.lilykonings]
+    title = "Lily Konings"
+    url = "https://lilykonin.gs/"
+    favicon = "https://lilykonin.gs/static/02cbea25cb8232a8285c4ea6b4fcad70/c5e7c/favicon.png"
