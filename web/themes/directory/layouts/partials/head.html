@@ -27,9 +27,14 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-10WQ5H9Z01"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+  var doNotTrack = (dnt == "1" || dnt == "yes");
 
-  gtag('config', 'G-10WQ5H9Z01');
+  if (!doNotTrack) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-10WQ5H9Z01');
+  }
 </script>
