@@ -63,3 +63,163 @@
     title = "Sasha Rosenbaum"
     url = "https://www.sasharosenbaum.com/"
     favicon = "https://www.sasharosenbaum.com/images/favicon.png"
+
+    [blogs.xamldev]
+    title = "Morten Nielsen"
+    url = "https://xaml.dev/"
+    favicon = "https://xaml.dev/Content/images/blog/blogengine.ico"
+
+    [blogs.damiengcom]
+    title = "Damien Guard"
+    url = "https://damieng.com"
+    favicon = "https://damieng.com/favicons/favicon-16x16.png"
+
+    [blogs.vivianphungme]
+    title = "Vivian Phung"
+    url = "https://vivianphung.me/"
+    favicon = "/generic.ico"
+
+    [blogs.trycatchdev]
+    title = "Sasha Kotlyar"
+    url = "https://trycatch.dev/"
+    favicon = "https://trycatch.dev/favicon.ico"
+
+    [blogs.johnpapanet]
+    title = "John Papa"
+    url = "https://johnpapa.net/"
+    favicon = "https://johnpapa.net/favicon.ico"
+
+    [blogs.charmainekleecom]
+    title = "Charmaine Lee"
+    url = "https://www.charmaineklee.com/"
+    favicon = "https://images.squarespace-cdn.com/content/56725e7240667a634d12bdd8/1587460815850-LPA2DB0KDCULMYSLAEGG/android-chrome-192x192.png"
+
+    [blogs.paigeviews]
+    title = "Paige Bailey"
+    url = "https://paigeview.ws/"
+    favicon = "/generic.ico"
+
+    [blogs.megdev]
+    title = "Meg Risdal"
+    url = "https://meg.dev/"
+    favicon = "https://mrisdal.github.io/blog/img/favicon-32x32.png"
+
+    [blogs.knowingnet]
+    title = "Larry O'Brien"
+    url = "https://knowing.net"
+    favicon = "/generic.ico"
+
+    [blogs.galasoftch]
+    title = "Laurent Bugnion"
+    url = "https://galasoft.ch"
+    favicon = "https://galasoft.ch/favicon.ico"
+
+    [blogs.kristendev]
+    title = "Kristen Kwong"
+    url = "https://kristen.dev/"
+    favicon = "https://kristen.dev/icons/icon-48x48.png"
+
+    [blogs.danyownet]
+    title = "Jeremy Danyow"
+    url = "https://danyow.net/"
+    favicon = "https://danyow.net/favicon.ico"
+
+    [blogs.duncanmackenzienet]
+    title = "Duncan Mackenzie"
+    url = "https://www.duncanmackenzie.net/"
+    favicon = "https://www.duncanmackenzie.net/favicon.ico"
+
+    [blogs.jessdev]
+    title = "Jessie Frazelle"
+    url = "https://jess.dev/"
+    favicon = "https://www.duncanmackenzie.net/favicon.ico"
+
+    [blogs.salmanio]
+    title = "Salman Ansari"
+    url = "https://salman.io/"
+    favicon = "https://salman.io/favicon.ico"
+
+    [blogs.brittanychengcom]
+    title = "Brittany Cheng"
+    url = "http://brittanycheng.com/"
+    favicon = "http://brittanycheng.com/images/favicon.ico"
+
+    [blogs.kaibaileycom]
+    title = "Kai Bailey"
+    url = "https://kai-bailey.com/"
+    favicon = "/generic.ico"
+
+    [blogs.whizzoecom]
+    title = "Zoe Chew"
+    url = "https://whizzoe.com/"
+    favicon = "https://whizzoe.com/assets/images/favicon.png"
+
+    [blogs.candicepooncom]
+    title = "Candice Poon"
+    url = "https://www.candicepoon.com/"
+    favicon = "https://assets.squarespace.com/universal/default-favicon.ico"
+
+    [blogs.celestineyehcom]
+    title = "Celestine Yeh"
+    url = "https://www.celestineyeh.com/"
+    favicon = "https://images.squarespace-cdn.com/content/5a4c933a8fd4d255d22eda93/1542609251239-R66KAGJJS7R715S2EWVZ/Picture1.png"
+
+    [blogs.noopkatcom]
+    title = "Suz Hinton"
+    url = "https://www.noopkat.com/"
+    favicon = "/generic.ico"
+
+    [blogs.alisonyume]
+    title = "Alison Yu"
+    url = "https://www.alisonyu.me/"
+    favicon = "https://assets.squarespace.com/universal/default-favicon.ico"
+
+    [blogs.christinais]
+    title = "Christina Warren"
+    url = "http://christina.is/"
+    favicon = "http://christina.is/favicon.ico"
+
+    [blogs.snarkyca]
+    title = "Brett Cannon"
+    url = "https://snarky.ca/"
+    favicon = "https://snarky.ca/favicon.ico"
+
+    [blogs.bernddev]
+    title = "Bernd Verst"
+    url = "https://bernd.dev/"
+    favicon = "https://bernd.dev/favicon.ico"
+
+    [blogs.deborahzhangcom]
+    title = "Deborah Zhang"
+    url = "http://deborahzhang.com/"
+    favicon = "http://deborahzhang.com/pinkcloud2.ico"
+
+    [blogs.rudyhuyncom]
+    title = "Rudy Huyn"
+    url = "https://www.rudyhuyn.com/"
+    favicon = "https://www.rudyhuyn.com/blog/wp-content/uploads/2016/07/cropped-windows_10_logo-wallpaper-1920x1080-1-32x32.jpg"
+
+    [blogs.matthidingercom]
+    title = "Matt Hidinger"
+    url = "http://matthidinger.com/"
+    favicon = "http://matthidinger.com/favicon.ico"
+
+    [blogs.jeffwilcoxblog]
+    title = "Jeff Wilcox"
+    url = "https://jeffwilcox.blog/"
+    favicon = "https://jeffwilcox.blog/favicon.ico"
+
+    [blogs.kindelcom]
+    title = "Charlie Kindel"
+    url = "https://ceklog.kindel.com/"
+    favicon = "https://ceklog.kindel.com/favicon.ico"
+
+    [blogs.orvillemcdonaldcom]
+    title = "Orville McDonald"
+    url = "https://orvillemcdonald.com/"
+    favicon = "https://secure.gravatar.com/blavatar/9100f51f64391af7695250b9aaa8a75a"
+
+    [blogs.vogueandcodecom]
+    title = "April Speight"
+    url = "https://www.vogueandcode.com/"
+    favicon = "https://uploads-ssl.webflow.com/5ecc3028a06918401a9a27e2/5f5fb5cdca03cb1622f077c8_vogueandcodebig.png"

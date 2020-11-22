@@ -39,3 +39,51 @@ h3 {
 .blog-link:active {
     color: #d62828;
 }
+
+ul {
+    z-index: 4;
+    list-style-type: none;
+    margin: 1.7em;
+    padding: 0;
+    overflow: hidden;
+    font-size: .925rem;
+}
+
+li {
+    z-index: 4;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f77f00;
+}
+
+.title-li {
+    float: left;
+    border: #ffffff solid 1px;
+}
+
+.link-container {
+    margin: 1.7em;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.category-container {
+    width: 300px;
+    min-width: 300px;
+}
+
+.site-title {
+    margin: 1.7em;
+}

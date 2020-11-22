@@ -1,0 +1,60 @@
+[blogs]
+    [blogs.dendev]
+    title = "Courtny Cotten"
+    url = "https://courtny.co/"
+    favicon = "https://courtny.co/images/favicon.png"
+
+    [blogs.tinykatcafe]
+    title = "Kat Fukui"
+    url = "https://www.tinykat.cafe/"
+    favicon = "https://www.tinykat.cafe/favicon-32x32.png"
+
+    [blogs.nobadmemoriescom]
+    title = "Rachel Weil"
+    url = "http://www.nobadmemories.com/"
+    favicon = "http://www.nobadmemories.com/favicon.ico"
+
+    [blogs.jimmyhsuca]
+    title = "Jimmy Hsu"
+    url = "https://www.jimmyhsu.ca/"
+    favicon = "https://images.squarespace-cdn.com/content/5ad4f1a44eddecd8e1c31487/1530830277890-MGQOL94KDVFJLAE2EIXW/Favicon.png"
+
+    [blogs.horyundesign]
+    title = "Horyun Song"
+    url = "http://horyun.design/"
+    favicon = "http://horyun.design/favicon.ico"
+
+    [blogs.kurtisbeaverscom]
+    title = "Kurtis Beavers"
+    url = "http://www.kurtisbeavers.com/"
+    favicon = "http://www.kurtisbeavers.com/favicon.ico"
+
+    [blogs.saraclaytoncom]
+    title = "Sara Clayton"
+    url = "https://www.saraclayton.com/"
+    favicon = "https://www.saraclayton.com/favicon.ico"
+
+    [blogs.stephaniestimaccom]
+    title = "Stephanie Stimac"
+    url = "https://stephaniestimac.com/"
+    favicon = "https://stephaniestimac.com/imgs/favicon.ico"
+
+    [blogs.femkedesign]
+    title = "Femke van Schoonhoven"
+    url = "https://www.femke.design/"
+    favicon = "https://assets.website-files.com/5a4605273472ef00014ade36/5a98f5d1a301900001617061_fav.png"
+
+    [blogs.arielnorlingcom]
+    title = "Ariel Norling"
+    url = "http://arielnorling.com/"
+    favicon = "http://arielnorling.com/wp-includes/images/w-logo-blue-white-bg.png"
+
+    [blogs.juliedesign]
+    title = "Julie Chabin"
+    url = "https://www.julie.design/"
+    favicon = "https://uploads-ssl.webflow.com/5e98afe0bed714ef237eeba4/5e9afd1705bf3a65cc1114f9_fav32.png"
+
+    [blogs.allisongraycecom]
+    title = "Allison Grayce Marshall"
+    url = "https://www.allisongrayce.com/"
+    favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"

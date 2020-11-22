@@ -3,22 +3,29 @@
         {{ partial "head.html" . }}
     </head>
     <body>
+        {{ partial "header.html" . }}
+
         <div class="site-title">
             <h1>{{ .Site.Title }}</h1>
         </div>
+        <div class="link-container">
         {{ range .Site.Data }}
-            {{ range $key, $value := . }}
-                <h3>{{ $key }}</h3>
-                
-                {{ range $blogkey, $blogval := $value }}
-                    {{ range .blogs}}
-                        <div class="blog-item">
-                            <img class="blog-icon" src="{{ .favicon }}" />
-                            <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
-                        </div>
-                    {{ end}}
+                {{ range $key, $value := . }}
+                    <div class="category-container">
+                    <h3>{{ $key }}</h3>
+                    
+                    {{ range $blogkey, $blogval := $value }}
+                        {{ range .blogs}}
+                            <div class="blog-item">
+                                <img class="blog-icon" src="{{ .favicon }}" />
+                                <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
+                            </div>
+                        {{ end}}
+                    {{ end }}
+                    </div>
                 {{ end }}
-            {{ end }}
+            </div>
         {{ end }}
+        </div>
     </body>
 </html>

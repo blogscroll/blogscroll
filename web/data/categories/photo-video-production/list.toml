@@ -1,0 +1,5 @@
+[blogs]
+    [blogs.dendev]
+    title = "Kaitlin McKinnon"
+    url = "https://www.kaitlinmckinnon.com"
+    favicon = "https://www.kaitlinmckinnon.com/favicon.ico"
