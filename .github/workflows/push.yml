@@ -1,0 +1,22 @@
+on: 
+  push:
+    branches:
+    - master
+name: Blog deployment
+jobs:
+  publishBlog:
+    name: Publish blog
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Publish blog
+      uses: dend/actions/deploy-github-io@master
+      env:
+        BLOG_DEPLOY_KEY: ${{ secrets.BLOG_DEPLOY_KEY }}
+        BLOG_FOLDER: web
+        BLOG_PUBLISH_LOCATION: blog_pub
+        BLOG_PUBLISH_URL: github.com/blogscroll/blogscroll.github.io
+        GIT_EMAIL: 1389609+dend@users.noreply.github.com
+        GIT_NAME: Den Delimarsky
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        HUGO_URL: https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_Linux-64bit.deb
