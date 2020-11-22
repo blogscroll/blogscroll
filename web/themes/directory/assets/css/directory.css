@@ -15,7 +15,7 @@ h3 {
 .blog-item {
     display: flex;
     align-items: center;
-    height: 32px;;
+    height: 32px;
 }
 
 .blog-icon {
@@ -86,4 +86,49 @@ li a:hover {
 
 .site-title {
     margin: 1.7em;
+    max-width: 500px;
+}
+
+@media only screen and (max-device-width: 720px) {
+    .site-title {
+        font-size: 3rem;
+        width: 600px;
+        max-width: 600px;
+        margin: 1.7em;
+    }
+
+    .link-container {
+        margin: 3.4em;
+        width: 600px;
+        max-width: 600px;
+    }
+
+    .category-container {
+        width: 600px;
+        min-width: 600px;
+    }
+
+    .blog-item {
+        font-size: 3rem;
+        margin-bottom: 48px;
+    }
+
+    h3 {
+        margin-bottom: 48px;
+        font-size: 3rem;
+    }
+
+    .blog-icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 24px;
+    }
+
+    ul {
+        font-size: 2.2rem;
+    }
+
+    .title-li {
+        padding: 8px;
+    }
 }

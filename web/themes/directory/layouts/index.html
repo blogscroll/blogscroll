@@ -6,7 +6,9 @@
         {{ partial "header.html" . }}
 
         <div class="site-title">
-            <h1>{{ .Site.Title }}</h1>
+            <p>Welcome to BlogScroll! 👋</p>
+            <p>This is an open directory of personal sites and blogs, maintained entirely <a class="blog-link" href="https://github.com/blogscroll/blogscroll">on GitHub</a>.</p>
+            <p>This project was created by <a href="https://den.dev"  class="blog-link">Den Delimarsky</a> in an effort to bring attention to little digital gardens people maintain outside, well - walled gardens.</p>
         </div>
         <div class="link-container">
         {{ range .Site.Data }}
@@ -17,7 +19,7 @@
                     {{ range $blogkey, $blogval := $value }}
                         {{ range .blogs}}
                             <div class="blog-item">
-                                <img class="blog-icon" src="{{ .favicon }}" />
+                                <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
                                 <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
                             </div>
                         {{ end}}
