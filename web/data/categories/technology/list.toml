@@ -7,4 +7,9 @@
     [blogs.daringfireballnet]
     title = "Daring Fireball"
     url = "https://daringfireball.net"
-    favicon = "https://daringfireball.net/graphics/favicon.ico" 
+    favicon = "https://daringfireball.net/graphics/favicon.ico"
+
+    [blogs.philippcannonscom]
+    title = "Philipp Cannons"
+    url = "https://philippcannons.com"
+    favicon = "https://philippcannons.com/wp-content/uploads/2020/04/cropped-favicon-32x32.png"
