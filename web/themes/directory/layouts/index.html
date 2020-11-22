@@ -1,13 +1,24 @@
-{{ range .Site.Data }}
-    {{ range $key, $value := . }}
-        <h3>{{ $key }}</h3>
-        
-        {{ range $blogkey, $blogval := $value }}
-            {{ range .blogs}}
-                <div>
-                    <p><a href="{{ .url }}">{{ .title }}</p>
-                </div>
-            {{ end}}
+<html>
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        <div class="site-title">
+            <h1>{{ .Site.Title }}</h1>
+        </div>
+        {{ range .Site.Data }}
+            {{ range $key, $value := . }}
+                <h3>{{ $key }}</h3>
+                
+                {{ range $blogkey, $blogval := $value }}
+                    {{ range .blogs}}
+                        <div>
+                            <img src="{{ .favicon }}"></img>
+                            <p><a href="{{ .url }}">{{ .title }}</p>
+                        </div>
+                    {{ end}}
+                {{ end }}
+            {{ end }}
         {{ end }}
-    {{ end }}
-{{ end }}
+    </body>
+</html>
