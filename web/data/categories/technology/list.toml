@@ -243,3 +243,8 @@
     title = "David Anson"
     url = "https://dlaa.me/"
     favicon = "https://dlaa.me/favicon.ico"
+    
+    [blogs.arafattehsinblog]
+    title = "Arafat Tehsin"
+    url = "https://www.arafattehsin.com/blog"
+    favicon = "https://www.arafattehsin.com/wp-content/uploads/2018/09/logo.png"
