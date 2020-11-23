@@ -243,8 +243,13 @@
     title = "David Anson"
     url = "https://dlaa.me/"
     favicon = "https://dlaa.me/favicon.ico"
-    
+
     [blogs.arafattehsincom]
     title = "Arafat Tehsin"
     url = "https://www.arafattehsin.com"
     favicon = "https://www.arafattehsin.com/wp-content/uploads/2018/09/logo.png"
+
+    [blogs.zerowidthjoinernet]
+    title = "Melvyn Laïly"
+    url = "https://zerowidthjoiner.net/"
+    favicon = "https://zerowidthjoiner.net/favicon.ico"
