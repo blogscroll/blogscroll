@@ -63,3 +63,8 @@
     title = "Lily Konings"
     url = "https://lilykonin.gs/"
     favicon = "https://lilykonin.gs/static/02cbea25cb8232a8285c4ea6b4fcad70/c5e7c/favicon.png"
+
+    [blogs.tedgoascom]
+    title = "Ted Goas"
+    url = "https://www.tedgoas.com"
+    favicon = "https://www.tedgoas.com/images/favicon.ico"
