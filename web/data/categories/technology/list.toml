@@ -253,3 +253,8 @@
     title = "Melvyn Laïly"
     url = "https://zerowidthjoiner.net/"
     favicon = "https://zerowidthjoiner.net/favicon.ico"
+    
+    [blogs.timheuercom]
+    title = "Tim Heuer"
+    url = "https://timheuer.com/blog"
+    favicon = "https://timheuer.com/img/icon16x16.png"
