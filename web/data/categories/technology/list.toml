@@ -233,3 +233,8 @@
     title = "Brian Peek"
     url = "https://brianpeek.com/"
     favicon = "https://brianpeek.com/favicon.ico"
+
+    [blogs.swimburgernet]
+    title = "Niels Swimberghe"
+    url = "https://swimburger.net/"
+    favicon = "https://swimburger.net/favicon.ico"
