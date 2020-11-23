@@ -21,3 +21,5 @@ This is work in progress - your feedback is [very much welcome](https://github.c
 ### Can I remove someone else's site?
 
 ### A site is no longer active/returns a 404. Can it be removed?
+
+### A site seems to be hosting questionable content. What should I do?
