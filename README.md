@@ -10,6 +10,8 @@ This project was created by [Den Delimarsky](https://den.dev/) in an effort to b
 
 This is a nice replacement for the bookmarks I have in my browser, all aggregated into the **People** folder in the bookmarks bar.
 
+![A screenshot of the BlogScroll project](screenshot.png)
+
 And it goes without saying that this site is work in progress - your feedback is [very much welcome](https://github.com/blogscroll/blogscroll/issues)!
 
 ## ❓ FAQ
@@ -23,6 +25,8 @@ I actually just moved my bookmarks to the web. That's it - that's the complicate
 Not quite. I am very intentional about this project being a directory of sites that people manage **within their own domains**. The goal is to create an environment for serendipitous discovery of digital gardens that are outside the typical social media/newsletter aggregation sites. Which means that pull requests with links to Blogger, LiveJournal, Medium, Twitter, Facebook, LinkedIn, etc. will not be accepted.
 
 Now, if you have a site that you host on Medium (or any other blog hosting service for that matter) and it has a custom domain associated with it - fantastic! Put it on the list.
+
+Additionally, you need to ensure that the site does not contain inappropriate, harmful, abusive, or hateful content. Any sites that are found to be in violation of this rule will be removed without notice.
 
 ### Can I remove my site from the list?
 
