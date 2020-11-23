@@ -243,3 +243,8 @@
     title = "David Anson"
     url = "https://dlaa.me/"
     favicon = "https://dlaa.me/favicon.ico"
+
+    [blogs.zerowidthjoinernet]
+    title = "Melvyn Laïly"
+    url = "https://zerowidthjoiner.net/"
+    favicon = "https://zerowidthjoiner.net/favicon.ico"
