@@ -238,3 +238,8 @@
     title = "Niels Swimberghe"
     url = "https://swimburger.net/"
     favicon = "https://swimburger.net/favicon.ico"
+
+    [blogs.dlaame]
+    title = "David Anson"
+    url = "https://dlaa.me/"
+    favicon = "https://dlaa.me/favicon.ico"
