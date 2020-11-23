@@ -228,3 +228,8 @@
     title = "Cassidy Williams"
     url = "https://cassidoo.co/"
     favicon = "https://cassidoo.co/img/favicon-16x16.png"
+
+    [blogs.brianpeekcom]
+    title = "Brian Peek"
+    url = "https://brianpeek.com/"
+    favicon = "https://brianpeek.com/favicon.ico"
