@@ -59,3 +59,9 @@ No. Just personal sites, please.
 ### Can I include a link to my company/startup/business/consulting/project site?
 
 Same as above - just personal sites, please.
+
+### I want to create a pull request and add my site. What do I do?
+
+Fork the repository, then add a new TOML entry for your site in the [`categories`](https://github.com/blogscroll/blogscroll/tree/main/web/data/categories) folder, in the respective `list.toml` file.
+
+Basically, you need three data points - the URL, name of the person who the site belongs to, and a link to the favicon. The identifier for the site (in square brackets) should be the blog apex domain, with spaces and dashes removed.

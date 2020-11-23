@@ -38,3 +38,12 @@
     gtag('config', 'G-10WQ5H9Z01');
   }
 </script>
+
+<script>
+    function goToRandomPage(){
+        var links = document.getElementById('link-container').getElementsByTagName('a');
+
+        var id = Math.floor(Math.random() * Math.floor(links.length - 1));
+        window.location.href = links[id]['href'];
+    }
+</script>
