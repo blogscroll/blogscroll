@@ -258,3 +258,19 @@
     title = "Ali Khan"
     url = "https://akhan.me/"
     favicon = "https://alikhan4home.files.wordpress.com/2020/01/cropped-screen-shot-2020-01-05-at-23.11.17.png?w=16"
+
+    [blogs.arafattehsincom]
+    title = "Arafat Tehsin"
+    url = "https://www.arafattehsin.com"
+    favicon = "https://www.arafattehsin.com/wp-content/uploads/2018/09/logo.png"
+
+    [blogs.zerowidthjoinernet]
+    title = "Melvyn Laïly"
+    url = "https://zerowidthjoiner.net/"
+    favicon = "https://zerowidthjoiner.net/favicon.ico"
+    
+    [blogs.timheuercom]
+    title = "Tim Heuer"
+    url = "https://timheuer.com/blog"
+    favicon = "https://timheuer.com/img/icon16x16.png"
+
