@@ -243,3 +243,18 @@
     title = "David Anson"
     url = "https://dlaa.me/"
     favicon = "https://dlaa.me/favicon.ico"
+
+    [blogs.edfreitasme]
+    title = "Ed Freitas"
+    url = "https://www.edfreitas.me/"
+    favicon = "https://www.edfreitas.me/assets/img/favicon-16x16.png"
+
+    [blogs.tattoocodercom]
+    title = "Shayne Boyer"
+    url = "https://tattoocoder.com/"
+    favicon = "https://tattoocoder.com/favicon.ico"
+
+    [blogs.akhanme]
+    title = "Ali Khan"
+    url = "https://akhan.me/"
+    favicon = "https://alikhan4home.files.wordpress.com/2020/01/cropped-screen-shot-2020-01-05-at-23.11.17.png?w=16"
