@@ -274,3 +274,8 @@
     url = "https://timheuer.com/blog"
     favicon = "https://timheuer.com/img/icon16x16.png"
 
+    [blogs.vladiliescunet]
+    title = "Vlad Iliescu"
+    url = "https://vladiliescu.net"
+    favicon = "https://vladiliescu.net/favicon.ico"
+
