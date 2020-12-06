@@ -268,7 +268,7 @@
     title = "Melvyn Laïly"
     url = "https://zerowidthjoiner.net/"
     favicon = "https://zerowidthjoiner.net/favicon.ico"
-    
+
     [blogs.timheuercom]
     title = "Tim Heuer"
     url = "https://timheuer.com/blog"
@@ -278,4 +278,9 @@
     title = "Vlad Iliescu"
     url = "https://vladiliescu.net"
     favicon = "https://vladiliescu.net/favicon.ico"
+
+    [blogs.prophitt]
+    title = "Corey Prophitt"
+    url = "https://prophitt.me"
+    favicon = "https://prophitt.me/assets/images/favicon.ico"
 
