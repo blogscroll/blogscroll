@@ -283,4 +283,9 @@
     title = "Corey Prophitt"
     url = "https://prophitt.me"
     favicon = "https://prophitt.me/assets/images/favicon.ico"
+    
+    [blogs.benjamincongdonme]
+    title = "Ben Congdon"
+    url = "https://benjamincongdon.me"
+    favicon = "https://benjamincongdon.me/img/icon.png"
 
