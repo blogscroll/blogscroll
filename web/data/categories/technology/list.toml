@@ -283,7 +283,7 @@
     title = "Corey Prophitt"
     url = "https://prophitt.me"
     favicon = "https://prophitt.me/assets/images/favicon.ico"
-    
+
     [blogs.benjamincongdonme]
     title = "Ben Congdon"
     url = "https://benjamincongdon.me"
@@ -294,8 +294,12 @@
     url = "https://abhishekbanthia.com/"
     favicon = "https://secure.gravatar.com/blavatar/fa8b5d42f0523127422206d8e3477f10?s=16"
 
+    [blogs.haltakovnet]
+    title = "Vladimir Haltakov"
+    url = "https://haltakov.net/"
+    favicon = "https://haltakov.net/theme/images/vh_logo_96.png"
+
     [blogs.cridev]
     title = "Christian Fei"
     url = "https://cri.dev/"
     favicon = "https://cri.dev/assets/images/cf4.64x64.webp"
-    
