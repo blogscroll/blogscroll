@@ -294,7 +294,7 @@
     url = "https://abhishekbanthia.com/"
     favicon = "https://secure.gravatar.com/blavatar/fa8b5d42f0523127422206d8e3477f10?s=16"
 
-    [blogs.vladimirhaltakov]
+    [blogs.haltakovnet]
     title = "Vladimir Haltakov"
     url = "https://haltakov.net/"
     favicon = "https://haltakov.net/theme/images/vh_logo_96.png"
