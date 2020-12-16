@@ -293,4 +293,9 @@
     title = "Abhishek Banthia"
     url = "https://abhishekbanthia.com/"
     favicon = "https://secure.gravatar.com/blavatar/fa8b5d42f0523127422206d8e3477f10?s=16"
+
+    [blogs.cridev]
+    title = "Christian Fei"
+    url = "https://cri.dev/"
+    favicon = "https://cri.dev/assets/images/cf4.64x64.webp"
     
