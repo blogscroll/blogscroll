@@ -1,9 +1,4 @@
 [blogs]
-    [blogs.dendev]
-    title = "Courtny Cotten"
-    url = "https://courtny.co/"
-    favicon = "https://courtny.co/images/favicon.png"
-
     [blogs.tinykatcafe]
     title = "Kat Fukui"
     url = "https://www.tinykat.cafe/"
@@ -18,11 +13,6 @@
     title = "Jimmy Hsu"
     url = "https://www.jimmyhsu.ca/"
     favicon = "https://images.squarespace-cdn.com/content/5ad4f1a44eddecd8e1c31487/1530830277890-MGQOL94KDVFJLAE2EIXW/Favicon.png"
-
-    [blogs.horyundesign]
-    title = "Horyun Song"
-    url = "http://horyun.design/"
-    favicon = "http://horyun.design/favicon.ico"
 
     [blogs.kurtisbeaverscom]
     title = "Kurtis Beavers"
