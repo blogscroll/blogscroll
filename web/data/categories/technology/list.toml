@@ -298,3 +298,8 @@
     title = "Christian Fei"
     url = "https://cri.dev/"
     favicon = "https://cri.dev/assets/images/cf4.64x64.webp"
+
+    [blogs.foreverlikethis]
+    title = "Jayden Garridan Bridges"
+    url = "https://foreverliketh.is/"
+    favicon = "https://foreverliketh.is/favicon.ico"
