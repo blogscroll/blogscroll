@@ -298,3 +298,9 @@
     title = "Christian Fei"
     url = "https://cri.dev/"
     favicon = "https://cri.dev/assets/images/cf4.64x64.webp"
+
+    [blogs.vk7eu]
+    title = "Vitalii Kovalenko"
+    url = "https://vk7.eu/"
+    favicon = "/apple-touch-icon.png"
+
