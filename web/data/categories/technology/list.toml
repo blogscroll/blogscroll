@@ -308,3 +308,8 @@
     title = "Autodidacts"
     url = "https://www.autodidacts.io/"
     favicon = "https://www.autodidacts.io/content/images/size/w256h256/2022/10/autodidacts-logo-small.png"
+
+    [blogs.bryanleetccom]
+    title = "Bryan Lee"
+    url = "https://www.bryanleetc.com/"
+    favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
