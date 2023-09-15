@@ -9,11 +9,6 @@
     url = "http://www.nobadmemories.com/"
     favicon = "/generic.ico"
 
-    [blogs.jimmyhsuca]
-    title = "Jimmy Hsu"
-    url = "https://www.jimmyhsu.ca/"
-    favicon = "https://images.squarespace-cdn.com/content/5ad4f1a44eddecd8e1c31487/1530830277890-MGQOL94KDVFJLAE2EIXW/Favicon.png"
-
     [blogs.kurtisbeaverscom]
     title = "Kurtis Beavers"
     url = "http://www.kurtisbeavers.com/"
