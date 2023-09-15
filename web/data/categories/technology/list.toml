@@ -164,11 +164,6 @@
     url = "http://deborahzhang.com/"
     favicon = "/generic.ico"
 
-    [blogs.rudyhuyncom]
-    title = "Rudy Huyn"
-    url = "https://www.rudyhuyn.com/"
-    favicon = "https://www.rudyhuyn.com/blog/wp-content/uploads/2016/07/cropped-windows_10_logo-wallpaper-1920x1080-1-32x32.jpg"
-
     [blogs.matthidingercom]
     title = "Matt Hidinger"
     url = "http://matthidinger.com/"
