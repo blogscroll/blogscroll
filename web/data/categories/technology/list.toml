@@ -72,7 +72,7 @@
     [blogs.damiengcom]
     title = "Damien Guard"
     url = "https://damieng.com"
-    favicon = "https://damieng.com/favicons/favicon-16x16.png"
+    favicon = "https://damieng.com/favicon-32x32.png"
 
     [blogs.vivianphungme]
     title = "Vivian Phung"
@@ -142,7 +142,7 @@
     [blogs.brittanychengcom]
     title = "Brittany Cheng"
     url = "http://brittanycheng.com/"
-    favicon = "http://brittanycheng.com/images/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.kaibaileycom]
     title = "Kai Bailey"
@@ -169,15 +169,10 @@
     url = "https://www.noopkat.com/"
     favicon = "/generic.ico"
 
-    [blogs.alisonyume]
-    title = "Alison Yu"
-    url = "https://www.alisonyu.me/"
-    favicon = "https://assets.squarespace.com/universal/default-favicon.ico"
-
     [blogs.christinais]
     title = "Christina Warren"
     url = "http://christina.is/"
-    favicon = "http://christina.is/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.snarkyca]
     title = "Brett Cannon"
@@ -192,7 +187,7 @@
     [blogs.deborahzhangcom]
     title = "Deborah Zhang"
     url = "http://deborahzhang.com/"
-    favicon = "http://deborahzhang.com/pinkcloud2.ico"
+    favicon = "/generic.ico"
 
     [blogs.rudyhuyncom]
     title = "Rudy Huyn"
@@ -257,7 +252,7 @@
     [blogs.akhanme]
     title = "Ali Khan"
     url = "https://akhan.me/"
-    favicon = "https://alikhan4home.files.wordpress.com/2020/01/cropped-screen-shot-2020-01-05-at-23.11.17.png?w=16"
+    favicon = "/generic.ico"
 
     [blogs.arafattehsincom]
     title = "Arafat Tehsin"
@@ -302,7 +297,7 @@
     [blogs.vk7eu]
     title = "Vitalii Kovalenko"
     url = "https://vk7.eu/"
-    favicon = "/apple-touch-icon.png"
+    favicon = "/generic.ico"
 
     [blogs.autodidactsio]
     title = "Autodidacts"

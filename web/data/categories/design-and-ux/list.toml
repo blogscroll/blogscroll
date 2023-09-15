@@ -7,7 +7,7 @@
     [blogs.nobadmemoriescom]
     title = "Rachel Weil"
     url = "http://www.nobadmemories.com/"
-    favicon = "http://www.nobadmemories.com/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.jimmyhsuca]
     title = "Jimmy Hsu"
@@ -17,7 +17,7 @@
     [blogs.kurtisbeaverscom]
     title = "Kurtis Beavers"
     url = "http://www.kurtisbeavers.com/"
-    favicon = "/apple-touch-icon.png"
+    favicon = "/generic.ico"
 
     [blogs.saraclaytoncom]
     title = "Sara Clayton"
@@ -37,7 +37,7 @@
     [blogs.arielnorlingcom]
     title = "Ariel Norling"
     url = "http://arielnorling.com/"
-    favicon = "/apple-touch-icon.png"
+    favicon = "/generic.ico"
 
     [blogs.juliedesign]
     title = "Julie Chabin"
