@@ -207,7 +207,7 @@
     [blogs.dlaame]
     title = "David Anson"
     url = "https://dlaa.me/"
-    favicon = "https://dlaa.me/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.edfreitasme]
     title = "Ed Freitas"
