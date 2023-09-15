@@ -77,7 +77,7 @@
     [blogs.trycatchdev]
     title = "Sasha Kotlyar"
     url = "https://trycatch.dev/"
-    favicon = "https://trycatch.dev/favicon.ico"
+    favicon = "https://trycatch.dev/wp-content/uploads/2022/07/cropped-favicon-32x32.png"
 
     [blogs.johnpapanet]
     title = "John Papa"
@@ -92,7 +92,7 @@
     [blogs.megdev]
     title = "Meg Risdal"
     url = "https://meg.dev/"
-    favicon = "https://mrisdal.github.io/blog/img/favicon-32x32.png"
+    favicon = "https://www.meg.dev/favicon.png"
 
     [blogs.knowingnet]
     title = "Larry O'Brien"
