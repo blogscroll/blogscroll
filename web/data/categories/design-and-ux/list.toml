@@ -17,7 +17,7 @@
     [blogs.kurtisbeaverscom]
     title = "Kurtis Beavers"
     url = "http://www.kurtisbeavers.com/"
-    favicon = "http://www.kurtisbeavers.com/favicon.ico"
+    favicon = "/apple-touch-icon.png"
 
     [blogs.saraclaytoncom]
     title = "Sara Clayton"
@@ -27,7 +27,7 @@
     [blogs.stephaniestimaccom]
     title = "Stephanie Stimac"
     url = "https://stephaniestimac.com/"
-    favicon = "https://stephaniestimac.com/imgs/favicon.ico"
+    favicon = "https://stephaniestimac.com/_astro/logo.3ca72af9.svg"
 
     [blogs.femkedesign]
     title = "Femke van Schoonhoven"
@@ -37,24 +37,19 @@
     [blogs.arielnorlingcom]
     title = "Ariel Norling"
     url = "http://arielnorling.com/"
-    favicon = "http://arielnorling.com/wp-includes/images/w-logo-blue-white-bg.png"
+    favicon = "/apple-touch-icon.png"
 
     [blogs.juliedesign]
     title = "Julie Chabin"
     url = "https://www.julie.design/"
-    favicon = "https://uploads-ssl.webflow.com/5e98afe0bed714ef237eeba4/5e9afd1705bf3a65cc1114f9_fav32.png"
+    favicon = "https://uploads-ssl.webflow.com/5ff62621e4a653ce2ada8a92/5ff62621e4a6534d68da8b17_Fav256.png"
 
     [blogs.allisongraycecom]
     title = "Allison Grayce Marshall"
     url = "https://www.allisongrayce.com/"
     favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"
 
-    [blogs.lilykonings]
-    title = "Lily Konings"
-    url = "https://lilykonin.gs/"
-    favicon = "https://lilykonin.gs/static/02cbea25cb8232a8285c4ea6b4fcad70/c5e7c/favicon.png"
-
     [blogs.tedgoascom]
     title = "Ted Goas"
     url = "https://www.tedgoas.com"
-    favicon = "https://www.tedgoas.com/images/favicon.ico"
+    favicon = "https://www.tedgoas.com/assets/img/favicon.png"
