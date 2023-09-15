@@ -1,0 +1,32 @@
+name: Link Checker
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 18 * * *"
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Load Excludes
+        run: |
+          LYCHEE_FILE_STACK=$(find . -not \( -path ./web/themes -prune \) -name '*.toml' -print0 |xargs --null)
+          echo "LYCHEE_FILE_STACK=$LYCHEE_FILE_STACK" >> $GITHUB_ENV
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@master
+        with:
+          args: --verbose --accept=200,429 --format markdown --exclude-file .lycheeignore --exclude-mail -- ${{ env.LYCHEE_FILE_STACK }}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v3
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
