@@ -278,3 +278,8 @@
     title = "Bryan Lee"
     url = "https://www.bryanleetc.com/"
     favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
+
+    [blogs.hjr265me]
+    title = "Mahmud Ridwan"
+    url = "https://hjr265.me/"
+    favicon = "https://hjr265.me/favicon-32x32.1d48fb00f610b0394f61635dcc40ce4fb3c75370201bf1a19c6e47425a3cc588.png"
