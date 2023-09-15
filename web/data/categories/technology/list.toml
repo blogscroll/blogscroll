@@ -1,8 +1,8 @@
 [blogs]
     [blogs.dendev]
-    title = "Den"
+    title = "Den Delimarsky"
     url = "https://den.dev"
-    favicon = "https://cdn.den.dev/images/favicon.ico"
+    favicon = "https://assets.den.dev/images/icon/apple-touch-icon.png"
 
     [blogs.daringfireballnet]
     title = "John Gruber"
@@ -32,7 +32,7 @@
     [blogs.jeffsandquistcom]
     title = "Jeff Sandquist"
     url = "https://www.jeffsandquist.com/"
-    favicon = "https://www.jeffsandquist.com/favicon.ico"
+    favicon = "https://i0.wp.com/jeffsandquist.com/wp-content/uploads/2022/12/241554021_10160031182773484_4117889748168457844_n.jpg"
 
     [blogs.fernandezlife]
     title = "Dan Fernandez"
@@ -72,17 +72,12 @@
     [blogs.damiengcom]
     title = "Damien Guard"
     url = "https://damieng.com"
-    favicon = "https://damieng.com/favicons/favicon-16x16.png"
-
-    [blogs.vivianphungme]
-    title = "Vivian Phung"
-    url = "https://vivianphung.me/"
-    favicon = "/generic.ico"
+    favicon = "https://damieng.com/favicon-32x32.png"
 
     [blogs.trycatchdev]
     title = "Sasha Kotlyar"
     url = "https://trycatch.dev/"
-    favicon = "https://trycatch.dev/favicon.ico"
+    favicon = "https://trycatch.dev/wp-content/uploads/2022/07/cropped-favicon-32x32.png"
 
     [blogs.johnpapanet]
     title = "John Papa"
@@ -94,15 +89,10 @@
     url = "https://www.charmaineklee.com/"
     favicon = "https://images.squarespace-cdn.com/content/56725e7240667a634d12bdd8/1587460815850-LPA2DB0KDCULMYSLAEGG/android-chrome-192x192.png"
 
-    [blogs.paigeviews]
-    title = "Paige Bailey"
-    url = "https://paigeview.ws/"
-    favicon = "/generic.ico"
-
     [blogs.megdev]
     title = "Meg Risdal"
     url = "https://meg.dev/"
-    favicon = "https://mrisdal.github.io/blog/img/favicon-32x32.png"
+    favicon = "https://www.meg.dev/favicon.png"
 
     [blogs.knowingnet]
     title = "Larry O'Brien"
@@ -113,11 +103,6 @@
     title = "Laurent Bugnion"
     url = "https://galasoft.ch"
     favicon = "https://galasoft.ch/favicon.ico"
-
-    [blogs.kristendev]
-    title = "Kristen Kwong"
-    url = "https://kristen.dev/"
-    favicon = "https://kristen.dev/icons/icon-48x48.png"
 
     [blogs.danyownet]
     title = "Jeremy Danyow"
@@ -142,11 +127,6 @@
     [blogs.brittanychengcom]
     title = "Brittany Cheng"
     url = "http://brittanycheng.com/"
-    favicon = "http://brittanycheng.com/images/favicon.ico"
-
-    [blogs.kaibaileycom]
-    title = "Kai Bailey"
-    url = "https://kai-bailey.com/"
     favicon = "/generic.ico"
 
     [blogs.whizzoecom]
@@ -164,20 +144,10 @@
     url = "https://www.celestineyeh.com/"
     favicon = "https://images.squarespace-cdn.com/content/5a4c933a8fd4d255d22eda93/1542609251239-R66KAGJJS7R715S2EWVZ/Picture1.png"
 
-    [blogs.noopkatcom]
-    title = "Suz Hinton"
-    url = "https://www.noopkat.com/"
-    favicon = "/generic.ico"
-
-    [blogs.alisonyume]
-    title = "Alison Yu"
-    url = "https://www.alisonyu.me/"
-    favicon = "https://assets.squarespace.com/universal/default-favicon.ico"
-
     [blogs.christinais]
     title = "Christina Warren"
     url = "http://christina.is/"
-    favicon = "http://christina.is/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.snarkyca]
     title = "Brett Cannon"
@@ -192,12 +162,7 @@
     [blogs.deborahzhangcom]
     title = "Deborah Zhang"
     url = "http://deborahzhang.com/"
-    favicon = "http://deborahzhang.com/pinkcloud2.ico"
-
-    [blogs.rudyhuyncom]
-    title = "Rudy Huyn"
-    url = "https://www.rudyhuyn.com/"
-    favicon = "https://www.rudyhuyn.com/blog/wp-content/uploads/2016/07/cropped-windows_10_logo-wallpaper-1920x1080-1-32x32.jpg"
+    favicon = "/generic.ico"
 
     [blogs.matthidingercom]
     title = "Matt Hidinger"
@@ -221,8 +186,8 @@
 
     [blogs.vogueandcodecom]
     title = "April Speight"
-    url = "https://www.vogueandcode.com/"
-    favicon = "https://uploads-ssl.webflow.com/5ecc3028a06918401a9a27e2/5f5fb5cdca03cb1622f077c8_vogueandcodebig.png"
+    url = "https://www.monthaftermars.com/"
+    favicon = "https://uploads-ssl.webflow.com/62f5e79b270e0c6e590b3af1/64dadf40b3a469513a672507_mam-256.png"
 
     [blogs.cassidooco]
     title = "Cassidy Williams"
@@ -242,7 +207,7 @@
     [blogs.dlaame]
     title = "David Anson"
     url = "https://dlaa.me/"
-    favicon = "https://dlaa.me/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.edfreitasme]
     title = "Ed Freitas"
@@ -257,7 +222,7 @@
     [blogs.akhanme]
     title = "Ali Khan"
     url = "https://akhan.me/"
-    favicon = "https://alikhan4home.files.wordpress.com/2020/01/cropped-screen-shot-2020-01-05-at-23.11.17.png?w=16"
+    favicon = "/generic.ico"
 
     [blogs.arafattehsincom]
     title = "Arafat Tehsin"
@@ -299,7 +264,22 @@
     url = "https://cri.dev/"
     favicon = "https://cri.dev/assets/images/cf4.64x64.webp"
 
+    [blogs.vk7eu]
+    title = "Vitalii Kovalenko"
+    url = "https://vk7.eu/"
+    favicon = "/generic.ico"
+
+    [blogs.autodidactsio]
+    title = "Autodidacts"
+    url = "https://www.autodidacts.io/"
+    favicon = "https://www.autodidacts.io/content/images/size/w256h256/2022/10/autodidacts-logo-small.png"
+
+    [blogs.bryanleetccom]
+    title = "Bryan Lee"
+    url = "https://www.bryanleetc.com/"
+    favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
+    
     [blogs.foreverlikethis]
     title = "Jayden Garridan Bridges"
-    url = "https://foreverliketh.is/"
+    url = "https://foreverliketh.is/blog/"
     favicon = "https://foreverliketh.is/favicon.ico"
