@@ -1,8 +1,8 @@
 [blogs]
     [blogs.tinykatcafe]
     title = "Kat Fukui"
-    url = "https://www.tinykat.cafe/"
-    favicon = "https://www.tinykat.cafe/favicon-32x32.png"
+    url = "https://www.katfukui.com/"
+    favicon = "https://www.katfukui.com/favicon.ico"
 
     [blogs.nobadmemoriescom]
     title = "Rachel Weil"
