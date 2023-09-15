@@ -74,11 +74,6 @@
     url = "https://damieng.com"
     favicon = "https://damieng.com/favicon-32x32.png"
 
-    [blogs.vivianphungme]
-    title = "Vivian Phung"
-    url = "https://vivianphung.me/"
-    favicon = "/generic.ico"
-
     [blogs.trycatchdev]
     title = "Sasha Kotlyar"
     url = "https://trycatch.dev/"
@@ -94,11 +89,6 @@
     url = "https://www.charmaineklee.com/"
     favicon = "https://images.squarespace-cdn.com/content/56725e7240667a634d12bdd8/1587460815850-LPA2DB0KDCULMYSLAEGG/android-chrome-192x192.png"
 
-    [blogs.paigeviews]
-    title = "Paige Bailey"
-    url = "https://paigeview.ws/"
-    favicon = "/generic.ico"
-
     [blogs.megdev]
     title = "Meg Risdal"
     url = "https://meg.dev/"
@@ -113,11 +103,6 @@
     title = "Laurent Bugnion"
     url = "https://galasoft.ch"
     favicon = "https://galasoft.ch/favicon.ico"
-
-    [blogs.kristendev]
-    title = "Kristen Kwong"
-    url = "https://kristen.dev/"
-    favicon = "https://kristen.dev/icons/icon-48x48.png"
 
     [blogs.danyownet]
     title = "Jeremy Danyow"
@@ -144,11 +129,6 @@
     url = "http://brittanycheng.com/"
     favicon = "/generic.ico"
 
-    [blogs.kaibaileycom]
-    title = "Kai Bailey"
-    url = "https://kai-bailey.com/"
-    favicon = "/generic.ico"
-
     [blogs.whizzoecom]
     title = "Zoe Chew"
     url = "https://whizzoe.com/"
@@ -163,11 +143,6 @@
     title = "Celestine Yeh"
     url = "https://www.celestineyeh.com/"
     favicon = "https://images.squarespace-cdn.com/content/5a4c933a8fd4d255d22eda93/1542609251239-R66KAGJJS7R715S2EWVZ/Picture1.png"
-
-    [blogs.noopkatcom]
-    title = "Suz Hinton"
-    url = "https://www.noopkat.com/"
-    favicon = "/generic.ico"
 
     [blogs.christinais]
     title = "Christina Warren"
@@ -216,8 +191,8 @@
 
     [blogs.vogueandcodecom]
     title = "April Speight"
-    url = "https://www.vogueandcode.com/"
-    favicon = "https://uploads-ssl.webflow.com/5ecc3028a06918401a9a27e2/5f5fb5cdca03cb1622f077c8_vogueandcodebig.png"
+    url = "https://www.monthaftermars.com/"
+    favicon = "https://uploads-ssl.webflow.com/62f5e79b270e0c6e590b3af1/64dadf40b3a469513a672507_mam-256.png"
 
     [blogs.cassidooco]
     title = "Cassidy Williams"
