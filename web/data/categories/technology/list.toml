@@ -298,3 +298,8 @@
     title = "David Singleton"
     url = "https://blog.singleton.io/"
     favicon = "https://blog.singleton.io/favicon.ico"
+
+    [blogs.wwwdewermanorg]
+    title = "Brent Deverman"
+    url = "https://www.deverman.org/"
+    favicon = "https://www.deverman.org/favicon.ico"
