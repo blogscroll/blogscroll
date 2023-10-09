@@ -279,6 +279,11 @@
     url = "https://www.bryanleetc.com/"
     favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
 
+    [blogs.cprimozicnet]
+    title = "Casey Primozic"
+    url = "https://cprimozic.net/"
+    favicon = "https://cprimozic.b-cdn.net/favicon-32x32.png"
+
     [blogs.mikekasbergcom]
     title = "Mike Kasberg"
     url = "https://www.mikekasberg.com/"
