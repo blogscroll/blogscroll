@@ -169,11 +169,6 @@
     url = "http://deborahzhang.com/"
     favicon = "/generic.ico"
 
-    [blogs.matthidingercom]
-    title = "Matt Hidinger"
-    url = "http://matthidinger.com/"
-    favicon = "http://matthidinger.com/favicon.ico"
-
     [blogs.jeffwilcoxblog]
     title = "Jeff Wilcox"
     url = "https://jeffwilcox.blog/"
