@@ -293,3 +293,8 @@
     title = "Mike Kasberg"
     url = "https://www.mikekasberg.com/"
     favicon = "https://www.mikekasberg.com/favicon-32x32.png"
+
+    [blogs.blogsingletonio]
+    title = "David Singleton"
+    url = "https://blog.singleton.io/"
+    favicon = "https://blog.singleton.io/favicon.ico"
