@@ -283,3 +283,8 @@
     title = "Bryan Lee"
     url = "https://www.bryanleetc.com/"
     favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
+
+    [blogs.mikekasbergcom]
+    title = "Mike Kasberg"
+    url = "https://www.mikekasberg.com/"
+    favicon = "https://www.mikekasberg.com/favicon-32x32.png"
