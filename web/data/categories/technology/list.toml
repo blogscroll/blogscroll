@@ -259,6 +259,11 @@
     url = "https://haltakov.net/"
     favicon = "https://haltakov.net/theme/images/vh_logo_96.png"
 
+    [blogs.scastieldev]
+    title = "Sebastien Castiel"
+    url = "https://scastiel.dev"
+    favicon = "https://scastiel.dev/icon.png"
+
     [blogs.cridev]
     title = "Christian Fei"
     url = "https://cri.dev/"
