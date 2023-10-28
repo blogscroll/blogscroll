@@ -308,3 +308,8 @@
     title = "Brent Deverman"
     url = "https://www.deverman.org/"
     favicon = "https://www.deverman.org/favicon.ico"
+
+    [blogs.thejavaguyorg]
+    title = "Ivan Milosavljevic"
+    url = "https://thejavaguy.org/"
+    favicon = "/generic.ico"
