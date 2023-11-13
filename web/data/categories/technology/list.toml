@@ -219,11 +219,6 @@
     url = "https://tattoocoder.com/"
     favicon = "https://tattoocoder.com/favicon.ico"
 
-    [blogs.akhanme]
-    title = "Ali Khan"
-    url = "https://akhan.me/"
-    favicon = "/generic.ico"
-
     [blogs.arafattehsincom]
     title = "Arafat Tehsin"
     url = "https://www.arafattehsin.com"
