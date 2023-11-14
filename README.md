@@ -28,6 +28,8 @@ Now, if you have a site that you host on Medium (or any other blog hosting servi
 
 Additionally, you need to ensure that the site does not contain inappropriate, harmful, abusive, or hateful content. Any sites that are found to be in violation of this rule will be removed without notice.
 
+Additionally, and I want to spell this out directly - I reserve the right to not include or publish any site on BlogScroll. Because this is _my_ project, I get to choose how I curate it.
+
 ### Can I remove my site from the list?
 
 Absolutely. [Open an issue](https://github.com/blogscroll/blogscroll/issues), [create a pull request](https://github.com/blogscroll/blogscroll/pulls), or ping me directly [on Twitter](https://twitter.com/denniscode).
@@ -65,3 +67,7 @@ Same as above - just personal sites, please.
 Fork the repository, then add a new TOML entry for your site in the [`categories`](https://github.com/blogscroll/blogscroll/tree/main/web/data/categories) folder, in the respective `list.toml` file.
 
 Basically, you need three data points - the URL, name of the person who the site belongs to, and a link to the favicon. The identifier for the site (in square brackets) should be the blog apex domain, with spaces and dashes removed.
+
+### Can I submit more than one site?
+
+No. To give everyone a fair level of exposure, I will only accept one URL per individual. If you own several sites, pick the one blog that you feel represents you the best or is the most interesting for an audience to discover. Keep in mind that it still needs to be a _blog_ - this is not a site to promote other projects.
