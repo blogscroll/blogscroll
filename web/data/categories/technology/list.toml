@@ -318,3 +318,8 @@
     title = "Yusuke Tsutsumi"
     url = "https://y.tsutsumi.io/"
     favicon = "https://y.tsutsumi.io/favicon.ico"
+
+    [blog.muffinmanio]
+    title = "Stanko Tadić"
+    url = "https://muffinman.io/"
+    favicon = "https://muffinman.io/favicon/blue/icon-180.png"
