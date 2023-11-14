@@ -48,3 +48,9 @@
     title = "Ted Goas"
     url = "https://www.tedgoas.com"
     favicon = "https://www.tedgoas.com/assets/img/favicon.png"
+
+    [blogs.pjonoriblog]
+    title = "PJ Onori"
+    url = "https://pjonori.blog/"
+    favicon = "/generic.ico"
+
