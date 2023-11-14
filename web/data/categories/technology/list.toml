@@ -313,3 +313,8 @@
     title = "Ryan Bagley"
     url = "https://rb.ax/"
     favicon = "/generic.ico"
+
+    [blog.ytsutsumiio]
+    title = "Yusuke Tsutsumi"
+    url = "https://y.tsutsumi.io/"
+    favicon = "https://y.tsutsumi.io/favicon.ico"
