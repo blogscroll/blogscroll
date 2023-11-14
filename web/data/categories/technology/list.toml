@@ -308,3 +308,8 @@
     title = "Ivan Milosavljevic"
     url = "https://thejavaguy.org/"
     favicon = "/generic.ico"
+
+    [blog.rbax]
+    title = "Ryan Bagley"
+    url = "https://rb.ax/"
+    favicon = "/generic.ico"
