@@ -309,17 +309,17 @@
     url = "https://thejavaguy.org/"
     favicon = "/generic.ico"
 
-    [blog.rbax]
+    [blogs.rbax]
     title = "Ryan Bagley"
     url = "https://rb.ax/"
     favicon = "/generic.ico"
 
-    [blog.ytsutsumiio]
+    [blogs.ytsutsumiio]
     title = "Yusuke Tsutsumi"
     url = "https://y.tsutsumi.io/"
     favicon = "https://y.tsutsumi.io/favicon.ico"
 
-    [blog.muffinmanio]
+    [blogs.muffinmanio]
     title = "Stanko Tadic"
     url = "https://muffinman.io/"
     favicon = "https://muffinman.io/favicon/blue/icon-180.png"
