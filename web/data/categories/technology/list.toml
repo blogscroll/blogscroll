@@ -323,3 +323,18 @@
     title = "Stanko Tadic"
     url = "https://muffinman.io/"
     favicon = "https://muffinman.io/favicon/blue/icon-180.png"
+
+    [blogs.victorbjorklundcom]
+    title = "Victor Björklund"
+    url = "https://victorbjorklund.com/"
+    favicon = "https://victorbjorklund.com/assets/images/favicon.png"
+
+    [blogs.dsebastiennet]
+    title = "Sébastien Dubois"
+    url = "https://www.dsebastien.net/"
+    favicon = "https://www.dsebastien.net/content/images/size/w256h256/2022/11/logo_symbol.png"
+
+    [blogs.somethingdecentcouk]
+    title = "Paul Singh"
+    url = "https://somethingdecent.co.uk/"
+    favicon = "https://somethingdecent.co.uk/wp-content/uploads/2023/01/cropped-something-decent-logo-192x192.jpg"
