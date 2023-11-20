@@ -338,3 +338,8 @@
     title = "Paul Singh"
     url = "https://somethingdecent.co.uk/"
     favicon = "https://somethingdecent.co.uk/wp-content/uploads/2023/01/cropped-something-decent-logo-192x192.jpg"
+
+    [blogs.cosmicqbit]
+    title = "Shariq Raza Qadri"
+    url = "https://cosmicqbit.dev"
+    favicon = "https://cosmicqbit.dev/images/avatar_hu474f295c7267822304e3fd2adfc9d2f2_13155_32x32_resize_q75_box.jpeg"
