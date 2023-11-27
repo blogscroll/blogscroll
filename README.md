@@ -28,7 +28,7 @@ Now, if you have a site that you host on Medium (or any other blog hosting servi
 
 Additionally, you need to ensure that the site does not contain inappropriate, harmful, abusive, or hateful content. Any sites that are found to be in violation of this rule will be removed without notice.
 
-Additionally, and I want to spell this out directly - I reserve the right to not include or publish any site on BlogScroll. Because this is _my_ project, I get to choose how I curate it.
+Lastly, and I want to spell this out directly - I reserve the right to not include or publish any site on BlogScroll. Because this is _my_ project, I get to choose how I curate it.
 
 ### Can I remove my site from the list?
 
@@ -44,7 +44,7 @@ Totally. [Open an issue](https://github.com/blogscroll/blogscroll/issues), [crea
 
 ### A site seems to be hosting questionable content. What should I do?
 
-You're probably sick of hearing this, but [open an issue](https://github.com/blogscroll/blogscroll/issues), [create a pull request](https://github.com/blogscroll/blogscroll/pulls), or ping me directly [on Twitter](https://twitter.com/denniscode) - I'll help fix the issue.
+You're probably sick of hearing this, but [open an issue](https://github.com/blogscroll/blogscroll/issues) or [create a pull request](https://github.com/blogscroll/blogscroll/pulls) - I'll help fix the problem.
 
 ### I don't like the categories that are laid out. Can I change them?
 
