@@ -358,3 +358,8 @@
     title = "Ben Hekster"
     url = "https://www.hekster.org/"
     favicon = "/generic.ico"
+
+    [blogs.nicolasboulianecom]
+    title = "Nicolas Bouliane"
+    url = "https://nicolasbouliane.com/"
+    favicon = "https://nicolasbouliane.com/img/favicon.png"

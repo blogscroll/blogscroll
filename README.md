@@ -32,7 +32,7 @@ Lastly, and I want to spell this out directly - I reserve the right to not inclu
 
 ### Can I remove my site from the list?
 
-Absolutely. [Open an issue](https://github.com/blogscroll/blogscroll/issues), [create a pull request](https://github.com/blogscroll/blogscroll/pulls), or ping me directly [on Twitter](https://twitter.com/denniscode).
+Absolutely. [Open an issue](https://github.com/blogscroll/blogscroll/issues) or [create a pull request](https://github.com/blogscroll/blogscroll/pulls).
 
 ### Can I remove someone else's site?
 
@@ -40,7 +40,7 @@ Not really. Short of that site being no longer available, or hosting abusive, ha
 
 ### A site is no longer active/returns a 404. Can it be removed?
 
-Totally. [Open an issue](https://github.com/blogscroll/blogscroll/issues), [create a pull request](https://github.com/blogscroll/blogscroll/pulls), or ping me directly [on Twitter](https://twitter.com/denniscode) - I'll help fix the issue.
+Totally. [Open an issue](https://github.com/blogscroll/blogscroll/issues) or [create a pull request](https://github.com/blogscroll/blogscroll/pulls) - I'll help fix the issue.
 
 ### A site seems to be hosting questionable content. What should I do?
 
