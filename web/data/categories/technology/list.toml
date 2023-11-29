@@ -353,3 +353,8 @@
     title = "Daniel Grzelak"
     url = "https://dagrz.com"
     favicon = "https://dagrz.com/images/favicon-16x16.png"
+
+    [blogs.wwwheksterorg]
+    title = "Ben Hekster"
+    url = "https://www.hekster.org/"
+    favicon = "/generic.ico"
