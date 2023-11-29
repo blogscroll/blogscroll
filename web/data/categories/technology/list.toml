@@ -363,3 +363,8 @@
     title = "Nicolas Bouliane"
     url = "https://nicolasbouliane.com/"
     favicon = "https://nicolasbouliane.com/img/favicon.png"
+
+    [blogs.stephangocom]
+    title = "Steph Ango"
+    url = "https://stephango.com/"
+    favicon = "https://stephango.com/icon.svg"
