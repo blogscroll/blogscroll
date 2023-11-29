@@ -348,3 +348,8 @@
     title = "Rohan Kumar"
     url = "https://seirdy.one/"
     favicon = "https://seirdy.one/favicon192.cff57cdaf1657054398835cb00361c49.png"
+
+    [blogs.dagrzcom]
+    title = "Daniel Grzelak"
+    url = "https://dagrz.com"
+    favicon = "https://dagrz.com/images/favicon-16x16.png"
