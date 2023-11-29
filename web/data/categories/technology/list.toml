@@ -343,3 +343,8 @@
     title = "Shariq Raza Qadri"
     url = "https://cosmicqbit.dev"
     favicon = "https://cosmicqbit.dev/images/avatar_hu474f295c7267822304e3fd2adfc9d2f2_13155_32x32_resize_q75_box.jpeg"
+
+    [blogs.seirdyone]
+    title = "Rohan Kumar"
+    url = "https://seirdy.one/"
+    favicon = "https://seirdy.one/favicon192.cff57cdaf1657054398835cb00361c49.png"
