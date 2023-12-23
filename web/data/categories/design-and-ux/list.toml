@@ -22,7 +22,7 @@
     [blogs.stephaniestimaccom]
     title = "Stephanie Stimac"
     url = "https://stephaniestimac.com/"
-    favicon = "https://stephaniestimac.com/_astro/logo.3ca72af9.svg"
+    favicon = "/generic.ico"
 
     [blogs.femkedesign]
     title = "Femke van Schoonhoven"
