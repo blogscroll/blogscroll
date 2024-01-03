@@ -19,6 +19,11 @@
     url = "https://www.hellomayuko.com/"
     favicon = "https://images.squarespace-cdn.com/content/v1/5cc138a0c46f6d618fd63b4c/1590011027740-SKKDM5SVU995NU71SYLP/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKFSZnIIAPuX1C4iUTyn4Xd4-76gsgk4xgxAaWTBSRHt9w/favicon.ico?format=100w"
 
+    [blogs.howdoicomputerlol]
+    title = "Tyler Hampton"
+    url = "https://howdoicomputer.lol"
+    favicon = "https://howdoicomputer.lol/favicon.ico"
+
     [blogs.paulirishcom]
     title = "Paul Irish"
     url = "https://www.paulirish.com/"
@@ -164,11 +169,6 @@
     url = "http://deborahzhang.com/"
     favicon = "/generic.ico"
 
-    [blogs.matthidingercom]
-    title = "Matt Hidinger"
-    url = "http://matthidinger.com/"
-    favicon = "http://matthidinger.com/favicon.ico"
-
     [blogs.jeffwilcoxblog]
     title = "Jeff Wilcox"
     url = "https://jeffwilcox.blog/"
@@ -219,11 +219,6 @@
     url = "https://tattoocoder.com/"
     favicon = "https://tattoocoder.com/favicon.ico"
 
-    [blogs.akhanme]
-    title = "Ali Khan"
-    url = "https://akhan.me/"
-    favicon = "/generic.ico"
-
     [blogs.arafattehsincom]
     title = "Arafat Tehsin"
     url = "https://www.arafattehsin.com"
@@ -259,6 +254,11 @@
     url = "https://haltakov.net/"
     favicon = "https://haltakov.net/theme/images/vh_logo_96.png"
 
+    [blogs.scastieldev]
+    title = "Sebastien Castiel"
+    url = "https://scastiel.dev"
+    favicon = "https://scastiel.dev/icon.png"
+
     [blogs.cridev]
     title = "Christian Fei"
     url = "https://cri.dev/"
@@ -278,7 +278,97 @@
     title = "Bryan Lee"
     url = "https://www.bryanleetc.com/"
     favicon = "https://www.bryanleetc.com/theme/img/favicon.ico"
-    
+
+    [blogs.hjr265me]
+    title = "Mahmud Ridwan"
+    url = "https://hjr265.me/"
+    favicon = "https://hjr265.me/favicon-32x32.1d48fb00f610b0394f61635dcc40ce4fb3c75370201bf1a19c6e47425a3cc588.png"
+
+    [blogs.cprimozicnet]
+    title = "Casey Primozic"
+    url = "https://cprimozic.net/"
+    favicon = "https://cprimozic.b-cdn.net/favicon-32x32.png"
+
+    [blogs.mikekasbergcom]
+    title = "Mike Kasberg"
+    url = "https://www.mikekasberg.com/"
+    favicon = "https://www.mikekasberg.com/favicon-32x32.png"
+
+    [blogs.blogsingletonio]
+    title = "David Singleton"
+    url = "https://blog.singleton.io/"
+    favicon = "https://blog.singleton.io/favicon.ico"
+
+    [blogs.wwwdewermanorg]
+    title = "Brent Deverman"
+    url = "https://www.deverman.org/"
+    favicon = "https://www.deverman.org/favicon.ico"
+
+    [blogs.thejavaguyorg]
+    title = "Ivan Milosavljevic"
+    url = "https://thejavaguy.org/"
+    favicon = "/generic.ico"
+
+    [blogs.rbax]
+    title = "Ryan Bagley"
+    url = "https://rb.ax/"
+    favicon = "/generic.ico"
+
+    [blogs.ytsutsumiio]
+    title = "Yusuke Tsutsumi"
+    url = "https://y.tsutsumi.io/"
+    favicon = "https://y.tsutsumi.io/favicon.ico"
+
+    [blogs.muffinmanio]
+    title = "Stanko Tadic"
+    url = "https://muffinman.io/"
+    favicon = "https://muffinman.io/favicon/blue/icon-180.png"
+
+    [blogs.victorbjorklundcom]
+    title = "Victor Björklund"
+    url = "https://victorbjorklund.com/"
+    favicon = "https://victorbjorklund.com/assets/images/favicon.png"
+
+    [blogs.dsebastiennet]
+    title = "Sébastien Dubois"
+    url = "https://www.dsebastien.net/"
+    favicon = "https://www.dsebastien.net/content/images/size/w256h256/2022/11/logo_symbol.png"
+
+    [blogs.somethingdecentcouk]
+    title = "Paul Singh"
+    url = "https://somethingdecent.co.uk/"
+    favicon = "https://somethingdecent.co.uk/wp-content/uploads/2023/01/cropped-something-decent-logo-192x192.jpg"
+
+    [blogs.cosmicqbitdev]
+    title = "Shariq Raza Qadri"
+    url = "https://cosmicqbit.dev"
+    favicon = "https://cosmicqbit.dev/images/avatar_hu474f295c7267822304e3fd2adfc9d2f2_13155_32x32_resize_q75_box.jpeg"
+
+    [blogs.seirdyone]
+    title = "Rohan Kumar"
+    url = "https://seirdy.one/"
+    favicon = "https://seirdy.one/favicon192.cff57cdaf1657054398835cb00361c49.png"
+
+    [blogs.dagrzcom]
+    title = "Daniel Grzelak"
+    url = "https://dagrz.com"
+    favicon = "https://dagrz.com/images/favicon-16x16.png"
+
+    [blogs.wwwheksterorg]
+    title = "Ben Hekster"
+    url = "https://www.hekster.org/"
+    favicon = "/generic.ico"
+
+    [blogs.nicolasboulianecom]
+    title = "Nicolas Bouliane"
+    url = "https://nicolasbouliane.com/"
+    favicon = "https://nicolasbouliane.com/img/favicon.png"
+
+    [blogs.stephangocom]
+    title = "Steph Ango"
+    url = "https://stephango.com/"
+    favicon = "https://stephango.com/icon.svg"
+
     [blogs.foreverlikethis]
     title = "Jayden Garridan Bridges"
     url = "https://foreverliketh.is/blog/"

@@ -1,5 +1,5 @@
 [blogs]
-    [blogs.tinykatcafe]
+    [blogs.katfukuicom]
     title = "Kat Fukui"
     url = "https://www.katfukui.com/"
     favicon = "https://www.katfukui.com/favicon.ico"
@@ -22,7 +22,7 @@
     [blogs.stephaniestimaccom]
     title = "Stephanie Stimac"
     url = "https://stephaniestimac.com/"
-    favicon = "https://stephaniestimac.com/_astro/logo.3ca72af9.svg"
+    favicon = "/generic.ico"
 
     [blogs.femkedesign]
     title = "Femke van Schoonhoven"
@@ -48,3 +48,9 @@
     title = "Ted Goas"
     url = "https://www.tedgoas.com"
     favicon = "https://www.tedgoas.com/assets/img/favicon.png"
+
+    [blogs.pjonoriblog]
+    title = "PJ Onori"
+    url = "https://pjonori.blog/"
+    favicon = "/generic.ico"
+
