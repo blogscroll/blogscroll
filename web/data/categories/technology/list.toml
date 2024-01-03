@@ -368,3 +368,8 @@
     title = "Steph Ango"
     url = "https://stephango.com/"
     favicon = "https://stephango.com/icon.svg"
+
+    [blogs.foreverlikethis]
+    title = "Jayden Garridan Bridges"
+    url = "https://foreverliketh.is/blog/"
+    favicon = "https://foreverliketh.is/favicon.ico"
