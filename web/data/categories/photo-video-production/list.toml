@@ -3,3 +3,8 @@
     title = "Kaitlin McKinnon"
     url = "https://www.kaitlinmckinnon.com"
     favicon = "https://www.kaitlinmckinnon.com/favicon.ico"
+
+    [blogs.chillbilldillcom]
+    title = "Bill (ChillBillDill)"
+    url = "https://www.chillbilldill.com/"
+    favicon = "https://www.chillbilldill.com/content/images/size/w192h192/size/w256h256/2023/02/faviconbig-1.png"
