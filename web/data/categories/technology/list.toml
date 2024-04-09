@@ -389,3 +389,9 @@
     url = "https://hyperific.bearblog.dev/"
     favicon = "/generic.ico"
 
+    [blogs.sjerred]
+    title = "Jerred Shepherd"
+    url = "https://sjer.red/"
+    favicon = "https://sjer.red/favicon-32x32.png"
+
+
