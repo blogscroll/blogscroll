@@ -379,3 +379,7 @@
     url = "https://michael.mior.ca/blog"
     favicon = "https://michael.mior.ca/favicons/android-chrome-144x144.png"
 
+    [blogs.jmmvdev]
+    title = "Julio Merino"
+    url = "https://jmmv.dev/"
+    favicon = "https://jmmv.dev/images/favicons/favicon-30x30.png"
