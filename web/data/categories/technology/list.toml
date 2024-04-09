@@ -368,3 +368,9 @@
     title = "Steph Ango"
     url = "https://stephango.com/"
     favicon = "https://stephango.com/icon.svg"
+
+    [blogs.reprodevcom]
+    title = "ReproDev"
+    url = "https://reprodev.com/"
+    favicon = "https://reprodev.com/favicon.ico"
+
