@@ -428,3 +428,8 @@
     title = "Luis Quintanilla"
     url = "https://www.lqdev.me/"
     favicon = "https://www.lqdev.me/favicon.ico"
+
+    [blogs.wwwunsungnoveltyorg]
+    title = "Nikhil (Unsung Novelty)"
+    url = "https://www.unsungnovelty.org/"
+    favicon = "https://www.unsungnovelty.org/favicon.ico"
