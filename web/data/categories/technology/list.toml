@@ -374,3 +374,8 @@
     url = "https://reprodev.com/"
     favicon = "https://reprodev.com/favicon.ico"
 
+    [blogs.michaelmiorcablog]
+    title = "Michael Mior"
+    url = "https://michael.mior.ca/blog"
+    favicon = "https://michael.mior.ca/favicons/android-chrome-144x144.png"
+
