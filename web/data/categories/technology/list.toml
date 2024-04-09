@@ -418,3 +418,8 @@
     title = "Zachary Kanfer"
     url = "https://zck.org/"
     favicon = "https://zck.org/favicon.ico"
+
+    [blogs.vgelme]
+    title = "Theia Vogel"
+    url = "https://vgel.me/"
+    favicon = "https://vgel.me/favicon.ico"
