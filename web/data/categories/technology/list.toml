@@ -433,3 +433,8 @@
     title = "Nikhil (Unsung Novelty)"
     url = "https://www.unsungnovelty.org/"
     favicon = "https://www.unsungnovelty.org/favicon.ico"
+
+    [blogs.lapcatsoftwarecom]
+    title = "Jeff Johnson"
+    url = "https://lapcatsoftware.com/articles/"
+    favicon = "/generic.ico"
