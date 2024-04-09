@@ -408,3 +408,8 @@
     title = "Sebastien Castiel"
     url = "https://scastiel.dev/"
     favicon = "https://scastiel.dev/favicon.ico"
+
+    [blogs.muhammadrazame]
+    title = "Muhammad Raza"
+    url = "https://muhammadraza.me/"
+    favicon = "/generic.ico
