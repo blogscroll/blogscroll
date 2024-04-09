@@ -1,9 +1,4 @@
 [blogs]
-    [blogs.bixblog]
-    title = "Bix Frankonis"
-    url = "https://bix.blog/"
-    favicon = "https://bix.blog/wp-content/uploads/2023/06/cropped-IMG_4972-32x32.jpg"
-
     [blogs.stuckytech]
     title = "Dave Stucky"
     url = "https://stucky.tech//"
