@@ -18,3 +18,8 @@
     title = "Robert Kingett"
     url = "https://robertkingett.com/"
     favicon = "https://robertkingett.com/favicon.ico"
+
+    [blogs.risingthumbxyz]
+    title = "Aaron Leonard"
+    url = "https://risingthumb.xyz/"
+    favicon = "https://risingthumb.xyz/favicon.ico"
