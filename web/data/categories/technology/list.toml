@@ -412,4 +412,9 @@
     [blogs.muhammadrazame]
     title = "Muhammad Raza"
     url = "https://muhammadraza.me/"
-    favicon = "/generic.ico
+    favicon = "/generic.ico"
+
+    [blogs.zckorg]
+    title = "Zachary Kanfer"
+    url = "https://zck.org/"
+    favicon = "https://zck.org/favicon.ico"
