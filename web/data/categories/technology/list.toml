@@ -403,3 +403,8 @@
     title = "Omkar Khair"
     url = "https://0x8.in/blog"
     favicon = "/generic.ico"
+
+    [blogs.scastieldev]
+    title = "Sebastien Castiel"
+    url = "https://scastiel.dev/"
+    favicon = "https://scastiel.dev/favicon.ico"
