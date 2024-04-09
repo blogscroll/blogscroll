@@ -394,4 +394,7 @@
     url = "https://sjer.red/"
     favicon = "https://sjer.red/favicon-32x32.png"
 
-
+    [blogs.calebjaycom]
+    title = "Caleb Jay Rogers"
+    url = "https://calebjay.com/"
+    favicon = "https://calebjay.com/favicon.ico"
