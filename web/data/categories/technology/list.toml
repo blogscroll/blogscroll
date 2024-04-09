@@ -438,3 +438,8 @@
     title = "Jeff Johnson"
     url = "https://lapcatsoftware.com/articles/"
     favicon = "/generic.ico"
+
+    [blogs.codebycodycom]
+    title = "Cody Sechelski"
+    url = "https://codebycody.com/"
+    favicon = "https://codebycody.com/content/images/size/w256h256/2023/02/icon.png"
