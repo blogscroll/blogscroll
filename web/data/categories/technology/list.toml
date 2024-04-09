@@ -423,3 +423,8 @@
     title = "Theia Vogel"
     url = "https://vgel.me/"
     favicon = "https://vgel.me/favicon.ico"
+
+    [blogs.wwwlqdevme]
+    title = "Luis Quintanilla"
+    url = "https://www.lqdev.me/"
+    favicon = "https://www.lqdev.me/favicon.ico"
