@@ -13,3 +13,8 @@
     title = "Chris (Odd Links)"
     url = "https://oddlinks.com/"
     favicon = "https://oddlinks.com/content/images/size/w256h256/2024/03/paw-2.png"
+
+    [blogs.robertkingettcom]
+    title = "Robert Kingett"
+    url = "https://robertkingett.com/"
+    favicon = "https://robertkingett.com/favicon.ico"
