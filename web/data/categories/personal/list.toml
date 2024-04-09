@@ -1,5 +1,10 @@
 [blogs]
     [blogs.stuckytech]
     title = "Dave Stucky"
-    url = "https://stucky.tech//"
+    url = "https://stucky.tech/"
     favicon = "https://stucky.tech/wp-content/uploads/2022/05/cropped-Logo-32x32.png"
+
+    [blogs.brianjdevriescom]
+    title = "Brian Devries"
+    url = "https://brianjdevries.com/"
+    favicon = "https://brianjdevries.com/favicon-32x32.png"
