@@ -17,7 +17,7 @@
     [blogs.robertkingettcom]
     title = "Robert Kingett"
     url = "https://robertkingett.com/"
-    favicon = "https://robertkingett.com/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.risingthumbxyz]
     title = "Aaron Leonard"
