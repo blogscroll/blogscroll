@@ -373,3 +373,73 @@
     title = "Jayden Garridan Bridges"
     url = "https://foreverliketh.is/blog/"
     favicon = "https://foreverliketh.is/favicon.ico"
+
+    [blogs.reprodevcom]
+    title = "ReproDev"
+    url = "https://reprodev.com/"
+    favicon = "https://reprodev.com/favicon.ico"
+
+    [blogs.michaelmiorcablog]
+    title = "Michael Mior"
+    url = "https://michael.mior.ca/blog"
+    favicon = "https://michael.mior.ca/favicons/android-chrome-144x144.png"
+
+    [blogs.jmmvdev]
+    title = "Julio Merino"
+    url = "https://jmmv.dev/"
+    favicon = "https://jmmv.dev/images/favicons/favicon-30x30.png"
+
+    [blogs.hyperificbearblogdev]
+    title = "Daniel Oberbauer"
+    url = "https://hyperific.bearblog.dev/"
+    favicon = "/generic.ico"
+
+    [blogs.sjerred]
+    title = "Jerred Shepherd"
+    url = "https://sjer.red/"
+    favicon = "https://sjer.red/favicon-32x32.png"
+
+    [blogs.calebjaycom]
+    title = "Caleb Jay Rogers"
+    url = "https://calebjay.com/"
+    favicon = "https://calebjay.com/favicon.ico"
+
+    [blogs.0x8inblog]
+    title = "Omkar Khair"
+    url = "https://0x8.in/blog"
+    favicon = "/generic.ico"
+
+    [blogs.muhammadrazame]
+    title = "Muhammad Raza"
+    url = "https://muhammadraza.me/"
+    favicon = "/generic.ico"
+
+    [blogs.zckorg]
+    title = "Zachary Kanfer"
+    url = "https://zck.org/"
+    favicon = "https://zck.org/favicon.ico"
+
+    [blogs.vgelme]
+    title = "Theia Vogel"
+    url = "https://vgel.me/"
+    favicon = "https://vgel.me/favicon.ico"
+
+    [blogs.wwwlqdevme]
+    title = "Luis Quintanilla"
+    url = "https://www.lqdev.me/"
+    favicon = "https://www.lqdev.me/favicon.ico"
+
+    [blogs.wwwunsungnoveltyorg]
+    title = "Nikhil (Unsung Novelty)"
+    url = "https://www.unsungnovelty.org/"
+    favicon = "https://www.unsungnovelty.org/favicon.ico"
+
+    [blogs.lapcatsoftwarecom]
+    title = "Jeff Johnson"
+    url = "https://lapcatsoftware.com/articles/"
+    favicon = "/generic.ico"
+
+    [blogs.codebycodycom]
+    title = "Cody Sechelski"
+    url = "https://codebycody.com/"
+    favicon = "https://codebycody.com/content/images/size/w256h256/2023/02/icon.png"

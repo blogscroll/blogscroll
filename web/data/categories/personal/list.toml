@@ -1,10 +1,25 @@
 [blogs]
-    [blogs.bixblog]
-    title = "Bix Frankonis"
-    url = "https://bix.blog/"
-    favicon = "https://bix.blog/wp-content/uploads/2023/06/cropped-IMG_4972-32x32.jpg"
-
     [blogs.stuckytech]
     title = "Dave Stucky"
-    url = "https://stucky.tech//"
+    url = "https://stucky.tech/"
     favicon = "https://stucky.tech/wp-content/uploads/2022/05/cropped-Logo-32x32.png"
+
+    [blogs.brianjdevriescom]
+    title = "Brian Devries"
+    url = "https://brianjdevries.com/"
+    favicon = "https://brianjdevries.com/favicon-32x32.png"
+
+    [blogs.oddlinkscom]
+    title = "Chris (Odd Links)"
+    url = "https://oddlinks.com/"
+    favicon = "https://oddlinks.com/content/images/size/w256h256/2024/03/paw-2.png"
+
+    [blogs.robertkingettcom]
+    title = "Robert Kingett"
+    url = "https://robertkingett.com/"
+    favicon = "/generic.ico"
+
+    [blogs.risingthumbxyz]
+    title = "Aaron Leonard"
+    url = "https://risingthumb.xyz/"
+    favicon = "https://risingthumb.xyz/favicon.ico"
