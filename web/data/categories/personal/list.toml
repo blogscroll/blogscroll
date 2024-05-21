@@ -23,3 +23,8 @@
     title = "Aaron Leonard"
     url = "https://risingthumb.xyz/"
     favicon = "https://risingthumb.xyz/favicon.ico"
+
+    [blogs.foreverlikethis]
+    title = "Jayden Garridan Bridges"
+    url = "https://foreverliketh.is/blog/"
+    favicon = "https://foreverliketh.is/favicon.ico"
