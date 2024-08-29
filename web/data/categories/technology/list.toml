@@ -19,11 +19,6 @@
     url = "https://www.hellomayuko.com/"
     favicon = "https://images.squarespace-cdn.com/content/v1/5cc138a0c46f6d618fd63b4c/1590011027740-SKKDM5SVU995NU71SYLP/ke17ZwdGBToddI8pDm48kMpagLdZPgiW6yD5i4KsS9VZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7UnCxNA8dHvmd7460Z7fbKFSZnIIAPuX1C4iUTyn4Xd4-76gsgk4xgxAaWTBSRHt9w/favicon.ico?format=100w"
 
-    [blogs.howdoicomputerlol]
-    title = "Tyler Hampton"
-    url = "https://howdoicomputer.lol"
-    favicon = "https://howdoicomputer.lol/favicon.ico"
-
     [blogs.paulirishcom]
     title = "Paul Irish"
     url = "https://www.paulirish.com/"
@@ -32,17 +27,12 @@
     [blogs.paulstamatioucom]
     title = "Paul Stamatiou"
     url = "https://paulstamatiou.com/"
-    favicon = "https://paulstamatiou.com/touch-icon-192x192.png"
+    favicon = "https://paulstamatiou.com/favicon.svg"
 
     [blogs.jeffsandquistcom]
     title = "Jeff Sandquist"
     url = "https://www.jeffsandquist.com/"
     favicon = "https://i0.wp.com/jeffsandquist.com/wp-content/uploads/2022/12/241554021_10160031182773484_4117889748168457844_n.jpg"
-
-    [blogs.fernandezlife]
-    title = "Dan Fernandez"
-    url = "https://fernandez.life/"
-    favicon = "https://fernandez.life/favicon.ico"
 
     [blogs.codinghorrorcom]
     title = "Jeff Atwood"
@@ -192,7 +182,7 @@
     [blogs.cassidooco]
     title = "Cassidy Williams"
     url = "https://cassidoo.co/"
-    favicon = "https://cassidoo.co/img/favicon-16x16.png"
+    favicon = "https://cassidoo.co/favicon.ico"
 
     [blogs.brianpeekcom]
     title = "Brian Peek"
