@@ -27,7 +27,7 @@
     [blogs.bauvacom]
     title = "Pranit Bauva"
     url = "https://bauva.com"
-    favicon = "https://bauva.com/favicon.ico"
+    favicon = "/generic.ico"
 
     [blogs.mxstbrcom]
     title = "Max Stoiber"
