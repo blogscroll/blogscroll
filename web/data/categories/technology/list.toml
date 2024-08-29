@@ -374,11 +374,6 @@
     url = "https://jmmv.dev/"
     favicon = "https://jmmv.dev/images/favicons/favicon-30x30.png"
 
-    [blogs.hyperificbearblogdev]
-    title = "Daniel Oberbauer"
-    url = "https://hyperific.bearblog.dev/"
-    favicon = "/generic.ico"
-
     [blogs.sjerred]
     title = "Jerred Shepherd"
     url = "https://sjer.red/"
