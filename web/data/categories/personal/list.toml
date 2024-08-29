@@ -23,3 +23,8 @@
     title = "Aaron Leonard"
     url = "https://risingthumb.xyz/"
     favicon = "https://risingthumb.xyz/favicon.ico"
+
+    [blogs.bauvacom]
+    title = "Pranit Bauva"
+    url = "https://bauva.com"
+    favicon = "https://bauva.com/favicon.ico"
