@@ -438,3 +438,8 @@
     title = "Cody Sechelski"
     url = "https://codebycody.com/"
     favicon = "https://codebycody.com/content/images/size/w256h256/2023/02/icon.png"
+
+    [blogs.randomnouncom]
+    title = "Greg Knox"
+    url = "https://www.randomnoun.com/"
+    favicon = "/generic.ico"

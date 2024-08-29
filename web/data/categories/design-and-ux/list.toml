@@ -54,3 +54,8 @@
     url = "https://pjonori.blog/"
     favicon = "/generic.ico"
 
+    [blogs.jarangocom]
+    title = "Jorge Arango"
+    url = "https://jarango.com/"
+    favicon = "https://jarango.com/favicon-32x32.png"
+
