@@ -3,63 +3,77 @@
     title = "Kat Fukui"
     url = "https://www.katfukui.com/"
     favicon = "https://www.katfukui.com/favicon.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.nobadmemoriescom]
     title = "Rachel Weil"
     url = "http://www.nobadmemories.com/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.kurtisbeaverscom]
     title = "Kurtis Beavers"
     url = "http://www.kurtisbeavers.com/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.saraclaytoncom]
     title = "Sara Clayton"
     url = "https://www.saraclayton.com/"
     favicon = "https://www.saraclayton.com/favicon.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.stephaniestimaccom]
     title = "Stephanie Stimac"
     url = "https://stephaniestimac.com/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.femkedesign]
     title = "Femke van Schoonhoven"
     url = "https://www.femke.design/"
     favicon = "https://assets.website-files.com/5a4605273472ef00014ade36/5a98f5d1a301900001617061_fav.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.arielnorlingcom]
     title = "Ariel Norling"
     url = "http://arielnorling.com/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.juliedesign]
     title = "Julie Chabin"
     url = "https://www.julie.design/"
     favicon = "https://uploads-ssl.webflow.com/5ff62621e4a653ce2ada8a92/5ff62621e4a6534d68da8b17_Fav256.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.allisongraycecom]
     title = "Allison Grayce Marshall"
     url = "https://www.allisongrayce.com/"
     favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.tedgoascom]
     title = "Ted Goas"
     url = "https://www.tedgoas.com"
     favicon = "https://www.tedgoas.com/assets/img/favicon.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.pjonoriblog]
     title = "PJ Onori"
     url = "https://pjonori.blog/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.jarangocom]
     title = "Jorge Arango"
     url = "https://jarango.com/"
     favicon = "https://jarango.com/favicon-32x32.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.solomonio]
     title = "Sam Solomon"
     url = "https://solomon.io/"
     favicon = "https://i0.wp.com/solomon.io/wp-content/uploads/2024/01/SS-Logo.png"
+    updated="2024-09-01T14:00:00-0700"
+

@@ -3,48 +3,58 @@
     title = "Dave Stucky"
     url = "https://stucky.tech/"
     favicon = "https://stucky.tech/wp-content/uploads/2022/05/cropped-Logo-32x32.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.brianjdevriescom]
     title = "Brian Devries"
     url = "https://brianjdevries.com/"
     favicon = "https://brianjdevries.com/favicon-32x32.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.cawblog]
     title = "Chris"
     url = "https://caw.blog/"
     favicon = "https://caw.blog/content/images/size/w256h256/format/png/2024/08/Raven-9-1-.svg"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.robertkingettcom]
     title = "Robert Kingett"
     url = "https://robertkingett.com/"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.risingthumbxyz]
     title = "Aaron Leonard"
     url = "https://risingthumb.xyz/"
     favicon = "https://risingthumb.xyz/favicon.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.bauvacom]
     title = "Pranit Bauva"
     url = "https://bauva.com"
     favicon = "/generic.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.mxstbrcom]
     title = "Max Stoiber"
     url = "https://mxstbr.com"
     favicon = "https://mxstbr.com/icon.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.shreyasprakashcom]
     title = "Shreyas Prakash"
     url = "https://www.shreyasprakash.com"
     favicon = "https://shreyasprakash.com/content/images/size/w256h256/2024/07/Group-2-2.png"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.bneoxyz]
     title = "Benedict Neo"
     url = "https://www.bneo.xyz/"
     favicon = "https://www.bneo.xyz/icon.ico"
+	updated="2024-09-01T14:00:00-0700"
 
     [blogs.alexeystarcom]
     title = "Alexey Staroselets"
     url = "https://www.alexeystar.com/"
     favicon = "https://www.alexeystar.com/images/favicon/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"

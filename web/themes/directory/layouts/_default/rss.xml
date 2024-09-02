@@ -1,0 +1,42 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ .Site.Title }}</title>
+    <link>{{ .Site.BaseURL }}</link>
+    <atom:link href="{{ .Site.BaseURL }}index.xml" rel="self" type="application/rss+xml" />
+    <description>{{ .Site.Params.description | default "Default site description" }}</description>
+    <pubDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</pubDate>
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</lastBuildDate>
+
+    {{ $totalBlogs := 0 }}
+    {{ $allBlogs := slice }}
+
+    <!-- Iterate over all categories and collect all blog items -->
+    {{ range .Site.Data }}
+      {{ range $key, $value := . }}
+        {{ range $blogkey, $blogval := $value }}
+          {{ range $blog := $blogval.blogs }}
+            {{ $date := time.AsTime $blog.updated }}
+            {{ $allBlogs = $allBlogs | append (dict "title" $blog.title "url" $blog.url "updated" $date "favicon" $blog.favicon "category" $key) }}
+            {{ $totalBlogs = add $totalBlogs 1 }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ range $sortedBlogs := sort $allBlogs "title" }}
+      <item>
+        <title>{{ $sortedBlogs.title }} ({{ $sortedBlogs.category }})</title>
+        <link>{{ $sortedBlogs.url }}</link>
+        <description>{{ $sortedBlogs.title }} - {{ $sortedBlogs.url }}</description>
+        <pubDate>{{ $sortedBlogs.updated.Format "Mon, 02 Jan 2006 15:04:05 PST" }}</pubDate>
+        <guid>{{ $sortedBlogs.url }}</guid>
+      </item>
+    {{ else }}
+      <item>
+        <title>No Blogs Found</title>
+        <description>No blogs were found in any category.</description>
+      </item>
+    {{ end }}
+  </channel>
+</rss>
