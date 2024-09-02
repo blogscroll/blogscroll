@@ -13,21 +13,21 @@
         </div>
         <div class="link-container" id="link-container">
         {{ range .Site.Data }}
-                {{ range $key, $value := . }}
-                    <div class="category-container">
+            {{ range $key, $value := . }}
+                <div class="category-container">
                     <h3>{{ $key }}</h3>
-                    
-                    {{ range $blogkey, $blogval := $value }}
-                        {{ range .blogs}}
+
+                    {{ range $sorted := sort $value ".blogs" }}
+                        {{ range $blogkey, $blogval := $sorted }}
                             <div class="blog-item">
-                                <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
-                                <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
+                                <img class="blog-icon" src="{{ $blogval.favicon }}" decoding="async" />
+                                <p><a class="blog-link" href="{{ $blogval.url }}">{{ $blogval.title }}</a></p>
                             </div>
-                        {{ end}}
+                        {{ end }}
                     {{ end }}
-                    </div>
-                {{ end }}
-            </div>
+                </div>
+            {{ end }}
+        </div>
         {{ end }}
         </div>
     </body>
