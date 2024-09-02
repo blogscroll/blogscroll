@@ -43,3 +43,8 @@
     title = "Benedict Neo"
     url = "https://www.bneo.xyz/"
     favicon = "https://www.bneo.xyz/icon.ico"
+
+    [blogs.alexeystarcom]
+    title = "Alexey Staroselets"
+    url = "https://www.alexeystar.com/"
+    favicon = "https://www.alexeystar.com/images/favicon/favicon.ico"
