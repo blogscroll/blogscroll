@@ -8,8 +8,13 @@ h1 {
     color: #fcbf49;
 }
 
-h3 {
+h3, h4 {
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: 0.9em;
+    color: rgba(128, 128, 128, 0.8); /* Slightly muted gray with 80% opacity */
 }
 
 .blog-item {
@@ -114,7 +119,7 @@ li a:hover {
         margin-bottom: 48px;
     }
 
-    h3 {
+    h3, h4 {
         margin-bottom: 48px;
         font-size: 3rem;
     }

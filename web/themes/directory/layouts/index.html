@@ -13,21 +13,26 @@
         </div>
         <div class="link-container" id="link-container">
         {{ range .Site.Data }}
-                {{ range $key, $value := . }}
-                    <div class="category-container">
+            {{ range $key, $value := . }}
+                <div class="category-container">
                     <h3>{{ $key }}</h3>
-                    
+                    {{ $totalBlogs := 0 }}
                     {{ range $blogkey, $blogval := $value }}
-                        {{ range .blogs}}
+                        {{ $totalBlogs = add $totalBlogs (len $blogval.blogs) }}
+                    {{ end }}
+                    <h4><strong>{{ $totalBlogs }}</strong> Entries</h4>                         
+                    {{ range $blogkey, $blogval := $value }}
+                        {{ $sortedBlogs := sort $blogval.blogs "title" }}
+                        {{ range $sortedBlogs }}
                             <div class="blog-item">
                                 <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
                                 <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
                             </div>
-                        {{ end}}
+                        {{ end }}
                     {{ end }}
-                    </div>
-                {{ end }}
-            </div>
+                </div>
+            {{ end }}
+        </div>
         {{ end }}
         </div>
     </body>
