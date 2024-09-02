@@ -59,3 +59,7 @@
     url = "https://jarango.com/"
     favicon = "https://jarango.com/favicon-32x32.png"
 
+    [blogs.solomonio]
+    title = "Sam Solomon"
+    url = "https://solomon.io/"
+    favicon = "https://i0.wp.com/solomon.io/wp-content/uploads/2024/01/SS-Logo.png"
