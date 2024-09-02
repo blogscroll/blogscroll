@@ -95,3 +95,21 @@
     favicon = "https://interroban.gg/assets/favicon/icon.svg"
     updated="2024-09-01T14:00:00-0700"
       
+    [blogs.tonili]
+    title = "Toni Lijic"
+    url = "https://www.toni.li"
+    favicon = "https://www.toni.li/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+    
+    [blogs.glennme]
+    title = "Glenn Hitchcock"
+    url = "https://glenn.me/"
+    favicon = "https://framerusercontent.com/images/fINWFuq4LgJ68nUJIva6xqQJk.svg"
+    updated="2024-09-01T14:00:00-0700"
+      
+    [blogs.carlbarenbrugcom]
+    title = "Carl Barenbrug"
+    url = "https://carlbarenbrug.com/"
+    favicon = "https://carlbarenbrug.com/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+      

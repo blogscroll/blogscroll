@@ -58,3 +58,10 @@
     url = "https://www.alexeystar.com/"
     favicon = "https://www.alexeystar.com/images/favicon/favicon.ico"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.christinaljcom]
+    title = "Christina Chen"
+    url = "https://christinalj.com/"
+    favicon = "https://framerusercontent.com/images/o6dVuqFY5F4Z2ulFOMlVAABzQMg.png"
+    updated="2024-09-01T14:00:00-0700"
+      
