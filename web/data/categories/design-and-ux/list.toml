@@ -77,3 +77,21 @@
     favicon = "https://i0.wp.com/solomon.io/wp-content/uploads/2024/01/SS-Logo.png"
     updated="2024-09-01T14:00:00-0700"
 
+    [blogs.craighooperxyz]
+    title = "Craig Hooper"
+    url = "https://craighooper.xyz/"
+    favicon = "https://framerusercontent.com/images/TUBfPN0NYcyNCiDLlS6F3IwK7I.png"
+    updated="2024-09-01T15:00:00-0700"
+      
+    [blogs.alexbaldwincom]
+    title = "Alex Baldwin"
+    url = "https://www.alexbaldwin.com"
+    favicon = "https://www.alexbaldwin.com"
+    updated="2024-09-01T14:00:00-0700"
+      
+    [blogs.interrobangg]
+    title = "Luke Mitchell"
+    url = "https://interroban.gg"
+    favicon = "https://interroban.gg/assets/favicon/icon.svg"
+    updated="2024-09-01T14:00:00-0700"
+      

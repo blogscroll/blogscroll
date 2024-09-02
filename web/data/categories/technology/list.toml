@@ -587,3 +587,21 @@
     favicon = "/generic.ico"
 	updated="2024-09-01T14:00:00-0700"
 
+    [blogs.niklasjohannknechtcom]
+    title = "Niklas Johannknecht"
+    url = "https://niklasjohannknecht.com"
+    favicon = "https://niklasjohannknecht.com/images/favicon.png"
+    updated="2024-09-01T15:00:00-0700"
+
+    [blogs.chloechiacom]
+    title = "Chloe Chia"
+    url = "https://chloechia.com/"
+    favicon = "https://freight.cargo.site/t/original/i/3eb17c6fc77685d5cb78cffd8cff8e74279a60a7b1c5cf8144f2a25e8d5c5acd/Screen-Shot-2021-12-05-at-12.01.57-PM.ico"
+    updated="2024-09-01T14:00:00-0700"
+  
+    [blogs.ashconnolly.com]
+    title = "Ash Connolly"
+    url = "https://ashconnolly.com"
+    favicon = "https://ashconnolly.com/favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+      
