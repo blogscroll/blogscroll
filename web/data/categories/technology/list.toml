@@ -453,3 +453,39 @@
     title = "Nicole Tietz"
     url = "https://ntietz.com/"
     favicon = "https://ntietz.com/favicon-32x32.png"
+
+    [blogs.ralfjde]
+    title = "Ralf Jung"
+    url = "https://www.ralfj.de/"
+    favicon = "/generic.ico"
+
+    [blogs.andrewwalpolecom]
+    title = "Andrew Walpole"
+    url = "https://andrewwalpole.com/"
+    favicon = "https://andrewwalpole.com/favicon.svg"
+
+    [blogs.jbcrawfordus]
+    title = "J. B. Crawford"
+    url = "https://jbcrawford.us/"
+    favicon = "https://jbcrawford.us/favicon.png"
+
+    [blogs.keithcirkelcouk]
+    title = "Keith Cirkel"
+    url = "https://www.keithcirkel.co.uk/"
+    favicon = "https://www.keithcirkel.co.uk/favicon.ico"
+
+    [blogs.brycekerleynet]
+    title = "Bryce Kerley"
+    url = "https://blog.brycekerley.net/"
+    favicon = "/generic.ico"
+
+    [blogs.danslimmoncom]
+    title = "Dan Slimmon"
+    url = "https://blog.danslimmon.com/"
+    favicon = "/generic.ico"
+
+    [blogs.syscalleu]
+    title = "Raphaël Rigo"
+    url = "https://syscall.eu/"
+    favicon = "/generic.ico"
+
