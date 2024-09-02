@@ -112,4 +112,18 @@
     url = "https://carlbarenbrug.com/"
     favicon = "https://carlbarenbrug.com/favicon.ico"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.shawnfarsaicom]
+    title = "Shawn Farsai"
+    url = "https://www.shawnfarsai.com/"
+    favicon = "https://www.shawnfarsai.com/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.alefyi]
+    title = "Alessandro Mingione"
+    url = "https://www.ale.fyi/"
+    favicon = "https://www.ale.fyi/favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+      
+      
       
