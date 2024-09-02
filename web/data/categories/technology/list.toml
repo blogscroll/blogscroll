@@ -428,3 +428,28 @@
     title = "Greg Knox"
     url = "https://www.randomnoun.com/"
     favicon = "/generic.ico"
+
+    [blogs.rtpgco]
+    title = "Raphael Gaschignard"
+    url = "https://rtpg.co/"
+    favicon = "https://rtpg.co/favicon.ico"
+
+    [blogs.rtpgco]
+    title = "Hynek Schlawack"
+    url = "https://hynek.me/"
+    favicon = "https://hynek.me/favicon-32x32.png"
+
+    [blogs.rightocom]
+    title = "Ken Shirriff"
+    url = "https://www.righto.com/"
+    favicon = "https://www.righto.com/favicon.ico"
+
+    [blogs.thespatulaio]
+    title = "Kilroy Jones"
+    url = "https://www.thespatula.io/"
+    favicon = "/generic.ico"
+
+    [blogs.rtpgco]
+    title = "Nicole Tietz"
+    url = "https://ntietz.com/"
+    favicon = "https://ntietz.com/favicon-32x32.png"
