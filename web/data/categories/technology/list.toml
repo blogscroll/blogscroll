@@ -434,7 +434,7 @@
     url = "https://rtpg.co/"
     favicon = "https://rtpg.co/favicon.ico"
 
-    [blogs.rtpgco]
+    [blogs.hynekme]
     title = "Hynek Schlawack"
     url = "https://hynek.me/"
     favicon = "https://hynek.me/favicon-32x32.png"
