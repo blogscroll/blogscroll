@@ -280,3 +280,45 @@
     url = "https://charliedeets.com"
     favicon = "https://charliedeets.com/assets/favicon/favicon-light-32.png"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.tim0lsencom]
+    title = "Tim Olsen"
+    url = "https://www.tim0lsen.com"
+    favicon = "https://cdn.prod.website-files.com/662124ad6ea76ed027cfb8ae/6624d7de74419f84905935b3_Favicon32.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.edgarlrcom]
+    title = "Edgar López"
+    url = "https://edgarlr.com"
+    favicon = "https://edgarlr.com/icon.svg"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.diegoarspace]
+    title = "Diego Alarcon"
+    url = "https://www.diegoar.space"
+    favicon = "https://www.diegoar.space/icon.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.danilotaniccom]
+    title = "Danilo Tanic"
+    url = "https://danilotanic.com"
+    favicon = "https://framerusercontent.com/images/JtZxR3yDd5kqx1IhllvhzX6gvk.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.thaonfcom]
+    title = "Thao N."
+    url = "https://thaonf.com"
+    favicon = "https://res.cloudinary.com/read-cv/raw/upload/v1/1/siteBuilder/jU2c7UeLmzPmSuDlj78t2T1oef42/favicon-1719638905348.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.dylan-jamesco]
+    title = "Dylan James"
+    url = "https://www.dylan-james.co"
+    favicon = "https://framerusercontent.com/images/KHZ5bcK2JC2y7NGUGgKw1nnNaJQ.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.adarshdkcom]
+    title = "Adarsh DK"
+    url = "https://www.adarshdk.com"
+    favicon = "https://www.adarshdk.com/icon.svg"
+    updated = "2024-09-01T14:00:00-0700"

@@ -124,3 +124,15 @@
     url = "https://alxmurashko.com"
     favicon = "https://cdn.prod.website-files.com/5da0776a675e838577ac3613/61c4f9fd0232e710d1d8d1e4_Favicon%2032.png"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.parthski]
+    title = "Parth Patel"
+    url = "https://parth.ski"
+    favicon = "https://parth.ski/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.raphaelsalajacom]
+    title = "Raphael Salaja"
+    url = "https://www.raphaelsalaja.com"
+    favicon = "https://www.raphaelsalaja.com/icon"
+    updated = "2024-09-01T14:00:00-0700"

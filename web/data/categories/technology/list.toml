@@ -670,3 +670,23 @@
     url = "https://www.dylanfisher.com"
     favicon = "https://www.dylanfisher.com/assets/images/favicon.png"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.duncanland]
+    title = "Ephraim Duncan"
+    url = "https://duncan.land"
+    favicon = "https://duncan.land/icon"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.vitoodev]
+    title = "Vitor Hugo"
+    url = "https://vitoo.dev"
+    favicon = "https://vitoo.dev/cat.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.sirajchokshicom]
+    title = "Siraj Chokshi"
+    url = "https://sirajchokshi.com"
+    favicon = "https://sirajchokshi.com/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+
