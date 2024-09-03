@@ -64,4 +64,10 @@
     url = "https://christinalj.com/"
     favicon = "https://framerusercontent.com/images/o6dVuqFY5F4Z2ulFOMlVAABzQMg.png"
     updated="2024-09-01T14:00:00-0700"
-      
+
+    [blogs.tiagorangelcom]
+    title = "Tiago Rangel"
+    url = "https://tiagorangel.com"
+    favicon = "https://cdn.glitch.global/48690336-169b-48d5-87d9-06221c1a7992/%F0%9F%91%8B.png"
+    updated="2024-09-01T14:00:00-0700"
+          

@@ -124,6 +124,57 @@
     url = "https://www.ale.fyi/"
     favicon = "https://www.ale.fyi/favicon.png"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.ersinme]
+    title = "Ersin Kıymaz"
+    url = "https://www.ersin.me"
+    favicon = "/generic.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.niklasrosense]
+    title = "Niklas Rosén"
+    url = "https://www.niklasrosen.se"
+    favicon = "https://www.niklasrosen.se/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.anhng]
+    title = "Ánh Nguyễn"
+    url = "https://www.anh.ng"
+    favicon = "https://www.anh.ng/public/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"
       
-      
-      
+    [blogs.nazhamidcom]
+    title = "Naz Hamid"
+    url = "https://nazhamid.com"
+    favicon = "https://nazhamid.com/assets/img/naz_avatar.png"
+    updated="2024-09-01T14:00:00-0700"
+    
+    [blogs.moritzkindlercom]
+    title = "Moritz Kindler"
+    url = "https://moritzkindler.com"
+    favicon = "https://moritzkindler.com/assets/images/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.kevduco]
+    title = "Kevin Dukkon"
+    url = "https://www.kevdu.co"
+    favicon = "https://framerusercontent.com/images/ZJCA18B5g60V6qfPp2hcyOs5rs.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.glauberxyz]
+    title = "Glauber"
+    url = "https://glauber.xyz"
+    favicon = "https://glauber.xyz/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.marcelokunzecom]
+    title = "Marcelo Kunze"
+    url = "https://www.marcelokunze.com"
+    favicon = "https://www.marcelokunze.com/favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.thu-lecom]
+    title = "Thu Le"
+    url = "https://thu-le.com"
+    favicon = "https://thu-le.com/assets/favicon.png"
+    updated="2024-09-01T14:00:00-0700"

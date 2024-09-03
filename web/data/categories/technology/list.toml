@@ -605,3 +605,20 @@
     favicon = "https://ashconnolly.com/favicon.png"
     updated="2024-09-01T14:00:00-0700"
       
+    [blogs.gabewolfordcom]
+    title = "Gabe Wolford"
+    url = "https://gabewolford.com"
+    favicon = "https://gabewolford.com/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.cahyawibawadev]
+    title = "Cahya Wibawa"
+    url = "https://cahyawibawa.dev"
+    favicon = "https://cahyawibawa.dev/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.doantranminhthanhcom]
+    title = "Doan Tran Minh Thanh"
+    url = "https://doantranminhthanh.com"
+    favicon = "https://doantranminhthanh.com/icon.svg"
+    updated="2024-09-01T14:00:00-0700"
