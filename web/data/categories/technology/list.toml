@@ -640,3 +640,27 @@
     url = "https://didiercatz.com"
     favicon = "https://didiercatz.com/favicon.ico?v=2"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.mijndertstuijnl]
+    title = "Mijndert Stuij"
+    url = "https://mijndertstuij.nl"
+    favicon = "https://mijndertstuij.nl/favicon/favicon-32x32.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.petermekhaeilcom]
+    title = "Peter Mekhaeil"
+    url = "https://www.petermekhaeil.com"
+    favicon = "https://www.petermekhaeil.com/assets/icon.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.kyusufcom]
+    title = "Kenan Yusuf"
+    url = "https://kyusuf.com"
+    favicon = "https://kyusuf.com/favicon/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.mayurbhoicom]
+    title = "Mayur Bhoi"
+    url = "https://www.mayurbhoi.com"
+    favicon = "https://www.mayurbhoi.com/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
