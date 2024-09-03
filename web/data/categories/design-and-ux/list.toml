@@ -268,3 +268,15 @@
     url = "https://grantpurtle.com"
     favicon = "https://grantpurtle.com/favicon.ico"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.pranathipericom]
+    title = "Pranathi Peri"
+    url = "https://pranathiperi.com"
+    favicon = "https://pranathiperi.com/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.charliedeetscom]
+    title = "Charlie Deets"
+    url = "https://charliedeets.com"
+    favicon = "https://charliedeets.com/assets/favicon/favicon-light-32.png"
+    updated = "2024-09-01T14:00:00-0700"

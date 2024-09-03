@@ -118,3 +118,9 @@
     url = "https://www.hiasmir.com"
     favicon = "https://www.hiasmir.com/favicon.png"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.alxmurashkocom]
+    title = "Alex Murashko"
+    url = "https://alxmurashko.com"
+    favicon = "https://cdn.prod.website-files.com/5da0776a675e838577ac3613/61c4f9fd0232e710d1d8d1e4_Favicon%2032.png"
+    updated = "2024-09-01T14:00:00-0700"

@@ -664,3 +664,9 @@
     url = "https://www.mayurbhoi.com"
     favicon = "https://www.mayurbhoi.com/favicon.ico"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.dylanfishercom]
+    title = "Dylan Fisher"
+    url = "https://www.dylanfisher.com"
+    favicon = "https://www.dylanfisher.com/assets/images/favicon.png"
+    updated = "2024-09-01T14:00:00-0700"
