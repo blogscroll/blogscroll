@@ -178,3 +178,33 @@
     url = "https://thu-le.com"
     favicon = "https://thu-le.com/assets/favicon.png"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.barbaraschussmannde]
+    title = "Barbara Schussmann"
+    url = "https://barbaraschussmann.de"
+    favicon = "https://barbaraschussmann.de/img/icon.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.joesakjfcom]
+    title = "Joesak Josefianoes"
+    url = "https://www.joesakjf.com"
+    favicon = "https://framerusercontent.com/images/UxCS0yYWzhtgvAf8TJhOkkOGTQM.svg"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.blogfanindraxyz]
+    title = "Fanindra Maharana"
+    url = "https://blog.fanindra.xyz"
+    favicon = "https://blog.fanindra.xyz/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.edinabazicom]
+    title = "Edin Abazi"
+    url = "https://www.edinabazi.com"
+    favicon = "https://www.edinabazi.com/images/edinhat.jpg"
+    updated="2024-09-01T14:00:00-0700"
+    
+    [blogs.bradcerasanime]
+    title = "Brad Cerasani"
+    url = "https://bradcerasani.me"
+    favicon = "https://bradcerasani.me/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"

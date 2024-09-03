@@ -71,3 +71,38 @@
     favicon = "https://cdn.glitch.global/48690336-169b-48d5-87d9-06221c1a7992/%F0%9F%91%8B.png"
     updated="2024-09-01T14:00:00-0700"
           
+    [blogs.jordangonencom]
+    title = "Jordan Gonen"
+    url = "https://www.jordangonen.com"
+    favicon = "/generic.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.sofianbettayebcom]
+    title = "Sofian Bettayeb"
+    url = "https://sofianbettayeb.com"
+    favicon = "https://sofianbettayeb.com/images/favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.solomenkocom]
+    title = "Darya Solomenko"
+    url = "https://www.solomenko.com"
+    favicon = "https://www.solomenko.com/wp-content/uploads/2024/08/dasha-favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.namanmodanicom]
+    title = "Naman Modani"
+    url = "https://namanmodani.com"
+    favicon = "https://namanmodani.com/favicon.png"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.namcheedev]
+    title = "Christopher (Namchee)"
+    url = "https://www.namchee.dev"
+    favicon = "https://www.namchee.dev/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.benjiorg]
+    title = "Benji Taylor"
+    url = "https://benji.org"
+    favicon = "https://benji.org/icon.png?d947e0f888b5f2d2"
+    updated="2024-09-01T14:00:00-0700"

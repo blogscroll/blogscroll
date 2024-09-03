@@ -622,3 +622,21 @@
     url = "https://doantranminhthanh.com"
     favicon = "https://doantranminhthanh.com/icon.svg"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.mishomikedev]
+    title = "Mikael Sargsyan"
+    url = "https://www.mishomike.dev"
+    favicon = "https://www.mishomike.dev/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.szubrytnet]
+    title = "Mariusz Szubryt"
+    url = "https://szubryt.net"
+    favicon = "https://szubryt.net/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.didiercatzcom]
+    title = "Didier Catz"
+    url = "https://didiercatz.com"
+    favicon = "https://didiercatz.com/favicon.ico?v=2"
+    updated="2024-09-01T14:00:00-0700"
