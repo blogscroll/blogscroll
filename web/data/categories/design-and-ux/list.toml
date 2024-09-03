@@ -322,3 +322,45 @@
     url = "https://www.adarshdk.com"
     favicon = "https://www.adarshdk.com/icon.svg"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.billytsengcom]
+    title = "Billy Tseng"
+    url = "https://www.billytseng.com"
+    favicon = "https://framerusercontent.com/images/i9Nr3Zt7PjpExQObX6hl9IKFkI.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.simonausterberrycouk]
+    title = "Simon Austerberry"
+    url = "https://www.simonausterberry.co.uk"
+    favicon = "https://www.simonausterberry.co.uk/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.noahbuschercom]
+    title = "Noah Buscher"
+    url = "https://noahbuscher.com"
+    favicon = "https://noahbuscher.com/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.thomasrico]
+    title = "Thomas Rico"
+    url = "https://www.thomasri.co"
+    favicon = "https://www.thomasri.co/favicon.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.nikolaskleinde]
+    title = "Nikolas Klein"
+    url = "http://nikolasklein.de"
+    favicon = "https://nikolasklein.de/favicon.png"
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.reynoldsjco]
+    title = "John Reynolds"
+    url = "https://reynoldsj.co"
+    favicon = ""
+    updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.stuartre]
+    title = "Stuart Regan"
+    url = "https://stuart.re"
+    favicon = ""
+    updated = "2024-09-01T14:00:00-0700"

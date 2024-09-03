@@ -689,4 +689,10 @@
     favicon = "https://sirajchokshi.com/favicon.ico"
     updated = "2024-09-01T14:00:00-0700"
 
+    [blogs.dhrumilca]
+    title = "Dhrumil Patel"
+    url = "https://dhrumil.ca"
+    favicon = "https://dhrumil.ca/assets/image/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
+
 
