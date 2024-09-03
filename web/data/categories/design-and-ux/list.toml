@@ -202,9 +202,15 @@
     url = "https://www.edinabazi.com"
     favicon = "https://www.edinabazi.com/images/edinhat.jpg"
     updated="2024-09-01T14:00:00-0700"
-    
+
     [blogs.bradcerasanime]
     title = "Brad Cerasani"
     url = "https://bradcerasani.me"
     favicon = "https://bradcerasani.me/favicon.svg"
+    updated="2024-09-01T14:00:00-0700"
+
+    [blogs.mahantico]
+    title = "Arjun Mahanti"
+    url = "https://mahanti.co"
+    favicon = "/generic.ico"
     updated="2024-09-01T14:00:00-0700"
