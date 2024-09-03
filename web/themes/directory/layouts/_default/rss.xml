@@ -16,6 +16,9 @@
       {{ range $key, $value := . }}
         {{ range $blogkey, $blogval := $value }}
           {{ range $blog := $blogval.blogs }}
+            {{ range $key, $value := $blog }}
+                {{ warnf "Debug Info: Key: %s, Value: %s" $key $value }}
+            {{ end }}
             {{ $date := time.AsTime $blog.updated }}
             {{ $allBlogs = $allBlogs | append (dict "title" $blog.title "url" $blog.url "updated" $date "favicon" $blog.favicon "category" $key) }}
             {{ $totalBlogs = add $totalBlogs 1 }}

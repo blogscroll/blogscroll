@@ -106,3 +106,9 @@
     url = "https://benji.org"
     favicon = "https://benji.org/icon.png?d947e0f888b5f2d2"
     updated="2024-09-01T14:00:00-0700"
+
+    [blogs.udaraio]
+    title = "Udara Jay"
+    url = "https://udara.io"
+    favicon = "https://udara.io/favicon.ico"
+    updated="2024-09-01T14:00:00-0700"
