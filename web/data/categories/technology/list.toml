@@ -53,12 +53,6 @@
     favicon = "https://www.hanselman.com/favicon.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.matvellosocom]
-    title = "Mat Velloso"
-    url = "https://www.matvelloso.com/"
-    favicon = "/generic.ico"
-	updated = "2024-09-01T14:00:00-0700"
-
     [blogs.tiraniaorg]
     title = "Miguel de Icaza"
     url = "https://tirania.org/blog/"
@@ -501,12 +495,6 @@
     title = "Jeff Johnson"
     url = "https://lapcatsoftware.com/articles/"
     favicon = "/generic.ico"
-	updated = "2024-09-01T14:00:00-0700"
-
-    [blogs.codebycodycom]
-    title = "Cody Sechelski"
-    url = "https://codebycody.com/"
-    favicon = "https://codebycody.com/content/images/size/w256h256/2023/02/icon.png"
 	updated = "2024-09-01T14:00:00-0700"
 
     [blogs.randomnouncom]
