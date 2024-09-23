@@ -136,3 +136,8 @@
     url = "https://www.raphaelsalaja.com"
     favicon = "https://www.raphaelsalaja.com/icon"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.foreverlikethis]
+    title = "Jayden Garridan Bridges"
+    url = "https://foreverliketh.is/blog/"
+    favicon = "https://foreverliketh.is/favicon.ico"
