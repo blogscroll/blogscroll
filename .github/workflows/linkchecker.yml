@@ -20,7 +20,6 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
           args: --verbose --exclude-file .lycheeignore --no-progress './**/*.toml' --exclude-mail
-          fail: true
 
       - name: Create Issue From File
         if: always() && env.exit_code != 0 && github.event_name != 'pull_request'
