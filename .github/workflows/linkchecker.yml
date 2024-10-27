@@ -21,8 +21,12 @@ jobs:
         with:
           args: --verbose --exclude-file .lycheeignore --no-progress './**/*.toml' --exclude-mail
 
+      - name: Capture Lychee Exit Code
+        run: echo "exit_code=$?" >> $GITHUB_ENV
+        continue-on-error: true
+
       - name: Create Issue From File
-        if: always() && env.exit_code != 0 && github.event_name != 'pull_request'
+        if: always() && env.exit_code != '0' && github.event_name != 'pull_request'
         uses: peter-evans/create-issue-from-file@main
         with:
           title: Link Checker Report
