@@ -38,8 +38,8 @@
     [blogs.jeffsandquistcom]
     title = "Jeff Sandquist"
     url = "https://www.jeffsandquist.com/"
-    favicon = "https://i0.wp.com/jeffsandquist.com/wp-content/uploads/2022/12/241554021_10160031182773484_4117889748168457844_n.jpg"
-	updated = "2024-09-01T14:00:00-0700"
+    favicon = "https://i0.wp.com/jeffsandquist.com/wp-content/uploads/2024/10/jeffsandquist.webp?fit=32%2C32&ssl=1"
+	updated = "2025-01-01T14:00:00-0700"
 
     [blogs.codinghorrorcom]
     title = "Jeff Atwood"
@@ -446,8 +446,8 @@
     [blogs.sjerred]
     title = "Jerred Shepherd"
     url = "https://sjer.red/"
-    favicon = "https://sjer.red/favicon-32x32.png"
-	updated = "2024-09-01T14:00:00-0700"
+    favicon = "https://sjer.red/apple-touch-icon.png"
+	updated = "2025-01-01T14:00:00-0700"
 
     [blogs.calebjaycom]
     title = "Caleb Jay Rogers"
@@ -602,8 +602,8 @@
     [blogs.cahyawibawadev]
     title = "Cahya Wibawa"
     url = "https://cahyawibawa.dev"
-    favicon = "https://cahyawibawa.dev/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+    favicon = "https://cahyawibawa.dev/icon"
+    updated = "2025-01-01T14:00:00-0700"
 
     [blogs.doantranminhthanhcom]
     title = "Doan Tran Minh Thanh"
@@ -614,8 +614,8 @@
     [blogs.mishomikedev]
     title = "Mikael Sargsyan"
     url = "https://www.mishomike.dev"
-    favicon = "https://www.mishomike.dev/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+    favicon = "https://www.mishomike.dev/icon"
+    updated = "2025-01-01T14:00:00-0700"
 
     [blogs.szubrytnet]
     title = "Mariusz Szubryt"
