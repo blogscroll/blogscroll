@@ -19,4 +19,4 @@ jobs:
         BLOG_PUBLISH_URL: github.com/blogscroll/blogscroll.github.io
         GIT_EMAIL: 1389609+dend@users.noreply.github.com
         GIT_NAME: Den Delimarsky
-        HUGO_URL: https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_extended_0.74.3_Linux-64bit.deb
+        HUGO_URL: https://github.com/gohugoio/hugo/releases/download/v0.140.2/hugo_extended_0.140.2_linux-amd64.deb
