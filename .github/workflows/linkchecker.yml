@@ -20,10 +20,9 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
           args: --verbose --exclude-file .lycheeignore --no-progress './**/*.toml' --exclude-mail
-        continue-on-error: true
 
       - name: Create Issue From File
-        if: always() && steps.lychee.conclusion != 'success' && github.event_name != 'pull_request'
+        if: always() && steps.lychee.outcome == 'failure' && github.event_name != 'pull_request'
         uses: peter-evans/create-issue-from-file@main
         with:
           title: Link Checker Report
