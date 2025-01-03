@@ -1,4 +1,10 @@
 [blogs]
+    [blogs.nunocoelhosantos.com]
+    title = "Nuno Coelho Santos"
+    url = "http://www.nunocoelhosantos.com/"
+    favicon = "http://www.nunocoelhosantos.com/favicon-192.png"
+    updated = "2025-01-03T14:00:00-0700"
+
     [blogs.nobadmemoriescom]
     title = "Rachel Weil"
     url = "http://www.nobadmemories.com/"
