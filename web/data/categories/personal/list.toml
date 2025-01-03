@@ -275,3 +275,9 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.winstoncooke]
+    title = "Winston Cooke"
+    url = "https://www.winstoncooke.com/"
+    favicon = "https://www.winstoncooke.com/favicon.ico"
+    updated = "2025-01-03T16:30:00+0000"
+
