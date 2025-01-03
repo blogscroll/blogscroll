@@ -275,3 +275,9 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.henriquegodoy]
+    title = "HENRIQUE GODOY"
+    url = "https://henriquegodoy.com/"
+    favicon = "https://henriquegodoy.com/favicon.svg"
+    updated = "2025-01-03T09:16:17+0000"
+
