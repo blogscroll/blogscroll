@@ -700,3 +700,9 @@
     url = "https://blog.horaceg.xyz/"
     favicon = "/generic.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.glthrcom]
+    title = "Guillaume Lethuillier"
+    url = "https://glthr.com/"
+    favicon = "https://cdn.hashnode.com/res/hashnode/image/upload/v1611242173172/AOX1gE2jc.png"
+    updated = "2025-01-02T14:00:00-0700"
