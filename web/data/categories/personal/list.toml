@@ -250,3 +250,9 @@
     url = "https://cshubh.com/"
     favicon = "https://cshubh.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.evilcookiede]
+    title = "Raphael Pour"
+    url = "https://evilcookie.de/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
