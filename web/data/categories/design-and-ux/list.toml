@@ -358,3 +358,9 @@
     url = "https://trangbui.me/"
     favicon = "https://trangbui.me/favicon.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.arjunmakesthingsgithubio]
+    title = "Arjun"
+    url = "https://arjunmakesthings.github.io/"
+    favicon = "https://arjunmakesthings.github.io/assets/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
