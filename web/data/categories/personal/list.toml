@@ -263,8 +263,15 @@
     favicon = "https://www.roshanshibu.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
 
+    [blogs.daltonrowecom]
+    title = "Dalton Rowe"
+    url = "https://daltonrowe.com/"
+    favicon = "https://daltonrowe.com/favicon.svg"
+    updated = "2025-01-02T14:00:00-0700"
+
     [blogs.maxbome]
     title = "Max Bo"
     url = "https://maxbo.me/"
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
+
