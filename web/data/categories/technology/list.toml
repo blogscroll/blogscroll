@@ -724,3 +724,9 @@
     url = "https://lackofimagination.org/"
     favicon = "https://lackofimagination.org/favicon-32x32.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.blogerlendsh]
+    title = "Erlend Sogge Heggen"
+    url = "https://blog.erlend.sh/"
+    favicon = "https://cdn.writeas.net/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
