@@ -683,4 +683,14 @@
     favicon = "https://dhrumil.ca/assets/image/favicon.ico"
     updated = "2024-09-01T14:00:00-0700"
 
+    [blogs.11011110githubio]
+    title = "David Eppstein"
+    url = "https://11011110.github.io/blog"
+    favicon = "https://11011110.github.io/blog/assets/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
 
+    [blogs.wwwbunniestudioscom]
+    title = "Bunnie"
+    url = "https://www.bunniestudios.com/"
+    favicon = "https://www.bunniestudios.com/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"

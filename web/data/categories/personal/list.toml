@@ -130,3 +130,75 @@
     url = "https://www.raphaelsalaja.com"
     favicon = "https://www.raphaelsalaja.com/icon"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.alexanderweichartde]
+    title = "Alex Weichart"
+    url = "https://alexanderweichart.de/"
+    favicon = "https://alexanderweichart.de/static/icon.gif"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.vedranmileticnet]
+    title = "Vedran Miletić"
+    url = "https://vedran.miletic.net/"
+    favicon = "https://vedran.miletic.net/images/favicon-32x32.png"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.maxweylandtcom]
+    title = "Max Weylandt"
+    url = "https://www.maxweylandt.com/"
+    favicon = "https://www.maxweylandt.com/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.nikhilvishnucom]
+    title = "Nikhil Vishnu"
+    url = "https://nikhilvishnu.com/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.onemikro2ndnet]
+    title = "Mike Morris"
+    url = "https://one.mikro2nd.net/"
+    favicon = "https://one.mikro2nd.net/images/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.twomorecentsorg]
+    title = "Aadhavan Srinivasan"
+    url = "https://twomorecents.org/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.brajeshwarcom]
+    title = "Brajeshwar Oinam"
+    url = "https://brajeshwar.com/"
+    favicon = "https://brajeshwar.com/favicon-32x32.png"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.scattershotblog]
+    title = "Scattershot"
+    url = "https://scattershot.blog/"
+    favicon = "https://micro.blog/scattershot/favicon.png"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.ronaldsvilcinscom]
+    title = "Ronalds Vilciņš"
+    url = "https://ronaldsvilcins.com/"
+    favicon = "https://ronaldsvilcins.com/icon.png"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.homehedydev]
+    title = "~hedy"
+    url = "https://home.hedy.dev/"
+    favicon = "https://home.hedy.dev/favicon.90d06356c5e08f398149619025955e54.svg"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.tegowerkeu]
+    title = "Victor Stanciu"
+    url = "https://tegowerk.eu/"
+    favicon = "https://tegowerk.eu/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.almerdev]
+    title = "Felix Almer"
+    url = "https://almer.dev/"
+    favicon = "https://almer.dev/favicon-32x32.png"
+    updated = "2025-01-02T14:00:00-0700"

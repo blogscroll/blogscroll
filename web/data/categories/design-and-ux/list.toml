@@ -344,11 +344,17 @@
     [blogs.reynoldsjco]
     title = "John Reynolds"
     url = "https://reynoldsj.co"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2024-09-01T14:00:00-0700"
 
     [blogs.stuartre]
     title = "Stuart Regan"
     url = "https://stuart.re"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.trangbuime]
+    title = "Trang Bui"
+    url = "https://trangbui.me/"
+    favicon = "https://trangbui.me/favicon.png"
+    updated = "2025-01-02T14:00:00-0700"
