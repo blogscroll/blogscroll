@@ -262,3 +262,8 @@
     url = "https://www.roshanshibu.com/"
     favicon = "https://www.roshanshibu.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.daltonrowe]
+    title = "Dalton Rowe"
+    url = "https://daltonrowe.com/"
+    favicon = "https://daltonrowe.com/favicon.svg"
