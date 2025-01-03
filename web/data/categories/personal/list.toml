@@ -226,3 +226,9 @@
     url = "https://petesprojects.net/"
     favicon = "/generic.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.mangeshmxyz]
+    title = "Mangesh"
+    url = "https://mangeshm.xyz/"
+    favicon = "https://avatars.githubusercontent.com/u/82205152"
+    updated = "2025-01-02T14:00:00-0700"
