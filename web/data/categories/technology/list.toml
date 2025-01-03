@@ -712,3 +712,9 @@
     url = "https://www.quaxio.com/"
     favicon = "https://www.quaxio.com/favicon.svg"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.beliefdrivendesigncom]
+    title = "Ben Weidig"
+    url = "https://belief-driven-design.com/"
+    favicon = "https://belief-driven-design.com/favicons/favicon-32x32.png"
+    updated = "2025-01-02T14:00:00-0700"
