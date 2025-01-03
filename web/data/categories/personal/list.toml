@@ -202,3 +202,9 @@
     url = "https://almer.dev/"
     favicon = "https://almer.dev/favicon-32x32.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.wwwmtsolitarycom]
+    title = "Clinton Boys"
+    url = "https://www.mtsolitary.com/"
+    favicon = "https://www.mtsolitary.com/favicon.png"
+    updated = "2025-01-02T14:00:00-0700"
