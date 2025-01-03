@@ -130,3 +130,10 @@
     url = "https://www.raphaelsalaja.com"
     favicon = "https://www.raphaelsalaja.com/icon"
     updated = "2024-09-01T14:00:00-0700"
+
+    [blogs.jlericsoncom]
+    title = "Jon Ericson"
+    url = "https://jlericson.com"
+    favicon = "https://jlericson.com/favicon.ico"
+    updated = 2025-01-02T23:01:49-08:00"
+    
