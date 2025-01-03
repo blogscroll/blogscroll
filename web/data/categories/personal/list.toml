@@ -135,6 +135,7 @@
     title = "Hashin Jithu"
     url = "https://blog.hashin.me/"
     favicon = "https://blog.hashin.me/images/icon.png"
+    updated = "2025-01-02T14:00:00-0700"
 
     [blogs.alexanderweichartde]
     title = "Alex Weichart"
