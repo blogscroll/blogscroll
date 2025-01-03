@@ -238,3 +238,10 @@
     url = "https://zygimantas.com/"
     favicon = "https://zygimantas.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.gardenpiviccom]
+    title = "Niklas Pivic"
+    url = "https://garden.pivic.com/"
+    favicon = "https://garden.pivic.com/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
