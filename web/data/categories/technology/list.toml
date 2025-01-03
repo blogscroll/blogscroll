@@ -694,3 +694,9 @@
     url = "https://www.bunniestudios.com/"
     favicon = "https://www.bunniestudios.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.bloghoracegxyz]
+    title = "Horace Guy"
+    url = "https://blog.horaceg.xyz/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
