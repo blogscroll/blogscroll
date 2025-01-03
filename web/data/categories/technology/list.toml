@@ -754,3 +754,9 @@
     url = "https://blog.x-way.org/"
     favicon = "https://blog.x-way.org/gfx/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+    
+    [blogs.irensaltali]
+    title = "İren Saltalı"
+    url = "https://irensaltali.com/"
+    favicon = "https://irensaltali.com/content/images/2025/01/IMG_7093_bw_sq-1.jpg"
+    updated = "2025-01-03T15:00:00-0700"
