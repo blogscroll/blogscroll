@@ -742,3 +742,9 @@
     url = "https://ashishb.net/"
     favicon = "https://ashishb.net/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.wwwgibneyorg]
+    title = "Marek Gibney"
+    url = "https://www.gibney.org/"
+    favicon = "https://www.gibney.org/assets/images/mg_photo.jpg"
+    updated = "2025-01-02T14:00:00-0700"
