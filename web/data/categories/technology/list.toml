@@ -748,3 +748,9 @@
     url = "https://www.gibney.org/"
     favicon = "https://www.gibney.org/assets/images/mg_photo.jpg"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.blogxwayorg]
+    title = "Andreas Jaggi"
+    url = "https://blog.x-way.org/"
+    favicon = "https://blog.x-way.org/gfx/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
