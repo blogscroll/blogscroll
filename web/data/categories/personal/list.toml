@@ -245,3 +245,8 @@
     favicon = "https://garden.pivic.com/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
 
+    [blogs.cshubhcom]
+    title = "Shubh A. Chudasama"
+    url = "https://cshubh.com/"
+    favicon = "https://cshubh.com/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
