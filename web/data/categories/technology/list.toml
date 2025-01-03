@@ -736,3 +736,9 @@
     url = "https://rednafi.com/"
     favicon = "https://blob.rednafi.com/static/images/home/favicon.webp"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.ashishbnet]
+    title = "Ashish Bhatia"
+    url = "https://ashishb.net/"
+    favicon = "https://ashishb.net/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
