@@ -718,3 +718,9 @@
     url = "https://belief-driven-design.com/"
     favicon = "https://belief-driven-design.com/favicons/favicon-32x32.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.lackofimaginationorg]
+    title = "Aycan Gulez"
+    url = "https://lackofimagination.org/"
+    favicon = "https://lackofimagination.org/favicon-32x32.png"
+    updated = "2025-01-02T14:00:00-0700"
