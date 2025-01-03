@@ -220,3 +220,9 @@
     url = "https://michaelkupietz.com/"
     favicon = "https://michaelkupietz.com/wp-content/uploads/fbrfg/favicon.ico"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.petesprojectsnet]
+    title = "Pete Ader"
+    url = "https://petesprojects.net/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
