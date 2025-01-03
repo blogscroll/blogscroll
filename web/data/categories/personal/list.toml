@@ -275,3 +275,8 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.oscgarden]
+    title = "Óscar Fernández"
+    url= "https://osc.garden/"
+    favicon = "https://osc.garden/img/seedling.png"
+    updated = "2025-01-03T10:25:00+0000"
