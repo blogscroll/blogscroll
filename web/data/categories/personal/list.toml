@@ -64,7 +64,7 @@
     url = "https://tiagorangel.com"
     favicon = "https://cdn.glitch.global/48690336-169b-48d5-87d9-06221c1a7992/%F0%9F%91%8B.png"
     updated = "2024-09-01T14:00:00-0700"
-          
+
     [blogs.jordangonencom]
     title = "Jordan Gonen"
     url = "https://www.jordangonen.com"
@@ -275,3 +275,8 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.laihoconsultingcom]
+    title = "Pekka Laiho"
+    url = "https://laihoconsulting.com/"
+    favicon = "https://laihoconsulting.com/favicon.png"
+    updated = "2025-01-03T15:00:00+0000"
