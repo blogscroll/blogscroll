@@ -1,4 +1,10 @@
 [blogs]
+    [blogs.hashinjithu]
+    title = "Hashin Jithu"
+    url = "https://blog.hashin.me//"
+    favicon = "/images/icon.png"
+	updated = "2025-01-03T14:00:00-0700"
+
     [blogs.stuckytech]
     title = "Dave Stucky"
     url = "https://stucky.tech/"
