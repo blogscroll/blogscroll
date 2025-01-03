@@ -706,3 +706,9 @@
     url = "https://glthr.com/"
     favicon = "https://cdn.hashnode.com/res/hashnode/image/upload/v1611242173172/AOX1gE2jc.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.wwwquaxiocom]
+    title = "Alok Menghrajani"
+    url = "https://www.quaxio.com/"
+    favicon = "https://www.quaxio.com/favicon.svg"
+    updated = "2025-01-02T14:00:00-0700"
