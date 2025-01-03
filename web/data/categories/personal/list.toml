@@ -275,3 +275,8 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.thomaspaulin]
+    title = "Thomas Paulin"
+    url = "https://thomaspaulin.me/"
+    favicon = "https://thomaspaulin.me/favicon.ico"
+    updated = "2025-01-03T15:17:00+0000"
