@@ -275,6 +275,12 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.blogjatinnagpalcom]
+    title = "Jatin Nagpal"
+    url = "https://blog.jatinnagpal.com/"
+    favicon = "/generic.ico"
+    updated = "2025-01-04T06:22:00+0530"
+
     [blogs.krajtilakvercelapp]
     title = "K. Rajtilak"
     url = "https://krajtilak.vercel.app"
@@ -298,3 +304,4 @@
     url = "https://www.goncharov.xyz/"
     favicon = "https://www.goncharov.xyz/favicon.ico"
     updated = "2025-01-06T19:21:17+0000"
+
