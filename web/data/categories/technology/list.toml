@@ -760,3 +760,9 @@
     url = "https://robertheaton.com"
     favicon = "https://robertheaton.com/images/fav.png"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.nillebco]
+    title = "Ivo Bellin Salarin"
+    url = "https://nilleb.co/blog"
+    favicon = "https://nilleb.co/favicon.ico"
+    updated = "2025-01-02T14:10:00-0700"
