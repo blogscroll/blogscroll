@@ -275,7 +275,13 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
-    [blogs.dbohdan]
+    [blogs.krajtilakvercelapp]
+    title = "K. Rajtilak"
+    url = "https://krajtilak.vercel.app"
+    favicon = "https://krajtilak.vercel.app/assets/favicon.ico"
+    updated = "2025-01-04T08:20:05+0530"
+
+    [blogs.dbohdancom]
     title = "D. Bohdan"
     url = "https://dbohdan.com/"
     favicon = "https://dbohdan.com/favicon.ico"
