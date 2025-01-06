@@ -281,3 +281,44 @@
     favicon = "https://shyamjos.com/favicon.ico"
     updated = "2025-01-03T16:20:10+0000"
 
+    [blogs.wwwwinstoncookecom]
+    title = "Winston Cooke"
+    url = "https://www.winstoncooke.com/"
+    favicon = "https://www.winstoncooke.com/favicon.ico"
+    updated = "2025-01-03T16:30:00+0000"
+
+    [blogs.henriquegodoycom]
+    title = "Henrique Godoy"
+    url = "https://henriquegodoy.com/"
+    favicon = "https://henriquegodoy.com/favicon.svg"
+    updated = "2025-01-03T09:16:17+0000"
+
+    [blogs.blogjatinnagpalcom]
+    title = "Jatin Nagpal"
+    url = "https://blog.jatinnagpal.com/"
+    favicon = "/generic.ico"
+    updated = "2025-01-04T06:22:00+0530"
+
+    [blogs.krajtilakvercelapp]
+    title = "K. Rajtilak"
+    url = "https://krajtilak.vercel.app"
+    favicon = "https://krajtilak.vercel.app/assets/favicon.ico"
+    updated = "2025-01-04T08:20:05+0530"
+
+    [blogs.dbohdancom]
+    title = "D. Bohdan"
+    url = "https://dbohdan.com/"
+    favicon = "https://dbohdan.com/favicon.ico"
+    updated = "2025-01-04T10:24:37+0000"
+
+    [blogs.elleshome]
+    title = "elle"
+    url = "https://ellesho.me/page/"
+    favicon = "https://ellesho.me/favicon.ico"
+    updated = "2025-01-06T16:45:00+0000"
+
+    [blogs.wwwgoncharovxyz]
+    title = "Lev Goncharov"
+    url = "https://www.goncharov.xyz/"
+    favicon = "https://www.goncharov.xyz/favicon.ico"
+    updated = "2025-01-06T19:21:17+0000"
