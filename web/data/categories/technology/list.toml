@@ -665,12 +665,6 @@
     favicon = "https://duncan.land/icon"
     updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.vitoodev]
-    title = "Vitor Hugo"
-    url = "https://vitoo.dev"
-    favicon = "https://vitoo.dev/cat.png"
-    updated = "2024-09-01T14:00:00-0700"
-
     [blogs.sirajchokshicom]
     title = "Siraj Chokshi"
     url = "https://sirajchokshi.com"
@@ -753,4 +747,10 @@
     title = "Andreas Jaggi"
     url = "https://blog.x-way.org/"
     favicon = "https://blog.x-way.org/gfx/favicon.ico"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.robertheatoncom]
+    title = "Robert Heaton"
+    url = "https://robertheaton.com"
+    favicon = "https://robertheaton.com/images/fav.png"
     updated = "2025-01-02T14:00:00-0700"
