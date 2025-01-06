@@ -275,6 +275,12 @@
     favicon = "https://maxbo.me/favicon.ico"
     updated = "2025-01-03T09:15:17+0000"
 
+    [blogs.wwwteotimepacreaufr]
+    title = "Teotime Pacreau"
+    url = "https://www.teotimepacreau.fr/"
+    favicon = "https://www.teotimepacreau.fr/favicon/favicon.svg"
+    updated = "2025-01-03T14:00:00-0700"
+
     [blogs.laihoconsultingcom]
     title = "Pekka Laiho"
     url = "https://laihoconsulting.com/"
