@@ -764,5 +764,5 @@
     [blogs.nillebco]
     title = "Ivo Bellin Salarin"
     url = "https://nilleb.co/blog"
-    favicon = "https://nilleb.co/favicon.ico"
+    favicon = "/generic.ico"
     updated = "2025-01-02T14:10:00-0700"
