@@ -796,3 +796,9 @@
   url = "https://hernandis.me/"
   favicon = "https://hernandis.me/static/favicon.png"
   updated = "2024-07-19T10:00:00+0100"
+
+  [blogs.ninioninarskicom]
+  title = "Nikolay Ninarski"
+  url = "https://ninio.ninarski.com/"
+  favicon = "https://ninio.ninarski.com/wp-content/uploads/2024/02/contract_edit_FILL0_wght200_GRAD0_opsz48.svg"
+  updated = "2025-01-03T11:57:00+0200"
