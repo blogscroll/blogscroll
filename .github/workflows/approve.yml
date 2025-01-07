@@ -14,8 +14,11 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const comment = context.payload.comment;
-            const issue = context.payload.issue;
+            const github = require('@actions/github');
+            const core = require('@actions/core');
+
+            const comment = github.context.payload.comment;
+            const issue = github.context.payload.issue;
 
             if (comment?.user?.login === 'dend' && comment?.body?.trim() === '/approved') {
               core.setOutput('approved', 'true');
@@ -29,19 +32,22 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const issueNumber = parseInt(core.getInput('issue_number'), 10);
-            const { octokit } = github;
+            const github = require('@actions/github');
+            const core = require('@actions/core');
 
-            await octokit.issues.removeLabel({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            const issueNumber = parseInt(core.getInput('issue_number'), 10);
+            const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
+
+            await octokit.rest.issues.removeLabel({
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
               issue_number: issueNumber,
               name: 'needs-triage'
             });
 
-            await octokit.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+            await octokit.rest.issues.addLabels({
+              owner: github.context.repo.owner,
+              repo: github.context.repo.repo,
               issue_number: issueNumber,
               labels: ['approved']
             });
