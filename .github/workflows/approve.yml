@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-            - name: Check comment author and content
+      - name: Check comment author and content
         id: check_comment
         uses: actions/github-script@v6
         with:
