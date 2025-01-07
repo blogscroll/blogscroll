@@ -45,5 +45,5 @@ jobs:
               issue_number: issueNumber,
               labels: ['approved']
             });
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

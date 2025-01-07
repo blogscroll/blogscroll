@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to report a bug! Please fill out the fields below to help me identify and fix the issue. This is **not the form to request a site** but rather **report an issue with the BlogScroll website**.
+        Thank you for taking the time to report a bug! Fill out the fields below to help me identify and fix the issue. This is **not the form to request a site** but rather **report an issue with the BlogScroll website**. Please make sure to [search for existing issues](https://github.com/blogscroll/blogscroll/issues) before filing a new one!
 
   - type: input
     id: bug-title
