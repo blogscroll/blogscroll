@@ -23,7 +23,6 @@ jobs:
           script: |
             if (context.payload.comment.user.login === 'dend' && context.payload.comment.body.trim() === '/approved') {
               core.setOutput('approved', 'true');
-              core.setOutput('issue_number', github.event.issue.number);
             } else {
               core.setOutput('approved', 'false');
             }
