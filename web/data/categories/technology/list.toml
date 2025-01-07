@@ -772,9 +772,9 @@
 	url = "https://nilleb.co/blog"
 	favicon = "/generic.ico"
 	updated = "2025-01-02T14:10:00-0700"
-  
-  [blogs.ameye]
-  title = "Alexander Ameye"
-  url = "https://ameye.dev/"
-  favicon = "https://ameye.dev/favicon/favicon-32x32.png"
-  updated = "2025-01-03T14:00:00-0700"
+
+  	[blogs.ameye]
+  	title = "Alexander Ameye"
+  	url = "https://ameye.dev/"
+  	favicon = "https://ameye.dev/favicon/favicon-32x32.png"
+  	updated = "2025-01-03T14:00:00-0700"
