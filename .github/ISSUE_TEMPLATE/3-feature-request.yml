@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for suggesting a new feature! Please fill out the details below to help me understand and evaluate your request.
+        Thank you for suggesting a new feature! Fill out the details below to help me understand and evaluate your request. Please make sure to [search for existing feature requests](https://github.com/blogscroll/blogscroll/issues) before filing a new one!
 
   - type: input
     id: feature-title

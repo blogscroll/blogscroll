@@ -10,7 +10,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please make sure to [read the FAQ](https://github.com/blogscroll/blogscroll#-faq) before submitting the request. If the content of this issue is already covered in the FAQ, it will be closed.
+        Please make sure to [read the FAQ](https://github.com/blogscroll/blogscroll#-faq) before submitting the request. If the content of this request is contradicts the FAQ, it will be closed.
 
   - type: checkboxes
     id: terms
