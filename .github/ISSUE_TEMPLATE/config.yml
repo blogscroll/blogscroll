@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: BlogScroll Discussions
+    url: https://github.com/blogscroll/blogscroll/discussions
+    about: Please ask and answer questions here.
+  - name: Non-GitHub Outreach
+    url: "mailto:hi@den.dev?subject=BlogScroll Questions & Suggestions"
+    about: If you prefer to not use GitHub, reach out over email.
