@@ -17,11 +17,11 @@ jobs:
             const comment = context.payload.comment;
             const issue = context.payload.issue;
 
-            if (comment.user.login === 'dend' && comment.body.trim() === '/approved') {
-              core.setOutput('approved', true);
-              core.setOutput('issue_number', issue.number);
+            if (comment?.user?.login === 'dend' && comment?.body?.trim() === '/approved') {
+              core.setOutput('approved', 'true');
+              core.setOutput('issue_number', issue.number.toString());
             } else {
-              core.setOutput('approved', false);
+              core.setOutput('approved', 'false');
             }
 
       - name: Remove 'needs-triage' label and add 'approved'
@@ -29,7 +29,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const issueNumber = core.getInput('issue_number');
+            const issueNumber = parseInt(core.getInput('issue_number'), 10);
             const { octokit } = github;
 
             await octokit.issues.removeLabel({
