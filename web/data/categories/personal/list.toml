@@ -352,3 +352,9 @@
     url= "https://osc.garden/"
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
+
+    [blogs.ozornin]
+    title = "Andrey Ozornin"
+    url= "https://ozorn.in/"
+    favicon = "https://ozorn.in/favicon.png"
+    updated = "2025-01-07T12:58:00+0000"
