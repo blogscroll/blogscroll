@@ -22,11 +22,29 @@ I actually just moved my bookmarks to the web. That's it - that's the complicate
 
 ### Can I add any site?
 
-Not quite. I am very intentional about this project being a directory of sites that people manage **within their own domains**. The goal is to create an environment for serendipitous discovery of digital gardens that are outside the typical social media/newsletter aggregation sites. Which means that pull requests with links to Blogger, LiveJournal, Medium, Twitter, Facebook, LinkedIn, etc. will not be accepted.
+Not quite. I am very intentional about this project being a directory of sites that people manage **within their own domains**. The goal is to create an environment for serendipitous discovery of digital gardens and personal pages that are outside the typical social media/newsletter aggregation sites.
 
-Now, if you have a site that you host on Medium (or any other blog hosting service for that matter) and it has a custom domain associated with it - fantastic! Put it on the list.
+Here is a simple (**yet not comprehensive)** breakdown of what may be approved and what may not:
 
-Additionally, you need to ensure that the site does not contain inappropriate, harmful, abusive, or hateful content. Any sites that are found to be in violation of this rule will be removed without notice.
+#### ✅ OK to submit
+
+- Sites hosted on common blogging services **with a custom domain attached**.
+- Personal sites hosted on open-source services, like GitHub Pages (e.g., a page like `https://dend.github.io` is OK).
+- Personal portfolios.
+- Personal wiki sites.
+- Self-hosted blogs.
+
+#### 🛑 Not OK to submit
+
+- Sites hosted on Blogger, LiveJournal, Substack, Medium, or any other service **without a custom domain attached**.
+- Twitter, Facebook, LinkedIn, or other social media links.
+- Links to companies or websites representing personal companies, whose primary purpose is to sell or promote a product.
+- Sites that contain Not Safe For Work (NSFW) material (e.g., nudity, gore, disturbing imagery). While we're all adults here, the directory is designed to be fit for consumption anywhere (home, workplace, school, public transit). It would be a very unpleasant surprise to randomly stumble across content that may be classified as inappropriate just by clicking a blog link.
+- Sites that contain or allude to hate speech, abuse, or otherwise harmful material.
+- Sites that have a primary purpose other than being a personal page (e.g., podcasts, streaming pages, project pages).
+
+>[!WARNING]
+>Any sites that are found to be in violation of these guidelines _even after submission_ will be removed with no notice, and there's a good chance that you won't be able to submit more pages in the future.
 
 Lastly, and I want to spell this out directly - I reserve the right to not include or publish any site on BlogScroll. Because this is _my_ project, I get to choose how I curate it.
 
