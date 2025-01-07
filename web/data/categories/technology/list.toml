@@ -586,7 +586,7 @@
 	url = "https://chloechia.com/"
 	favicon = "https://freight.cargo.site/t/original/i/3eb17c6fc77685d5cb78cffd8cff8e74279a60a7b1c5cf8144f2a25e8d5c5acd/Screen-Shot-2021-12-05-at-12.01.57-PM.ico"
 	updated = "2024-09-01T14:00:00-0700"
-  
+
 	[blogs.ashconnollycom]
 	title = "Ash Connolly"
 	url = "https://ashconnolly.com"
@@ -772,3 +772,9 @@
 	url = "https://nilleb.co/blog"
 	favicon = "/generic.ico"
 	updated = "2025-01-02T14:10:00-0700"
+
+  	[blogs.ameye]
+  	title = "Alexander Ameye"
+  	url = "https://ameye.dev/"
+  	favicon = "https://ameye.dev/favicon/favicon-32x32.png"
+  	updated = "2025-01-03T14:00:00-0700"
