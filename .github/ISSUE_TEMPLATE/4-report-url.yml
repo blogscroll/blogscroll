@@ -1,0 +1,44 @@
+name: "🔗 Report a URL"
+description: Report a problematic or incorrect URL in BlogScroll
+title: "[URL Report]: "
+labels:
+  - bug
+  - needs-triage
+assignees:
+  - dend
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a URL issue! Please provide the details below to help me address the problem.
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://example.com
+      description: Enter the URL that you believe is incorrect, broken, or problematic.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      description: Select the type of issue you are reporting.
+      options:
+        - Broken link
+        - Incorrect URL
+        - Malicious, inappropriate, or otherwise questionable content
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description of the issue
+      description: Provide details about the issue with the URL. What is wrong, and how did you find it?
+      placeholder: This URL leads to a 404 error, or it redirects to an unrelated site.
+    validations:
+      required: true
