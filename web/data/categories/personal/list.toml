@@ -352,3 +352,10 @@
     url= "https://osc.garden/"
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
+
+    [blogs.onerinas]
+    title = "Rinas"
+    url = "https://onerinas.com"
+    favicon = "/generic.ico"
+    updated = "2024-12-17T00:00:00+0000"
+    
