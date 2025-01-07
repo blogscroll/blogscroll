@@ -773,20 +773,26 @@
 	favicon = "/generic.ico"
 	updated = "2025-01-02T14:10:00-0700"
 
-  [blogs.ameye]
+  [blogs.ameyedev]
   title = "Alexander Ameye"
   url = "https://ameye.dev/"
   favicon = "https://ameye.dev/favicon/favicon-32x32.png"
   updated = "2025-01-03T14:00:00-0700"
 
-  [blogs.deeplifelearning]
+  [blogs.wwwdeeplifelearningcom]
   title = "Alberto Llamas"
   url = "https://www.deeplifelearning.com/"
   favicon = "https://www.deeplifelearning.com/favicon.ico"
   updated = "2025-01-03T11:54:00-0700"
 
-  [blogs.irensaltali]
+  [blogs.irensaltalicom]
   title = "İren Saltalı"
   url = "https://irensaltali.com/"
   favicon = "https://irensaltali.com/content/images/2025/01/IMG_7093_bw_sq-1.jpg"
   updated = "2025-01-03T15:00:00-0700"
+
+  [blogs.hernandisme]
+  title = "Elias Hernandis"
+  url = "https://hernandis.me/"
+  favicon = "https://hernandis.me/static/favicon.png"
+  updated = "2024-07-19T10:00:00+0100"
