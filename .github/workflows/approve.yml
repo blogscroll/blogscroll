@@ -1,0 +1,49 @@
+name: Approve Issue
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check comment author and content
+        id: check_comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const comment = context.payload.comment;
+            const issue = context.payload.issue;
+
+            if (comment.user.login === 'dend' && comment.body.trim() === '/approved') {
+              core.setOutput('approved', true);
+              core.setOutput('issue_number', issue.number);
+            } else {
+              core.setOutput('approved', false);
+            }
+
+      - name: Remove 'needs-triage' label and add 'approved'
+        if: steps.check_comment.outputs.approved == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issueNumber = core.getInput('issue_number');
+            const { octokit } = github;
+
+            await octokit.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              name: 'needs-triage'
+            });
+
+            await octokit.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels: ['approved']
+            });
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
