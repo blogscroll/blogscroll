@@ -2,7 +2,7 @@ name: "🔗 Report a URL"
 description: Report a problematic or incorrect URL in BlogScroll
 title: "[URL Report]: "
 labels:
-  - bug
+  - site-report
   - needs-triage
 assignees:
   - dend
