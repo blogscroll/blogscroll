@@ -1,18 +1,18 @@
 [blogs]
-	[blogs.kaitlinmckinnoncom]
-	title = "Kaitlin McKinnon"
-	url = "https://www.kaitlinmckinnon.com"
-	favicon = "https://www.kaitlinmckinnon.com/favicon.ico"
-	updated = "2024-09-01T14:00:00-0700"
+    [blogs.kaitlinmckinnoncom]
+    title = "Kaitlin McKinnon"
+    url = "https://www.kaitlinmckinnon.com"
+    favicon = "https://www.kaitlinmckinnon.com/favicon.ico"
+    updated = "2024-09-01T14:00:00-0700"
 
-	[blogs.chillbilldillcom]
-	title = "Bill (ChillBillDill)"
-	url = "https://www.chillbilldill.com/"
-	favicon = "https://www.chillbilldill.com/content/images/size/w192h192/size/w256h256/2023/02/faviconbig-1.png"
-	updated = "2024-09-01T14:00:00-0700"
+    [blogs.chillbilldillcom]
+    title = "Bill (ChillBillDill)"
+    url = "https://www.chillbilldill.com/"
+    favicon = "https://www.chillbilldill.com/content/images/size/w192h192/size/w256h256/2023/02/faviconbig-1.png"
+    updated = "2024-09-01T14:00:00-0700"
 
-	[blogs.spaqin]
-	title = "Spaqin"
-	url = "https://spaq.in/"
-	favicon = "/generic.ico"
-	updated = "2025-01-02T14:00:00-0700"
+    [blogs.spaqin]
+    title = "Spaqin"
+    url = "https://spaq.in/"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:00:00-0700"
