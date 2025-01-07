@@ -352,3 +352,9 @@
     url= "https://osc.garden/"
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
+
+    [blogs.splitbrainorg]
+    title = "Andreas Gohr"
+    url = "https://www.splitbrain.org"
+    favicon = "https://www.splitbrain.org/_media/wiki/favicon.ico"
+    updated = "2025-01-07T15:41:00+0000"
