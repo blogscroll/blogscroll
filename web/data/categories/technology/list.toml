@@ -665,12 +665,6 @@
     favicon = "https://duncan.land/icon"
     updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.vitoodev]
-    title = "Vitor Hugo"
-    url = "https://vitoo.dev"
-    favicon = "https://vitoo.dev/cat.png"
-    updated = "2024-09-01T14:00:00-0700"
-
     [blogs.sirajchokshicom]
     title = "Siraj Chokshi"
     url = "https://sirajchokshi.com"
@@ -760,3 +754,21 @@
     url = "https://sicpers.info/blog"
     favicon = "https://www.sicpers.info/wp-content/uploads/2014/08/explosion.jpg"
     updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.wwwbrendanlentzcom]
+    title = "Brendan Lentz"
+    url = "https://www.brendanlentz.com/"
+    favicon = "https://www.brendanlentz.com/favicon.ico"
+    updated = "2025-01-03T14:00:00-0700"
+
+    [blogs.robertheatoncom]
+    title = "Robert Heaton"
+    url = "https://robertheaton.com"
+    favicon = "https://robertheaton.com/images/fav.png"
+    updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.nillebco]
+    title = "Ivo Bellin Salarin"
+    url = "https://nilleb.co/blog"
+    favicon = "/generic.ico"
+    updated = "2025-01-02T14:10:00-0700"
