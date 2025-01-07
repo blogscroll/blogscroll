@@ -14,12 +14,11 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const comment = github.context.payload.comment;
-            const issue = github.context.payload.issue;
+            const comment = github.event.comment.body;
 
-            if (comment?.user?.login === 'dend' && comment?.body?.trim() === '/approved') {
+            if (github.event.comment.user.login === 'dend' && comment.trim() === '/approved') {
               core.setOutput('approved', 'true');
-              core.setOutput('issue_number', issue.number);
+              core.setOutput('issue_number', context.issue.number);
             } else {
               core.setOutput('approved', 'false');
             }
@@ -29,19 +28,17 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const issueNumber = parseInt(steps.check_comment.outputs.issue_number, 10);
-
             await github.rest.issues.removeLabel({
-              owner: github.context.repo.owner,
-              repo: github.context.repo.repo,
-              issue_number: issueNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
               name: 'needs-triage'
             });
 
             await github.rest.issues.addLabels({
-              owner: github.context.repo.owner,
-              repo: github.context.repo.repo,
-              issue_number: issueNumber,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
               labels: ['approved']
             });
         env:
