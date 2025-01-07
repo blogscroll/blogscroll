@@ -346,3 +346,9 @@
 	url = "https://www.goncharov.xyz/"
 	favicon = "https://www.goncharov.xyz/favicon.ico"
 	updated = "2025-01-06T19:21:17+0000"
+
+  [blogs.oscgarden]
+  title = "Óscar Fernández"
+  url= "https://osc.garden/"
+  favicon = "https://osc.garden/img/seedling.png"
+  updated = "2025-01-03T10:25:00+0000"
