@@ -2,14 +2,20 @@ on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
+    paths:
+      - 'web/**'
+
 name: Blog deployment
+
 jobs:
   publishBlog:
     name: Publish blog
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@master
+
     - name: Publish blog
       uses: dend/actions/deploy-github-io@master
       env:

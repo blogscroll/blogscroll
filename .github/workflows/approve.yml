@@ -9,13 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get context
-        id: get_context
-        uses: actions/github-script@v6
-        with:
-          script: |
-            console.log(context)
-
       - name: Check comment author and content
         id: check_comment
         uses: actions/github-script@v6
