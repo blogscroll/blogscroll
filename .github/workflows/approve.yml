@@ -22,7 +22,7 @@ jobs:
 
             if (comment?.user?.login === 'dend' && comment?.body?.trim() === '/approved') {
               core.setOutput('approved', 'true');
-              core.setOutput('issue_number', issue.number.toString());
+              core.setOutput('issue_number', issue.number);
             } else {
               core.setOutput('approved', 'false');
             }
@@ -32,10 +32,9 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const github = require('@actions/github');
             const core = require('@actions/core');
 
-            const issueNumber = parseInt(core.getInput('issue_number'), 10);
+            const issueNumber = parseInt(steps.check_comment.outputs.issue_number, 10);
             const octokit = github.getOctokit(process.env.GITHUB_TOKEN);
 
             await octokit.rest.issues.removeLabel({
