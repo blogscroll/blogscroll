@@ -14,11 +14,9 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            const comment = github.event.comment.body;
-
-            if (github.event.comment.user.login === 'dend' && comment.trim() === '/approved') {
+            if (github.event.comment.user.login === 'dend' && github.event.comment.body.trim() === '/approved') {
               core.setOutput('approved', 'true');
-              core.setOutput('issue_number', context.issue.number);
+              core.setOutput('issue_number', github.event.issue.number);
             } else {
               core.setOutput('approved', 'false');
             }
