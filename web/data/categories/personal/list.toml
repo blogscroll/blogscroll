@@ -364,3 +364,9 @@
     url= "https://cellio.org/"
     favicon = "https://cellio.org/media/themes/berlin.png"
     updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.idesdev]
+    title = "Will"
+    url= "https://ides.dev/"
+    favicon = "https://ides.dev/assets/images/favicon.png"
+    updated = "2025-01-07T10:25:00+0000"
