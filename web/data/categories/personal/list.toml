@@ -358,3 +358,21 @@
     url= "https://ozorn.in/"
     favicon = "https://ozorn.in/favicon.png"
     updated = "2025-01-07T12:58:00+0000"
+
+    [blogs.rmukeshguptacom]
+    title = "Mukesh Gupta"
+    url= "https://rmukeshgupta.com/"
+    favicon = "https://rmukeshgupta.com/favicon.ico"
+    updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.cellioorg]
+    title = "Monica Cellio"
+    url= "https://cellio.org/"
+    favicon = "https://cellio.org/media/themes/berlin.png"
+    updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.idesdev]
+    title = "Will"
+    url= "https://ides.dev/"
+    favicon = "https://ides.dev/assets/images/favicon.png"
+    updated = "2025-01-07T10:25:00+0000"
