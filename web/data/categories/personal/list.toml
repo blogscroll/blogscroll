@@ -370,3 +370,10 @@
     url= "https://ides.dev/"
     favicon = "https://ides.dev/assets/images/favicon.png"
     updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.rishikeshscom]
+    title = "Rishikesh Sreehari"
+    url = "https://rishikeshs.com/"
+    favicon = "https://rishikeshs.com/favicon.ico"
+    updated = "2025-01-08T15:55:00+04:00"
+
