@@ -352,3 +352,9 @@
     url= "https://osc.garden/"
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
+
+    [blogs.rmukeshguptacom]
+    title = "Mukesh Gupta"
+    url= "https://rmukeshgupta.com/"
+    favicon = "https://rmukeshgupta.com/favicon.ico"
+    updated = "2025-01-07T10:25:00+0000"
