@@ -1,0 +1,72 @@
+name: "🌎 Add Site"
+description: "Add a new site to the BlogScroll index."
+title: "[Site Request]: "
+labels:
+  - enhancement
+  - needs-triage
+assignees:
+  - dend
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure to [read the FAQ](https://github.com/blogscroll/blogscroll#-faq) before submitting the request. If the content of this request is contradicts the FAQ, it will be closed.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: FAQ acknowledgement
+      description: I read and agree to follow the rules outlined in [the BlogScroll FAQ](https://github.com/blogscroll/blogscroll#-faq).
+      options:
+        - label: I read the FAQ
+          required: true
+
+  - type: input
+    id: site-name
+    attributes:
+      label: Site name
+      placeholder: Your site name
+      description: Enter your readable site name as it will be displayed on BlogScroll.
+    validations:
+      required: true
+
+  - type: input
+    id: site-url
+    attributes:
+      label: Site URL
+      placeholder: https://blogscroll.com
+      description: Enter your site URL.
+    validations:
+      required: true
+
+  - type: input
+    id: favicon-url
+    attributes:
+      label: Favicon URL
+      placeholder: https://blogscroll.com/favicon.ico
+      description: Enter the URL to the icon used for the site, as it will be displayed on BlogScroll. Ensure that the icon can be accessed across domains.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: site-category
+    attributes:
+      label: Site category
+      description: Which category does your site belong to?
+      options:
+        - design-and-ux
+        - personal
+        - photo-video-production
+        - technology
+        - Other (please specify in "Additional Notes")
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional notes
+      description: Add any other relevant context.
+      placeholder: My site is awesome.
+    validations:
+      required: false

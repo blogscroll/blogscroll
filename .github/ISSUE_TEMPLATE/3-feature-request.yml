@@ -1,0 +1,56 @@
+name: "✨ Feature Request"
+description: Suggest a new feature or enhancement for BlogScroll
+title: "[Feature Request]: "
+labels:
+  - enhancement
+  - needs-triage
+assignees:
+  - dend
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! Fill out the details below to help me understand and evaluate your request. Please make sure to [search for existing feature requests](https://github.com/blogscroll/blogscroll/issues) before filing a new one!
+
+  - type: input
+    id: feature-title
+    attributes:
+      label: Feature summary
+      placeholder: Brief description of the feature
+      description: Provide a short and descriptive title for the feature you are requesting (e.g., "Add dark mode").
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature description
+      description: Describe the feature in detail. What problem does it solve? Why is it useful?
+      placeholder: Dark mode would make the site more comfortable to use at night and reduce eye strain.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: alternative-solutions
+    attributes:
+      label: Considered alternatives
+      description: Have you thought of alternative solutions or workarounds?
+      options:
+        - label: Yes, and I will describe them below
+        - label: No alternatives considered
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: If you checked "Yes" above, describe any alternative solutions or workarounds you’ve considered.
+      placeholder: An alternative could be using a browser extension for dark mode, but it wouldn't be tailored to BlogScroll's design.
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional notes
+      description: Add any extra context, details, or mockups that could help me understand your feature request.
+      placeholder: Here’s a mockup of how the dark mode could look...
+    validations:
+      required: false

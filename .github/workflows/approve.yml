@@ -1,0 +1,42 @@
+name: Approve Issue
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  approve:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check comment author and content
+        id: check_comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (context.payload.comment.user.login === 'dend' && context.payload.comment.body.trim() === '/approved') {
+              core.setOutput('approved', 'true');
+            } else {
+              core.setOutput('approved', 'false');
+            }
+
+      - name: Remove 'needs-triage' label and add 'approved'
+        if: steps.check_comment.outputs.approved == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              name: 'needs-triage'
+            });
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['approved']
+            });
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

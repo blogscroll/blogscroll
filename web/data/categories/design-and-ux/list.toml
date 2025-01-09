@@ -1,354 +1,372 @@
 [blogs]
-    [blogs.nobadmemoriescom]
-    title = "Rachel Weil"
-    url = "http://www.nobadmemories.com/"
-    favicon = "/generic.ico"
+	[blogs.nobadmemoriescom]
+	title = "Rachel Weil"
+	url = "http://www.nobadmemories.com/"
+	favicon = "/generic.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.kurtisbeaverscom]
-    title = "Kurtis Beavers"
-    url = "http://www.kurtisbeavers.com/"
-    favicon = "/generic.ico"
+	[blogs.kurtisbeaverscom]
+	title = "Kurtis Beavers"
+	url = "http://www.kurtisbeavers.com/"
+	favicon = "/generic.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.saraclaytoncom]
-    title = "Sara Clayton"
-    url = "https://www.saraclayton.com/"
-    favicon = "https://www.saraclayton.com/favicon.ico"
+	[blogs.saraclaytoncom]
+	title = "Sara Clayton"
+	url = "https://www.saraclayton.com/"
+	favicon = "https://www.saraclayton.com/favicon.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.stephaniestimaccom]
-    title = "Stephanie Stimac"
-    url = "https://stephaniestimac.com/"
-    favicon = "/generic.ico"
+	[blogs.stephaniestimaccom]
+	title = "Stephanie Stimac"
+	url = "https://stephaniestimac.com/"
+	favicon = "/generic.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.femkedesign]
-    title = "Femke van Schoonhoven"
-    url = "https://www.femke.design/"
-    favicon = "https://assets.website-files.com/5a4605273472ef00014ade36/5a98f5d1a301900001617061_fav.png"
+	[blogs.femkedesign]
+	title = "Femke van Schoonhoven"
+	url = "https://www.femke.design/"
+	favicon = "https://assets.website-files.com/5a4605273472ef00014ade36/5a98f5d1a301900001617061_fav.png"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.arielnorlingcom]
-    title = "Ariel Norling"
-    url = "http://arielnorling.com/"
-    favicon = "/generic.ico"
+	[blogs.arielnorlingcom]
+	title = "Ariel Norling"
+	url = "http://arielnorling.com/"
+	favicon = "/generic.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.juliedesign]
-    title = "Julie Chabin"
-    url = "https://www.julie.design/"
-    favicon = "https://uploads-ssl.webflow.com/5ff62621e4a653ce2ada8a92/5ff62621e4a6534d68da8b17_Fav256.png"
+	[blogs.juliedesign]
+	title = "Julie Chabin"
+	url = "https://www.julie.design/"
+	favicon = "https://uploads-ssl.webflow.com/5ff62621e4a653ce2ada8a92/5ff62621e4a6534d68da8b17_Fav256.png"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.allisongraycecom]
-    title = "Allison Grayce Marshall"
-    url = "https://www.allisongrayce.com/"
-    favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"
+	[blogs.allisongraycecom]
+	title = "Allison Grayce Marshall"
+	url = "https://www.allisongrayce.com/"
+	favicon = "https://uploads-ssl.webflow.com/img/favicon.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.tedgoascom]
-    title = "Ted Goas"
-    url = "https://www.tedgoas.com"
-    favicon = "https://www.tedgoas.com/assets/img/favicon.png"
+	[blogs.tedgoascom]
+	title = "Ted Goas"
+	url = "https://www.tedgoas.com"
+	favicon = "https://www.tedgoas.com/assets/img/favicon.png"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.pjonoriblog]
-    title = "PJ Onori"
-    url = "https://pjonori.blog/"
-    favicon = "/generic.ico"
+	[blogs.pjonoriblog]
+	title = "PJ Onori"
+	url = "https://pjonori.blog/"
+	favicon = "/generic.ico"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.jarangocom]
-    title = "Jorge Arango"
-    url = "https://jarango.com/"
-    favicon = "https://jarango.com/favicon-32x32.png"
+	[blogs.jarangocom]
+	title = "Jorge Arango"
+	url = "https://jarango.com/"
+	favicon = "https://jarango.com/favicon-32x32.png"
 	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.solomonio]
-    title = "Sam Solomon"
-    url = "https://solomon.io/"
-    favicon = "https://i0.wp.com/solomon.io/wp-content/uploads/2024/01/SS-Logo.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.solomonio]
+	title = "Sam Solomon"
+	url = "https://solomon.io/"
+	favicon = "https://i0.wp.com/solomon.io/wp-content/uploads/2024/01/SS-Logo.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.craighooperxyz]
-    title = "Craig Hooper"
-    url = "https://craighooper.xyz/"
-    favicon = "https://framerusercontent.com/images/TUBfPN0NYcyNCiDLlS6F3IwK7I.png"
-    updated = "2024-09-01T15:00:00-0700"
-      
-    [blogs.alexbaldwincom]
-    title = "Alex Baldwin"
-    url = "https://www.alexbaldwin.com"
-    favicon = "https://www.alexbaldwin.com/favicon-32x32.png"
-    updated = "2024-09-01T14:00:00-0700"
-      
-    [blogs.interrobangg]
-    title = "Luke Mitchell"
-    url = "https://interroban.gg"
-    favicon = "https://interroban.gg/assets/favicon/icon.svg"
-    updated = "2024-09-01T14:00:00-0700"
-      
-    [blogs.tonili]
-    title = "Toni Lijic"
-    url = "https://www.toni.li"
-    favicon = "https://www.toni.li/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
-    
-    [blogs.glennme]
-    title = "Glenn Hitchcock"
-    url = "https://glenn.me/"
-    favicon = "https://framerusercontent.com/images/fINWFuq4LgJ68nUJIva6xqQJk.svg"
-    updated = "2024-09-01T14:00:00-0700"
-      
-    [blogs.carlbarenbrugcom]
-    title = "Carl Barenbrug"
-    url = "https://carlbarenbrug.com/"
-    favicon = "https://carlbarenbrug.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.craighooperxyz]
+	title = "Craig Hooper"
+	url = "https://craighooper.xyz/"
+	favicon = "https://framerusercontent.com/images/TUBfPN0NYcyNCiDLlS6F3IwK7I.png"
+	updated = "2024-09-01T15:00:00-0700"
+	  
+	[blogs.alexbaldwincom]
+	title = "Alex Baldwin"
+	url = "https://www.alexbaldwin.com"
+	favicon = "https://www.alexbaldwin.com/favicon-32x32.png"
+	updated = "2024-09-01T14:00:00-0700"
+	  
+	[blogs.interrobangg]
+	title = "Luke Mitchell"
+	url = "https://interroban.gg"
+	favicon = "https://interroban.gg/assets/favicon/icon.svg"
+	updated = "2024-09-01T14:00:00-0700"
+	  
+	[blogs.tonili]
+	title = "Toni Lijic"
+	url = "https://www.toni.li"
+	favicon = "https://www.toni.li/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
+	
+	[blogs.glennme]
+	title = "Glenn Hitchcock"
+	url = "https://glenn.me/"
+	favicon = "https://framerusercontent.com/images/fINWFuq4LgJ68nUJIva6xqQJk.svg"
+	updated = "2024-09-01T14:00:00-0700"
+	  
+	[blogs.carlbarenbrugcom]
+	title = "Carl Barenbrug"
+	url = "https://carlbarenbrug.com/"
+	favicon = "https://carlbarenbrug.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.shawnfarsaicom]
-    title = "Shawn Farsai"
-    url = "https://www.shawnfarsai.com/"
-    favicon = "https://www.shawnfarsai.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.shawnfarsaicom]
+	title = "Shawn Farsai"
+	url = "https://www.shawnfarsai.com/"
+	favicon = "https://www.shawnfarsai.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.alefyi]
-    title = "Alessandro Mingione"
-    url = "https://www.ale.fyi/"
-    favicon = "https://www.ale.fyi/favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.alefyi]
+	title = "Alessandro Mingione"
+	url = "https://www.ale.fyi/"
+	favicon = "https://www.ale.fyi/favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.niklasrosense]
-    title = "Niklas Rosén"
-    url = "https://www.niklasrosen.se"
-    favicon = "https://www.niklasrosen.se/favicon.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.niklasrosense]
+	title = "Niklas Rosén"
+	url = "https://www.niklasrosen.se"
+	favicon = "https://www.niklasrosen.se/favicon.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.anhng]
-    title = "Ánh Nguyễn"
-    url = "https://www.anh.ng"
-    favicon = "https://www.anh.ng/public/favicon.svg"
-    updated = "2024-09-01T14:00:00-0700"
-      
-    [blogs.nazhamidcom]
-    title = "Naz Hamid"
-    url = "https://nazhamid.com"
-    favicon = "https://nazhamid.com/assets/img/naz_avatar.png"
-    updated = "2024-09-01T14:00:00-0700"
-    
-    [blogs.moritzkindlercom]
-    title = "Moritz Kindler"
-    url = "https://moritzkindler.com"
-    favicon = "https://moritzkindler.com/assets/images/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.anhng]
+	title = "Ánh Nguyễn"
+	url = "https://www.anh.ng"
+	favicon = "https://www.anh.ng/public/favicon.svg"
+	updated = "2024-09-01T14:00:00-0700"
+	  
+	[blogs.nazhamidcom]
+	title = "Naz Hamid"
+	url = "https://nazhamid.com"
+	favicon = "https://nazhamid.com/assets/img/naz_avatar.png"
+	updated = "2024-09-01T14:00:00-0700"
+	
+	[blogs.moritzkindlercom]
+	title = "Moritz Kindler"
+	url = "https://moritzkindler.com"
+	favicon = "https://moritzkindler.com/assets/images/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.kevduco]
-    title = "Kevin Dukkon"
-    url = "https://www.kevdu.co"
-    favicon = "https://framerusercontent.com/images/ZJCA18B5g60V6qfPp2hcyOs5rs.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.kevduco]
+	title = "Kevin Dukkon"
+	url = "https://www.kevdu.co"
+	favicon = "https://framerusercontent.com/images/ZJCA18B5g60V6qfPp2hcyOs5rs.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.glauberxyz]
-    title = "Glauber"
-    url = "https://glauber.xyz"
-    favicon = "https://glauber.xyz/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.glauberxyz]
+	title = "Glauber"
+	url = "https://glauber.xyz"
+	favicon = "https://glauber.xyz/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.marcelokunzecom]
-    title = "Marcelo Kunze"
-    url = "https://www.marcelokunze.com"
-    favicon = "https://www.marcelokunze.com/favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.marcelokunzecom]
+	title = "Marcelo Kunze"
+	url = "https://www.marcelokunze.com"
+	favicon = "https://www.marcelokunze.com/favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.thu-lecom]
-    title = "Thu Le"
-    url = "https://thu-le.com"
-    favicon = "https://thu-le.com/assets/favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.thu-lecom]
+	title = "Thu Le"
+	url = "https://thu-le.com"
+	favicon = "https://thu-le.com/assets/favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.barbaraschussmannde]
-    title = "Barbara Schussmann"
-    url = "https://barbaraschussmann.de"
-    favicon = "https://barbaraschussmann.de/img/icon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.barbaraschussmannde]
+	title = "Barbara Schussmann"
+	url = "https://barbaraschussmann.de"
+	favicon = "https://barbaraschussmann.de/img/icon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.joesakjfcom]
-    title = "Joesak Josefianoes"
-    url = "https://www.joesakjf.com"
-    favicon = "https://framerusercontent.com/images/UxCS0yYWzhtgvAf8TJhOkkOGTQM.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.joesakjfcom]
+	title = "Joesak Josefianoes"
+	url = "https://www.joesakjf.com"
+	favicon = "https://framerusercontent.com/images/UxCS0yYWzhtgvAf8TJhOkkOGTQM.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.blogfanindraxyz]
-    title = "Fanindra Maharana"
-    url = "https://blog.fanindra.xyz"
-    favicon = "https://blog.fanindra.xyz/favicon.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.blogfanindraxyz]
+	title = "Fanindra Maharana"
+	url = "https://blog.fanindra.xyz"
+	favicon = "https://blog.fanindra.xyz/favicon.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.edinabazicom]
-    title = "Edin Abazi"
-    url = "https://www.edinabazi.com"
-    favicon = "https://www.edinabazi.com/images/edinhat.jpg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.edinabazicom]
+	title = "Edin Abazi"
+	url = "https://www.edinabazi.com"
+	favicon = "https://www.edinabazi.com/images/edinhat.jpg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.bradcerasanime]
-    title = "Brad Cerasani"
-    url = "https://bradcerasani.me"
-    favicon = "https://bradcerasani.me/favicon.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.bradcerasanime]
+	title = "Brad Cerasani"
+	url = "https://bradcerasani.me"
+	favicon = "https://bradcerasani.me/favicon.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.mahantico]
-    title = "Arjun Mahanti"
-    url = "https://mahanti.co"
-    favicon = "/generic.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.mahantico]
+	title = "Arjun Mahanti"
+	url = "https://mahanti.co"
+	favicon = "/generic.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.ramseswork]
-    title = "Ramsés Cabello"
-    url = "https://ramses.work"
-    favicon = "https://res.cloudinary.com/read-cv/raw/upload/v1/1/siteBuilder/jYrKm50dOMeOO1gz85sZVwBFg2U2/favicon-1720110359677.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.ramseswork]
+	title = "Ramsés Cabello"
+	url = "https://ramses.work"
+	favicon = "https://res.cloudinary.com/read-cv/raw/upload/v1/1/siteBuilder/jYrKm50dOMeOO1gz85sZVwBFg2U2/favicon-1720110359677.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.carolynzhangcom]
-    title = "Kelin Carolyn Zhang"
-    url = "https://www.carolynzhang.com"
-    favicon = "https://cdn.prod.website-files.com/5f87969568dd5c6d4c225afb/5feda16a45a05d71c2487ae2_sparkles-favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.carolynzhangcom]
+	title = "Kelin Carolyn Zhang"
+	url = "https://www.carolynzhang.com"
+	favicon = "https://cdn.prod.website-files.com/5f87969568dd5c6d4c225afb/5feda16a45a05d71c2487ae2_sparkles-favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.kristjanposkacom]
-    title = "Kristjan Poska"
-    url = "https://www.kristjanposka.com"
-    favicon = "https://www.kristjanposka.com/favicon-32x32.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.kristjanposkacom]
+	title = "Kristjan Poska"
+	url = "https://www.kristjanposka.com"
+	favicon = "https://www.kristjanposka.com/favicon-32x32.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.adiac]
-    title = "Adi Chakravarty"
-    url = "https://adi.ac"
-    favicon = "https://framerusercontent.com/images/aD6HIy6q0l0uiaKgV3uqMXMg7CY.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.adiac]
+	title = "Adi Chakravarty"
+	url = "https://adi.ac"
+	favicon = "https://framerusercontent.com/images/aD6HIy6q0l0uiaKgV3uqMXMg7CY.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.marcastburycom]
-    title = "Marc Astbury"
-    url = "https://marcastbury.com"
-    favicon = "https://i0.wp.com/marcastbury.com/wp-content/uploads/2023/11/marc-profile.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.marcastburycom]
+	title = "Marc Astbury"
+	url = "https://marcastbury.com"
+	favicon = "https://i0.wp.com/marcastbury.com/wp-content/uploads/2023/11/marc-profile.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.gonzijacom]
-    title = "Gonzalo García Paz"
-    url = "https://www.gonzija.com"
-    favicon = "https://framerusercontent.com/images/xAG6iaggJJ7yfPmK60QrtzBVGcU.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.gonzijacom]
+	title = "Gonzalo García Paz"
+	url = "https://www.gonzija.com"
+	favicon = "https://framerusercontent.com/images/xAG6iaggJJ7yfPmK60QrtzBVGcU.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.jasonjundev]
-    title = "Jason Jun"
-    url = "https://www.jasonjun.dev"
-    favicon = "https://www.jasonjun.dev/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.jasonjundev]
+	title = "Jason Jun"
+	url = "https://www.jasonjun.dev"
+	favicon = "https://www.jasonjun.dev/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.luxonautacom]
-    title = "Lucas de França"
-    url = "https://www.luxonauta.com"
-    favicon = "https://www.luxonauta.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.luxonautacom]
+	title = "Lucas de França"
+	url = "https://www.luxonauta.com"
+	favicon = "https://www.luxonauta.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.grantpurtlecom]
-    title = "Grant Purtle"
-    url = "https://grantpurtle.com"
-    favicon = "https://grantpurtle.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.grantpurtlecom]
+	title = "Grant Purtle"
+	url = "https://grantpurtle.com"
+	favicon = "https://grantpurtle.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.pranathipericom]
-    title = "Pranathi Peri"
-    url = "https://pranathiperi.com"
-    favicon = "https://pranathiperi.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.pranathipericom]
+	title = "Pranathi Peri"
+	url = "https://pranathiperi.com"
+	favicon = "https://pranathiperi.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.charliedeetscom]
-    title = "Charlie Deets"
-    url = "https://charliedeets.com"
-    favicon = "https://charliedeets.com/assets/favicon/favicon-light-32.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.charliedeetscom]
+	title = "Charlie Deets"
+	url = "https://charliedeets.com"
+	favicon = "https://charliedeets.com/assets/favicon/favicon-light-32.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.tim0lsencom]
-    title = "Tim Olsen"
-    url = "https://www.tim0lsen.com"
-    favicon = "https://cdn.prod.website-files.com/662124ad6ea76ed027cfb8ae/6624d7de74419f84905935b3_Favicon32.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.tim0lsencom]
+	title = "Tim Olsen"
+	url = "https://www.tim0lsen.com"
+	favicon = "https://cdn.prod.website-files.com/662124ad6ea76ed027cfb8ae/6624d7de74419f84905935b3_Favicon32.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.edgarlrcom]
-    title = "Edgar López"
-    url = "https://edgarlr.com"
-    favicon = "https://edgarlr.com/icon.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.edgarlrcom]
+	title = "Edgar López"
+	url = "https://edgarlr.com"
+	favicon = "https://edgarlr.com/icon.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.diegoarspace]
-    title = "Diego Alarcon"
-    url = "https://www.diegoar.space"
-    favicon = "https://www.diegoar.space/icon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.diegoarspace]
+	title = "Diego Alarcon"
+	url = "https://www.diegoar.space"
+	favicon = "https://www.diegoar.space/icon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.danilotaniccom]
-    title = "Danilo Tanic"
-    url = "https://danilotanic.com"
-    favicon = "https://framerusercontent.com/images/JtZxR3yDd5kqx1IhllvhzX6gvk.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.danilotaniccom]
+	title = "Danilo Tanic"
+	url = "https://danilotanic.com"
+	favicon = "https://framerusercontent.com/images/JtZxR3yDd5kqx1IhllvhzX6gvk.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.thaonfcom]
-    title = "Thao N."
-    url = "https://thaonf.com"
-    favicon = "https://res.cloudinary.com/read-cv/raw/upload/v1/1/siteBuilder/jU2c7UeLmzPmSuDlj78t2T1oef42/favicon-1719638905348.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.thaonfcom]
+	title = "Thao N."
+	url = "https://thaonf.com"
+	favicon = "https://res.cloudinary.com/read-cv/raw/upload/v1/1/siteBuilder/jU2c7UeLmzPmSuDlj78t2T1oef42/favicon-1719638905348.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.dylan-jamesco]
-    title = "Dylan James"
-    url = "https://www.dylan-james.co"
-    favicon = "https://framerusercontent.com/images/KHZ5bcK2JC2y7NGUGgKw1nnNaJQ.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.dylan-jamesco]
+	title = "Dylan James"
+	url = "https://www.dylan-james.co"
+	favicon = "https://framerusercontent.com/images/KHZ5bcK2JC2y7NGUGgKw1nnNaJQ.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.adarshdkcom]
-    title = "Adarsh DK"
-    url = "https://www.adarshdk.com"
-    favicon = "https://www.adarshdk.com/icon.svg"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.adarshdkcom]
+	title = "Adarsh DK"
+	url = "https://www.adarshdk.com"
+	favicon = "https://www.adarshdk.com/icon.svg"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.billytsengcom]
-    title = "Billy Tseng"
-    url = "https://www.billytseng.com"
-    favicon = "https://framerusercontent.com/images/i9Nr3Zt7PjpExQObX6hl9IKFkI.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.billytsengcom]
+	title = "Billy Tseng"
+	url = "https://www.billytseng.com"
+	favicon = "https://framerusercontent.com/images/i9Nr3Zt7PjpExQObX6hl9IKFkI.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.simonausterberrycouk]
-    title = "Simon Austerberry"
-    url = "https://www.simonausterberry.co.uk"
-    favicon = "https://www.simonausterberry.co.uk/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.simonausterberrycouk]
+	title = "Simon Austerberry"
+	url = "https://www.simonausterberry.co.uk"
+	favicon = "https://www.simonausterberry.co.uk/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.noahbuschercom]
-    title = "Noah Buscher"
-    url = "https://noahbuscher.com"
-    favicon = "https://noahbuscher.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.noahbuschercom]
+	title = "Noah Buscher"
+	url = "https://noahbuscher.com"
+	favicon = "https://noahbuscher.com/favicon.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.thomasrico]
-    title = "Thomas Rico"
-    url = "https://www.thomasri.co"
-    favicon = "https://www.thomasri.co/favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.thomasrico]
+	title = "Thomas Rico"
+	url = "https://www.thomasri.co"
+	favicon = "https://www.thomasri.co/favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.nikolaskleinde]
-    title = "Nikolas Klein"
-    url = "http://nikolasklein.de"
-    favicon = "https://nikolasklein.de/favicon.png"
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.nikolaskleinde]
+	title = "Nikolas Klein"
+	url = "http://nikolasklein.de"
+	favicon = "https://nikolasklein.de/favicon.png"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.reynoldsjco]
-    title = "John Reynolds"
-    url = "https://reynoldsj.co"
-    favicon = ""
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.reynoldsjco]
+	title = "John Reynolds"
+	url = "https://reynoldsj.co"
+	favicon = "/generic.ico"
+	updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.stuartre]
-    title = "Stuart Regan"
-    url = "https://stuart.re"
-    favicon = ""
-    updated = "2024-09-01T14:00:00-0700"
+	[blogs.stuartre]
+	title = "Stuart Regan"
+	url = "https://stuart.re"
+	favicon = "/generic.ico"
+	updated = "2024-09-01T14:00:00-0700"
+
+	[blogs.trangbuime]
+	title = "Trang Bui"
+	url = "https://trangbui.me/"
+	favicon = "https://trangbui.me/favicon.png"
+	updated = "2025-01-02T14:00:00-0700"
+
+	[blogs.arjunmakesthingsgithubio]
+	title = "Arjun"
+	url = "https://arjunmakesthings.github.io/"
+	favicon = "https://arjunmakesthings.github.io/assets/favicon.ico"
+	updated = "2025-01-02T14:00:00-0700"
+
+    [blogs.wwwnunocoelhosantoscom]
+    title = "Nuno Coelho Santos"
+    url = "https://www.nunocoelhosantos.com/"
+    favicon = "https://nunocoelhosantos.com/graphics/favicon-32.png"
+    updated = "2025-01-03T14:00:00-0700"

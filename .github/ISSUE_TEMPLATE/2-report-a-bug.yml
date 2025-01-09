@@ -1,0 +1,54 @@
+name: "🐞 Report a Bug"
+description: Report a bug on the BlogScroll site
+title: "[Bug Report]: "
+labels:
+  - bug
+  - needs-triage
+assignees:
+  - dend
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a bug! Fill out the fields below to help me identify and fix the issue. This is **not the form to request a site** but rather **report an issue with the BlogScroll website**. Please make sure to [search for existing issues](https://github.com/blogscroll/blogscroll/issues) before filing a new one!
+
+  - type: input
+    id: bug-title
+    attributes:
+      label: Bug summary
+      placeholder: Brief description of the bug
+      description: Provide a short summary of the bug (e.g., "Site favicon not displaying").
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: Provide a detailed description of the bug, including what you expected to happen and what actually occurred. Include the browser version.
+      placeholder: The site favicon is not appearing in the browser tab. Expected to see the favicon as defined in the site metadata.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Specify the browser where you encountered the bug.
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: device-info
+    attributes:
+      label: Device/OS
+      placeholder: Windows 11 / macOS Monterey / iOS 18
+      description: Provide information about the device and operating system where the bug was obser
+    validations:
+      required: true
