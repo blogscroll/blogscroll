@@ -370,3 +370,9 @@
     url= "https://ides.dev/"
     favicon = "https://ides.dev/assets/images/favicon.png"
     updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.spences]
+    title = "Spencer Scorcelletti"
+    url = "https://spenc.es/"
+    favicon = "https://spenc.es/favicon-16x16.png"
+    updated = "2025-01-10T11:46:00+0200"
