@@ -1,11 +1,4 @@
 [blogs]
-
-    [blogs.robkohrcom]
-    title = "Rob Kohr"
-    url = "https://robkohr.com/"
-    favicon = "https://robkohr.com/favicon.ico"
-    updated = "2024-01-05T14:00:00-0700"
-
     [blogs.stuckytech]
     title = "Dave Stucky"
     url = "https://stucky.tech/"
@@ -359,3 +352,9 @@
     url= "https://osc.garden/"
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
+
+    [blogs.robkohrcom]
+    title = "Rob Kohr"
+    url = "https://robkohr.com/"
+    favicon = "https://robkohr.com/favicon.ico"
+    updated = "2024-01-05T14:00:00-0700"
