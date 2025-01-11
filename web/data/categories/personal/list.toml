@@ -376,3 +376,9 @@
     url = "https://jlericson.com"
     favicon = "https://jlericson.com/favicon.ico"
     updated = "2025-01-09T14:26:47-08:00"
+
+    [blogs.spences]
+    title = "Spencer Scorcelletti"
+    url = "https://spenc.es/"
+    favicon = "https://spenc.es/favicon-16x16.png"
+    updated = "2025-01-10T11:46:00+0200"
