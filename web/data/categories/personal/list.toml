@@ -183,7 +183,7 @@
     title = "Bret Comnes"
     url = "https://bret.io/"
     favicon = "https://bret.io/favicons/favicon-32x32.png"
-    updated = "2025-01-07T14:00:00-0700
+    updated = "2025-01-07T14:00:00-0700"
 
     [blogs.scattershotblog]
     title = "Scattershot"
