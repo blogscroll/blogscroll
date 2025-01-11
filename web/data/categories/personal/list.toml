@@ -371,6 +371,12 @@
     favicon = "https://ides.dev/assets/images/favicon.png"
     updated = "2025-01-07T10:25:00+0000"
 
+    [blogs.jlericsoncom]
+    title = "Jon Ericson"
+    url = "https://jlericson.com"
+    favicon = "https://jlericson.com/favicon.ico"
+    updated = "2025-01-09T14:26:47-08:00"
+
     [blogs.spences]
     title = "Spencer Scorcelletti"
     url = "https://spenc.es/"
