@@ -179,6 +179,12 @@
     favicon = "https://brajeshwar.com/favicon-32x32.png"
     updated = "2025-01-02T14:00:00-0700"
 
+    [blogs.bretio]
+    title = "Bret Comnes"
+    url = "https://bret.io/"
+    favicon = "https://bret.io/favicons/favicon-32x32.png"
+    updated = "2025-01-07T14:00:00-0700
+
     [blogs.scattershotblog]
     title = "Scattershot"
     url = "https://scattershot.blog/"
@@ -353,9 +359,74 @@
     favicon = "https://osc.garden/img/seedling.png"
     updated = "2025-01-03T10:25:00+0000"
 
-    [blogs.onerinas]
+    [blogs.onerinascom]
     title = "Rinas"
     url = "https://onerinas.com"
     favicon = "/generic.ico"
     updated = "2024-12-17T00:00:00+0000"
-    
+
+    [blogs.ozornin]
+    title = "Andrey Ozornin"
+    url= "https://ozorn.in/"
+    favicon = "https://ozorn.in/favicon.png"
+    updated = "2025-01-07T12:58:00+0000"
+
+    [blogs.wwwsplitbrainorg]
+    title = "Andreas Gohr"
+    url = "https://www.splitbrain.org"
+    favicon = "https://www.splitbrain.org/_media/wiki/favicon.ico"
+    updated = "2025-01-07T15:41:00+0000"
+
+    [blogs.robkohrcom]
+    title = "Rob Kohr"
+    url = "https://robkohr.com/"
+    favicon = "https://robkohr.com/favicon.ico"
+    updated = "2024-01-05T14:00:00-0700"
+
+    [blogs.rmukeshguptacom]
+    title = "Mukesh Gupta"
+    url= "https://rmukeshgupta.com/"
+    favicon = "https://rmukeshgupta.com/favicon.ico"
+    updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.cellioorg]
+    title = "Monica Cellio"
+    url= "https://cellio.org/"
+    favicon = "https://cellio.org/media/themes/berlin.png"
+    updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.idesdev]
+    title = "Will"
+    url= "https://ides.dev/"
+    favicon = "https://ides.dev/assets/images/favicon.png"
+    updated = "2025-01-07T10:25:00+0000"
+
+    [blogs.rishikeshscom]
+    title = "Rishikesh Sreehari"
+    url = "https://rishikeshs.com/"
+    favicon = "https://rishikeshs.com/favicon.ico"
+    updated = "2025-01-08T15:55:00+04:00"
+
+    [blogs.ttntmme]
+    title = "Tom"
+    url= "https://ttntm.me/"
+    favicon = "https://ttntm.me/favicon.ico"
+    updated = "2025-01-09T15:05:00+0000"
+
+    [blogs.ikesauco]
+    title = "Ike Saunders"
+    url= "https://ikesau.co/"
+    favicon = "https://ikesau.co/favicon.ico"
+    updated = "2025-01-09T16:30:00+0000"
+
+    [blogs.jlericsoncom]
+    title = "Jon Ericson"
+    url = "https://jlericson.com"
+    favicon = "https://jlericson.com/favicon.ico"
+    updated = "2025-01-09T14:26:47-08:00"
+
+    [blogs.spences]
+    title = "Spencer Scorcelletti"
+    url = "https://spenc.es/"
+    favicon = "https://spenc.es/favicon-16x16.png"
+    updated = "2025-01-10T11:46:00+0200"
