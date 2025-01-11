@@ -33,6 +33,7 @@ Here is a simple (**yet not comprehensive)** breakdown of what may be approved a
 - Personal portfolios.
 - Personal wiki sites.
 - Self-hosted blogs.
+- Site is in English.
 
 #### 🛑 Not OK to submit
 
@@ -42,11 +43,16 @@ Here is a simple (**yet not comprehensive)** breakdown of what may be approved a
 - Sites that contain Not Safe For Work (NSFW) material (e.g., nudity, gore, disturbing imagery). While we're all adults here, the directory is designed to be fit for consumption anywhere (home, workplace, school, public transit). It would be a very unpleasant surprise to randomly stumble across content that may be classified as inappropriate just by clicking a blog link.
 - Sites that contain or allude to hate speech, abuse, or otherwise harmful material.
 - Sites that have a primary purpose other than being a personal page (e.g., podcasts, streaming pages, project pages).
+- Site is in a language other than English.
 
 >[!WARNING]
 >Any sites that are found to be in violation of these guidelines _even after submission_ will be removed with no notice, and there's a good chance that you won't be able to submit more pages in the future.
 
 Lastly, and I want to spell this out directly - I reserve the right to not include or publish any site on BlogScroll. Because this is _my_ project, I get to choose how I curate it.
+
+### Why are you only allowing sites that are in English?
+
+The primary audience for this blog directory is _global_, and English is more or less a universally accepted shared language. If someone comes to this page and wants to discover a blog, I want to maximize the likelihood that they will be able to read it without having to resort to translation, therefore for now I am only limiting the content to blogs and gardens written in English.
 
 ### Can I remove my site from the list?
 
