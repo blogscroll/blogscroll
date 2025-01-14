@@ -34,6 +34,8 @@ Here is a simple (**yet not comprehensive)** breakdown of what may be approved a
 - Personal wiki sites.
 - Self-hosted blogs.
 - Site is in English.
+- Site or content is written and maintained by a human.
+- Site is written by one author.
 
 #### 🛑 Not OK to submit
 
@@ -44,6 +46,8 @@ Here is a simple (**yet not comprehensive)** breakdown of what may be approved a
 - Sites that contain or allude to hate speech, abuse, or otherwise harmful material.
 - Sites that have a primary purpose other than being a personal page (e.g., podcasts, streaming pages, project pages).
 - Site is in a language other than English.
+- Site or content is AI-generated.
+- Site is written by many authors or other contributors.
 
 >[!WARNING]
 >Any sites that are found to be in violation of these guidelines _even after submission_ will be removed with no notice, and there's a good chance that you won't be able to submit more pages in the future.
