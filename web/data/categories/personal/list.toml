@@ -11,6 +11,12 @@
     favicon = "https://brianjdevries.com/favicon-32x32.png"
     updated = "2024-09-01T14:00:00-0700"
 
+    [blogs.bryanhogancom]
+    title = "Bryan Hogan"
+    url = "https://bryanhogan.com/"
+    favicon = "https://bryanhogan.com/logos/fav/favicon.ico"
+    updated = "2025-01-11T14:00:00-0700"
+
     [blogs.robertkingettcom]
     title = "Robert Kingett"
     url = "https://robertkingett.com/"
