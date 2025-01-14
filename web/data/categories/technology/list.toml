@@ -808,3 +808,9 @@
     url = "https://outlore.dev/"
     favicon = "https://outlore.dev/logo-bg.png"
     updated = "2025-01-07T11:57:00+0200"
+
+    [blogs.wwwjacquescorbytuechcom]
+    title = "Jacques Corby-Tuech"
+    url = "https://www.jacquescorbytuech.com/"
+    favicon = "https://www.jacquescorbytuech.com/core/misc/favicon.ico"
+    updated = "2025-01-13T11:57:00+0200"
