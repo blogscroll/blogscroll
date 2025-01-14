@@ -371,8 +371,8 @@
 	favicon = "https://nunocoelhosantos.com/graphics/favicon-32.png"
 	updated = "2025-01-03T14:00:00-0700"
 
-	[blogs.ericwbailey]
-	title = "Eric Bailey"
-	url = "https://ericwbailey.website/"
-	favicon = "https://ericwbailey.website/favicon.ico"
-	updated = "2025-01-12T14:00:00-0700"
+        [blogs.ericwbaileywebsite]
+        title = "Eric Bailey"
+        url = "https://ericwbailey.website/"
+        favicon = "https://ericwbailey.website/favicon.ico"
+        updated = "2025-01-12T14:00:00-0700"
