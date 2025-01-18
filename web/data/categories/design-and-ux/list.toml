@@ -179,12 +179,6 @@
 	favicon = "https://framerusercontent.com/images/UxCS0yYWzhtgvAf8TJhOkkOGTQM.svg"
 	updated = "2024-09-01T14:00:00-0700"
 
-	[blogs.blogfanindraxyz]
-	title = "Fanindra Maharana"
-	url = "https://blog.fanindra.xyz"
-	favicon = "https://blog.fanindra.xyz/favicon.svg"
-	updated = "2024-09-01T14:00:00-0700"
-
 	[blogs.edinabazicom]
 	title = "Edin Abazi"
 	url = "https://www.edinabazi.com"
