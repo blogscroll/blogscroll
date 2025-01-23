@@ -820,3 +820,9 @@
     url = "https://frederickvanbrabant.com/"
     favicon = "https://frederickvanbrabant.com/images/favicon_hu599050eff2131ff884e6a5ecaf3c86b4_8258_144x0_resize_lanczos_3.png"
     updated = "2025-01-23T18:48:37Z"
+
+    [blogs.nelsoncloud]
+    title = "Nelson Figueroa"
+    url = "https://nelson.cloud/"
+    favicon = "https://nelson.cloud/favicon-32x32.png"
+    updated = "2025-01-23T18:50:46Z"
