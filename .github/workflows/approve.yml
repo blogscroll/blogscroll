@@ -86,7 +86,8 @@ jobs:
             core.setOutput('issue_id', issue.data.id);
 
       - name: Echo issue ID
-        run: echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
+        run: |
+          echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
 
       - name: Run copilot-automation script
         if: steps.check_comment.outputs.approved == 'true'
