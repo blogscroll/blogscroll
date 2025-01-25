@@ -100,23 +100,23 @@ def main():
     thread_bootstrap_url = "https://api.individual.githubcopilot.com/github/chat/threads"
 
     # Fetch API token
-    print("Fetching API token...")
+    #print("Fetching API token...")
     api_token = fetch_api_token(session_id, token_endpoint)
 
     # Bootstrap a thread
-    print("Bootstrapping thread...")
+    #print("Bootstrapping thread...")
     thread_state = bootstrap_thread(api_token, thread_bootstrap_url)
     thread_id = thread_state['thread_id']
-    print(f"Thread ID: {thread_id}")
+    #print(f"Thread ID: {thread_id}")
 
     # Build and send conversation prompt
     json_prompt = build_json_prompt(issue_id=issue_id, issue_number=issue_number)
     thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
-    print(f"Sending conversation prompt to thread {thread_id}...")
+    #print(f"Sending conversation prompt to thread {thread_id}...")
     response_content = fetch_thread_responses(api_token, thread_id, json_prompt, thread_conversation_url)
 
     # Print the final response
-    print("Response from thread:")
+    #print("Response from thread:")
     print(response_content)
 
 
