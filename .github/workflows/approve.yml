@@ -90,10 +90,10 @@ jobs:
           echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
 
       - name: Run copilot-automation script
-        if: steps.check_comment.outputs.approved == 'true'
         id: run_copilot_automation
+        if: steps.check_comment.outputs.approved == 'true'
         run: |
-          output=$(python -m copilot_automation --session-id ${{ secrets.SESSION_ID }} --issue-id ${{ github.event.issue.number }})
+          output=$(python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-number ${{ github.event.issue.number }} --issue-id ${{ steps.get_issue_id.outputs.issue_id }})
           echo "$output"
           echo "::set-output name=issue_json::$output"
         working-directory: util
