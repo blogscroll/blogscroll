@@ -39,13 +39,15 @@ def build_json_prompt(issue_number, issue_id):
     """Build the JSON prompt for the thread conversation."""
     return json.dumps({
         "content": (
-            "Use this file as a general reference for TOML format: web/data/categories/technology/list.toml in the blogscroll/blogscroll repository. DO NOT USE THIS CONTENT IN THE RESPONSE. "
-            "The ID (in square brackets) should always be in the form [blog.] where what follows after the period is the site domain part from the Site URL section without the protocol, and the periods are omitted entirely. "
-            "In the TOML header section that represents the site there could be only alphanumeric characters. No hyphens, underscores, or any other special characters. "
-            "Based on the current issue in the current repository that you have in the context, generate a TOML blob that can be inserted into the file defined as the category property. "
+            "Use this file as a general reference for TOML format that I want you to use: web/data/categories/technology/list.toml in the blogscroll/blogscroll repository. DO NOT USE THIS CONTENT IN THE RESPONSE. "
+            "If your response includes ANY content from this file, it will be considered incorrect. "
+            "From the current issue body, generate a TOML blob that can be inserted into the file defined as the category property. "
+            "If the generated TOML does not represent the CURRENT ISSUE BODY, it will be considered incorrect. "
+            "The result ID (in square brackets) should always be in the form [blog.] where what follows after the period is the site domain part from the Site URL section without the protocol, and the periods are omitted entirely. "
+            "In the TOML header (between square brackets) that represents the site there could be only alphanumeric characters. No hyphens, underscores, or any other special characters. "
             "Include the file path where the blob needs to be inserted. The file path is of the pattern web/data/categories/{category}/list.toml. "
             "Return data in JSON format (just the JSON). JSON response should have two properties - `content` for the TOML content, and `file_path` for the file path."
-            "UNDER NO CIRCUMSTANCES in the response you give back to me should you include Markdown markers (```) that delineate the code fragment."
+            "UNDER NO CIRCUMSTANCES in the response you produce should you include Markdown markers (```) that delineate the code fragment."
             "Just return the raw JSON without the triple ticks. If your response contains ```, it will be considered incorrect."
         ),
         "intent": "conversation",
