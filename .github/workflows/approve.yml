@@ -90,7 +90,108 @@ jobs:
           echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
 
       - name: Run copilot-automation script
+        id: run_copilot_automation
         if: steps.check_comment.outputs.approved == 'true'
         run: |
           python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-number ${{ github.event.issue.number }} --issue-id ${{ steps.get_issue_id.outputs.issue_id }}
         working-directory: util
+
+      - name: Check for TOML content
+        if: steps.check_comment.outputs.approved == 'true'
+        id: check_toml
+        run: |
+          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_number=${{ github.event.issue.number }}
+          if grep -q "#<issue_${issue_number}>" "$file_path"; then
+            echo "TOML content found"
+            echo "toml_found=true" >> $GITHUB_ENV
+          else
+            echo "TOML content not found"
+            echo "toml_found=false" >> $GITHUB_ENV
+          fi
+
+      - name: Amend file with TOML content
+        if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'true'
+        run: |
+          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_number=${{ github.event.issue.number }}
+          sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" "$file_path"
+
+      - name: Append TOML content
+        if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'false'
+        run: |
+          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_number=${{ github.event.issue.number }}
+          echo -e "\n#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" >> "$file_path"
+
+      - name: Commit changes
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          issue_number=${{ github.event.issue.number }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Fixes #${issue_number}"
+
+      - name: Push changes
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          git push --set-upstream origin automation-update
+
+      - name: Check for existing pull request
+        if: steps.check_comment.outputs.approved == 'true'
+        id: check_pr
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prs = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:automation-update`,
+              base: 'main',
+              state: 'open'
+            });
+            if (prs.data.length > 0) {
+              core.setOutput('pr_exists', 'true');
+              core.setOutput('pr_id', prs.data[0].number);
+            } else {
+              core.setOutput('pr_exists', 'false');
+            }
+
+      - name: Create pull request
+        if: steps.check_comment.outputs.approved == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        id: create_pr
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Fixes #${context.issue.number}`,
+              head: 'automation-update',
+              base: 'main',
+              body: 'This PR fixes issue #${context.issue.number}.'
+            });
+            core.setOutput('pr_id', pr.data.number);
+
+      - name: Post comment on issue
+        if: steps.check_comment.outputs.approved == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const commit_id = (await github.rest.repos.listCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: 'automation-update',
+              per_page: 1
+            })).data[0].sha;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `Commit was created to fix #${context.issue.number}: ${commit_id}. You can track the change propagation in #${{ steps.create_pr.outputs.pr_id }}`
+            });
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
