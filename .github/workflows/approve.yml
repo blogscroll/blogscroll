@@ -111,7 +111,8 @@ jobs:
         if: steps.check_comment.outputs.approved == 'true'
         id: check_toml
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_json="${{ steps.run_copilot_automation.outputs.issue_json }}"
+          file_path=$(echo "$issue_json" | jq -r '.file_path')
           issue_number=${{ github.event.issue.number }}
           if grep -q "#<issue_${issue_number}>" "$file_path"; then
             echo "TOML content found"
@@ -124,19 +125,21 @@ jobs:
       - name: Amend file with TOML content
         if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'true'
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
-          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_json="${{ steps.run_copilot_automation.outputs.issue_json }}"
+          file_path=$(echo "$issue_json" | jq -r '.file_path')
+          toml_content=$(echo "$issue_json" | jq -r '.toml_content')
           issue_number=${{ github.event.issue.number }}
           sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" "$file_path"
 
       - name: Append TOML content
         if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'false'
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
-          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          issue_json="${{ steps.run_copilot_automation.outputs.issue_json }}"
+          file_path=$(echo "$issue_json" | jq -r '.file_path')
+          toml_content=$(echo "$issue_json" | jq -r '.toml_content')
           issue_number=${{ github.event.issue.number }}
           echo -e "\n#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" >> "$file_path"
-
+          
       - name: Commit changes
         if: steps.check_comment.outputs.approved == 'true'
         run: |
