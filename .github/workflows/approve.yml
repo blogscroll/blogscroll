@@ -49,9 +49,10 @@ jobs:
 
       - name: Install dependencies
         if: steps.check_comment.outputs.approved == 'true'
+        working-directory: util
         run: |
           python -m pip install --upgrade pip
-          pip install -r util/requirements.txt
+          pip install -r requirements.txt
 
       - name: Check issue number
         if: steps.check_comment.outputs.approved == 'true'
