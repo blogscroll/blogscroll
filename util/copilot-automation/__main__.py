@@ -51,8 +51,8 @@ def build_json_prompt(issue_number, issue_id):
         "context": [
         {
             "type": "issue",
-            "id": int({issue_id}),
-            "number": int({issue_number}),
+            "id": int(issue_id),
+            "number": int(issue_number),
             "repository": {
                 "id": 314958631,
                 "name": "blogscroll",
