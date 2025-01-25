@@ -73,8 +73,23 @@ jobs:
         run: |
           echo "Issue number: ${{ github.event.issue.number }}"
 
+      - name: Get issue ID
+        id: get_issue_id
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+            core.setOutput('issue_id', issue.data.id);
+
+      - name: Echo issue ID
+        run: echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
+
       - name: Run copilot-automation script
         if: steps.check_comment.outputs.approved == 'true'
         run: |
-          python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-id ${{ github.event.issue.number }}
+          python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-number ${{ github.event.issue.number }} --issue-id ${{ steps.get_issue_id.outputs.issue_id }}"
         working-directory: util

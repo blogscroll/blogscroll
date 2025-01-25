@@ -7,7 +7,8 @@ def get_args():
     """Parse and return command-line arguments."""
     parser = argparse.ArgumentParser(description="Automate BlogScroll entry identification with GitHub Copilot.")
     parser.add_argument("--session-id", required=True, help="The session ID to use.")
-    parser.add_argument("--issue-id", required=True, help="Issue for which context extraction is happening.")
+    parser.add_argument("--issue-id", required=True, help="Issue ID (not number) for which context extraction is happening.")
+    parser.add_argument("--issue-number", required=True, help="Issue number for which context extraction is happening.")
     return parser.parse_args()
 
 def fetch_api_token(session_id, token_url):
@@ -34,7 +35,7 @@ def bootstrap_thread(api_token, bootstrap_url):
         raise Exception(f"Failed to bootstrap thread. Status code: {response.status_code}, Response: {response.text}")
     return response.json()
 
-def build_json_prompt(issue_id):
+def build_json_prompt(issue_number, issue_id):
     """Build the JSON prompt for the thread conversation."""
     return json.dumps({
         "content": (
@@ -47,7 +48,19 @@ def build_json_prompt(issue_id):
             "DO NOT include Markdown markers in your response that delineate the code fragment - just the raw JSON without the triple ticks."
         ),
         "intent": "conversation",
-        "currentURL": f"https://github.com/blogscroll/blogscroll/issues/{issue_id}",
+        "context": [
+        {
+            "type": "issue",
+            "id": int({issue_id}),
+            "number": int({issue_number}),
+            "repository": {
+                "id": 314958631,
+                "name": "blogscroll",
+                "owner": "blogscroll"
+            }
+        }
+        ],
+        "currentURL": f"https://github.com/blogscroll/blogscroll/issues/{issue_number}",
         "streaming": True,
         "confirmations": [],
         "customInstructions": [],
@@ -80,6 +93,7 @@ def main():
     args = get_args()
     session_id = args.session_id
     issue_id = args.issue_id
+    issue_number = args.issue_number
 
     # Endpoints
     token_endpoint = "https://github.com/github-copilot/chat/token"
@@ -96,7 +110,7 @@ def main():
     print(f"Thread ID: {thread_id}")
 
     # Build and send conversation prompt
-    json_prompt = build_json_prompt(issue_id)
+    json_prompt = build_json_prompt(issue_id: issue_id, issue_number: issue_number)
     thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
     print(f"Sending conversation prompt to thread {thread_id}...")
     response_content = fetch_thread_responses(api_token, thread_id, json_prompt, thread_conversation_url)
