@@ -94,7 +94,7 @@ jobs:
         if: steps.check_comment.outputs.approved == 'true'
         run: |
           set -e  # Exit on error
-          output=$(python -m copilot_automation \
+          output=$(python -m copilot-automation \
             --session-id "${{ secrets.SESSION_ID }}" \
             --issue-number "${{ github.event.issue.number }}" \
             --issue-id "${{ steps.get_issue_id.outputs.issue_id }}")
