@@ -76,5 +76,5 @@ jobs:
       - name: Run copilot-automation script
         if: steps.check_comment.outputs.approved == 'true'
         run: |
-          python -m copilot_automation --session-id ${{ secrets.SESSION_ID }} --issue-id ${{ github.event.issue.number }}
+          python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-id ${{ github.event.issue.number }}
         working-directory: util
