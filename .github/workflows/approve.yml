@@ -173,6 +173,11 @@ jobs:
             exit 1
           fi
 
+      - name: Create and switch to new branch
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          git checkout -b automation-update
+
       - name: Commit changes
         if: steps.check_comment.outputs.approved == 'true'
         run: |
