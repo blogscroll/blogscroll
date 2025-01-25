@@ -110,7 +110,7 @@ def main():
     print(f"Thread ID: {thread_id}")
 
     # Build and send conversation prompt
-    json_prompt = build_json_prompt(issue_id: issue_id, issue_number: issue_number)
+    json_prompt = build_json_prompt(issue_id=issue_id, issue_number=issue_number)
     thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
     print(f"Sending conversation prompt to thread {thread_id}...")
     response_content = fetch_thread_responses(api_token, thread_id, json_prompt, thread_conversation_url)
