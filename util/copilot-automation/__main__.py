@@ -45,7 +45,7 @@ def build_json_prompt(issue_number, issue_id):
             "Based on the current issue in the current repository that you have in the context, generate a TOML blob that can be inserted into the file defined as the category property. "
             "Include the file path where the blob needs to be inserted. The file path is of the pattern web/data/categories/{category}/list.toml. "
             "Return data in JSON format (just the JSON). JSON response should have two properties - `content` for the TOML content, and `file_path` for the file path."
-            "DO NOT include Markdown markers in your response that delineate the code fragment - just the raw JSON without the triple ticks."
+            "In the response you give back - DO NOT include Markdown markers (```) response that delineate the code fragment - just the raw JSON without the triple ticks."
         ),
         "intent": "conversation",
         "context": [
