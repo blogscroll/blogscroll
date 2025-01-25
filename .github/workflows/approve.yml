@@ -114,6 +114,8 @@ jobs:
           issue_json="${{ steps.run_copilot_automation.outputs.issue_json }}"
           file_path=$(echo "$issue_json" | jq -r '.file_path')
           issue_number=${{ github.event.issue.number }}
+          echo "Checking for TOML content in file: $file_path"
+          echo "Issue number: $issue_number"
           if grep -q "#<issue_${issue_number}>" "$file_path"; then
             echo "TOML content found"
             echo "toml_found=true" >> $GITHUB_ENV
