@@ -93,9 +93,16 @@ jobs:
         id: run_copilot_automation
         if: steps.check_comment.outputs.approved == 'true'
         run: |
-          output=$(python -m copilot_automation --session-id ${{ secrets.SESSION_ID }} --issue-number ${{ github.event.issue.number }} --issue-id ${{ steps.get_issue_id.outputs.issue_id }})
+          set -e  # Fail the script on errors
+          output=$(python -m copilot_automation \
+            --session-id "${{ secrets.SESSION_ID }}" \
+            --issue-number "${{ github.event.issue.number }}" \
+            --issue-id "${{ steps.get_issue_id.outputs.issue_id }}")
+          
           echo "$output"
-          echo "issue_json=$(echo "$output" | jq -R -s)" >> $GITHUB_OUTPUT
+          
+          # Write to GITHUB_OUTPUT
+          echo "issue_json=$(echo "$output" | jq -Rs .)" >> $GITHUB_OUTPUT
         working-directory: util
 
       - name: Check for TOML content
