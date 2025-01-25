@@ -95,14 +95,14 @@ jobs:
         run: |
           output=$(python -m copilot-automation --session-id ${{ secrets.SESSION_ID }} --issue-number ${{ github.event.issue.number }} --issue-id ${{ steps.get_issue_id.outputs.issue_id }})
           echo "$output"
-          echo "::set-output name=issue_json::$output"
+          echo "issue_json=$output" >> $GITHUB_ENV
         working-directory: util
 
       - name: Check for TOML content
         if: steps.check_comment.outputs.approved == 'true'
         id: check_toml
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          file_path=$(jq -r '.file_path' <<< "$issue_json")
           issue_number=${{ github.event.issue.number }}
           if grep -q "#<issue_${issue_number}>" "$file_path"; then
             echo "TOML content found"
@@ -115,16 +115,16 @@ jobs:
       - name: Amend file with TOML content
         if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'true'
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
-          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          file_path=$(jq -r '.file_path' <<< "$issue_json")
+          toml_content=$(jq -r '.toml_content' <<< "$issue_json")
           issue_number=${{ github.event.issue.number }}
           sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" "$file_path"
 
       - name: Append TOML content
         if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'false'
         run: |
-          file_path=$(jq -r '.file_path' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
-          toml_content=$(jq -r '.toml_content' <<< "${{ steps.run_copilot_automation.outputs.issue_json }}")
+          file_path=$(jq -r '.file_path' <<< "$issue_json")
+          toml_content=$(jq -r '.toml_content' <<< "$issue_json")
           issue_number=${{ github.event.issue.number }}
           echo -e "\n#<issue_${issue_number}>\n${toml_content}\n#<\/issue_${issue_number}>" >> "$file_path"
 
@@ -189,11 +189,12 @@ jobs:
               sha: 'automation-update',
               per_page: 1
             })).data[0].sha;
+            const pr_id = steps.check_pr.outputs.pr_exists == 'true' ? steps.check_pr.outputs.pr_id : steps.create_pr.outputs.pr_id;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `Commit was created to fix #${context.issue.number}: ${commit_id}. You can track the change propagation in #${{ steps.create_pr.outputs.pr_id }}`
+              body: `Commit was created to fix #${context.issue.number}: ${commit_id}. You can track the change propagation in #${pr_id}`
             });
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
