@@ -875,3 +875,10 @@
     url = "https://amitmerchant.com"
     favicon = "https://amitmerchant.com/favicon.ico"
 #</issue_372>
+
+#<issue_387>
+    [blog.tomkennescom]
+    name = "Tom Kennes"
+    url = "https://tomkennes.com"
+    favicon = "https://tomkennes.com/favicon.ico"
+#</issue_387>
