@@ -439,7 +439,7 @@
 #</issue_443>
 
 #<issue_434>
-    [blog.ricosite]
+    [blog.ricossite]
     name = "Rico Trebeljahr"
     url = "https://ricos.site"
     favicon = "https://ricos.site/favicon/favicon-32x32.png"
@@ -450,5 +450,4 @@
     name = "Evan Pratten"
     url = "https://ewpratten.com"
     favicon = "https://ewp.fyi/pfp.png"
-    
 #</issue_431>
