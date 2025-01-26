@@ -493,3 +493,10 @@
     url = "https://sixey.es/"
     favicon = "https://sixey.es/favicon.ico"
 #</issue_380>
+
+#<issue_382>
+    [blog.weberdominikcom]
+    name = "Dominik Weber"
+    url = "https://weberdominik.com/"
+    favicon = "https://weberdominik.com/favicon.svg"
+#</issue_382>
