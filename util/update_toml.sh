@@ -3,7 +3,7 @@ set -e  # Exit on error
 
 issue_json="$1"
 file_path=$(echo "$issue_json" | jq -r '.file_path')
-content=$(echo "$issue_json" | jq -r '.content' | jq -sRr @sh | sed 's/^/    /')
+content=$(echo "$issue_json" | jq -r '.content' | sed 's/^/    /')
 issue_number="$2"
 
 echo "Processing file: $file_path for issue #${issue_number}"
