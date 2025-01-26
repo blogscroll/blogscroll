@@ -117,31 +117,6 @@ jobs:
           else
             git checkout -b automation-update
           fi
-    
-      - name: Check for TOML content
-        if: steps.check_comment.outputs.approved == 'true'
-        id: check_toml
-        run: |
-          set -e  # Exit on error
-          issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}'
-          file_path=$(echo "$issue_json" | jq -r '.file_path')
-          issue_number='${{ github.event.issue.number }}'
-          
-          echo "Checking for TOML content in file: $file_path"
-          echo "Issue number: $issue_number"
-
-          if [[ -f "$file_path" ]]; then
-            if grep -q "#<issue_${issue_number}>" "$file_path"; then
-              echo "TOML content found"
-              echo "toml_found=true" >> $GITHUB_ENV
-            else
-              echo "TOML content not found"
-              echo "toml_found=false" >> $GITHUB_ENV
-            fi
-          else
-            echo "File $file_path does not exist"
-            echo "toml_found=false" >> $GITHUB_ENV
-          fi
 
       - name: Check for TOML content and update file
         if: steps.check_comment.outputs.approved == 'true'
