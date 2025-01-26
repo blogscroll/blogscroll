@@ -465,3 +465,10 @@
     url = "https://brentter.com"
     favicon = "https://brentter.com/favicon.ico"
 #</issue_420>
+
+#<issue_416>
+    [blog.bepbopgithubio]
+    name = "Gyan Anjay"
+    url = "https://bepbop.github.io"
+    favicon = "https://bepbop.github.io/icon.svg"
+#</issue_416>
