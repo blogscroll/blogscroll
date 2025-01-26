@@ -833,3 +833,31 @@
     url = "https://blog.lukesalamone.com/"
     favicon = "https://blog.lukesalamone.com/favicon.ico"
 #</issue_427>
+
+#<issue_417>
+    [blog.ryanlynchme]
+    name = "Ryan Lynch"
+    url = "https://ryanlynch.me"
+    favicon = "https://ryanlynch.me/pages/Favicons/favicon-192x192.png"
+#</issue_417>
+
+#<issue_415>
+    [blog.vitochincom]
+    name = "Vito Chin"
+    url = "https://vitochin.com"
+    favicon = "https://vitoc.azurewebsites.net/images/siteicon.jpg"
+#</issue_415>
+
+#<issue_401>
+    [blog.digiingde]
+    name = "Digi-Ing"
+    url = "https://digi-ing.de/en/"
+    favicon = "https://digi-ing.de/wp-content/uploads/2020/05/cropped-Digi-Ing_ohne_Schrift-1.jpg"
+#</issue_401>
+
+#<issue_399>
+    [blog.manpreetfyi]
+    name = "Manpreet Kunnath"
+    url = "https://manpreet.fyi/"
+    favicon = "https://manpreet.fyi/favicon.ico"
+#</issue_399>
