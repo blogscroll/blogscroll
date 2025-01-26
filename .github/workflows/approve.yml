@@ -123,7 +123,7 @@ jobs:
       - name: Check for TOML content and update file
         if: steps.check_comment.outputs.approved == 'true'
         run: |
-          issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}''
+          issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}'
           issue_number=${{ github.event.issue.number }}
           ./util/update_toml.sh $issue_json $issue_number
 
