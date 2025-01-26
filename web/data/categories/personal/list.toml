@@ -486,3 +486,31 @@
     url = "https://williamhleucka.com"
     favicon = "https://williamhleucka.com/favicon.ico"
 #</issue_388>
+
+#<issue_380>
+    [blog.sixeyes]
+    name = "sixey.es"
+    url = "https://sixey.es/"
+    favicon = "https://sixey.es/favicon.ico"
+#</issue_380>
+
+#<issue_382>
+    [blog.weberdominikcom]
+    name = "Dominik Weber"
+    url = "https://weberdominik.com/"
+    favicon = "https://weberdominik.com/favicon.svg"
+#</issue_382>
+
+#<issue_373>
+    [blog.harshkncom]
+    name = "Harsha K N"
+    url = "https://www.harshkn.com"
+    favicon = "https://www.harshkn.com/favicon.ico"
+#</issue_373>
+
+#<issue_377>
+    [blog.justuspw]
+    name = "Justus Perlwitz"
+    url = "https://www.justus.pw/"
+    favicon = "https://www.justus.pw/favicon.png"
+#</issue_377>
