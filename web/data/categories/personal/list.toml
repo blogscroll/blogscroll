@@ -451,3 +451,10 @@
     url = "https://ewpratten.com"
     favicon = "https://ewp.fyi/pfp.png"
 #</issue_431>
+
+#<issue_424>
+    [blog.tylerknowsnothingcom]
+    name = "Tyler Knows Nothing"
+    url = "https://tylerknowsnothing.com"
+    favicon = "https://tylerknowsnothing.com/favicon.ico"
+#</issue_424>
