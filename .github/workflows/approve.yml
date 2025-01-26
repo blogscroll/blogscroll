@@ -190,6 +190,7 @@ jobs:
       - name: Push changes
         if: steps.check_comment.outputs.approved == 'true'
         run: |
+          git pull origin automation-update --rebase
           git push --set-upstream origin automation-update
 
       - name: Check for existing pull request
