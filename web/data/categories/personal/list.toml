@@ -436,6 +436,7 @@
     name = "Pavel Kovar"
     url = "https://pkworld.xyz/"
     favicon = "https://pkworld.xyz/favicon.svg"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_443>
 
 #<issue_434>
@@ -443,6 +444,7 @@
     name = "Rico Trebeljahr"
     url = "https://ricos.site"
     favicon = "https://ricos.site/favicon/favicon-32x32.png"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_434>
 
 #<issue_431>
@@ -450,6 +452,7 @@
     name = "Evan Pratten"
     url = "https://ewpratten.com"
     favicon = "https://ewp.fyi/pfp.png"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_431>
 
 #<issue_424>
@@ -457,6 +460,7 @@
     name = "Tyler Knows Nothing"
     url = "https://tylerknowsnothing.com"
     favicon = "/generic.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_424>
 
 #<issue_420>
@@ -464,6 +468,7 @@
     name = "Everythings Better With Brentter"
     url = "https://brentter.com"
     favicon = "https://brentter.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_420>
 
 #<issue_416>
@@ -471,6 +476,7 @@
     name = "Gyan Anjay"
     url = "https://bepbop.github.io"
     favicon = "https://bepbop.github.io/icon.svg"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_416>
 
 #<issue_397>
@@ -478,6 +484,7 @@
     name = "John YS"
     url = "https://blog.johnys.io"
     favicon = "https://blog.johnys.io/content/images/size/w256h256/2024/11/jys-profile-circle.png"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_397>
 
 #<issue_388>
@@ -485,6 +492,7 @@
     name = "William Hleucka"
     url = "https://williamhleucka.com"
     favicon = "https://williamhleucka.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_388>
 
 #<issue_380>
@@ -492,6 +500,7 @@
     name = "sixey.es"
     url = "https://sixey.es/"
     favicon = "https://sixey.es/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_380>
 
 #<issue_382>
@@ -499,6 +508,7 @@
     name = "Dominik Weber"
     url = "https://weberdominik.com/"
     favicon = "https://weberdominik.com/favicon.svg"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_382>
 
 #<issue_373>
@@ -506,6 +516,7 @@
     name = "Harsha K N"
     url = "https://www.harshkn.com"
     favicon = "https://www.harshkn.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_373>
 
 #<issue_377>
@@ -513,4 +524,11 @@
     name = "Justus Perlwitz"
     url = "https://www.justus.pw/"
     favicon = "https://www.justus.pw/favicon.png"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_377>
+
+    [blogs.kogakure]
+    title = "Stefan Imhoff"
+    url = "https://www.stefanimhoff.de"
+    favicon = "https://www.stefanimhoff.de/favicon.ico"
+    updated = "2025-01-23T11:17:00+0200"
