@@ -847,3 +847,10 @@
     url = "https://vitochin.com"
     favicon = "https://vitoc.azurewebsites.net/images/siteicon.jpg"
 #</issue_415>
+
+#<issue_401>
+    [blog.digiingde]
+    name = "Digi-Ing"
+    url = "https://digi-ing.de/en/"
+    favicon = "https://digi-ing.de/wp-content/uploads/2020/05/cropped-Digi-Ing_ohne_Schrift-1.jpg"
+#</issue_401>
