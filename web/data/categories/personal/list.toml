@@ -437,3 +437,10 @@
     url = "https://pkworld.xyz/"
     favicon = "https://pkworld.xyz/favicon.svg"
 #</issue_443>
+
+#<issue_434>
+    [blog.ricosite]
+    name = "Rico Trebeljahr"
+    url = "https://ricos.site"
+    favicon = "https://ricos.site/favicon/favicon-32x32.png"
+#</issue_434>
