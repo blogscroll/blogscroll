@@ -833,3 +833,10 @@
     url = "https://blog.lukesalamone.com/"
     favicon = "https://blog.lukesalamone.com/favicon.ico"
 #</issue_427>
+
+#<issue_417>
+    [blog.ryanlynchme]
+    name = "Ryan Lynch"
+    url = "https://ryanlynch.me"
+    favicon = "https://ryanlynch.me/pages/Favicons/favicon-192x192.png"
+#</issue_417>
