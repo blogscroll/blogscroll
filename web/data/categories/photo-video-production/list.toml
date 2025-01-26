@@ -22,3 +22,11 @@
     url = "https://roose.digital/en"
     favicon = "https://roose.digital/themes/molyneux/favicon/favicon.ico"
     updated = "2025-01-07T14:00:00-0700"
+
+#<issue_441>
+    [blog.examplecom]
+    name = "Test Site"
+    url = "https://example.com"
+    favicon = "https://example.com/favicon.ico"
+    category = "photo-video-production"
+#</issue_441>
