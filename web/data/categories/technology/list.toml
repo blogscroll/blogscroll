@@ -840,3 +840,10 @@
     url = "https://ryanlynch.me"
     favicon = "https://ryanlynch.me/pages/Favicons/favicon-192x192.png"
 #</issue_417>
+
+#<issue_415>
+    [blog.vitochincom]
+    name = "Vito Chin"
+    url = "https://vitochin.com"
+    favicon = "https://vitoc.azurewebsites.net/images/siteicon.jpg"
+#</issue_415>
