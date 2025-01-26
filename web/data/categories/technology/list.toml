@@ -832,6 +832,7 @@
     name = "Luke Salamone"
     url = "https://blog.lukesalamone.com/"
     favicon = "https://blog.lukesalamone.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_427>
 
 #<issue_417>
@@ -839,6 +840,7 @@
     name = "Ryan Lynch"
     url = "https://ryanlynch.me"
     favicon = "https://ryanlynch.me/pages/Favicons/favicon-192x192.png"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_417>
 
 #<issue_415>
@@ -846,6 +848,7 @@
     name = "Vito Chin"
     url = "https://vitochin.com"
     favicon = "https://vitoc.azurewebsites.net/images/siteicon.jpg"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_415>
 
 #<issue_401>
@@ -853,6 +856,7 @@
     name = "Digi-Ing"
     url = "https://digi-ing.de/en/"
     favicon = "https://digi-ing.de/wp-content/uploads/2020/05/cropped-Digi-Ing_ohne_Schrift-1.jpg"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_401>
 
 #<issue_399>
@@ -860,6 +864,7 @@
     name = "Manpreet Kunnath"
     url = "https://manpreet.fyi/"
     favicon = "https://manpreet.fyi/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_399>
 
 #<issue_394>
@@ -867,6 +872,7 @@
     name = "SaltyCrane"
     url = "https://www.saltycrane.com/"
     favicon = "https://www.saltycrane.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_394>
 
 #<issue_372>
@@ -874,6 +880,7 @@
     name = "Amit Merchant"
     url = "https://amitmerchant.com"
     favicon = "https://amitmerchant.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_372>
 
 #<issue_387>
@@ -881,4 +888,5 @@
     name = "Tom Kennes"
     url = "https://tomkennes.com"
     favicon = "https://tomkennes.com/favicon.ico"
+    updated = "2025-01-25T11:00:00+0200"
 #</issue_387>
