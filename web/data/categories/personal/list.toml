@@ -430,3 +430,10 @@
     url = "https://spenc.es/"
     favicon = "https://spenc.es/favicon-16x16.png"
     updated = "2025-01-10T11:46:00+0200"
+
+#<issue_443>
+    [blog.pkworldxyz]
+    name = "Pavel Kovar"
+    url = "https://pkworld.xyz/"
+    favicon = "https://pkworld.xyz/favicon.svg"
+#</issue_443>
