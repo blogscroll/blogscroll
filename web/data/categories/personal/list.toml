@@ -479,3 +479,10 @@
     url = "https://blog.johnys.io"
     favicon = "https://blog.johnys.io/content/images/size/w256h256/2024/11/jys-profile-circle.png"
 #</issue_397>
+
+#<issue_388>
+    [blog.williamhleuckacom]
+    name = "William Hleucka"
+    url = "https://williamhleucka.com"
+    favicon = "https://williamhleucka.com/favicon.ico"
+#</issue_388>
