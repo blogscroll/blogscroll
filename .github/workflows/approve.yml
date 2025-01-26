@@ -143,54 +143,12 @@ jobs:
             echo "toml_found=false" >> $GITHUB_ENV
           fi
 
-      - name: Amend file with TOML content
-        if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'true'
+      - name: Check for TOML content and update file
+        if: steps.check_comment.outputs.approved == 'true'
         run: |
-          set -e  # Exit on error
           issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}'
-          file_path=$(echo "$issue_json" | jq -r '.file_path')
-          toml_content=$(echo "$issue_json" | jq -r '.content')
           issue_number='${{ github.event.issue.number }}'
-          
-          echo "Amending file: $file_path for issue #${issue_number}"
-
-          if [[ -f "$file_path" ]]; then
-            # Prepare the replacement block
-            replacement_block=$(cat <<EOF
-              #<issue_${issue_number}>
-              $toml_content
-              #</issue_${issue_number}>
-              EOF
-            )
-
-            # Use sed to replace the entire block
-            sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
-            $replacement_block" "$file_path"
-
-            echo "File amended successfully."
-          else
-            echo "File $file_path does not exist. Cannot amend."
-            exit 1
-          fi
-
-      - name: Append TOML content
-        if: steps.check_comment.outputs.approved == 'true' && env.toml_found == 'false'
-        run: |
-          set -e  # Exit on error
-          issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}'
-          file_path=$(echo "$issue_json" | jq -r '.file_path')
-          content=$(echo "$issue_json" | jq -r '.content')
-          issue_number='${{ github.event.issue.number }}'
-          
-          echo "Appending TOML content to file: $file_path for issue #${issue_number}"
-
-          if [[ -f "$file_path" ]]; then
-            echo -e "\n#<issue_${issue_number}>\n$(echo "$content" | sed 's/^/    /')\n#</issue_${issue_number}>" >> "$file_path"
-            echo "Content appended successfully."
-          else
-            echo "File $file_path does not exist. Cannot append."
-            exit 1
-          fi
+          ./util/update_toml.sh "$issue_json" "$issue_number"
 
       - name: Commit changes
         if: steps.check_comment.outputs.approved == 'true'
