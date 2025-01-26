@@ -486,3 +486,10 @@
     url = "https://williamhleucka.com"
     favicon = "https://williamhleucka.com/favicon.ico"
 #</issue_388>
+
+#<issue_380>
+    [blog.sixeyes]
+    name = "sixey.es"
+    url = "https://sixey.es/"
+    favicon = "https://sixey.es/favicon.ico"
+#</issue_380>
