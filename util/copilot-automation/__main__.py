@@ -73,7 +73,7 @@ def build_json_prompt(issue_number, issue_id):
     })
 
 
-def fetch_thread_responses(api_token, thread_id, prompt, conversation_url):
+def fetch_thread_responses(api_token, prompt, conversation_url):
     """Send a conversation prompt and stream responses."""
     headers = {
         "Authorization": f"GitHub-Bearer {api_token}",
@@ -91,6 +91,16 @@ def fetch_thread_responses(api_token, thread_id, prompt, conversation_url):
             response_content += data['body']
     return response_content
 
+def delete_thread(api_token, conversation_url):
+    """Send a conversation prompt and stream responses."""
+    headers = {
+        "Authorization": f"GitHub-Bearer {api_token}",
+    }
+    response = requests.delete(conversation_url, headers=headers)
+    if response.status_code not in [200, 201, 204]:
+        raise Exception(f"Failed to delete thread. Status code: {response.status_code}, Response: {response.text}")
+    
+    return True
 
 def main():
     args = get_args()
@@ -116,11 +126,16 @@ def main():
     json_prompt = build_json_prompt(issue_id=issue_id, issue_number=issue_number)
     thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
     #print(f"Sending conversation prompt to thread {thread_id}...")
-    response_content = fetch_thread_responses(api_token, thread_id, json_prompt, thread_conversation_url)
+    response_content = fetch_thread_responses(api_token, json_prompt, thread_conversation_url)
 
     # Print the final response
     #print("Response from thread:")
+
     print(response_content)
+
+    thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}"
+    #print(f'{thread_conversation_url} deleting...')
+    thread_deleted = delete_thread(api_token, thread_conversation_url)
 
 
 if __name__ == "__main__":
