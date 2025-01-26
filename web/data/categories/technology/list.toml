@@ -861,3 +861,10 @@
     url = "https://manpreet.fyi/"
     favicon = "https://manpreet.fyi/favicon.ico"
 #</issue_399>
+
+#<issue_394>
+    [blog.saltycrane]
+    name = "SaltyCrane"
+    url = "https://www.saltycrane.com/"
+    favicon = "https://www.saltycrane.com/favicon.ico"
+#</issue_394>
