@@ -21,9 +21,11 @@ $content
 EOF
     )
 
-    # Use sed to replace the entire block
-    sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
-$replacement_block" "$file_path"
+    # Use sed to replace the entire block with a different delimiter
+    sed -i '' -e "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
+#<issue_${issue_number}>\\
+$content\\
+#</issue_${issue_number}>" "$file_path"
 
     echo "File amended successfully."
   else
