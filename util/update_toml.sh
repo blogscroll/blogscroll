@@ -4,8 +4,12 @@ set -e  # Exit on error
 issue_json="$1"
 issue_number="$2"
 
+# Extract fields from JSON
 file_path=$(echo "$issue_json" | jq -r '.file_path')
-content=$(echo "$issue_json" | jq -r '.content' | sed 's/^/    /')
+content=$(echo "$issue_json" | jq -r '.content')
+
+# Indent content by 4 spaces
+indented_content=$(echo "$content" | sed 's/^/    /')
 
 echo "Processing file: $file_path for issue #${issue_number}"
 
@@ -17,7 +21,7 @@ if [[ -f "$file_path" ]]; then
     # Use awk for safer multi-line block replacement
     awk -v block_start="#<issue_${issue_number}>" \
         -v block_end="#</issue_${issue_number}>" \
-        -v replacement="$content" \
+        -v replacement="$indented_content" \
         'BEGIN {found=0} 
          $0 ~ block_start {found=1; print $0; print replacement; next} 
          $0 ~ block_end {found=0} 
@@ -29,7 +33,8 @@ if [[ -f "$file_path" ]]; then
     echo "TOML content not found for issue #${issue_number}"
 
     echo "Appending TOML content to file: $file_path"
-    echo -e "\n#<issue_${issue_number}>\n$content\n#</issue_${issue_number}>" >> "$file_path"
+    # Use printf for proper escaping and handling of multi-line content
+    printf "\n#<issue_%s>\n%s\n#</issue_%s>\n" "$issue_number" "$indented_content" "$issue_number" >> "$file_path"
     echo "Content appended successfully."
   fi
 else
