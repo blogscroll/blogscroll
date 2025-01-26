@@ -868,3 +868,10 @@
     url = "https://www.saltycrane.com/"
     favicon = "https://www.saltycrane.com/favicon.ico"
 #</issue_394>
+
+#<issue_372>
+    [blog.amitmerchantcom]
+    name = "Amit Merchant"
+    url = "https://amitmerchant.com"
+    favicon = "https://amitmerchant.com/favicon.ico"
+#</issue_372>
