@@ -472,3 +472,10 @@
     url = "https://bepbop.github.io"
     favicon = "https://bepbop.github.io/icon.svg"
 #</issue_416>
+
+#<issue_397>
+    [blog.johnysio]
+    name = "John YS"
+    url = "https://blog.johnys.io"
+    favicon = "https://blog.johnys.io/content/images/size/w256h256/2024/11/jys-profile-circle.png"
+#</issue_397>
