@@ -49,7 +49,7 @@ def build_json_prompt(issue_number, issue_id):
             "The domain part after 'blog.' should be in lowercase and always there. Make sure to letters are missing, even if they are duplicated. "
             "Include the file path where the blob needs to be inserted. The file path is of the pattern web/data/categories/REPLACE-CATEGORY-HERE/list.toml. "
             "The REPLACE-CATEGORY-HERE should match 1:1 the category that is provided in the issue body, in the Site category section."
-            "The TOML content should NOT contain any properties other than name, url, and favicon. If other properties are present, the results will be considered incorrect. "
+            "The TOML content should NOT contain any properties other than `name`, `url`, `favicon`, and `updated`. `updated` should be the current ISO-8601 date. If other properties are present, the results will be considered incorrect. "
             "Return data in JSON format (just the JSON). JSON response should have two properties - `content` for the TOML content, and `file_path` for the file path."
             "UNDER NO CIRCUMSTANCES in the response you produce should you include Markdown markers (```) that delineate the code fragment."
             "Just return the raw JSON without the triple ticks. If your response contains ```, it will be considered incorrect."
