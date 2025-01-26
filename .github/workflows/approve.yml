@@ -165,7 +165,7 @@ jobs:
 
             # Use sed to replace the entire block
             sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
-      $replacement_block" "$file_path"
+            $replacement_block" "$file_path"
 
             echo "File amended successfully."
           else
