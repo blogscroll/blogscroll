@@ -45,6 +45,8 @@ def build_json_prompt(issue_number, issue_id):
             "If the generated TOML does not represent the CURRENT ISSUE BODY, it will be considered incorrect. "
             "The result ID (in square brackets) should always be in the form [blog.] where what follows after the period is the site domain part from the Site URL section without the protocol, and the periods are omitted entirely. "
             "Just in the TOML header (between square brackets) that represents the site there could be only alphanumeric characters. No hyphens, underscores, or any other special characters. "
+            "The [blog.] part should be in lowercase and ALWAYS there. The period separating it from the rest should ALWAYS be there. "
+            "The domain part after 'blog.' should be in lowercase and always there. Make sure to letters are missing, even if they are duplicated. "
             "Include the file path where the blob needs to be inserted. The file path is of the pattern web/data/categories/REPLACE-CATEGORY-HERE/list.toml. "
             "The REPLACE-CATEGORY-HERE should match 1:1 the category that is provided in the issue body, in the Site category section."
             "The TOML content should NOT contain any properties other than name, url, and favicon. If other properties are present, the results will be considered incorrect. "
