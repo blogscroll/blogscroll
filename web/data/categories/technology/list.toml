@@ -854,3 +854,10 @@
     url = "https://digi-ing.de/en/"
     favicon = "https://digi-ing.de/wp-content/uploads/2020/05/cropped-Digi-Ing_ohne_Schrift-1.jpg"
 #</issue_401>
+
+#<issue_399>
+    [blog.manpreetfyi]
+    name = "Manpreet Kunnath"
+    url = "https://manpreet.fyi/"
+    favicon = "https://manpreet.fyi/favicon.ico"
+#</issue_399>
