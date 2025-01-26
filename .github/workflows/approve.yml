@@ -155,10 +155,22 @@ jobs:
           echo "Amending file: $file_path for issue #${issue_number}"
 
           if [[ -f "$file_path" ]]; then
-            sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
-                #<issue_${issue_number}>\\
-                $(echo "$toml_content" | sed 's/^/    /')\\
-                #</issue_${issue_number}>" "$file_path"
+            # Prepare the replacement content in a temporary file
+            {
+              echo "#<issue_${issue_number}>"
+              echo "$toml_content"
+              echo "#</issue_${issue_number}>"
+            } > temp_replacement.txt
+
+            # Use sed to replace the block with the new content
+            sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/{
+              r temp_replacement.txt
+              d
+            }" "$file_path"
+
+            # Clean up the temporary file
+            rm -f temp_replacement.txt
+
             echo "File amended successfully."
           else
             echo "File $file_path does not exist. Cannot amend."
