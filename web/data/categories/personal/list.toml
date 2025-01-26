@@ -430,3 +430,24 @@
     url = "https://spenc.es/"
     favicon = "https://spenc.es/favicon-16x16.png"
     updated = "2025-01-10T11:46:00+0200"
+
+#<issue_443>
+    [blog.pkworldxyz]
+    name = "Pavel Kovar"
+    url = "https://pkworld.xyz/"
+    favicon = "https://pkworld.xyz/favicon.svg"
+#</issue_443>
+
+#<issue_434>
+    [blog.ricossite]
+    name = "Rico Trebeljahr"
+    url = "https://ricos.site"
+    favicon = "https://ricos.site/favicon/favicon-32x32.png"
+#</issue_434>
+
+#<issue_431>
+    [blog.ewprattencom]
+    name = "Evan Pratten"
+    url = "https://ewpratten.com"
+    favicon = "https://ewp.fyi/pfp.png"
+#</issue_431>
