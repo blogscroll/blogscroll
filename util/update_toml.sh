@@ -4,8 +4,17 @@ set -e  # Exit on error
 issue_json="$1"
 issue_number="$2"
 
+echo "------------- ISSUE JSON -------------"
+echo "$issue_json"
+echo "--------------------------------------"
+echo "------------- ISSUE NUMBER -----------"
+echo "$issue_number"
+echo "--------------------------------------"
+
 # Extract fields from JSON
+echo "Extracing file path..."
 file_path=$(echo "$issue_json" | jq -r '.file_path')
+echo "Extracing content..."
 content=$(echo "$issue_json" | jq -r '.content')
 
 # Indent content by 4 spaces
