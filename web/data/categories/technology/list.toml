@@ -826,3 +826,10 @@
     url = "https://nelson.cloud/"
     favicon = "https://nelson.cloud/favicon-32x32.png"
     updated = "2025-01-23T18:50:46Z"
+#<issue_427>
+    [bloglukesalamonecom]
+    name = "Luke Salamone"
+    url = "https://blog.lukesalamone.com/"
+    favicon = "https://blog.lukesalamone.com/favicon.ico"
+    
+#</issue_427>
