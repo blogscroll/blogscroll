@@ -507,3 +507,10 @@
     url = "https://www.harshkn.com"
     favicon = "https://www.harshkn.com/favicon.ico"
 #</issue_373>
+
+#<issue_377>
+    [blog.justuspw]
+    name = "Justus Perlwitz"
+    url = "https://www.justus.pw/"
+    favicon = "https://www.justus.pw/favicon.png"
+#</issue_377>
