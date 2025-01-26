@@ -114,7 +114,7 @@ def main():
 
     # Endpoints
     token_endpoint = "https://github.com/github-copilot/chat/token"
-    thread_bootstrap_url = "https://api.individual.githubcopilot.com/github/chat/threads"
+    thread_bootstrap_endpoint = "https://api.individual.githubcopilot.com/github/chat/threads"
 
     # Fetch API token
     #print("Fetching API token...")
@@ -122,24 +122,24 @@ def main():
 
     # Bootstrap a thread
     #print("Bootstrapping thread...")
-    thread_state = bootstrap_thread(api_token, thread_bootstrap_url)
+    thread_state = bootstrap_thread(api_token, thread_bootstrap_endpoint)
     thread_id = thread_state['thread_id']
     #print(f"Thread ID: {thread_id}")
 
     # Build and send conversation prompt
     json_prompt = build_json_prompt(issue_id=issue_id, issue_number=issue_number)
-    thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
+    thread_conversation_endpoint = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}/messages"
     #print(f"Sending conversation prompt to thread {thread_id}...")
-    response_content = fetch_thread_responses(api_token, json_prompt, thread_conversation_url)
+    response_content = fetch_thread_responses(api_token, json_prompt, thread_conversation_endpoint)
 
     # Print the final response
     #print("Response from thread:")
 
     print(response_content)
 
-    thread_conversation_url = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}"
+    thread_conversation_endpoint = f"https://api.individual.githubcopilot.com/github/chat/threads/{thread_id}"
     #print(f'{thread_conversation_url} deleting...')
-    thread_deleted = delete_thread(api_token, thread_conversation_url)
+    thread_deleted = delete_thread(api_token, thread_conversation_endpoint)
 
 
 if __name__ == "__main__":

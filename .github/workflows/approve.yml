@@ -74,6 +74,7 @@ jobs:
           echo "Issue number: ${{ github.event.issue.number }}"
 
       - name: Get issue ID
+        if: steps.check_comment.outputs.approved == 'true'
         id: get_issue_id
         uses: actions/github-script@v6
         with:
@@ -86,6 +87,7 @@ jobs:
             core.setOutput('issue_id', issue.data.id);
 
       - name: Echo issue ID
+        if: steps.check_comment.outputs.approved == 'true'
         run: |
           echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
 
