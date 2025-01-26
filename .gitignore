@@ -1,2 +1,4 @@
 *.lock
 public/
+.env/
+__pycache__/

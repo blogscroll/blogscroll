@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v2
+
       - name: Check comment author and content
         id: check_comment
         uses: actions/github-script@v6
@@ -25,18 +27,173 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            await github.rest.issues.removeLabel({
+            const issueLabels = await github.rest.issues.listLabelsOnIssue({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.number,
-              name: 'needs-triage'
+              issue_number: context.issue.number
             });
 
-            await github.rest.issues.addLabels({
+            const labels = issueLabels.data.map(label => label.name);
+
+            if (labels.includes('needs-triage')) {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'needs-triage'
+              });
+            }
+
+            if (!labels.includes('approved')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: ['approved']
+              });
+            }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        if: steps.check_comment.outputs.approved == 'true'
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        if: steps.check_comment.outputs.approved == 'true'
+        working-directory: util
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check issue number
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          echo "Issue number: ${{ github.event.issue.number }}"
+
+      - name: Get issue ID
+        if: steps.check_comment.outputs.approved == 'true'
+        id: get_issue_id
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const issue = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+            core.setOutput('issue_id', issue.data.id);
+
+      - name: Echo issue ID
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          echo "Issue ID: ${{ steps.get_issue_id.outputs.issue_id }}"
+
+      - name: Run copilot-automation script
+        id: run_copilot_automation
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          set -e  # Exit on error
+          output=$(python -m copilot-automation \
+            --session-id "${{ secrets.SESSION_ID }}" \
+            --issue-number "${{ github.event.issue.number }}" \
+            --issue-id "${{ steps.get_issue_id.outputs.issue_id }}")
+          
+          echo "Raw output:"
+          echo "$output"
+
+          # Escape the JSON output for GITHUB_OUTPUT
+          escaped_output=$(echo "$output" | jq -c .)
+          echo "issue_json=$escaped_output" >> $GITHUB_OUTPUT
+        working-directory: util
+
+      - name: Create and switch to new branch
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          git fetch origin
+          if git show-ref --quiet refs/remotes/origin/automation-update; then
+            git checkout automation-update
+            git pull origin automation-update
+          else
+            git checkout -b automation-update
+          fi
+
+      - name: Check for TOML content and update file
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          issue_json='${{ steps.run_copilot_automation.outputs.issue_json }}'
+          issue_number='${{ github.event.issue.number }}'
+          ./util/update_toml.sh "$issue_json" "$issue_number"
+
+      - name: Commit changes
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          issue_number=${{ github.event.issue.number }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Fixes #${issue_number}"
+
+      - name: Push changes
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          git push --set-upstream origin automation-update
+
+      - name: Check for existing pull request
+        if: steps.check_comment.outputs.approved == 'true'
+        id: check_pr
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const prs = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              head: `${context.repo.owner}:automation-update`,
+              base: 'main',
+              state: 'open'
+            });
+            if (prs.data.length > 0) {
+              core.setOutput('pr_exists', 'true');
+              core.setOutput('pr_id', prs.data[0].number);
+            } else {
+              core.setOutput('pr_exists', 'false');
+            }
+
+      - name: Create pull request
+        if: steps.check_comment.outputs.approved == 'true' && steps.check_pr.outputs.pr_exists == 'false'
+        id: create_pr
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const pr = await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Automatic fixes based on approvals`,
+              head: 'automation-update',
+              base: 'main',
+              body: 'This PR adds websites that were approved in the BlogScroll issue tracker.'
+            });
+            const fs = require('fs');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `pr_id=${pr.data.number}\n`);
+
+      - name: Post comment on issue
+        if: steps.check_comment.outputs.approved == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const commit = await github.rest.repos.listCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: 'automation-update',
+              per_page: 1
+            });
+            const commit_id = commit.data[0].sha;
+            const pr_id = '${{ steps.check_pr.outputs.pr_exists }}' === 'true' ? '${{ steps.check_pr.outputs.pr_id }}' : '${{ steps.create_pr.outputs.pr_id }}';
+            await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              labels: ['approved']
+              body: `Commit was created to fix #${context.issue.number}: ${commit_id}. You can track the change propagation in #${pr_id}`
             });
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

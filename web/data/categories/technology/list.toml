@@ -814,3 +814,71 @@
     url = "https://www.jacquescorbytuech.com/"
     favicon = "https://www.jacquescorbytuech.com/core/misc/favicon.ico"
     updated = "2025-01-13T11:57:00+0200"
+
+    [blogs.frederickvanbrabantcom]
+    title = "Frederick Vanbrabant"
+    url = "https://frederickvanbrabant.com/"
+    favicon = "https://frederickvanbrabant.com/images/favicon_hu599050eff2131ff884e6a5ecaf3c86b4_8258_144x0_resize_lanczos_3.png"
+    updated = "2025-01-23T18:48:37Z"
+
+    [blogs.nelsoncloud]
+    title = "Nelson Figueroa"
+    url = "https://nelson.cloud/"
+    favicon = "https://nelson.cloud/favicon-32x32.png"
+    updated = "2025-01-23T18:50:46Z"
+
+#<issue_427>
+    [blog.bloglukesalamonecom]
+    name = "Luke Salamone"
+    url = "https://blog.lukesalamone.com/"
+    favicon = "https://blog.lukesalamone.com/favicon.ico"
+#</issue_427>
+
+#<issue_417>
+    [blog.ryanlynchme]
+    name = "Ryan Lynch"
+    url = "https://ryanlynch.me"
+    favicon = "https://ryanlynch.me/pages/Favicons/favicon-192x192.png"
+#</issue_417>
+
+#<issue_415>
+    [blog.vitochincom]
+    name = "Vito Chin"
+    url = "https://vitochin.com"
+    favicon = "https://vitoc.azurewebsites.net/images/siteicon.jpg"
+#</issue_415>
+
+#<issue_401>
+    [blog.digiingde]
+    name = "Digi-Ing"
+    url = "https://digi-ing.de/en/"
+    favicon = "https://digi-ing.de/wp-content/uploads/2020/05/cropped-Digi-Ing_ohne_Schrift-1.jpg"
+#</issue_401>
+
+#<issue_399>
+    [blog.manpreetfyi]
+    name = "Manpreet Kunnath"
+    url = "https://manpreet.fyi/"
+    favicon = "https://manpreet.fyi/favicon.ico"
+#</issue_399>
+
+#<issue_394>
+    [blog.saltycrane]
+    name = "SaltyCrane"
+    url = "https://www.saltycrane.com/"
+    favicon = "https://www.saltycrane.com/favicon.ico"
+#</issue_394>
+
+#<issue_372>
+    [blog.amitmerchantcom]
+    name = "Amit Merchant"
+    url = "https://amitmerchant.com"
+    favicon = "https://amitmerchant.com/favicon.ico"
+#</issue_372>
+
+#<issue_387>
+    [blog.tomkennescom]
+    name = "Tom Kennes"
+    url = "https://tomkennes.com"
+    favicon = "https://tomkennes.com/favicon.ico"
+#</issue_387>

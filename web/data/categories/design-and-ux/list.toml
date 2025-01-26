@@ -209,12 +209,6 @@
 	favicon = "https://cdn.prod.website-files.com/5f87969568dd5c6d4c225afb/5feda16a45a05d71c2487ae2_sparkles-favicon.png"
 	updated = "2024-09-01T14:00:00-0700"
 
-	[blogs.kristjanposkacom]
-	title = "Kristjan Poska"
-	url = "https://www.kristjanposka.com"
-	favicon = "https://www.kristjanposka.com/favicon-32x32.png"
-	updated = "2024-09-01T14:00:00-0700"
-
 	[blogs.adiac]
 	title = "Adi Chakravarty"
 	url = "https://adi.ac"
