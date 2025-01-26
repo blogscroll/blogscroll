@@ -500,3 +500,10 @@
     url = "https://weberdominik.com/"
     favicon = "https://weberdominik.com/favicon.svg"
 #</issue_382>
+
+#<issue_373>
+    [blog.harshkn]
+    name = "Harsha K N"
+    url = "https://www.harshkn.com"
+    favicon = "https://www.harshkn.com/favicon.ico"
+#</issue_373>
