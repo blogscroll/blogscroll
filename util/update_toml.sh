@@ -3,7 +3,7 @@ set -e  # Exit on error
 
 issue_json="$1"
 file_path=$(echo "$issue_json" | jq -r '.file_path')
-content=$(echo "$issue_json" | jq -r '.content' | sed 's/^/    /')
+content=$(echo "$issue_json" | jq -r '.content' | jq -sRr @sh | sed 's/^/    /')
 issue_number="$2"
 
 echo "Processing file: $file_path for issue #${issue_number}"
@@ -23,16 +23,14 @@ EOF
 
     # Use sed to replace the entire block
     sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
-#<issue_${issue_number}>\\
-$(echo "$content" | sed 's/^/    /')\\
-#</issue_${issue_number}>" "$file_path"
+$replacement_block" "$file_path"
 
     echo "File amended successfully."
   else
     echo "TOML content not found"
 
     echo "Appending TOML content to file: $file_path for issue #${issue_number}"
-    echo -e "\n#<issue_${issue_number}>\n$(echo "$content" | sed 's/^/    /')\n#</issue_${issue_number}>" >> "$file_path"
+    echo -e "\n#<issue_${issue_number}>\n$content\n#</issue_${issue_number}>" >> "$file_path"
     echo "Content appended successfully."
   fi
 else
