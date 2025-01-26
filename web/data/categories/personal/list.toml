@@ -458,3 +458,10 @@
     url = "https://tylerknowsnothing.com"
     favicon = "https://tylerknowsnothing.com/favicon.ico"
 #</issue_424>
+
+#<issue_420>
+    [blog.brenttercom]
+    name = "Everythings Better With Brentter"
+    url = "https://brentter.com"
+    favicon = "https://brentter.com/favicon.ico"
+#</issue_420>
