@@ -173,7 +173,8 @@ jobs:
               base: 'main',
               body: 'This PR fixes issue #${context.issue.number}.'
             });
-            echo "pr_id=${pr.data.number}" >> $GITHUB_OUTPUT
+            const fs = require('fs');
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `pr_id=${pr.data.number}\n`);
 
       - name: Post comment on issue
         if: steps.check_comment.outputs.approved == 'true'
