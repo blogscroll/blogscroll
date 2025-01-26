@@ -155,21 +155,17 @@ jobs:
           echo "Amending file: $file_path for issue #${issue_number}"
 
           if [[ -f "$file_path" ]]; then
-            # Prepare the replacement content in a temporary file
-            {
-              echo "#<issue_${issue_number}>"
-              echo "$toml_content"
-              echo "#</issue_${issue_number}>"
-            } > temp_replacement.txt
+            # Prepare the replacement block
+            replacement_block=$(cat <<EOF
+    #<issue_${issue_number}>
+    $toml_content
+    #</issue_${issue_number}>
+    EOF
+            )
 
-            # Use sed to replace the block with the new content
-            sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/{
-              r temp_replacement.txt
-              d
-            }" "$file_path"
-
-            # Clean up the temporary file
-            rm -f temp_replacement.txt
+            # Use sed to replace the entire block
+            sed -i "/#<issue_${issue_number}>/,/#<\/issue_${issue_number}>/c\\
+      $replacement_block" "$file_path"
 
             echo "File amended successfully."
           else
