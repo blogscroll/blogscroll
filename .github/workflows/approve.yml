@@ -107,6 +107,17 @@ jobs:
           echo "issue_json=$escaped_output" >> $GITHUB_OUTPUT
         working-directory: util
 
+      - name: Create and switch to new branch
+        if: steps.check_comment.outputs.approved == 'true'
+        run: |
+          git fetch origin
+          if git show-ref --quiet refs/remotes/origin/automation-update; then
+            git checkout automation-update
+            git pull origin automation-update
+          else
+            git checkout -b automation-update
+          fi
+    
       - name: Check for TOML content
         if: steps.check_comment.outputs.approved == 'true'
         id: check_toml
@@ -173,11 +184,6 @@ jobs:
             exit 1
           fi
 
-      - name: Create and switch to new branch
-        if: steps.check_comment.outputs.approved == 'true'
-        run: |
-          git checkout -b automation-update
-
       - name: Commit changes
         if: steps.check_comment.outputs.approved == 'true'
         run: |
@@ -190,7 +196,6 @@ jobs:
       - name: Push changes
         if: steps.check_comment.outputs.approved == 'true'
         run: |
-          git pull origin automation-update --rebase
           git push --set-upstream origin automation-update
 
       - name: Check for existing pull request
