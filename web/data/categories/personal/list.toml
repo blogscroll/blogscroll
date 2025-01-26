@@ -456,7 +456,7 @@
     [blog.tylerknowsnothingcom]
     name = "Tyler Knows Nothing"
     url = "https://tylerknowsnothing.com"
-    favicon = "https://tylerknowsnothing.com/favicon.ico"
+    favicon = "/generic.ico"
 #</issue_424>
 
 #<issue_420>
