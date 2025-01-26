@@ -105,8 +105,8 @@ jobs:
           echo "$output"
 
           # Escape the JSON output for GITHUB_OUTPUT
-          escaped_output=$(echo "$output" | jq -c . | sed "s/'/\\\'/g")
-          echo "issue_json=$escaped_output" >> $GITHUB_OUTPUT
+          escaped_output=$(echo "$output" | jq -c . | sed 's/"/\\"/g' | sed "s/'/\\\'/g")
+          echo "issue_json=\"$escaped_output\"" >> $GITHUB_OUTPUT
         working-directory: util
 
       - name: Create and switch to new branch
