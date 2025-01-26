@@ -444,3 +444,11 @@
     url = "https://ricos.site"
     favicon = "https://ricos.site/favicon/favicon-32x32.png"
 #</issue_434>
+
+#<issue_431>
+    [blog.ewprattencom]
+    name = "Evan Pratten"
+    url = "https://ewpratten.com"
+    favicon = "https://ewp.fyi/pfp.png"
+    
+#</issue_431>
