@@ -157,10 +157,10 @@ jobs:
           if [[ -f "$file_path" ]]; then
             # Prepare the replacement block
             replacement_block=$(cat <<EOF
-    #<issue_${issue_number}>
-    $toml_content
-    #</issue_${issue_number}>
-    EOF
+              #<issue_${issue_number}>
+              $toml_content
+              #</issue_${issue_number}>
+              EOF
             )
 
             # Use sed to replace the entire block
