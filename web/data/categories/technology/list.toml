@@ -890,3 +890,11 @@
     favicon = "https://tomkennes.com/favicon.ico"
     updated = "2025-01-25T11:00:00+0200"
 #</issue_387>
+
+#<issue_462>
+    [blog.clemsaucom]
+    name = "Clément Sauvage"
+    url = "https://www.clemsau.com/"
+    favicon = "https://www.clemsau.com/favicon.ico"
+    updated = "2025-01-28T05:20:48+00:00"
+#</issue_462>
