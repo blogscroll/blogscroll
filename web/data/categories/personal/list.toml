@@ -540,3 +540,11 @@
     favicon = "https://asterisk.lol/favicon.ico"
     updated = "2025-01-26T21:02:32Z"
 #</issue_391>
+
+#<issue_461>
+    [blog.kemalearth]
+    name = "kemal.earth"
+    url = "https://kemal.earth"
+    favicon = "https://kemal.earth/favicon.ico"
+    updated = "2025-01-28T05:20:19Z"
+#</issue_461>
