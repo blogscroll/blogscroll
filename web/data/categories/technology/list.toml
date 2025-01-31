@@ -580,7 +580,7 @@
     url = "https://ashconnolly.com"
     favicon = "https://ashconnolly.com/favicon.png"
     updated = "2024-09-01T14:00:00-0700"
-      
+
     [blogs.gabewolfordcom]
     title = "Gabe Wolford"
     url = "https://gabewolford.com"
@@ -784,6 +784,12 @@
     url = "https://hernandis.me/"
     favicon = "https://hernandis.me/static/favicon.png"
     updated = "2024-07-19T10:00:00+0100"
+
+    [blogs.darekkaycom]
+    title = "Darek Kay"
+    url = "https://darekkay.com/"
+    favicon = "https://darekkay.com/favicon.ico"
+    updated = "2025-01-29T19:00:00+0100"
 
     [blogs.ninioninarskicom]
     title = "Nikolay Ninarski"
