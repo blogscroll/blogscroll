@@ -556,3 +556,11 @@
     favicon = "https://nathanupchurch.com/img/logo_favicon.svg"
     updated = "2025-01-31T18:22:16+00:00"
 #</issue_465>
+
+#<issue_343>
+    [blog.hankruigercom]
+    name = "hankruiger.com"
+    url = "https://www.hankruiger.com"
+    favicon = ""
+    updated = "2025-01-31T18:49:24+00:00"
+#</issue_343>
