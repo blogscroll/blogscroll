@@ -567,8 +567,8 @@
 
 #<issue_341>
     [blog.kennethreitzorg]
-    name = "kennethreitz"
+    name = "Kenneth Reitz"
     url = "https://kennethreitz.org"
-    favicon = ""
+    favicon = "https://kennethreitz.org/favicon.ico"
     updated = "2025-01-31T18:53:34Z"
 #</issue_341>
