@@ -120,10 +120,6 @@ def main():
     # Fetch API token
     #print("Fetching API token...")
     api_token = fetch_api_token(session_id, token_endpoint)
-    if not api_token:
-        raise Exception("API token is empty.")
-    else:
-        print("API token is not empty.")
 
     # Bootstrap a thread
     #print("Bootstrapping thread...")
