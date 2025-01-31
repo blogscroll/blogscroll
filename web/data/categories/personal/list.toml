@@ -404,7 +404,7 @@
     [blogs.rishikeshscom]
     title = "Rishikesh Sreehari"
     url = "https://rishikeshs.com/"
-    favicon = "https://rishikeshs.com/favicon.ico"
+    favicon = "/generic.ico"
     updated = "2025-01-08T15:55:00+04:00"
 
     [blogs.ttntmme]
