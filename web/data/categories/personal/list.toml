@@ -548,3 +548,11 @@
     favicon = "https://kemal.earth/favicon.ico"
     updated = "2025-01-28T05:20:19Z"
 #</issue_461>
+
+#<issue_465>
+    [blog.nathanupchurchcom]
+    name = "Nathan Upchurch"
+    url = "https://nathanupchurch.com/"
+    favicon = "https://nathanupchurch.com/img/logo_favicon.svg"
+    updated = "2025-01-31T18:22:16+00:00"
+#</issue_465>
