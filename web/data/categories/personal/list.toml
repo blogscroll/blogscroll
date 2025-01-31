@@ -574,9 +574,9 @@
 #</issue_341>
 
 #<issue_333>
-    [blog.thingelstadcom]
-    name = "thingelstad.com"
+    [blog.wwwthingelstadcom]
+    name = "Jamie Thingelstad"
     url = "https://www.thingelstad.com/"
-    favicon = ""
+    favicon = "https://micro.blog/jthingelstad/favicon.png"
     updated = "2025-01-31T20:01:38Z"
 #</issue_333>
