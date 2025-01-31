@@ -922,3 +922,11 @@
     favicon = "https://blog.kulman.sk/favicon.ico"
     updated = "2025-01-31T19:02:25+00:00"
 #</issue_338>
+
+#<issue_336>
+    [blog.primaryobjectscom]
+    name = "Primary Objects"
+    url = "https://www.primaryobjects.com"
+    favicon = ""
+    updated = "2025-01-31T20:01:54+00:00"
+#</issue_336>
