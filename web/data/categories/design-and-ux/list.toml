@@ -367,8 +367,8 @@
 
 #<issue_337>
     [blog.pierreio]
-    name = "Pierre.io"
+    name = "Pierre Nel"
     url = "https://pierre.io"
-    favicon = "https://pierre.io/favicon.ico"
+    favicon = "https://pierre.io/favicon-16x16.png"
     updated = "2025-01-31T20:02:27Z"
 #</issue_337>
