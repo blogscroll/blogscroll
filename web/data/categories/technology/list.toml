@@ -149,12 +149,6 @@
     favicon = "https://whizzoe.com/assets/images/favicon.png"
     updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.candicepooncom]
-    title = "Candice Poon"
-    url = "https://www.candicepoon.com/"
-    favicon = "https://assets.squarespace.com/universal/default-favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
-
     [blogs.celestineyehcom]
     title = "Celestine Yeh"
     url = "https://www.celestineyeh.com/"
@@ -243,12 +237,6 @@
     title = "Shayne Boyer"
     url = "https://tattoocoder.com/"
     favicon = "https://tattoocoder.com/favicon.ico"
-    updated = "2024-09-01T14:00:00-0700"
-
-    [blogs.arafattehsincom]
-    title = "Arafat Tehsin"
-    url = "https://www.arafattehsin.com"
-    favicon = "https://www.arafattehsin.com/wp-content/uploads/2018/09/logo.png"
     updated = "2024-09-01T14:00:00-0700"
 
     [blogs.zerowidthjoinernet]
