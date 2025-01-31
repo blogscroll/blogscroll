@@ -556,3 +556,19 @@
     favicon = "https://nathanupchurch.com/img/logo_favicon.svg"
     updated = "2025-01-31T18:22:16+00:00"
 #</issue_465>
+
+#<issue_343>
+    [blog.wwwhankruigercom]
+    name = "Han Kruiger"
+    url = "https://www.hankruiger.com"
+    favicon = "https://www.hankruiger.com/favicon.jpg"
+    updated = "2025-01-31T18:49:24+00:00"
+#</issue_343>
+
+#<issue_341>
+    [blog.kennethreitzorg]
+    name = "Kenneth Reitz"
+    url = "https://kennethreitz.org"
+    favicon = "https://kennethreitz.org/favicon.ico"
+    updated = "2025-01-31T18:53:34Z"
+#</issue_341>

@@ -898,3 +898,19 @@
     url = "https://karnwong.me/"
     favicon = "https://karnwong.me/img/favicon.ico"
     updated = "2025-01-30T10:56:00+0100"
+
+#<issue_344>
+    [blog.andyterrelus]
+    name = "Andy Terrel"
+    url = "https://andy.terrel.us"
+    favicon = "/generic.ico"
+    updated = "2025-01-31T18:32:32+00:00"
+#</issue_344>
+
+#<issue_342>
+    [blog.isorame]
+    name = "Alexander Isora"
+    url = "https://isora.me/"
+    favicon = "https://unicorn-images.b-cdn.net/4494795e-a3be-4655-a89f-c5f4f130b006?optimizer=gif"
+    updated = "2025-01-31T18:51:41+00:00"
+#</issue_342>
