@@ -898,3 +898,9 @@
     favicon = "https://www.clemsau.com/favicon.ico"
     updated = "2025-01-28T05:20:48+00:00"
 #</issue_462>
+
+    [blogs.karnwongme]
+    title = "Karn Wong"
+    url = "https://karnwong.me/"
+    favicon = "https://karnwong.me/img/favicon.ico"
+    updated = "2025-01-30T10:56:00+0100"
