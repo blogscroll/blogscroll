@@ -914,3 +914,11 @@
     favicon = "https://unicorn-images.b-cdn.net/4494795e-a3be-4655-a89f-c5f4f130b006?optimizer=gif"
     updated = "2025-01-31T18:51:41+00:00"
 #</issue_342>
+
+#<issue_338>
+    [blog.kulmansk]
+    name = "Kulman's Blog"
+    url = "https://blog.kulman.sk"
+    favicon = ""
+    updated = "2025-01-31T19:02:25+00:00"
+#</issue_338>
