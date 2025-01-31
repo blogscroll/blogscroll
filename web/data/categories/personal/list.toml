@@ -572,3 +572,11 @@
     favicon = "https://kennethreitz.org/favicon.ico"
     updated = "2025-01-31T18:53:34Z"
 #</issue_341>
+
+#<issue_333>
+    [blog.wwwthingelstadcom]
+    name = "Jamie Thingelstad"
+    url = "https://www.thingelstad.com/"
+    favicon = "https://micro.blog/jthingelstad/favicon.png"
+    updated = "2025-01-31T20:01:38Z"
+#</issue_333>
