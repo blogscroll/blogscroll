@@ -13,7 +13,7 @@ echo "--------------------------------------"
 
 # Extract fields from JSON
 echo "Extracing file path..."
-file_path=$(echo "$issue_json" | jq -r '.file_path')
+file_path=$(echo "$issue_json" | jq -r '.file_path' | tr '[:upper:]' '[:lower:]')
 echo "Extracing content..."
 content=$(echo "$issue_json" | jq -r '.content')
 
