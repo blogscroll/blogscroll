@@ -564,3 +564,11 @@
     favicon = "https://www.hankruiger.com/favicon.jpg"
     updated = "2025-01-31T18:49:24+00:00"
 #</issue_343>
+
+#<issue_341>
+    [blog.kennethreitzorg]
+    name = "kennethreitz"
+    url = "https://kennethreitz.org"
+    favicon = ""
+    updated = "2025-01-31T18:53:34Z"
+#</issue_341>
