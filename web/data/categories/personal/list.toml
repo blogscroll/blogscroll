@@ -558,9 +558,9 @@
 #</issue_465>
 
 #<issue_343>
-    [blog.hankruigercom]
-    name = "hankruiger.com"
+    [blog.wwwhankruigercom]
+    name = "Han Kruiger"
     url = "https://www.hankruiger.com"
-    favicon = ""
+    favicon = "https://www.hankruiger.com/favicon.jpg"
     updated = "2025-01-31T18:49:24+00:00"
 #</issue_343>
