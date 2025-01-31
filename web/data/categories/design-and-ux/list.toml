@@ -364,3 +364,11 @@
     url = "https://ericwbailey.website/"
     favicon = "https://ericwbailey.website/favicon.ico"
     updated = "2025-01-12T14:00:00-0700"
+
+#<issue_337>
+    [blog.pierreio]
+    name = "Pierre.io"
+    url = "https://pierre.io"
+    favicon = "https://pierre.io/favicon.ico"
+    updated = "2025-01-31T20:02:27Z"
+#</issue_337>
