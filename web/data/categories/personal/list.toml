@@ -583,8 +583,8 @@
 
 #<issue_329>
     [blog.abishekmuthiancom]
-    name = "abishekmuthian.com"
+    name = "Abishek Muthian"
     url = "https://abishekmuthian.com/"
-    favicon = ""
+    favicon = "https://abishekmuthian.com/icons/TheTallestDwarf_logo-96x96.png"
     updated = "2025-02-01T02:25:43+00:00"
 #</issue_329>
