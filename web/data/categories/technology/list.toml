@@ -930,3 +930,19 @@
     favicon = "https://www.primaryobjects.com/favicon.ico"
     updated = "2025-01-31T20:01:54+00:00"
 #</issue_336>
+
+#<issue_335>
+    [blog.jonathanricolive]
+    name = "Jonathan Rico"
+    url = "https://jonathan.rico.live/"
+    favicon = "https://jonathan.rico.live/favicon.ico"
+    updated = "2025-02-01T02:25:32Z"
+#</issue_335>
+
+#<issue_328>
+    [blog.thejeshgncom]
+    name = "Thejesh GN"
+    url = "https://thejeshgn.com"
+    favicon = "https://thejeshgn.com/wp-content/uploads/2015/08/cropped-thejeshgn_icon1-150x150.png"
+    updated = "2025-02-01T02:25:55Z"
+#</issue_328>

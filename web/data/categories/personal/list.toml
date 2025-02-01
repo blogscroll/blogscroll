@@ -580,3 +580,11 @@
     favicon = "https://micro.blog/jthingelstad/favicon.png"
     updated = "2025-01-31T20:01:38Z"
 #</issue_333>
+
+#<issue_329>
+    [blog.abishekmuthiancom]
+    name = "Abishek Muthian"
+    url = "https://abishekmuthian.com/"
+    favicon = "https://abishekmuthian.com/icons/TheTallestDwarf_logo-96x96.png"
+    updated = "2025-02-01T02:25:43+00:00"
+#</issue_329>
