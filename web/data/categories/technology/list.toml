@@ -933,9 +933,9 @@
 
 #<issue_335>
     [blog.jonathanricolive]
-    name = "Jonathan Rico Live"
+    name = "Jonathan Rico"
     url = "https://jonathan.rico.live/"
-    favicon = ""
+    favicon = "https://jonathan.rico.live/favicon.ico"
     updated = "2025-02-01T02:25:32Z"
 #</issue_335>
 
@@ -943,6 +943,6 @@
     [blog.thejeshgncom]
     name = "Thejesh GN"
     url = "https://thejeshgn.com"
-    favicon = ""
+    favicon = "https://thejeshgn.com/wp-content/uploads/2015/08/cropped-thejeshgn_icon1-150x150.png"
     updated = "2025-02-01T02:25:55Z"
 #</issue_328>
