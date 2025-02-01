@@ -938,3 +938,11 @@
     favicon = ""
     updated = "2025-02-01T02:25:32Z"
 #</issue_335>
+
+#<issue_328>
+    [blog.thejeshgncom]
+    name = "Thejesh GN"
+    url = "https://thejeshgn.com"
+    favicon = ""
+    updated = "2025-02-01T02:25:55Z"
+#</issue_328>
