@@ -588,3 +588,9 @@
     favicon = "https://abishekmuthian.com/icons/TheTallestDwarf_logo-96x96.png"
     updated = "2025-02-01T02:25:43+00:00"
 #</issue_329>
+
+    [blog.jahirdev]
+    name = "Jahir Fiquitiva"
+    url = "https://jahir.dev"
+    favicon = "https://jahir.dev/media/brand/favicon114.png"
+    updated = "2025-02-03T00:00:00-05:00"
