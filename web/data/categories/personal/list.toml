@@ -616,3 +616,11 @@
     url = "https://jahir.dev"
     favicon = "https://jahir.dev/media/brand/favicon114.png"
     updated = "2025-02-05T00:00:00-05:00"
+
+#<issue_320>
+    [blog.boriskourtoukovcom]
+    name = "Boris Kourtoukov"
+    url = "https://boris.kourtoukov.com"
+    favicon = "https://boris.kourtoukov.com/favicon-32x32.png"
+    updated = "2025-02-05T18:46:56+00:00"
+#</issue_320>
