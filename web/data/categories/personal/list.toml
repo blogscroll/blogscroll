@@ -602,3 +602,11 @@
     favicon = "https://aitorres.com/favicon.ico"
     updated = "2025-02-05T04:19:13Z"
 #</issue_482>
+
+#<issue_479>
+    [blog.blogdlmwch]
+    name = "dlmw blog"
+    url = "https://blog.dlmw.ch/"
+    favicon = "https://blog.dlmw.ch/favicon.svg"
+    updated = "2025-02-05T04:22:20+00:00"
+#</issue_479>
