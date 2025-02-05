@@ -588,3 +588,11 @@
     favicon = "https://abishekmuthian.com/icons/TheTallestDwarf_logo-96x96.png"
     updated = "2025-02-01T02:25:43+00:00"
 #</issue_329>
+
+#<issue_482>
+    [blog.aitorrescom]
+    name = "andrés ignacio torres"
+    url = "https://aitorres.com"
+    favicon = "https://aitorres.com/favicon.ico"
+    updated = "2025-02-05T04:19:13Z"
+#</issue_482>
