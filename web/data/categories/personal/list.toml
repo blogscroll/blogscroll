@@ -621,6 +621,6 @@
     [blog.boriskourtoukovcom]
     name = "Boris Kourtoukov"
     url = "https://boris.kourtoukov.com"
-    favicon = ""
+    favicon = "https://boris.kourtoukov.com/favicon-32x32.png"
     updated = "2025-02-05T18:46:56+00:00"
 #</issue_320>
