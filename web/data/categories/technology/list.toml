@@ -946,9 +946,3 @@
     favicon = "https://thejeshgn.com/wp-content/uploads/2015/08/cropped-thejeshgn_icon1-150x150.png"
     updated = "2025-02-01T02:25:55Z"
 #</issue_328>
-
-    [blog.jahirdev]
-    name = "Jahir Fiquitiva"
-    url = "https://jahir.dev"
-    favicon = "https://jahir.dev/media/brand/favicon114.png"
-    updated = "2025-02-03T00:00:00-05:00"
