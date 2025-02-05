@@ -197,12 +197,6 @@
     favicon = "https://secure.gravatar.com/blavatar/9100f51f64391af7695250b9aaa8a75a"
     updated = "2024-09-01T14:00:00-0700"
 
-    [blogs.wwwvogueandcodecom]
-    title = "April Speight"
-    url = "https://www.vogueandcode.com/"
-    favicon = "https://images.squarespace-cdn.com/content/v1/65beb2b8bde0e14f769202a7/c1266f97-8eea-4c36-98bd-6aae8f99b8a1/favicon.ico?format=100w"
-    updated = "2025-01-06T14:00:00-0700"
-
     [blogs.cassidooco]
     title = "Cassidy Williams"
     url = "https://cassidoo.co/"
