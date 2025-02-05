@@ -610,3 +610,9 @@
     favicon = "https://blog.dlmw.ch/favicon.svg"
     updated = "2025-02-05T04:22:20+00:00"
 #</issue_479>
+
+    [blog.jahirdev]
+    name = "Jahir Fiquitiva"
+    url = "https://jahir.dev"
+    favicon = "https://jahir.dev/media/brand/favicon114.png"
+    updated = "2025-02-05T00:00:00-05:00"
