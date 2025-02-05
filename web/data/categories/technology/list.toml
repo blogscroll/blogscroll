@@ -940,3 +940,11 @@
     favicon = "https://thejeshgn.com/wp-content/uploads/2015/08/cropped-thejeshgn_icon1-150x150.png"
     updated = "2025-02-01T02:25:55Z"
 #</issue_328>
+
+#<issue_309>
+    [blog.blogterminalpink]
+    name = "Brian Mayer"
+    url = "https://blog.terminal.pink"
+    favicon = "/generic.ico"
+    updated = "2025-02-05T18:41:32+00:00"
+#</issue_309>
