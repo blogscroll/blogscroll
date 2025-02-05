@@ -589,6 +589,12 @@
     updated = "2025-02-01T02:25:43+00:00"
 #</issue_329>
 
+    [blogs.blogdarylsunpage]
+    title = "Daryl Sun's Journal"
+    url = "https://blog.darylsun.page/"
+    favicon = "https://cdn.darylsun.page/favicon.ico"
+    updated = "2025-02-01T22:00:32+08:00"
+
 #<issue_482>
     [blog.aitorrescom]
     name = "andrés ignacio torres"
