@@ -604,7 +604,7 @@
 #</issue_482>
 
 #<issue_479>
-    [blog.dlmwch]
+    [blog.blogdlmwch]
     name = "dlmw blog"
     url = "https://blog.dlmw.ch/"
     favicon = "https://blog.dlmw.ch/favicon.svg"
