@@ -951,16 +951,16 @@
 
 #<issue_241>
     [blog.valerocks]
-    name = "vale.rocks"
+    name = "Declan Chidlow"
     url = "https://vale.rocks"
-    favicon = "https://vale.rocks/favicon.ico"
+    favicon = "/generic.ico"
     updated = "2025-02-06T21:51:36Z"
 #</issue_241>
 
 #<issue_243>
-    [blog.vladsivcom]
-    name = "Vlad Siv"
+    [blog.wwwvladsivcom]
+    name = "Vladimir Sivcevic"
     url = "https://www.vladsiv.com/"
-    favicon = ""
+    favicon = "https://www.vladsiv.com/favicon-32x32.png"
     updated = "2025-02-06T21:51:53+00:00"
 #</issue_243>
