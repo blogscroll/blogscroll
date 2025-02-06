@@ -664,3 +664,11 @@
     favicon = "https://jamesg.blog/favicon.ico"
     updated = "2025-02-06T22:08:58+00:00"
 #</issue_319>
+
+#<issue_310>
+    [blog.martinirwin]
+    name = "martin-irwin"
+    url = "http://martin-irwin.github.io/"
+    favicon = "http://martin-irwin.github.io/favicon.ico"
+    updated = "2025-02-06T22:09:33Z"
+#</issue_310>
