@@ -377,14 +377,14 @@
     [blog.fabianhemmertcom]
     name = "Fabian Hemmert"
     url = "http://www.fabianhemmert.com"
-    favicon = ""
+    favicon = "https://www.fabianhemmert.com/assets/images/favicon/favicon.ico"
     updated = "2025-02-06T21:58:13+00:00"
 #</issue_244>
 
 #<issue_290>
     [blog.jshmllrcom]
-    name = "JshMllr Design"
+    name = "Josh Miller"
     url = "http://jshmllr.com"
-    favicon = ""
+    favicon = "https://www.jshmllr.com/favicon.ico"
     updated = "2025-02-06T21:59:13+00:00"
 #</issue_290>
