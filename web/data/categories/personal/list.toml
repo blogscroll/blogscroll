@@ -642,17 +642,17 @@
 #</issue_240>
 
 #<issue_280>
-    [blog.justanotherinternetguy]
+    [blog.justanotherinternetguygtihubio]
     name = "Just Another Internet Guy"
     url = "https://justanotherinternetguy.github.io/"
-    favicon = ""
+    favicon = "/generic.icon"
     updated = "2025-02-06T21:58:25Z"
 #</issue_280>
 
 #<issue_285>
     [blog.gregtecheu]
-    name = "GregTech"
+    name = "Gregor Podjed"
     url = "https://blog.gregtech.eu/"
-    favicon = ""
+    favicon = "https://blog.gregtech.eu/static/kitty.png"
     updated = "2025-02-06T21:58:51Z"
 #</issue_285>
