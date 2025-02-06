@@ -948,3 +948,19 @@
     favicon = "/generic.ico"
     updated = "2025-02-05T18:41:32+00:00"
 #</issue_309>
+
+#<issue_241>
+    [blog.valerocks]
+    name = "Declan Chidlow"
+    url = "https://vale.rocks"
+    favicon = "/generic.ico"
+    updated = "2025-02-06T21:51:36Z"
+#</issue_241>
+
+#<issue_243>
+    [blog.wwwvladsivcom]
+    name = "Vladimir Sivcevic"
+    url = "https://www.vladsiv.com/"
+    favicon = "https://www.vladsiv.com/favicon-32x32.png"
+    updated = "2025-02-06T21:51:53+00:00"
+#</issue_243>
