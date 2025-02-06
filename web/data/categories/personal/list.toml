@@ -672,3 +672,11 @@
     favicon = "http://martin-irwin.github.io/favicon.ico"
     updated = "2025-02-06T22:09:33Z"
 #</issue_310>
+
+#<issue_306>
+    [blog.ericthomasca]
+    name = "Eric Thomas"
+    url = "https://ericthomas.ca"
+    favicon = ""
+    updated = "2025-02-06T22:11:46Z"
+#</issue_306>
