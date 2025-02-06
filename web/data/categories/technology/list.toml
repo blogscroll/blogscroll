@@ -964,3 +964,11 @@
     favicon = "https://www.vladsiv.com/favicon-32x32.png"
     updated = "2025-02-06T21:51:53+00:00"
 #</issue_243>
+
+#<issue_281>
+    [blog.aezarebskigithubio]
+    name = "Alexander Zarebski"
+    url = "https://aezarebski.github.io"
+    favicon = "https://aezarebski.github.io/resources/nicemacs-favicon.png"
+    updated = "2025-02-06T21:58:45Z"
+#</issue_281>
