@@ -956,3 +956,11 @@
     favicon = "https://vale.rocks/favicon.ico"
     updated = "2025-02-06T21:51:36Z"
 #</issue_241>
+
+#<issue_243>
+    [blog.vladsivcom]
+    name = "Vlad Siv"
+    url = "https://www.vladsiv.com/"
+    favicon = ""
+    updated = "2025-02-06T21:51:53+00:00"
+#</issue_243>
