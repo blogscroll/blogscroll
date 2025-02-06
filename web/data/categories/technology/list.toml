@@ -980,3 +980,11 @@
     favicon = ""
     updated = "2025-02-06T22:08:59+00:00"
 #</issue_315>
+
+#<issue_311>
+    [blog.paultottermanname]
+    name = "Paul Tötterman"
+    url = "https://paul.totterman.name"
+    favicon = ""
+    updated = "2025-02-06T22:09:27+00:00"
+#</issue_311>
