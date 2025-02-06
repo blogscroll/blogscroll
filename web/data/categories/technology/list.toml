@@ -988,3 +988,11 @@
     favicon = ""
     updated = "2025-02-06T22:09:27+00:00"
 #</issue_311>
+
+#<issue_299>
+    [blog.aneeshsathecom]
+    name = "aneeshsathe.com"
+    url = "https://aneeshsathe.com"
+    favicon = ""
+    updated = "2025-02-06T22:09:41+00:00"
+#</issue_299>
