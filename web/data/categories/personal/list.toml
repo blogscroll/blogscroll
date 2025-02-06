@@ -635,8 +635,8 @@
 
 #<issue_240>
     [blog.vreemancom]
-    name = "vreeman.com"
+    name = "Simon Vreeman"
     url = "https://vreeman.com"
-    favicon = ""
+    favicon = "https://vreeman.com/favicon.ico"
     updated = "2025-02-06T21:50:13Z"
 #</issue_240>
