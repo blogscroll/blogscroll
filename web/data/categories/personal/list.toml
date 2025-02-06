@@ -648,3 +648,11 @@
     favicon = ""
     updated = "2025-02-06T21:58:25Z"
 #</issue_280>
+
+#<issue_285>
+    [blog.gregtecheu]
+    name = "GregTech"
+    url = "https://blog.gregtech.eu/"
+    favicon = ""
+    updated = "2025-02-06T21:58:51Z"
+#</issue_285>
