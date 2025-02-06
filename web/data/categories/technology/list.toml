@@ -996,3 +996,11 @@
     favicon = ""
     updated = "2025-02-06T22:09:41+00:00"
 #</issue_299>
+
+#<issue_307>
+    [blog.chrisritchieorgkilroy]
+    name = "Chris Ritchie's Kilroy"
+    url = "https://chrisritchie.org/kilroy/"
+    favicon = ""
+    updated = "2025-02-06T22:11:39+00:00"
+#</issue_307>
