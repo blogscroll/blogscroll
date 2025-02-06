@@ -680,3 +680,11 @@
     favicon = ""
     updated = "2025-02-06T22:11:46Z"
 #</issue_306>
+
+#<issue_301>
+    [blog.wwwalexschemagincom]
+    name = "AlexSchemagin.com"
+    url = "https://www.alexschemagin.com"
+    favicon = ""
+    updated = "2025-02-06T22:32:40Z"
+#</issue_301>
