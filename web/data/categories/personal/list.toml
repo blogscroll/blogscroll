@@ -688,3 +688,11 @@
     favicon = ""
     updated = "2025-02-06T22:32:40Z"
 #</issue_301>
+
+#<issue_277>
+    [blog.rosia.me]
+    name = "Rosia"
+    url = "https://rosia.me"
+    favicon = "https://rosia.me/favicon.ico"
+    updated = "2025-02-06T22:33:08Z"
+#</issue_277>
