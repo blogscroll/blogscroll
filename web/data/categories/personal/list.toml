@@ -640,3 +640,11 @@
     favicon = "https://vreeman.com/favicon.ico"
     updated = "2025-02-06T21:50:13Z"
 #</issue_240>
+
+#<issue_280>
+    [blog.justanotherinternetguy]
+    name = "Just Another Internet Guy"
+    url = "https://justanotherinternetguy.github.io/"
+    favicon = ""
+    updated = "2025-02-06T21:58:25Z"
+#</issue_280>
