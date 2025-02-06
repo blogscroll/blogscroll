@@ -372,3 +372,11 @@
     favicon = "https://pierre.io/favicon-16x16.png"
     updated = "2025-01-31T20:02:27Z"
 #</issue_337>
+
+#<issue_244>
+    [blog.fabianhemmertcom]
+    name = "Fabian Hemmert"
+    url = "http://www.fabianhemmert.com"
+    favicon = ""
+    updated = "2025-02-06T21:58:13+00:00"
+#</issue_244>
