@@ -656,3 +656,9 @@
     favicon = "https://blog.gregtech.eu/static/kitty.png"
     updated = "2025-02-06T21:58:51Z"
 #</issue_285>
+
+    [blogs.somerbynetmack]
+    title = "MacKenzie Cumings"
+    url = "https://somerby.net/mack/"
+    favicon = "https://somerby.net/mack/favicon.ico"
+    updated = "2025-02-09T20:04:50+0000"
