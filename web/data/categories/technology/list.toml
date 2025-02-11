@@ -975,9 +975,9 @@
 
 #<issue_315>
     [blog.danieldkeu]
-    name = "danieldk.eu"
+    name = "Daniël de Kok"
     url = "https://danieldk.eu/"
-    favicon = ""
+    favicon = "https://danieldk.eu/static/icon.png"
     updated = "2025-02-06T22:08:59+00:00"
 #</issue_315>
 
@@ -985,30 +985,30 @@
     [blog.paultottermanname]
     name = "Paul Tötterman"
     url = "https://paul.totterman.name"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2025-02-06T22:09:27+00:00"
 #</issue_311>
 
 #<issue_299>
     [blog.aneeshsathecom]
-    name = "aneeshsathe.com"
+    name = "Aneesh Sathe"
     url = "https://aneeshsathe.com"
-    favicon = ""
+    favicon = "https://aneeshsathe.com/wp-content/uploads/2025/01/cropped-img_0621.jpeg?w=32"
     updated = "2025-02-06T22:09:41+00:00"
 #</issue_299>
 
 #<issue_307>
     [blog.chrisritchieorgkilroy]
-    name = "Chris Ritchie's Kilroy"
+    name = "Chris Ritchie"
     url = "https://chrisritchie.org/kilroy/"
-    favicon = ""
+    favicon = "https://chrisritchie.org/kilroy/res/favicon.ico"
     updated = "2025-02-06T22:11:39+00:00"
 #</issue_307>
 
 #<issue_305>
     [blog.qsantosfr]
-    name = "Qsantos"
+    name = "Quentin Santos"
     url = "https://qsantos.fr/"
-    favicon = ""
+    favicon = "https://i0.wp.com/qsantos.fr/wp-content/uploads/2022/07/avatar.png?fit=29%2C32&ssl=1"
     updated = "2025-02-06T22:12:01+00:00"
 #</issue_305>

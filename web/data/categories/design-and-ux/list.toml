@@ -393,6 +393,6 @@
     [blog.guilhermesimoescom]
     name = "Guilherme Simoes"
     url = "https://guilhermesimoes.com/"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2025-02-06T22:32:56+00:00"
 #</issue_275>
