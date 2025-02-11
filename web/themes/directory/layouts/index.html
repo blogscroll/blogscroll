@@ -9,32 +9,41 @@
         <div class="site-title">
             <p>Welcome to BlogScroll! 👋</p>
             <p>This is an open directory of personal sites and blogs, maintained entirely <a class="blog-link" href="https://github.com/blogscroll/blogscroll">on GitHub</a>.</p>
-            <p>This project was created by <a href="https://den.dev"  class="blog-link">Den Delimarsky</a> in an effort to bring attention to little 🌱 digital gardens and ✨ personal corners of the internet that people maintain outside the "Big Tech" walled gardens. We're all better off maintaining homegrown corners of the Internet.</p>
+            <p>This project was created by <a href="https://den.dev" class="blog-link">Den Delimarsky</a> in an effort to bring attention to little 🌱 digital gardens and ✨ personal corners of the internet that people maintain outside the "Big Tech" walled gardens. We're all better off maintaining homegrown corners of the Internet.</p>
             <p>If you prefer not to use GitHub to make your contribution, you can also send me a note to <kbd>hi@den.dev</kbd> and I will happily review and publish it.</p>
-            <p>You can also subscribe to the <a class="blog-link" href="/index.xml">RSS feed</a> to stay up-to-date on latest additions.</p>
+            <p>You can also subscribe to the <a class="blog-link" href="/index.xml">RSS feed</a> to stay up-to-date on the latest additions.</p>
         </div>
+
         <div class="link-container" id="link-container">
         {{ range .Site.Data }}
-            {{ range $key, $value := . }}
+            {{ range $fileKey, $fileData := . }}
                 <div class="category-container">
-                    <h3>{{ $key }}</h3>
+                    <h3>{{ $fileKey }}</h3>
+                    
                     {{ $totalBlogs := 0 }}
-                    {{ range $blogkey, $blogval := $value }}
-                        {{ $totalBlogs = add $totalBlogs (len $blogval.blogs) }}
+                    {{ range $categoryKey, $categoryData := $fileData }}
+                        {{ if isset $categoryData "blogs" }}
+                            {{ $totalBlogs = add $totalBlogs (len $categoryData.blogs) }}
+                        {{ end }}
                     {{ end }}
-                    <h4><strong>{{ $totalBlogs }}</strong> Entries</h4>                         
-                    {{ range $blogkey, $blogval := $value }}
-                        {{ $sortedBlogs := sort $blogval.blogs "title" }}
-                        {{ range $sortedBlogs }}
-                            <div class="blog-item">
-                                <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
-                                <p><a class="blog-link" href="{{ .url }}">{{ .title }}</a></p>
-                            </div>
+
+                    <h4><strong>{{ $totalBlogs }}</strong> Entries</h4>
+
+                    {{ range $categoryKey, $categoryData := $fileData }}
+                        {{ if isset $categoryData "blogs" }}
+                            {{ $sortedBlogs := sort $categoryData.blogs "title" }}
+                            {{ range $sortedBlogs }}
+                                <div class="blog-item">
+                                    {{ if .favicon }}
+                                        <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
+                                    {{ end }}
+                                    <p><a class="blog-link" href="{{ .url }}">{{ .title | htmlEscape }}</a></p>
+                                </div>
+                            {{ end }}
                         {{ end }}
                     {{ end }}
                 </div>
             {{ end }}
-        </div>
         {{ end }}
         </div>
     </body>
