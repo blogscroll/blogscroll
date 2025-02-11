@@ -656,3 +656,51 @@
     favicon = "https://blog.gregtech.eu/static/kitty.png"
     updated = "2025-02-06T21:58:51Z"
 #</issue_285>
+
+#<issue_319>
+    [blog.jamesgblog]
+    name = "James"
+    url = "https://jamesg.blog"
+    favicon = "https://jamesg.blog/assets/mascot/mascot.svg"
+    updated = "2025-02-06T22:08:58+00:00"
+#</issue_319>
+
+#<issue_310>
+    [blog.martinirwin]
+    name = "Martin Irwin"
+    url = "http://martin-irwin.github.io/"
+    favicon = "/generic.ico"
+    updated = "2025-02-06T22:09:33Z"
+#</issue_310>
+
+#<issue_306>
+    [blog.ericthomasca]
+    name = "Eric Thomas"
+    url = "https://ericthomas.ca"
+    favicon = "https://ericthomas.ca/favicon-32x32.png"
+    updated = "2025-02-06T22:11:46Z"
+#</issue_306>
+
+#<issue_301>
+    [blog.wwwalexschemagincom]
+    name = "Alex Schemagin"
+    url = "https://www.alexschemagin.com"
+    favicon = "https://www.alexschemagin.com/img/favicon.png"
+    updated = "2025-02-06T22:32:40Z"
+#</issue_301>
+
+#<issue_277>
+    [blog.rosiame]
+    name = "Rosia Evans"
+    url = "https://rosia.me"
+    favicon = "https://rosia.me/willow.ico"
+    updated = "2025-02-06T22:33:08Z"
+#</issue_277>
+
+#<issue_284>
+    [blog.martinruecom]
+    name = "Martin Rue"
+    url = "https://martinrue.com"
+    favicon = "https://martinrue.com/assets/images/favicon/favicon-32x32.png"
+    updated = "2025-02-06T22:33:12+00:00"
+#</issue_284>

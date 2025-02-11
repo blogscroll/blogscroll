@@ -388,3 +388,11 @@
     favicon = "https://www.jshmllr.com/favicon.ico"
     updated = "2025-02-06T21:59:13+00:00"
 #</issue_290>
+
+#<issue_275>
+    [blog.guilhermesimoescom]
+    name = "Guilherme Simoes"
+    url = "https://guilhermesimoes.com/"
+    favicon = "/generic.ico"
+    updated = "2025-02-06T22:32:56+00:00"
+#</issue_275>
