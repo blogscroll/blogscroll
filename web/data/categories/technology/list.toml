@@ -1097,45 +1097,45 @@
     [blogs.flaviocopescom]
     title = "Flavio Copes"
     url = "https://flaviocopes.com"
-    favicon = ""
+    favicon = "https://flaviocopes.com/favicon.ico"
     updated = "2025-02-17T00:00:00Z"
 #</issue_289>
 
 #<issue_292>
     [blogs.pertdev]
-    title = "pert.dev"
+    title = "Rupert Carr"
     url = "https://pert.dev"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2025-02-17T00:00:00Z"
 #</issue_292>
 
 #<issue_294>
     [blogs.vashishthain]
-      title = "Blog of Vashishtha"
-      url = "http://blog.vashishtha.in/"
-      favicon = ""
-      updated = "2025-02-17T00:00:00Z"
+    title = "Kart"
+    url = "http://blog.vashishtha.in/"
+    favicon = "https://blog.vashishtha.in/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
 #</issue_294>
 
 #<issue_298>
     [blogs.tsuguxyz]
-    title = "Tsugu.xyz"
+    title = "Tsugu"
     url = "https://tsugu.xyz"
-    favicon = ""
+    favicon = "https://tsugu.xyz/images/favicon.webp"
     updated = "2025-02-17T19:46:43Z"
 #</issue_298>
 
 #<issue_314>
     [blogs.joethordev]
-    title = "joethor.dev"
+    title = "Joe Thor"
     url = "https://joethor.dev"
-    favicon = ""
+    favicon = "/generic.ico"
     updated = "2025-02-17T00:00:00Z"
 #</issue_314>
 
 #<issue_525>
     [blogs.hamishcampbellcom]
-    title = "https://hamishcampbell.com"
+    title = "Hamish Campbell"
     url = "https://hamishcampbell.com"
     favicon = "https://hamishcampbell.com/wp-content/uploads/2024/03/fire.png"
     updated = "2025-02-17T00:00:00Z"

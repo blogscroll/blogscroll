@@ -793,31 +793,31 @@
 
 #<issue_287>
     [blogs.mmathiascom]
-      title = "mmathias.com"
+      title = "Mathias Müller"
       url = "https://mmathias.com/"
-      favicon = ""
+      favicon = "https://mmathias.com/assets/icons/icon.svg"
       updated = "2025-02-17T00:00:00Z"
 #</issue_287>
 
 #<issue_296>
     [blogs.andereggca]
-    title = "[SITE REQUEST]"
+    title = "Gavin Anderegg"
     url = "https://anderegg.ca"
-    favicon = ""
+    favicon = "https://anderegg.ca/favicon.ico"
     updated = "2025-02-17T19:46:30Z"
 #</issue_296>
 
 #<issue_530>
     [blogs.simonecomputer]
-    title = "Simone's Computer"
+    title = "Simone"
     url = "https://simone.computer"
-    favicon = "https://simone.computer/favicon-32x32.png"
+    favicon = "https://simone.computer/android-chrome-192x192.png"
     updated = "2025-02-17T00:00:00Z"
 #</issue_530>
 
 #<issue_527>
     [blogs.simplyjoejenettcom]
-    title = "simply."
+    title = "joe jenett"
     url = "https://simply.joejenett.com/"
     favicon = "https://simply.joejenett.com/images/oj-0623-32.png"
     updated = "2025-02-17T19:50:05Z"
