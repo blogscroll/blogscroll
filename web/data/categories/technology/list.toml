@@ -1020,3 +1020,11 @@
     favicon = "https://tiniuc.com/favicon.ico"
     updated = "2025-02-17T00:00:00Z"
 #</issue_247>
+
+#<issue_248>
+    [blogs.drashsmithcom]
+      title = "drashsmith"
+      url = "https://www.drashsmith.com/"
+      favicon = ""
+      updated = "2025-02-17T00:00:00Z"
+#</issue_248>
