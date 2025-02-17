@@ -803,6 +803,12 @@
     favicon = "https://nelson.cloud/favicon-32x32.png"
     updated = "2025-01-23T18:50:46Z"
 
+    [blogs.nickgndcom]
+    title = "Nicolò Gnudi"
+    url = "https://nickgnd.com/"
+    favicon = "https://nickgnd.com/favicon-32x32.png"
+    updated = "2025-02-14T00:00:00Z"
+
 #<issue_427>
     [blogs.bloglukesalamonecom]
     title = "Luke Salamone"

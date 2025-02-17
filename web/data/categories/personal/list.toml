@@ -713,6 +713,12 @@
     updated = "2025-02-11T05:08:00Z"
 #</issue_261>
 
+    [blogs.yuval]
+    title = "Yuval Adam"
+    url = "https://yuv.al"
+    favicon = "https://yuv.al/static/img/favicon.png"
+    updated = "2025-02-11T12:00:00Z"
+
 #<issue_245>
     [blogs.arachnoidcom]
     title = "Paul Lutus"
