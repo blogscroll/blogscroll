@@ -399,9 +399,8 @@
 
 #<issue_256>
     [blogs.arbourtrarycom]
-    
-    title = "Arbourtrary"
+    title = "David Newcomb"
     url = "https://arbourtrary.com/"
-    favicon = ""
+    favicon = "https://arbourtrary.com/images/arbourtrary-32x32.png"
     updated = "2025-02-17T19:17:42Z"
 #</issue_256>
