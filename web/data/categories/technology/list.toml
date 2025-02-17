@@ -1012,3 +1012,83 @@
     favicon = "https://i0.wp.com/qsantos.fr/wp-content/uploads/2022/07/avatar.png?fit=29%2C32&ssl=1"
     updated = "2025-02-06T22:12:01Z"
 #</issue_305>
+
+#<issue_247>
+    [blogs.tiniuccom]
+    title = "Alex Tiniuc"
+    url = "https://tiniuc.com/"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_247>
+
+#<issue_248>
+    [blogs.drashsmithcom]
+    title = "Ash Smith"
+    url = "https://www.drashsmith.com/"
+    favicon = "https://www.drashsmith.com/static/icon.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_248>
+
+#<issue_249>
+    [blogs.interfacinglinuxcom]
+    title = "Venn Stone"
+    url = "https://interfacinglinux.com/"
+    favicon = "https://interfacinglinux.com/wp-content/uploads/2024/01/cropped-favicontrans-32x32.webp"
+    updated = "2025-02-17T19:15:22Z"
+#</issue_249>
+
+#<issue_253>
+    [blogs.blogshaishavkr]
+    title = "Shaishav Kr"
+    url = "https://blog.shaishav.kr/"
+    favicon = "https://blog.shaishav.kr/assets/images/favicon.png"
+    updated = "2025-02-17T19:16:24Z"
+#</issue_253>
+
+#<issue_258>
+    [blogs.abgnme]
+    title = "Albin Groen"
+    url = "https://abgn.me"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_258>
+
+#<issue_259>
+    [blogs.ym2132githubio]
+    title = "Yusuf Mohammad"
+    url = "https://ym2132.github.io"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T19:26:11Z"
+#</issue_259>
+
+#<issue_279>
+    [blogs.jensrantilgithubioposts]
+    title = "Jens Rantil"
+    url = "https://jensrantil.github.io/posts/"
+    favicon = "https://jensrantil.github.io/images/favicon.svg"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_279>
+
+#<issue_271>
+    [blogs.untestedsonnetio]
+      title = "Rafał Pastuszak"
+      url = "https://untested.sonnet.io"
+      favicon = "https://untested.sonnet.io/assets/favicons/icon-32.png"
+      updated = "2025-02-17T00:00:00Z"
+#</issue_271>
+
+#<issue_273>
+    [blogs.aayushsahucom]
+    title = "Aayush Sahu"
+    url = "https://aayushsahu.com/"
+    favicon = "https://aayushsahu.com/favicon-32x32.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_273>
+
+#<issue_274>
+    [blogs.imrankhancom]
+    title = "Imran Khan"
+    url = "https://imran-khan.com"
+    favicon = "https://imran-khan.com/favicon-16x16.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_274>
