@@ -930,3 +930,10 @@
     url = "https://izzys.casa/"
     favicon = "/generic.ico"
     updated = "2025-02-17T14:00:00Z"
+
+    [blogs.spences]
+    title = "Spencer Scorcelletti"
+    url = "http://spenc.es"
+    favicon = "https://spenc.es/favicon.ico?v=4"
+    updated = "2025-02-17T14:00:00Z"
+
