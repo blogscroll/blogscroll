@@ -1076,3 +1076,11 @@
       favicon = ""
       updated = "2025-02-17T00:00:00Z"
 #</issue_271>
+
+#<issue_273>
+    [blogs.aayushsahucom]
+    title = "Aayush Sahu's Blog"
+    url = "https://aayushsahu.com/"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_273>
