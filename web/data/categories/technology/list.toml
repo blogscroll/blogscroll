@@ -1116,3 +1116,11 @@
       favicon = ""
       updated = "2025-02-17T00:00:00Z"
 #</issue_294>
+
+#<issue_298>
+    [blogs.tsuguxyz]
+    title = "Tsugu.xyz"
+    url = "https://tsugu.xyz"
+    favicon = ""
+    updated = "2025-02-17T19:46:43Z"
+#</issue_298>
