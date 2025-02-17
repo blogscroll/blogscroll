@@ -1124,3 +1124,11 @@
     favicon = ""
     updated = "2025-02-17T19:46:43Z"
 #</issue_298>
+
+#<issue_314>
+    [blogs.joethordev]
+    title = "joethor.dev"
+    url = "https://joethor.dev"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_314>
