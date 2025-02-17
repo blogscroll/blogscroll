@@ -790,3 +790,11 @@
     favicon = "https://www.skruban.com/images/site/totodile.gif"
     updated = "2025-02-17T00:00:00Z"
 #</issue_276>
+
+#<issue_287>
+    [blogs.mmathiascom]
+      title = "mmathias.com"
+      url = "https://mmathias.com/"
+      favicon = ""
+      updated = "2025-02-17T00:00:00Z"
+#</issue_287>
