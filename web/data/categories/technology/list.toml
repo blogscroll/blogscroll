@@ -1036,3 +1036,11 @@
     favicon = ""
     updated = "2025-02-17T19:15:22Z"
 #</issue_249>
+
+#<issue_253>
+    [blogs.blogshaishavkr]
+    title = "Blog of Shaishav"
+    url = "https://blog.shaishav.kr/"
+    favicon = ""
+    updated = "2025-02-17T19:16:24Z"
+#</issue_253>
