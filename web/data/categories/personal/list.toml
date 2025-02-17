@@ -14,7 +14,7 @@
     [blogs.bryanhogancom]
     title = "Bryan Hogan"
     url = "https://bryanhogan.com/"
-    favicon = "https://bryanhogan.com/logos/fav/favicon.ico"
+    favicon = "https://bryanhogan.com/favicon.ico"
     updated = "2025-01-11T14:00:00Z"
 
     [blogs.robertkingettcom]
@@ -200,7 +200,7 @@
     [blogs.ronaldsvilcinscom]
     title = "Ronalds Vilciņš"
     url = "https://ronaldsvilcins.com/"
-    favicon = "https://ronaldsvilcins.com/icon.png"
+    favicon = "https://ronaldsvilcins.com/favicon.png"
     updated = "2025-01-02T14:00:00Z"
 
     [blogs.homehedydev]
@@ -328,12 +328,6 @@
     url = "https://blog.jatinnagpal.com/"
     favicon = "/generic.ico"
     updated = "2025-01-04T06:22:00Z"
-
-    [blogs.krajtilakvercelapp]
-    title = "K. Rajtilak"
-    url = "https://krajtilak.vercel.app"
-    favicon = "https://krajtilak.vercel.app/assets/img/favicon.ico"
-    updated = "2025-01-04T08:20:05Z"
 
     [blogs.dbohdancom]
     title = "D. Bohdan"
@@ -724,3 +718,197 @@
     url = "https://yuv.al"
     favicon = "https://yuv.al/static/img/favicon.png"
     updated = "2025-02-11T12:00:00Z"
+
+#<issue_245>
+    [blogs.arachnoidcom]
+    title = "Paul Lutus"
+    url = "https://arachnoid.com"
+    favicon = "https://arachnoid.com/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_245>
+
+#<issue_250>
+    [blogs.eyalgorencom]
+    title = "Eyal Goren"
+    url = "https://eyalgoren.com/blog"
+    favicon = "https://eyalgoren.com/favicon.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_250>
+
+#<issue_254>
+    [blogs.disruptingjapan]
+      title = "Tim Romero"
+      url = "https://www.disruptingjapan.com"
+      favicon = "https://substackcdn.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F58879cc3-9806-4513-a6b9-410bd727c5c2_1280x1280.png"
+      updated = "2025-02-17T19:17:20Z"
+#</issue_254>
+
+#<issue_260>
+    [blogs.jcarlosroldancom]
+    title = "J. Carlos Roldán"
+    url = "https://jcarlosroldan.com"
+    favicon = "https://jcarlosroldan.com/img/icon/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_260>
+
+#<issue_262>
+    [blogs.jakereichcouk]
+    title = "Jake Reich"
+    url = "https://www.jake-reich.co.uk/"
+    favicon = "https://www.jake-reich.co.uk/icon.png?31612e76cc4f190c"
+    updated = "2025-02-17T19:26:24Z"
+#</issue_262>
+
+#<issue_264>
+    [blogs.koehring]
+    title = "Norman Koehring"
+    url = "https://koehr.ing"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_264>
+
+#<issue_266>
+    [blogs.andrewkdinhcom]
+    title = "Andrew K. Dinh"
+    url = "https://andrewkdinh.com"
+    favicon = "https://andrewkdinh.com/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_266>
+
+#<issue_272>
+    [blogs.cobbautbe]
+    title = "Paul Cobbaut"
+    url = "https://cobbaut.be/"
+    favicon = "https://cobbaut.be/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_272>
+
+#<issue_276>
+    [blogs.skrubancom]
+    title = "Ruban SK"
+    url = "https://www.skruban.com/"
+    favicon = "https://www.skruban.com/images/site/totodile.gif"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_276>
+
+#<issue_287>
+    [blogs.mmathiascom]
+      title = "Mathias Müller"
+      url = "https://mmathias.com/"
+      favicon = "https://mmathias.com/assets/icons/icon.svg"
+      updated = "2025-02-17T00:00:00Z"
+#</issue_287>
+
+#<issue_296>
+    [blogs.andereggca]
+    title = "Gavin Anderegg"
+    url = "https://anderegg.ca"
+    favicon = "https://anderegg.ca/favicon.ico"
+    updated = "2025-02-17T19:46:30Z"
+#</issue_296>
+
+#<issue_530>
+    [blogs.simonecomputer]
+    title = "Simone"
+    url = "https://simone.computer"
+    favicon = "https://simone.computer/android-chrome-192x192.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_530>
+
+#<issue_527>
+    [blogs.simplyjoejenettcom]
+    title = "joe jenett"
+    url = "https://simply.joejenett.com/"
+    favicon = "https://simply.joejenett.com/images/oj-0623-32.png"
+    updated = "2025-02-17T19:50:05Z"
+#</issue_527>
+
+    [blogs.tracydurnellcom]
+    title = "Tracy Durnell"
+    url = "https://tracydurnell.com"
+    favicon = "https://tracydurnell.com/favicon.ico"
+    updated = "2024-02-17T14:00:00Z"
+
+    [blogs.benkuhnnet]
+    title = "Ben Kuhn"
+    url = "https://www.benkuhn.net"
+    favicon = "https://www.benkuhn.net/favicon.ico"
+    updated = "2024-02-17T14:00:00Z"
+
+    [blogs.cassidooco]
+    title = "Cassidy Williams"
+    url = "https://cassidoo.co"
+    favicon = "https://cassidoo.co/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.sivers]
+    title = "Derek Sivers"
+    url = "https://sive.rs"
+    favicon = "https://sive.rs/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.todepondcom]
+    title = "Lu Wilson"
+    url = "https://www.todepond.com"
+    favicon = "https://www.todepond.com/favicon.png"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.bloggingerbeardmancom]
+    title = "Matt Sephton"
+    url = "https://blog.gingerbeardman.com"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.gwernnet]
+    title = "Gwern Branwen"
+    url = "https://gwern.net"
+    favicon = "https://gwern.net/static/img/logo/logo-favicon-small.png"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.jacobfilippcom]
+    title = "Jacob Filipp"
+    url = "https://jacobfilipp.com"
+    favicon = "https://jacobfilipp.com/wp-content/uploads/2024/01/cropped-favicon-32x32.gif"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.johnnywebbercom]
+    title = "Johnny Webber"
+    url = "https://johnnywebber.com"
+    favicon = "https://johnnywebber.com/wp-content/uploads/2024/10/cropped-me-32x32.png"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.rachsmithcom]
+    title = "Rach Smith"
+    url = "https://rachsmith.com"
+    favicon = "https://rachsmith.com/favicon-32x32.png"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.stevenscrawlscom]
+    title = "Steven Scrawls"
+    url = "https://stevenscrawls.com"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.bookofjoecom]
+    title = "Book of Joe"
+    url = "https://www.bookofjoe.com"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.winnielimorg]
+    title = "Winnie Lim"
+    url = "https://winnielim.org"
+    favicon = "https://winnielim.org/wp-includes/images/w-logo-blue-white-bg.png"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.taylortown]
+    title = "Taylor Troesh"
+    url = "https://taylor.town"
+    favicon = "https://taylor.town/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.wittegrondnet]
+    title = "Witte Grond"
+    url = "https://www.wittegrond.net/"
+    favicon = "https://www.wittegrond.net/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
