@@ -227,12 +227,6 @@
     favicon = "https://www.edfreitas.me/assets/img/favicon-16x16.png"
     updated = "2024-09-01T14:00:00Z"
 
-    [blogs.tattoocodercom]
-    title = "Shayne Boyer"
-    url = "https://tattoocoder.com/"
-    favicon = "https://tattoocoder.com/favicon.ico"
-    updated = "2024-09-01T14:00:00Z"
-
     [blogs.zerowidthjoinernet]
     title = "Melvyn Laïly"
     url = "https://zerowidthjoiner.net/"
@@ -435,12 +429,6 @@
     title = "Caleb Jay Rogers"
     url = "https://calebjay.com/"
     favicon = "https://calebjay.com/favicon.ico"
-    updated = "2024-09-01T14:00:00Z"
-
-    [blogs.0x8inblog]
-    title = "Omkar Khair"
-    url = "https://0x8.in/blog"
-    favicon = "/generic.ico"
     updated = "2024-09-01T14:00:00Z"
 
     [blogs.muhammadrazame]
