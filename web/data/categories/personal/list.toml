@@ -742,3 +742,11 @@
       favicon = "https://www.disruptingjapan.com/favicon.ico"
       updated = "2025-02-17T19:17:20Z"
 #</issue_254>
+
+#<issue_260>
+    [blogs.jcarlosroldancom]
+    title = "Carlos Roldán"
+    url = "https://jcarlosroldan.com"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_260>
