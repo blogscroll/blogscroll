@@ -1052,3 +1052,11 @@
     favicon = "https://abgn.me/favicon.ico"
     updated = "2025-02-17T00:00:00Z"
 #</issue_258>
+
+#<issue_259>
+    [blogs.ym2132githubio]
+    title = "YM2132 Blog"
+    url = "https://ym2132.github.io"
+    favicon = ""
+    updated = "2025-02-17T19:26:11Z"
+#</issue_259>
