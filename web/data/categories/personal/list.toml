@@ -774,3 +774,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_266>
+
+#<issue_272>
+    [blogs.cobbautbe]
+    title = "cobbaut.be"
+    url = "https://cobbaut.be/"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_272>
