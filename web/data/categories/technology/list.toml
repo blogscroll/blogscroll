@@ -1132,3 +1132,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_314>
+
+#<issue_525>
+    [blogs.hamishcampbellcom]
+    title = "https://hamishcampbell.com"
+    url = "https://hamishcampbell.com"
+    favicon = "https://hamishcampbell.com/wp-content/uploads/2024/03/fire.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_525>
