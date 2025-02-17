@@ -766,3 +766,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_264>
+
+#<issue_266>
+    [blogs.andrewkdinhcom]
+    title = "Andrew K. Dinh"
+    url = "https://andrewkdinh.com"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_266>
