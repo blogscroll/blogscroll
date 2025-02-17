@@ -1012,3 +1012,11 @@
     favicon = "https://i0.wp.com/qsantos.fr/wp-content/uploads/2022/07/avatar.png?fit=29%2C32&ssl=1"
     updated = "2025-02-06T22:12:01Z"
 #</issue_305>
+
+#<issue_247>
+    [blogs.tiniuccom]
+    title = "Tiniuc"
+    url = "https://tiniuc.com/"
+    favicon = "https://tiniuc.com/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_247>
