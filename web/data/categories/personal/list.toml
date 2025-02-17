@@ -782,3 +782,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_272>
+
+#<issue_276>
+    [blogs.skrubancom]
+    title = "skruban.com"
+    url = "https://www.skruban.com/"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_276>
