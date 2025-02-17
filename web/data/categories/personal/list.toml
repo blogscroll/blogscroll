@@ -918,3 +918,9 @@
     url = "https://invertedpassion.com/"
     favicon = "https://invertedpassion.com/wp-content/uploads/2018/04/cropped-inverted-passion-face-512-32x32.jpg"
     updated = "2025-02-17T14:00:00Z"
+
+    [blogs.simpleindustries]
+    title = "Kim Burgess"
+    url = "https://simple.industries/"
+    favicon = "https://simple.industries/icon.svg"
+    updated = "2025-02-17T14:00:00Z"
