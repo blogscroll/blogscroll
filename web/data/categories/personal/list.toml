@@ -718,3 +718,11 @@
     favicon = "https://www.marclittlemore.com/favicons/favicon-32x32.png"
     updated = "2025-02-11T05:08:00Z"
 #</issue_261>
+
+#<issue_245>
+    [blogs.arachnoidcom]
+    title = "Arachnoid.com"
+    url = "https://arachnoid.com"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_245>
