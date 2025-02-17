@@ -1028,3 +1028,11 @@
       favicon = ""
       updated = "2025-02-17T00:00:00Z"
 #</issue_248>
+
+#<issue_249>
+    [blogs.interfacinglinuxcom]
+    title = "interfacinglinux.com"
+    url = "https://interfacinglinux.com/"
+    favicon = ""
+    updated = "2025-02-17T19:15:22Z"
+#</issue_249>
