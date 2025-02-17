@@ -1140,3 +1140,33 @@
     favicon = "https://hamishcampbell.com/wp-content/uploads/2024/03/fire.png"
     updated = "2025-02-17T00:00:00Z"
 #</issue_525>
+
+    [blogs.brandurorg]
+    title = "Brandur"
+    url = "https://brandur.org"
+    favicon = "https://brandur.org/assets/images/favicon/favicon-32.jpg"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.byteszone]
+    title = "Brian Hicks"
+    url = "https://bytes.zone"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.fasterthanlime]
+    title = "Amos"
+    url = "https://fasterthanli.me"
+    favicon = "https://cdn.fasterthanli.me/content/img/favicon~679ae9c272874bba.webp"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.akkartikname]
+    title = "Kartik Agaram"
+    url = "https://akkartik.name"
+    favicon = "https://akkartik.name/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.bernsteinbearcom]
+    title = "Max Bernstein
+    url = "https://bernsteinbear.com"
+    favicon = "https://bernsteinbear.com/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"

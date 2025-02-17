@@ -404,3 +404,27 @@
     favicon = "https://arbourtrary.com/images/arbourtrary-32x32.png"
     updated = "2025-02-17T19:17:42Z"
 #</issue_256>
+
+	[blogs.schmudde]
+	title = "David Schmudde"
+	url = "https://schmud.de"
+	favicon = "https://schmud.de/favicon.ico"
+	updated = "2025-02-17T14:00:00Z"
+
+	[blogs.chrbutlercom]
+	title = "Christopher Butler"
+	url = "https://www.chrbutler.com"
+	favicon = "https://cdn.blot.im/blog_a7eb7cf1ab024efcb17c380ef69c53f4/_avatars/1976bb0f-a6df-4893-8fa7-367964b69a4e.png"
+	updated = "2025-02-17T14:00:00Z"
+
+	[blogs.interconnectedorg]
+	title = "Matt Webb"
+	url = "https://interconnected.org"
+	favicon = "/generic.ico"
+	updated = "2025-02-17T14:00:00Z"
+
+	[blogs.pkethorg]
+	title = "Pirijan"
+	url = "https://pketh.org"
+	favicon = "https://pketh.org/favicon.ico?v=3"
+	updated = "2025-02-17T14:00:00Z"
