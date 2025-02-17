@@ -750,3 +750,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_260>
+
+#<issue_262>
+    [blogs.jakereichcouk]
+    title = "Jake Reich"
+    url = "https://www.jake-reich.co.uk/"
+    favicon = ""
+    updated = "2025-02-17T19:26:24Z"
+#</issue_262>
