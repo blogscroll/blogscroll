@@ -1108,3 +1108,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_292>
+
+#<issue_294>
+    [blogs.vashishthain]
+      title = "Blog of Vashishtha"
+      url = "http://blog.vashishtha.in/"
+      favicon = ""
+      updated = "2025-02-17T00:00:00Z"
+#</issue_294>
