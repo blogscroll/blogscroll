@@ -1092,3 +1092,51 @@
     favicon = "https://imran-khan.com/favicon-16x16.png"
     updated = "2025-02-17T00:00:00Z"
 #</issue_274>
+
+#<issue_289>
+    [blogs.flaviocopescom]
+    title = "Flavio Copes"
+    url = "https://flaviocopes.com"
+    favicon = "https://flaviocopes.com/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_289>
+
+#<issue_292>
+    [blogs.pertdev]
+    title = "Rupert Carr"
+    url = "https://pert.dev"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_292>
+
+#<issue_294>
+    [blogs.vashishthain]
+    title = "Kart"
+    url = "http://blog.vashishtha.in/"
+    favicon = "https://blog.vashishtha.in/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_294>
+
+#<issue_298>
+    [blogs.tsuguxyz]
+    title = "Tsugu"
+    url = "https://tsugu.xyz"
+    favicon = "https://tsugu.xyz/images/favicon.webp"
+    updated = "2025-02-17T19:46:43Z"
+#</issue_298>
+
+#<issue_314>
+    [blogs.joethordev]
+    title = "Joe Thor"
+    url = "https://joethor.dev"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_314>
+
+#<issue_525>
+    [blogs.hamishcampbellcom]
+    title = "Hamish Campbell"
+    url = "https://hamishcampbell.com"
+    favicon = "https://hamishcampbell.com/wp-content/uploads/2024/03/fire.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_525>
