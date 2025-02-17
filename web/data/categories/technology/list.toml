@@ -1068,3 +1068,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_279>
+
+#<issue_271>
+    [blogs.untestedsonnetio]
+      title = "[SITE REQUEST]"
+      url = "https://untested.sonnet.io"
+      favicon = ""
+      updated = "2025-02-17T00:00:00Z"
+#</issue_271>
