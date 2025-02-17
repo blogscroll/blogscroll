@@ -798,3 +798,11 @@
       favicon = ""
       updated = "2025-02-17T00:00:00Z"
 #</issue_287>
+
+#<issue_296>
+    [blogs.andereggca]
+    title = "[SITE REQUEST]"
+    url = "https://anderegg.ca"
+    favicon = ""
+    updated = "2025-02-17T19:46:30Z"
+#</issue_296>
