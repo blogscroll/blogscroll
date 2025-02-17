@@ -814,3 +814,11 @@
     favicon = "https://simone.computer/favicon-32x32.png"
     updated = "2025-02-17T00:00:00Z"
 #</issue_530>
+
+#<issue_527>
+    [blogs.simplyjoejenettcom]
+    title = "simply."
+    url = "https://simply.joejenett.com/"
+    favicon = "https://simply.joejenett.com/images/oj-0623-32.png"
+    updated = "2025-02-17T19:50:05Z"
+#</issue_527>
