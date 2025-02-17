@@ -924,3 +924,9 @@
     url = "https://simple.industries/"
     favicon = "https://simple.industries/icon.svg"
     updated = "2025-02-17T14:00:00Z"
+
+    [blogs.izzyscasa]
+    title = "Izzy Muerte"
+    url = "https://izzys.casa/"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
