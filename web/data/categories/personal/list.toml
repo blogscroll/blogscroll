@@ -937,3 +937,8 @@
     favicon = "https://spenc.es/favicon.ico?v=4"
     updated = "2025-02-17T14:00:00Z"
 
+    [blogs.entropicthoughtscom]
+    title = "Chris "
+    url = "https://entropicthoughts.com"
+    favicon = "https://entropicthoughts.com/image/favicon/favicon-48x48.png"
+    updated = "2025-02-17T14:00:00Z"

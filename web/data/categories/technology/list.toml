@@ -1164,3 +1164,21 @@
     url = "https://bernsteinbear.com"
     favicon = "https://bernsteinbear.com/favicon.ico"
     updated = "2025-02-17T14:00:00Z"
+
+    [blogs.alecmuffettcom]
+    title = "Alec Muffett"
+    url = "https://alecmuffett.com/blog"
+    favicon = "https://alecmuffett.com/wp-content/uploads/2025/01/dropsafe-square-150x150.jpg"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.andreincnet]
+    title = "Andrei Ciobanu"
+    url = "https://www.andreinc.net/"
+    favicon = "/generic.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.jeffgeerlingcom]
+    title = "Jeff Geerling"
+    url = "https://www.jeffgeerling.com"
+    favicon = "https://www.jeffgeerling.com/themes/jeffgeerling/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
