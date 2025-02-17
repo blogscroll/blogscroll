@@ -1100,3 +1100,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_289>
+
+#<issue_292>
+    [blogs.pertdev]
+    title = "pert.dev"
+    url = "https://pert.dev"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_292>
