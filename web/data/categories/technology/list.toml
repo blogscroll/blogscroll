@@ -1084,3 +1084,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_273>
+
+#<issue_274>
+    [blogs.imrankhancom]
+    title = "Imran Khan"
+    url = "https://imran-khan.com"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_274>
