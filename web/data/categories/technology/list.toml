@@ -1092,3 +1092,11 @@
     favicon = "https://imran-khan.com/favicon-16x16.png"
     updated = "2025-02-17T00:00:00Z"
 #</issue_274>
+
+#<issue_289>
+    [blogs.flaviocopescom]
+    title = "Flavio Copes"
+    url = "https://flaviocopes.com"
+    favicon = ""
+    updated = "2025-02-17T00:00:00Z"
+#</issue_289>
