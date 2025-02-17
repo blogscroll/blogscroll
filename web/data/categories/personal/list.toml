@@ -726,3 +726,11 @@
     favicon = ""
     updated = "2025-02-17T00:00:00Z"
 #</issue_245>
+
+#<issue_250>
+    [blogs.eyalgorencom]
+    title = "Eyal Goren's Blog"
+    url = "https://eyalgoren.com/blog"
+    favicon = "https://eyalgoren.com/favicon.ico"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_250>
