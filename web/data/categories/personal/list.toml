@@ -806,3 +806,11 @@
     favicon = ""
     updated = "2025-02-17T19:46:30Z"
 #</issue_296>
+
+#<issue_530>
+    [blogs.simonecomputer]
+    title = "Simone's Computer"
+    url = "https://simone.computer"
+    favicon = "https://simone.computer/favicon-32x32.png"
+    updated = "2025-02-17T00:00:00Z"
+#</issue_530>
