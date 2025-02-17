@@ -902,7 +902,13 @@
     updated = "2025-02-17T14:00:00Z"
 
     [blogs.taylortown]
-    title = "Taylor Troesh "
+    title = "Taylor Troesh"
     url = "https://taylor.town"
     favicon = "https://taylor.town/favicon.ico"
+    updated = "2025-02-17T14:00:00Z"
+
+    [blogs.wittegrondnet]
+    title = "Witte Grond"
+    url = "https://www.wittegrond.net/"
+    favicon = "https://www.wittegrond.net/favicon.ico"
     updated = "2025-02-17T14:00:00Z"
