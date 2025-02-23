@@ -428,3 +428,11 @@
 	url = "https://pketh.org"
 	favicon = "https://pketh.org/favicon.ico?v=3"
 	updated = "2025-02-17T14:00:00Z"
+
+#<issue_563>
+    [blogs.dlayeu]
+    title = "Dlay.ey"
+    url = "https://dlay.eu"
+    favicon = "https://mataroa.blog/images/5fa5a325.png"
+    updated = "2025-02-23T02:15:48Z"
+#</issue_563>
