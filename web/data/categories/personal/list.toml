@@ -925,6 +925,12 @@
     favicon = "https://simple.industries/icon.svg"
     updated = "2025-02-17T14:00:00Z"
 
+    [peterspathnet]
+    title = "Peter's Path"
+    url = "https://peterspath.net/"
+    favicon = "https://peterspath.net/favicon.svg"
+    updated = "2025-03-18T14:00:00Z"
+
     [blogs.izzyscasa]
     title = "Izzy Muerte"
     url = "https://izzys.casa/"
