@@ -976,3 +976,11 @@
       favicon = "none"
       updated = "2025-06-18Z"
 #</issue_584>
+
+#<issue_598>
+    [blogs.bewildered]
+      title = "bewilde.red"
+      url = "https://bewilde.red/"
+      favicon = "https://bewilde.red/favicon.ico"
+      updated = "2025-06-18Z"
+#</issue_598>
