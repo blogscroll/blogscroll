@@ -946,41 +946,41 @@
 #</issue_672>
 
 #<issue_649>
-    [blogs.lloydatkinsonnet]
-      title = "Lloyd Atkinson"
-      url = "https://www.lloydatkinson.net/"
-      favicon = "https://www.lloydatkinson.net/favicon.svg"
-      updated = "2025-06-18Z"
+    [blogs.wwwlloydatkinsonnet]
+    title = "Lloyd Atkinson"
+    url = "https://www.lloydatkinson.net/"
+    favicon = "https://www.lloydatkinson.net/favicon.svg"
+    updated = "2025-06-18Z"
 #</issue_649>
 
 #<issue_597>
-    [blogs.wargaluk]
-      title = "wargaluk"
-      url = "https://wargaluk.com/"
-      favicon = "https://wargaluk.com/favicon.ico"
-      updated = "2025-06-18Z"
+    [blogs.wargalukcom]
+    title = "wargaluk"
+    url = "https://wargaluk.com/"
+    favicon = "https://wargaluk.com/favicon.ico"
+    updated = "2025-06-18Z"
 #</issue_597>
 
 #<issue_585>
-    [blogs.mihirnaikcom]
-      title = "Mihir Naik"
-      url = "https://www.mihirnaik.com"
-      favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
-      updated = "2025-06-18Z"
+    [blogs.wwwmihirnaikcom]
+    title = "Mihir Naik"
+    url = "https://www.mihirnaik.com"
+    favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
+    updated = "2025-06-18Z"
 #</issue_585>
 
 #<issue_584>
     [blogs.harrisonbroadbentcom]
-      title = "Harrison Broadbent"
-      url = "https://harrisonbroadbent.com"
-      favicon = "none"
-      updated = "2025-06-18Z"
+    title = "Harrison Broadbent"
+    url = "https://harrisonbroadbent.com"
+    favicon = "/generic.ico"
+    updated = "2025-06-18Z"
 #</issue_584>
 
 #<issue_598>
     [blogs.bewildered]
-      title = "bewilde.red"
-      url = "https://bewilde.red/"
-      favicon = "https://bewilde.red/favicon.ico"
-      updated = "2025-06-18Z"
+    title = "bewildered"
+    url = "https://bewilde.red/"
+    favicon = "https://bewilde.red/favicon.ico"
+    updated = "2025-06-18Z"
 #</issue_598>
