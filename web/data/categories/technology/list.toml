@@ -1193,8 +1193,8 @@
 
 #<issue_652>
     [blogs.timcappallime]
-      title = "Tim Cappalli (Timbits)"
-      url = "https://blog.timcappalli.me"
-      favicon = "https://blog.timcappalli.me/favicon.png"
-      updated = "2025-06-18Z"
+    title = "Tim Cappalli"
+    url = "https://blog.timcappalli.me"
+    favicon = "https://blog.timcappalli.me/favicon.png"
+    updated = "2025-06-18Z"
 #</issue_652>
