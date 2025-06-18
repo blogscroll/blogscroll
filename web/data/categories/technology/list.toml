@@ -1182,3 +1182,35 @@
     url = "https://www.jeffgeerling.com"
     favicon = "https://www.jeffgeerling.com/themes/jeffgeerling/favicon.ico"
     updated = "2025-02-17T14:00:00Z"
+
+#<issue_656>
+    [blogs.catalinstech]
+    title = "Catalin Pit"
+    url = "https://catalins.tech"
+    favicon = "https://catalins.tech/favicon.ico"
+    updated = "2025-06-18Z"
+#</issue_656>
+
+#<issue_652>
+    [blogs.timcappallime]
+    title = "Tim Cappalli"
+    url = "https://blog.timcappalli.me"
+    favicon = "https://blog.timcappalli.me/favicon.png"
+    updated = "2025-06-18Z"
+#</issue_652>
+
+#<issue_605>
+    [blogs.eklausmeiergoipde]
+    title = "Elmar Klausmeier"
+    url = "https://eklausmeier.goip.de"
+    favicon = "https://eklausmeier.goip.de/favicon.ico"
+    updated = "2025-06-18Z"
+#</issue_605>
+
+#<issue_641>
+    [blogs.lesleylaiinfo]
+    title = "Lesley Lai"
+    url = "https://lesleylai.info/"
+    favicon = "https://lesleylai.info/favicon-32x32.png"
+    updated = "2025-06-18Z"
+#</issue_641>

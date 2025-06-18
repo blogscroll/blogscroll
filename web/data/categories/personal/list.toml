@@ -936,3 +936,59 @@
     url = "https://entropicthoughts.com"
     favicon = "https://entropicthoughts.com/image/favicon/favicon-48x48.png"
     updated = "2025-02-17T14:00:00Z"
+
+#<issue_672>
+    [blogs.hayobethlehemnl]
+    title = "Hayo Bethlehem"
+    url = "https://hayobethlehem.nl"
+    favicon = "https://hayobethlehem.nl/wp-content/uploads/uncategorised/hb-seal-300x300.png"
+    updated = "2025-06-18Z"
+#</issue_672>
+
+#<issue_649>
+    [blogs.wwwlloydatkinsonnet]
+    title = "Lloyd Atkinson"
+    url = "https://www.lloydatkinson.net/"
+    favicon = "https://www.lloydatkinson.net/favicon.svg"
+    updated = "2025-06-18Z"
+#</issue_649>
+
+#<issue_597>
+    [blogs.wargalukcom]
+    title = "wargaluk"
+    url = "https://wargaluk.com/"
+    favicon = "https://wargaluk.com/favicon.ico"
+    updated = "2025-06-18Z"
+#</issue_597>
+
+#<issue_585>
+    [blogs.wwwmihirnaikcom]
+    title = "Mihir Naik"
+    url = "https://www.mihirnaik.com"
+    favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
+    updated = "2025-06-18Z"
+#</issue_585>
+
+#<issue_584>
+    [blogs.harrisonbroadbentcom]
+    title = "Harrison Broadbent"
+    url = "https://harrisonbroadbent.com"
+    favicon = "/generic.ico"
+    updated = "2025-06-18Z"
+#</issue_584>
+
+#<issue_598>
+    [blogs.bewildered]
+    title = "bewildered"
+    url = "https://bewilde.red/"
+    favicon = "https://bewilde.red/favicon.ico"
+    updated = "2025-06-18Z"
+#</issue_598>
+
+#<issue_566>
+    [blogs.giventotri]
+    title = "Guillermo Esteves"
+    url = "https://www.giventotri.com/"
+    favicon = "https://www.giventotri.com/favicon.ico"
+    updated = "2025-06-18Z"
+#</issue_566>
