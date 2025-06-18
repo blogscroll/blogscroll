@@ -984,3 +984,11 @@
     favicon = "https://bewilde.red/favicon.ico"
     updated = "2025-06-18Z"
 #</issue_598>
+
+#<issue_566>
+    [blogs.giventotri]
+      title = "Given to Tri"
+      url = "https://www.giventotri.com/"
+      favicon = "https://www.giventotri.com/favicon.ico"
+      updated = "2025-06-18Z"
+#</issue_566>
