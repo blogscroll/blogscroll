@@ -1201,16 +1201,16 @@
 
 #<issue_605>
     [blogs.eklausmeiergoipde]
-      title = "Elmar Klausmeier's Blog on Computers, Programming, and Mathematics"
-      url = "https://eklausmeier.goip.de"
-      favicon = "https://eklausmeier.goip.de/favicon.ico"
-      updated = "2025-06-18Z"
+    title = "Elmar Klausmeier"
+    url = "https://eklausmeier.goip.de"
+    favicon = "https://eklausmeier.goip.de/favicon.ico"
+    updated = "2025-06-18Z"
 #</issue_605>
 
 #<issue_641>
     [blogs.lesleylaiinfo]
-      title = "Lesley Lai"
-      url = "https://lesleylai.info/"
-      favicon = "https://lesleylai.info/favicon-32x32.png"
-      updated = "2025-06-18Z"
+    title = "Lesley Lai"
+    url = "https://lesleylai.info/"
+    favicon = "https://lesleylai.info/favicon-32x32.png"
+    updated = "2025-06-18Z"
 #</issue_641>
