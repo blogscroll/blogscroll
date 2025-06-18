@@ -939,8 +939,8 @@
 
 #<issue_672>
     [blogs.hayobethlehemnl]
-      title = "HayoBethlehem.nl"
-      url = "https://hayobethlehem.nl"
-      favicon = "https://hayobethlehem.nl/favicon.ico"
-      updated = "2025-06-18Z"
+    title = "Hayo Bethlehem"
+    url = "https://hayobethlehem.nl"
+    favicon = "https://hayobethlehem.nl/wp-content/uploads/uncategorised/hb-seal-300x300.png"
+    updated = "2025-06-18Z"
 #</issue_672>
