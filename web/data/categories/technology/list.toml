@@ -261,7 +261,7 @@
     title = "Vladimir Haltakov"
     url = "https://haltakov.net/"
     favicon = "https://haltakov.net/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 
     [blogs.scastieldev]
     title = "Sebastien Castiel"
@@ -1176,7 +1176,7 @@
     title = "Catalin Pit"
     url = "https://catalins.tech"
     favicon = "https://catalins.tech/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_656>
 
 #<issue_652>
@@ -1184,7 +1184,7 @@
     title = "Tim Cappalli"
     url = "https://blog.timcappalli.me"
     favicon = "https://blog.timcappalli.me/favicon.png"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_652>
 
 #<issue_605>
@@ -1192,7 +1192,7 @@
     title = "Elmar Klausmeier"
     url = "https://eklausmeier.goip.de"
     favicon = "https://eklausmeier.goip.de/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_605>
 
 #<issue_641>
@@ -1200,5 +1200,5 @@
     title = "Lesley Lai"
     url = "https://lesleylai.info/"
     favicon = "https://lesleylai.info/favicon-32x32.png"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_641>

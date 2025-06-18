@@ -558,7 +558,7 @@
     title = "Kenneth Reitz"
     url = "https://kennethreitz.org"
     favicon = "/generic.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_341>
 
 #<issue_333>
@@ -642,7 +642,7 @@
     title = "Gregor Podjed"
     url = "https://blog.gregtech.eu/"
     favicon = "https://blog.gregtech.eu/assets/img/favicons/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_285>
 
     [blogs.somerbynetmack]
@@ -731,10 +731,10 @@
 
 #<issue_254>
     [blogs.disruptingjapan]
-      title = "Tim Romero"
-      url = "https://www.disruptingjapan.com"
-      favicon = "https://substackcdn.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F58879cc3-9806-4513-a6b9-410bd727c5c2_1280x1280.png"
-      updated = "2025-02-17T19:17:20Z"
+    title = "Tim Romero"
+    url = "https://www.disruptingjapan.com"
+    favicon = "https://substackcdn.com/image/fetch/w_170,c_limit,f_auto,q_auto:best,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F58879cc3-9806-4513-a6b9-410bd727c5c2_1280x1280.png"
+    updated = "2025-02-17T19:17:20Z"
 #</issue_254>
 
 #<issue_260>
@@ -782,15 +782,15 @@
     title = "Ruban SK"
     url = "https://www.skruban.com/"
     favicon = "https://www.skruban.com/images/favicon.webp"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_276>
 
 #<issue_287>
     [blogs.mmathiascom]
-      title = "Mathias Müller"
-      url = "https://mmathias.com/"
-      favicon = "https://mmathias.com/assets/icons/icon.svg"
-      updated = "2025-02-17T00:00:00Z"
+    title = "Mathias Müller"
+    url = "https://mmathias.com/"
+    favicon = "https://mmathias.com/assets/icons/icon.svg"
+    updated = "2025-02-17T00:00:00Z"
 #</issue_287>
 
 #<issue_296>
@@ -936,7 +936,7 @@
     title = "Hayo Bethlehem"
     url = "https://hayobethlehem.nl"
     favicon = "https://hayobethlehem.nl/wp-content/uploads/uncategorised/hb-seal-300x300.png"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_672>
 
 #<issue_649>
@@ -944,7 +944,7 @@
     title = "Lloyd Atkinson"
     url = "https://www.lloydatkinson.net/"
     favicon = "https://www.lloydatkinson.net/favicon.svg"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_649>
 
 #<issue_597>
@@ -952,7 +952,7 @@
     title = "wargaluk"
     url = "https://wargaluk.com/"
     favicon = "https://wargaluk.com/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_597>
 
 #<issue_585>
@@ -960,7 +960,7 @@
     title = "Mihir Naik"
     url = "https://www.mihirnaik.com"
     favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_585>
 
 #<issue_584>
@@ -968,7 +968,7 @@
     title = "Harrison Broadbent"
     url = "https://harrisonbroadbent.com"
     favicon = "/generic.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_584>
 
 #<issue_598>
@@ -976,7 +976,7 @@
     title = "bewildered"
     url = "https://bewilde.red/"
     favicon = "https://bewilde.red/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_598>
 
 #<issue_566>
@@ -984,5 +984,5 @@
     title = "Guillermo Esteves"
     url = "https://www.giventotri.com/"
     favicon = "https://www.giventotri.com/favicon.ico"
-    updated = "2025-06-18Z"
+    updated = "2025-06-18T14:00:00Z"
 #</issue_566>
