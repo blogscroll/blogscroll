@@ -944,3 +944,11 @@
     favicon = "https://hayobethlehem.nl/wp-content/uploads/uncategorised/hb-seal-300x300.png"
     updated = "2025-06-18Z"
 #</issue_672>
+
+#<issue_649>
+    [blogs.lloydatkinsonnet]
+      title = "Lloyd Atkinson"
+      url = "https://www.lloydatkinson.net/"
+      favicon = "https://www.lloydatkinson.net/favicon.svg"
+      updated = "2025-06-18Z"
+#</issue_649>
