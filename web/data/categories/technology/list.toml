@@ -1198,3 +1198,11 @@
     favicon = "https://blog.timcappalli.me/favicon.png"
     updated = "2025-06-18Z"
 #</issue_652>
+
+#<issue_605>
+    [blogs.eklausmeiergoipde]
+      title = "Elmar Klausmeier's Blog on Computers, Programming, and Mathematics"
+      url = "https://eklausmeier.goip.de"
+      favicon = "https://eklausmeier.goip.de/favicon.ico"
+      updated = "2025-06-18Z"
+#</issue_605>
