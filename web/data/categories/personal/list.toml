@@ -960,3 +960,11 @@
       favicon = "https://wargaluk.com/favicon.ico"
       updated = "2025-06-18Z"
 #</issue_597>
+
+#<issue_585>
+    [blogs.mihirnaikcom]
+      title = "Mihir Naik"
+      url = "https://www.mihirnaik.com"
+      favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
+      updated = "2025-06-18Z"
+#</issue_585>
