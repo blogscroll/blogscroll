@@ -968,3 +968,11 @@
       favicon = "https://www.mihirnaik.com/wp-content/uploads/2020/03/favicon-32x32-2.png"
       updated = "2025-06-18Z"
 #</issue_585>
+
+#<issue_584>
+    [blogs.harrisonbroadbentcom]
+      title = "Harrison Broadbent"
+      url = "https://harrisonbroadbent.com"
+      favicon = "none"
+      updated = "2025-06-18Z"
+#</issue_584>
