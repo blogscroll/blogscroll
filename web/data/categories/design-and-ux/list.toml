@@ -430,17 +430,17 @@
 	updated = "2025-02-17T14:00:00Z"
 
 #<issue_563>
-    [blogs.dlayeu]
-    title = "Dlay"
-    url = "https://dlay.eu"
-    favicon = "/generic.ico"
-    updated = "2025-02-23T02:15:48Z"
+	[blogs.dlayeu]
+	title = "Dlay"
+	url = "https://dlay.eu"
+	favicon = "/generic.ico"
+	updated = "2025-02-23T02:15:48Z"
 #</issue_563>
 
 #<issue_671>
-    [blogs.caneraras]
-      title = "Caner Aras"
-      url = "https://www.caneraras.com"
-      favicon = "https://cdn.prod.website-files.com/63e50e62750f5d4a79fd5698/681d263fdc9a82846a41539e_Favicon-small.png"
-      updated = "2025-06-18Z"
+	[blogs.wwwcanerarascom]
+	title = "Caner Aras"
+	url = "https://www.caneraras.com"
+	favicon = "https://cdn.prod.website-files.com/63e50e62750f5d4a79fd5698/681d263fdc9a82846a41539e_Favicon-small.png"
+	updated = "2025-06-18Z"
 #</issue_671>
