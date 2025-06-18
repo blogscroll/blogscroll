@@ -1206,3 +1206,11 @@
       favicon = "https://eklausmeier.goip.de/favicon.ico"
       updated = "2025-06-18Z"
 #</issue_605>
+
+#<issue_641>
+    [blogs.lesleylaiinfo]
+      title = "Lesley Lai"
+      url = "https://lesleylai.info/"
+      favicon = "https://lesleylai.info/favicon-32x32.png"
+      updated = "2025-06-18Z"
+#</issue_641>
