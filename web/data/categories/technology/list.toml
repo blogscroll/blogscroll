@@ -260,8 +260,8 @@
     [blogs.haltakovnet]
     title = "Vladimir Haltakov"
     url = "https://haltakov.net/"
-    favicon = "https://haltakov.net/theme/images/vh_logo_96.png"
-    updated = "2024-09-01T14:00:00Z"
+    favicon = "https://haltakov.net/favicon.ico"
+    updated = "2025-06-18Z"
 
     [blogs.scastieldev]
     title = "Sebastien Castiel"
@@ -464,12 +464,6 @@
     [blogs.lapcatsoftwarecom]
     title = "Jeff Johnson"
     url = "https://lapcatsoftware.com/articles/"
-    favicon = "/generic.ico"
-    updated = "2024-09-01T14:00:00Z"
-
-    [blogs.randomnouncom]
-    title = "Greg Knox"
-    url = "https://www.randomnoun.com/"
     favicon = "/generic.ico"
     updated = "2024-09-01T14:00:00Z"
 
@@ -736,12 +730,6 @@
     url = "https://robertheaton.com"
     favicon = "https://robertheaton.com/images/fav.png"
     updated = "2025-01-02T14:00:00Z"
-
-    [blogs.nillebco]
-    title = "Ivo Bellin Salarin"
-    url = "https://nilleb.co/blog"
-    favicon = "/generic.ico"
-    updated = "2025-01-02T14:10:00Z"
 
     [blogs.ameyedev]
     title = "Alexander Ameye"

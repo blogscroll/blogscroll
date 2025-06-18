@@ -89,12 +89,6 @@
     favicon = "https://www.solomenko.com/wp-content/uploads/2024/08/dasha-favicon.png"
     updated = "2024-09-01T14:00:00Z"
 
-    [blogs.namanmodanicom]
-    title = "Naman Modani"
-    url = "https://namanmodani.com"
-    favicon = "https://namanmodani.com/favicon.png"
-    updated = "2024-09-01T14:00:00Z"
-
     [blogs.namcheedev]
     title = "Christopher (Namchee)"
     url = "https://www.namchee.dev"
@@ -563,8 +557,8 @@
     [blogs.kennethreitzorg]
     title = "Kenneth Reitz"
     url = "https://kennethreitz.org"
-    favicon = "https://kennethreitz.org/favicon.ico"
-    updated = "2025-01-31T18:53:34Z"
+    favicon = "/generic.ico"
+    updated = "2025-06-18Z"
 #</issue_341>
 
 #<issue_333>
@@ -647,8 +641,8 @@
     [blogs.gregtecheu]
     title = "Gregor Podjed"
     url = "https://blog.gregtech.eu/"
-    favicon = "https://blog.gregtech.eu/static/kitty.png"
-    updated = "2025-02-06T21:58:51Z"
+    favicon = "https://blog.gregtech.eu/assets/img/favicons/favicon.ico"
+    updated = "2025-06-18Z"
 #</issue_285>
 
     [blogs.somerbynetmack]
@@ -787,8 +781,8 @@
     [blogs.skrubancom]
     title = "Ruban SK"
     url = "https://www.skruban.com/"
-    favicon = "https://www.skruban.com/images/site/totodile.gif"
-    updated = "2025-02-17T00:00:00Z"
+    favicon = "https://www.skruban.com/images/favicon.webp"
+    updated = "2025-06-18Z"
 #</issue_276>
 
 #<issue_287>

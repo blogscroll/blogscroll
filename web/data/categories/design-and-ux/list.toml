@@ -257,12 +257,6 @@
 	favicon = "https://charliedeets.com/assets/favicon/favicon-light-32.png"
 	updated = "2024-09-01T14:00:00Z"
 
-	[blogs.tim0lsencom]
-	title = "Tim Olsen"
-	url = "https://www.tim0lsen.com"
-	favicon = "https://cdn.prod.website-files.com/662124ad6ea76ed027cfb8ae/6624d7de74419f84905935b3_Favicon32.png"
-	updated = "2024-09-01T14:00:00Z"
-
 	[blogs.edgarlrcom]
 	title = "Edgar López"
 	url = "https://edgarlr.com"
