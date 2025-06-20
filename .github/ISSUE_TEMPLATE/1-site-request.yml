@@ -48,6 +48,15 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: rss-url
+    attributes:
+      label: RSS Feed URL
+      placeholder: https://blogscroll.com/feed.xml
+      description: Enter the URL to the RSS feed used for the site. Make sure the feed is properly formatted (validate it ahead of time).
+    validations:
+      required: false
+
   - type: dropdown
     id: site-category
     attributes:
