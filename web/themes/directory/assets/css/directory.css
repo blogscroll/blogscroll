@@ -168,6 +168,9 @@ li a:hover {
 
 .search-container {
     margin-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #search-input {
@@ -193,9 +196,14 @@ li a:hover {
 }
 
 .stats {
-    margin-top: 0.5em;
-    font-size: 0.9em;
-    color: var(--text-muted);
+    margin-top: 0.8em;
+    font-size: 0.8em;
+    color: var(--primary-text);
+    background-color: var(--surface-subtle);
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 500;
 }
 
 @media only screen and (max-device-width: 720px) {
