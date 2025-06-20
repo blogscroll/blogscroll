@@ -1,0 +1,37 @@
+{{- `<?xml version="1.0" encoding="UTF-8"?>` | safeHTML }}
+{{- `
+<?xml-stylesheet type="text/xsl" href="/opml.xsl"?>` | safeHTML }}
+<!--
+    Welcome!
+
+    If you're reading this it means your browser can't transform this
+    file into something nicer. If possible, please try to open it in
+    another browser, like Firefox, unless you're OK reading raw XML,
+    or if that was your intention from the beginning.
+-->
+<opml version="2.0">
+    <head>
+        <title>{{ .Site.Title }}</title>
+        <dateCreated>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</dateCreated>
+        <dateModified>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</dateModified>
+        <ownerName>{{ .Site.Params.Author | default "BlogScroll" }}</ownerName>
+        <ownerEmail>{{ .Site.Params.Email | default "" }}</ownerEmail>
+        <docs>http://opml.org/spec2.opml</docs>
+    </head>
+    <body>
+{{- range .Site.Data }}
+    {{- range $fileKey, $fileData := . }}
+        <outline text="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" title="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" description="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" type="folder">
+        {{- range $categoryKey, $categoryData := $fileData }}
+            {{- if isset $categoryData "blogs" }}
+                {{- $sortedBlogs := sort $categoryData.blogs "title" }}
+                {{- range $sortedBlogs }}
+            <outline text="{{ .title | htmlEscape }}" title="{{ .title | htmlEscape }}" description="{{ .title | htmlEscape }}" type="link" url="{{ .url }}"{{ if .favicon }} favicon="{{ .favicon }}"{{ end }} />
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        </outline>
+    {{- end }}
+{{- end }}
+    </body>
+</opml>

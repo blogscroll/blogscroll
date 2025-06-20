@@ -9,8 +9,16 @@ description = "An open directory of personal sites and blogs, maintained entirel
 publishDate = "Sep 2, 2024"
 
 [outputs]
-home = ["HTML", "RSS"]
+home = ["HTML", "RSS", "OPML"]
 
 [outputFormats]
 [outputFormats.RSS]
 mediaType = "application/rss+xml"
+
+[outputFormats.OPML]
+mediaType = "application/opml+xml"
+baseName = "index"
+
+[mediaTypes]
+  [mediaTypes."application/opml+xml"]
+    suffixes = ["opml"]
