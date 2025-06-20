@@ -11,12 +11,11 @@
 -->
 <opml version="2.0">
     <head>
-        <title>{{ .Site.Title }}</title>
-        <dateCreated>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</dateCreated>
-        <dateModified>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</dateModified>
+        <title>{{ .Site.Title }}</title>        
+        <dateCreated>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 UTC" }}</dateCreated>
+        <dateModified>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 UTC" }}</dateModified>
         <ownerName>{{ .Site.Params.Author | default "BlogScroll" }}</ownerName>
         <ownerEmail>{{ .Site.Params.Email | default "" }}</ownerEmail>
-        <docs>http://opml.org/spec2.opml</docs>
     </head>
     <body>
 {{- range .Site.Data }}
@@ -26,7 +25,7 @@
             {{- if isset $categoryData "blogs" }}
                 {{- $sortedBlogs := sort $categoryData.blogs "title" }}
                 {{- range $sortedBlogs }}
-            <outline text="{{ .title | htmlEscape }}" title="{{ .title | htmlEscape }}" description="{{ .title | htmlEscape }}" type="rss"{{ if .rss }} xmlUrl="{{ .rss }}"{{ end }} htmlUrl="{{ .url }}"{{ if .favicon }} favicon="{{ .favicon }}"{{ end }} />
+            <outline text="{{ .title | htmlEscape }}" title="{{ .title | htmlEscape }}" description="{{ .title | htmlEscape }}" type="rss" xmlUrl="{{ .rss | default "" }}" htmlUrl="{{ .url }}" />
                 {{- end }}
             {{- end }}
         {{- end }}
