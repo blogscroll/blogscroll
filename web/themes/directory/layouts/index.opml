@@ -20,7 +20,7 @@
     <body>
 {{- range .Site.Data }}
     {{- range $fileKey, $fileData := . }}
-        <outline text="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" title="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" description="{{ $fileKey | title | replaceRE `-` ` ` | replaceRE ` And ` ` &amp; ` }}" type="folder">
+        <outline text="{{ $fileKey }}" title="{{ $fileKey }}" description="{{ $fileKey }}" type="folder">
         {{- range $categoryKey, $categoryData := $fileData }}
             {{- if isset $categoryData "blogs" }}
                 {{- $sortedBlogs := sort $categoryData.blogs "title" }}
