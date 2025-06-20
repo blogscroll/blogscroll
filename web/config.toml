@@ -7,6 +7,7 @@ theme = "directory"
 [params]
 description = "An open directory of personal sites and blogs, maintained entirely on GitHub."
 publishDate = "Sep 2, 2024"
+email = "hi@den.dev"
 
 [outputs]
 home = ["HTML", "RSS", "OPML"]
