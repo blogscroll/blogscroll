@@ -11,9 +11,9 @@
 -->
 <opml version="2.0">
     <head>
-        <title>{{ .Site.Title }}</title>        
-        <dateCreated>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 UTC" }}</dateCreated>
-        <dateModified>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 UTC" }}</dateModified>
+        <title>{{ .Site.Title }}</title>
+        <dateCreated>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</dateCreated>
+        <dateModified>{{ now.UTC.Format "Mon, 02 Jan 2006 15:04:05 GMT" }}</dateModified>
         <ownerName>{{ .Site.Params.Author | default "BlogScroll" }}</ownerName>
         <ownerEmail>{{ .Site.Params.Email | default "" }}</ownerEmail>
     </head>
