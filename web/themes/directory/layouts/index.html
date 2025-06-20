@@ -30,11 +30,12 @@
 
                     {{ range $categoryKey, $categoryData := $fileData }}
                         {{ if isset $categoryData "blogs" }}
-                            {{ $sortedBlogs := sort $categoryData.blogs "title" }}
-                            {{ range $sortedBlogs }}
+                            {{ $sortedBlogs := sort $categoryData.blogs "title" }}                            {{ range $sortedBlogs }}
                                 <div class="blog-item">
                                     {{ if .favicon }}
-                                        <img class="blog-icon" src="{{ .favicon }}" decoding="async" />
+                                        <img class="blog-icon" src="{{ .favicon }}" loading="lazy" decoding="async" />
+                                    {{ else }}
+                                        <div class="blog-icon blog-icon-placeholder"></div>
                                     {{ end }}
                                     <p><a class="blog-link" href="{{ .url }}">{{ .title | htmlEscape }}</a></p>
                                 </div>

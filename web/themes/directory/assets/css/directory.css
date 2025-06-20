@@ -27,6 +27,24 @@ h4 {
     width: 16px;
     height: 16px;
     margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.blog-icon-placeholder {
+    background-image: url("/generic.ico");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blog-icon.loading {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.8; }
+    100% { opacity: 0.4; }
 }
 
 .blog-link:link {
@@ -122,12 +140,22 @@ li a:hover {
     h3, h4 {
         margin-bottom: 48px;
         font-size: 3rem;
-    }
-
-    .blog-icon {
+    }    .blog-icon {
         width: 32px;
         height: 32px;
         margin-right: 24px;
+        flex-shrink: 0;
+    }
+
+    .blog-icon-placeholder {
+        background-image: url("/generic.ico");
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .blog-icon.loading {
+        animation: pulse 1.5s ease-in-out infinite;
     }
 
     ul {

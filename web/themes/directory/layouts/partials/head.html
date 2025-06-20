@@ -46,4 +46,110 @@
         var id = Math.floor(Math.random() * Math.floor(links.length - 1));
         window.location.href = links[id]['href'];
     }
+
+    // Progressive favicon loading with enhanced UX
+    function optimizeFaviconLoading() {
+        const faviconImages = document.querySelectorAll('.blog-icon[src]');
+        let loadedCount = 0;
+        const maxConcurrentLoads = 6; // Reduced to prevent overwhelming
+        const loadQueue = [];
+        
+        // Create intersection observer for lazy loading
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (!img.dataset.queued) {
+                        img.dataset.queued = 'true';
+                        loadQueue.push(img);
+                        processQueue();
+                        observer.unobserve(img);
+                    }
+                }
+            });
+        }, {
+            rootMargin: '100px' // Increased margin for smoother experience
+        });        // Enhanced error handling with fallback
+        function setupImageHandlers(img) {
+            img.addEventListener('error', function() {
+                this.classList.remove('loading');
+                this.style.backgroundImage = 'url("/generic.ico")';
+                loadedCount--;
+                processQueue();
+            });
+            
+            img.addEventListener('load', function() {
+                this.classList.remove('loading');
+                this.classList.add('loaded');
+                this.style.backgroundImage = 'none';
+                loadedCount--;
+                processQueue();
+            });
+        }
+
+        function loadFavicon(img) {
+            if (!img.dataset.loaded && loadedCount < maxConcurrentLoads) {
+                img.dataset.loaded = 'true';
+                img.classList.add('loading');
+                loadedCount++;
+                
+                // Create a new image to test loading
+                const testImg = new Image();
+                testImg.onload = () => {
+                    img.src = testImg.src;
+                };
+                testImg.onerror = () => {
+                    img.dispatchEvent(new Event('error'));
+                };
+                testImg.src = img.src;
+            }
+        }
+
+        function processQueue() {
+            while (loadQueue.length > 0 && loadedCount < maxConcurrentLoads) {
+                const img = loadQueue.shift();
+                loadFavicon(img);
+            }
+        }
+
+        // Setup all images
+        faviconImages.forEach(img => {
+            setupImageHandlers(img);
+            observer.observe(img);
+        });
+
+        // Prioritize visible images
+        setTimeout(() => {
+            const visibleImages = Array.from(faviconImages).filter(img => {
+                const rect = img.getBoundingClientRect();
+                return rect.top < window.innerHeight + 50 && rect.bottom > -50;
+            });
+            
+            // Add visible images to front of queue
+            visibleImages.forEach(img => {
+                if (!img.dataset.queued) {
+                    img.dataset.queued = 'true';
+                    loadQueue.unshift(img); // Add to front
+                }
+            });
+            
+            processQueue();
+        }, 50);
+
+        // Preload favicons on hover for better UX
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.classList.contains('blog-link')) {
+                const blogItem = e.target.closest('.blog-item');
+                const favicon = blogItem.querySelector('.blog-icon');
+                if (favicon && !favicon.dataset.queued && !favicon.dataset.loaded) {
+                    favicon.dataset.queued = 'true';
+                    loadQueue.unshift(favicon);
+                    processQueue();
+                }
+            }
+        });
+    }
+
+    // Initialize favicon optimization when DOM is ready
+    document.addEventListener('DOMContentLoaded', optimizeFaviconLoading);
 </script>
