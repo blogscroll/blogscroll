@@ -1,11 +1,29 @@
+/* Color Scheme Variables */
+:root {
+    --primary-bg: #003049;
+    --primary-text: #ffffff;
+    --primary-accent: #fcbf49;
+    --secondary-accent: #f77f00;
+    --text-muted: rgba(255, 255, 255, 0.7);
+    --text-subtle: rgba(255, 255, 255, 0.6);
+    --surface-subtle: rgba(255, 255, 255, 0.1);
+    --surface-hover: rgba(255, 255, 255, 0.15);
+    --surface-active: rgba(255, 255, 255, 0.03);
+    --border-subtle: rgba(255, 255, 255, 0.2);
+    --link-default: #eae2b7;
+    --link-visited: #f77f00;
+    --link-hover: #fcbf49;
+    --link-active: #d62828;
+}
+
 body {
-    background-color: #003049;
+    background-color: var(--primary-bg);
     font-family: 'Lato', sans-serif;
-    color: #fff;
+    color: var(--primary-text);
 }
 
 h1 {
-    color: #fcbf49;
+    color: var(--primary-accent);
 }
 
 h3, h4 {
@@ -13,14 +31,17 @@ h3, h4 {
 }
 
 h4 {
-    font-size: 0.9em;
-    color: rgba(128, 128, 128, 0.8); /* Slightly muted gray with 80% opacity */
+    font-size: 0.8em;
+    color: var(--text-muted);
 }
 
 .blog-item {
     display: flex;
     align-items: center;
     height: 32px;
+    margin-bottom: 4px;
+    padding: 2px 0;
+    transition: background-color 0.15s ease;
 }
 
 .blog-icon {
@@ -48,20 +69,23 @@ h4 {
 }
 
 .blog-link:link {
-    color: #eae2b7;
-    text-decoration-style: dotted;
+    color: var(--link-default);
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: all 0.15s ease;
 }
 
 .blog-link:visited {
-    color: #f77f00;
+    color: var(--link-visited);
 }
 
 .blog-link:hover {
-    color: #d62828;
+    color: var(--link-hover);
+    border-bottom-color: var(--link-hover);
 }
 
 .blog-link:active {
-    color: #d62828;
+    color: var(--link-active);
 }
 
 ul {
@@ -87,12 +111,12 @@ li a {
 }
 
 li a:hover {
-    background-color: #f77f00;
+    background-color: var(--secondary-accent);
 }
 
 .title-li {
     float: left;
-    border: #ffffff solid 1px;
+    border: var(--primary-text) solid 1px;
 }
 
 .link-container {
@@ -106,11 +130,72 @@ li a:hover {
 .category-container {
     width: 300px;
     min-width: 300px;
+    margin-bottom: 2em;
+    padding-right: 1.5em;
+}
+
+.category-container h3 {
+    margin-bottom: 0.3em;
+    color: var(--primary-accent);
+    font-weight: 600;
+}
+
+.category-container h4 {
+    margin-bottom: 1em;
+    margin-top: 0;
+    display: inline-block;
+    background-color: var(--surface-subtle);
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    color: var(--primary-text);
+}
+
+.category-container h4 strong {
+    background-color: var(--secondary-accent);
+    color: var(--primary-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-right: 6px;
 }
 
 .site-title {
     margin: 1.7em;
     max-width: 500px;
+}
+
+.search-container {
+    margin-top: 1.5em;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    background-color: var(--surface-subtle);
+    border: 1px solid var(--border-subtle);
+    border-radius: 4px;
+    color: var(--primary-text);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+#search-input::placeholder {
+    color: var(--text-subtle);
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--primary-accent);
+    background-color: var(--surface-hover);
+}
+
+.stats {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: var(--text-muted);
 }
 
 @media only screen and (max-device-width: 720px) {
@@ -130,17 +215,30 @@ li a:hover {
     .category-container {
         width: 600px;
         min-width: 600px;
-    }
-
-    .blog-item {
-        font-size: 3rem;
-        margin-bottom: 48px;
+    }    .blog-item {
+        font-size: 3rem;        margin-bottom: 48px;
+        padding: 8px 0;
     }
 
     h3, h4 {
         margin-bottom: 48px;
         font-size: 3rem;
-    }    .blog-icon {
+    }    .category-container h4 {
+        background-color: var(--surface-subtle);
+        padding: 16px 20px;
+        border-radius: 4px;
+        color: var(--primary-text);
+    }
+
+    .category-container h4 strong {
+        background-color: var(--secondary-accent);
+        color: var(--primary-bg);
+        padding: 4px 12px;
+        border-radius: 4px;
+        font-size: 2.7rem;
+        font-weight: 600;
+        margin-right: 12px;
+    }.blog-icon {
         width: 32px;
         height: 32px;
         margin-right: 24px;

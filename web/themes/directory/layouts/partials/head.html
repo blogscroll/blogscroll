@@ -148,8 +148,61 @@
                 }
             }
         });
-    }
+    }    // Initialize favicon optimization when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        optimizeFaviconLoading();
+        initializeSearch();
+    });    // Simple search functionality
+    function initializeSearch() {
+        const searchInput = document.getElementById('search-input');
+        const blogItems = document.querySelectorAll('.blog-item');
+        const categoryContainers = document.querySelectorAll('.category-container');
+        const statsDiv = document.getElementById('stats');
+        
+        // Show initial stats
+        updateStats(blogItems.length, blogItems.length);
 
-    // Initialize favicon optimization when DOM is ready
-    document.addEventListener('DOMContentLoaded', optimizeFaviconLoading);
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                // Show all items
+                blogItems.forEach(item => item.style.display = 'flex');
+                categoryContainers.forEach(container => container.style.display = 'block');
+                updateStats(blogItems.length, blogItems.length);
+                return;
+            }
+
+            // Filter items
+            let visibleCount = 0;
+            categoryContainers.forEach(container => {
+                const items = container.querySelectorAll('.blog-item');
+                let hasVisibleItems = false;
+
+                items.forEach(item => {
+                    const title = item.querySelector('.blog-link').textContent.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        item.style.display = 'flex';
+                        hasVisibleItems = true;
+                        visibleCount++;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Hide category if no visible items
+                container.style.display = hasVisibleItems ? 'block' : 'none';
+            });
+            
+            updateStats(visibleCount, blogItems.length);
+        });
+        
+        function updateStats(visible, total) {
+            if (visible === total) {
+                statsDiv.textContent = `${total} blogs`;
+            } else {
+                statsDiv.textContent = `${visible} of ${total} blogs`;
+            }
+        }
+    }
 </script>
