@@ -26,7 +26,7 @@
             {{- if isset $categoryData "blogs" }}
                 {{- $sortedBlogs := sort $categoryData.blogs "title" }}
                 {{- range $sortedBlogs }}
-            <outline text="{{ .title | htmlEscape }}" title="{{ .title | htmlEscape }}" description="{{ .title | htmlEscape }}" type="link" url="{{ .url }}"{{ if .favicon }} favicon="{{ .favicon }}"{{ end }} />
+            <outline text="{{ .title | htmlEscape }}" title="{{ .title | htmlEscape }}" description="{{ .title | htmlEscape }}" type="rss"{{ if .rss }} xmlUrl="{{ .rss }}"{{ end }} htmlUrl="{{ .url }}"{{ if .favicon }} favicon="{{ .favicon }}"{{ end }} />
                 {{- end }}
             {{- end }}
         {{- end }}
