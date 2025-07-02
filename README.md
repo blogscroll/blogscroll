@@ -110,7 +110,3 @@ The identifier for the site (in square brackets) should be the blog apex domain,
 That being said, sites should still fit the [criteria above](#can-i-add-any-site).
 
 If you have more than one blog, submit the one that represents you best.
-
-### I don't want to use GitHub to add a site. What do I do?
-
-Send me a note to [`hi@den.dev`](mailto:hi@den.dev?subject=BlogScroll%20Requests%20and%20Questions).
