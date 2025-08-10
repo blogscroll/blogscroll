@@ -785,6 +785,14 @@
     updated = "2025-06-18T14:00:00Z"
 #</issue_276>
 
+#<issue_680>
+    [blogs.peterspath]
+    title = "Peter's Path"
+    url = "https://peterspath.net/"
+    favicon = "https://peterspath.net/favicon.svg"
+    updated = "2025-08-10T08:00:00Z"
+#</issue_680>
+
 #<issue_287>
     [blogs.mmathiascom]
     title = "Mathias Müller"
