@@ -1202,3 +1202,9 @@
     favicon = "https://lesleylai.info/favicon-32x32.png"
     updated = "2025-06-18T14:00:00Z"
 #</issue_641>
+
+    [blogs.joemocode]
+    title = "Joe Muoio"
+    url = "https://blog.joemocode.com"
+    favicon = "https://blog.joemocode.com/favicon.ico"
+    updated = "2025-09-22T14:00:00Z"
