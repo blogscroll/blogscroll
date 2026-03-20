@@ -1202,3 +1202,11 @@
     favicon = "https://lesleylai.info/favicon-32x32.png"
     updated = "2025-06-18T14:00:00Z"
 #</issue_641>
+
+#<issue_manual_toninotes_20260320>
+    [blogs.toninotescc]
+    title = "Toni"
+    url = "https://toninotes.cc"
+    favicon = "https://toninotes.cc/favicon.ico"
+    updated = "2026-03-20T14:00:00Z"
+#</issue_manual_toninotes_20260320>
