@@ -986,3 +986,9 @@
     favicon = "https://www.giventotri.com/favicon.ico"
     updated = "2025-06-18T14:00:00Z"
 #</issue_566>
+
+    [blogs.alecsargent]
+    title = "Alec's Blog"
+    url = "https://alecsargent.codeberg.page"
+    favicon = "https://alecsargent.codeberg.page/favicon/favicon_solid_tiny.svg"
+    updated = "2026-04-19T14:00:00Z"
