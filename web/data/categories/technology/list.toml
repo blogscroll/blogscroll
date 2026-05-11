@@ -1202,3 +1202,11 @@
     favicon = "https://lesleylai.info/favicon-32x32.png"
     updated = "2025-06-18T14:00:00Z"
 #</issue_641>
+
+#<issue_733>
+    [blogs.justwhatifind]
+    title = "Just What I Find (Rob Aleck)"
+    url = "https://blog.cynexia.com"
+    favicon = "https://blog.cynexia.com/favicon.ico"
+    updated = "2026-11-05T18:09:00Z"
+#</issue_733>
