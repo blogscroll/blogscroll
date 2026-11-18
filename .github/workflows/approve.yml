@@ -125,19 +125,17 @@ jobs:
         run: |
           ./util/update_toml.sh ${{ steps.run_copilot_automation.outputs.issue_json }} ${{ github.event.issue.number }}
 
+      # Signed commit through the API (required by the branch rulesets). The PR below
+      # merges it into main.
       - name: Commit changes
         if: steps.check_comment.outputs.approved == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
-          issue_number=${{ github.event.issue.number }}
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m "Fixes #${issue_number}"
-
-      - name: Push changes
-        if: steps.check_comment.outputs.approved == 'true'
-        run: |
-          git push --set-upstream origin automation-update
+          if git diff --cached --quiet; then echo "Nothing to commit." >&2; exit 1; fi
+          bash .github/scripts/commit-signed.sh automation-update "Fixes #${{ github.event.issue.number }}"
 
       - name: Check for existing pull request
         if: steps.check_comment.outputs.approved == 'true'
