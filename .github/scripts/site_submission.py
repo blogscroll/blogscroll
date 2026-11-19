@@ -2,6 +2,7 @@
 """BlogScroll site submissions: parse the issue form, check it, and add approved sites.
 
   site_submission.py check    Post or update the "Submission check" comment and set a check:* label.
+                              From an issue event, or from Run workflow with an issue number.
   site_submission.py approve  Add every open site request labeled "approved" to its list.toml.
   site_submission.py sweep    Check open site requests that have no check yet, and every new or
                               changed entry in open fork PRs. Posts only if SWEEP_POST=true;
@@ -850,8 +851,17 @@ def check_pr(gh: GitHub, pr: dict, listing: Listing, now: dt.datetime) -> tuple[
 
 def cmd_check() -> int:
     gh = env_github()
-    n = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())["issue"]["number"]
+    event = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())
+    manual = "inputs" in event  # Run workflow
+    raw = str(event["inputs"].get("issue", "")) if manual else str(event["issue"]["number"])
+    if not raw.isdigit():
+        print("The issue number must be a whole number.", file=sys.stderr)
+        return 1
+    n = int(raw)
     issue = gh.issue(n)  # current state, not the event payload
+    if issue.get("state") != "open" or "pull_request" in issue or "### Site URL" not in (issue.get("body") or ""):
+        print(f"#{n} is not an open site request.", file=sys.stderr)
+        return 1 if manual else 0  # an issue event can race a close or an edit; that is not a failure
     label, report, _ = check_issue(gh, issue, Listing.load(), dt.datetime.now(dt.timezone.utc))
     print(report)
     ensure_labels(gh)
