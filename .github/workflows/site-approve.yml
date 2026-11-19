@@ -1,0 +1,57 @@
+name: Add approved sites
+
+# A maintainer approves a site request by adding the "approved" label. Each run adds every open,
+# approved request (so a skipped or repeated run loses nothing), merges one signed PR into main,
+# closes the issues and starts the deploy. A merge made with GITHUB_TOKEN does not trigger push.yml.
+
+on:
+  issues:
+    types: [labeled]
+  workflow_dispatch:
+
+permissions: {}
+
+# One run at a time: every run appends to the same files on main.
+concurrency:
+  group: site-approve
+  cancel-in-progress: false
+
+jobs:
+  approve:
+    if: github.event_name == 'workflow_dispatch' || github.event.label.name == 'approved'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      actions: write
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      GH_REPO: ${{ github.repository }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+
+      - name: Validate and add approved sites
+        id: add
+        run: python3 .github/scripts/site_submission.py approve
+
+      - name: Merge, close the issues and deploy
+        if: steps.add.outputs.issues != ''
+        env:
+          ISSUES: ${{ steps.add.outputs.issues }}
+          MESSAGE: ${{ steps.add.outputs.message }}
+        run: |
+          if [ -n "$MESSAGE" ]; then
+            git add web/data/categories
+            bash .github/scripts/commit-signed.sh "site-add-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT" "$MESSAGE" main
+          fi
+          for n in $ISSUES; do
+            gh issue close "$n" --reason completed \
+              --comment "Added to BlogScroll. It appears on blogscroll.com after the deploy finishes."
+          done
+          if [ -n "$MESSAGE" ]; then gh workflow run push.yml --ref main; fi

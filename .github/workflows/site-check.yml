@@ -1,0 +1,34 @@
+name: Site submission check
+
+# Posts a "Submission check" comment on site requests and sets a check:* label.
+# It only reports. A maintainer decides, by adding the "approved" label (see site-approve.yml).
+
+on:
+  issues:
+    types: [opened, edited, reopened, labeled]
+
+permissions: {}
+
+concurrency:
+  group: site-check-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    # Runs again when a category:<name> label is added, because that changes the category.
+    if: >-
+      github.event.issue.state == 'open' && contains(github.event.issue.body, '### Site URL') &&
+      (github.event.action != 'labeled' || startsWith(github.event.label.name, 'category:'))
+    # GitHub-hosted on purpose: this job fetches URLs that strangers submit.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - run: python3 .github/scripts/site_submission.py check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

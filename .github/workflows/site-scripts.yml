@@ -1,0 +1,22 @@
+name: Site submission scripts
+
+on:
+  pull_request:
+    paths:
+      - '.github/scripts/**'
+      - '.github/site-check/**'
+      - 'web/data/categories/**'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # The tests also parse every list.toml, so a broken data file fails here.
+      - run: python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v
