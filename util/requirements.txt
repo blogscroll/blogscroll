@@ -1,2 +1,0 @@
-requests
-sseclient-py
