@@ -20,6 +20,8 @@ body:
       options:
         - label: I read the FAQ
           required: true
+        - label: My site is not about politics or religion
+          required: true
 
   - type: input
     id: site-name
@@ -44,7 +46,7 @@ body:
     attributes:
       label: Favicon URL
       placeholder: https://blogscroll.com/favicon.ico
-      description: Enter the URL to the icon used for the site, as it will be displayed on BlogScroll. Ensure that the icon can be accessed across domains.
+      description: Enter the URL to the icon used for the site, as it will be displayed on BlogScroll. It must use the same host name as the site URL (with or without www), and it must be accessible across domains.
     validations:
       required: true
 
@@ -53,7 +55,7 @@ body:
     attributes:
       label: RSS Feed URL
       placeholder: https://blogscroll.com/feed.xml
-      description: Enter the URL to the RSS feed used for the site. Make sure the feed is properly formatted (validate it ahead of time).
+      description: Enter the URL to the RSS feed used for the site. It must use the same host name as the site URL (with or without www). Make sure the feed is properly formatted (validate it ahead of time).
     validations:
       required: false
 

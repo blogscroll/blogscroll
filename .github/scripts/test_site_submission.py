@@ -76,6 +76,16 @@ class FormTests(unittest.TestCase):
         b = ss.validate(ss.parse_form(FORM.replace("favicon.ico", "other.ico")))
         self.assertNotEqual(a.fingerprint(), b.fingerprint())
 
+    def test_favicon_and_feed_must_be_on_the_site_domain(self):
+        ok = FORM.replace("_No response_", "https://www.example.org/feed.xml")
+        self.assertEqual(ss.validate(ss.parse_form(ok)).errors, [])  # www and the apex are the same site
+        for form in (FORM.replace("https://example.org/favicon.ico", "https://cdn.other.net/favicon.ico"),
+                     FORM.replace("_No response_", "https://feeds.example.org/rss"),
+                     FORM.replace("_No response_", "https://example.org.evil.com/rss")):
+            errors = ss.validate(ss.parse_form(form)).errors
+            self.assertEqual(len(errors), 1, errors)
+            self.assertIn("same host name", errors[0])
+
     def test_name_on_one_line(self):
         form = ss.parse_form(FORM)
         form["name"] = "a\x1bb"
@@ -191,6 +201,44 @@ class SignalTests(unittest.TestCase):
         self.assertEqual(len(signals), 2 + len(ss.SIGNALS))
         self.assertIn("Could not check", signals[-1].detail)
         self.assertIn(s.fingerprint(), ss.render_report(signals, ss.verdict(signals), s.fingerprint()))
+
+
+class TopicTests(unittest.TestCase):
+    def ctx(self, name="Notes", title="", description="", posts=()):
+        c = ss.Context(ss.Submission(name=name, host="example.org"), "u", None, NOW, None)
+        c.page.title, c.page.description, c.feed_titles = title, description, list(posts)
+        return c
+
+    def test_whole_words_only(self):
+        self.assertEqual(ss.topic_words("Godot tips, churn, Christmas lights, apolitical"), set())
+        self.assertEqual(ss.topic_words("Notes on Politics and the Church"), {"politics", "church"})
+
+    def test_any_match_needs_review_but_is_never_spam(self):
+        self.assertEqual(ss.sig_topic(self.ctx(posts=["Rust", "Go"]))[0], ss.PASS)
+        for c in (self.ctx(posts=["Rust"] * 9 + ["Election results: how voters split"]),
+                  self.ctx(title="Scripture and Sermons", posts=["Sermon", "Prayer"])):
+            [sig] = ss.sig_topic(c)
+            self.assertEqual(sig.level, ss.WARN)
+            self.assertEqual(ss.verdict([sig]), "check:review")
+
+    def test_tech_words_do_not_match(self):
+        self.assertEqual(ss.topic_words("A language-agnostic guide to Raft leader election, "
+                                        "the gospel of TDD, Christian's notes"), set())
+
+    def test_page_and_feed_give_the_text(self):
+        page = ss._PageParser()
+        page.feed('<title>T</title><meta name="description" content="Daily sermons">')
+        self.assertEqual(page.description, "Daily sermons")
+        rss = b"<rss><channel><title>Site</title><item><title>Vote GOP</title></item></channel></rss>"
+        self.assertEqual(ss.feed_stats(rss, NOW).titles, ["Vote GOP"])
+        atom = (b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title type="xhtml">'
+                b'<div xmlns="http://www.w3.org/1999/xhtml">On <b>Islam</b></div></title></entry></feed>')
+        self.assertEqual(ss.feed_stats(atom, NOW).titles, ["On Islam"])
+
+    def test_word_file_compiles(self):
+        for w in ss._list_file(ss.TOPIC_WORDS):
+            re.compile(w)
+            self.assertIsNone(re.fullmatch(rf"(?:{w})", ""), w)
 
 
 class PolicyTests(unittest.TestCase):
@@ -317,6 +365,14 @@ class PullRequestTests(unittest.TestCase):
         gh = FakePRGitHub(TECH)
         files = [{"filename": "web/data/categories/technology/list.toml", "status": "removed"}]
         self.assertEqual(ss.pr_entries(gh, PR, files), [])
+
+    def test_host_rule_applies_only_when_the_favicon_changes(self):
+        icon = 'favicon = "https://assets.den.dev/'  # a listed entry with its favicon on another host
+        self.assertIn(icon, TECH)
+        renamed = self.entries(TECH.replace('title = "Den Delimarsky"', 'title = "Den D."', 1))
+        self.assertEqual([(e.key, e.sub.errors) for e in renamed], [("dendev", [])])
+        moved = self.entries(TECH.replace(icon, 'favicon = "https://cdn.other.net/', 1))
+        self.assertIn("same host name", moved[0].sub.errors[0])
 
     def test_invalid_toml_is_reported(self):
         entries = self.entries('[blogs]\n  title = "$TS\n')
