@@ -1202,3 +1202,9 @@
     favicon = "https://lesleylai.info/favicon-32x32.png"
     updated = "2025-06-18T14:00:00Z"
 #</issue_641>
+
+    [blogs.digidaigithubio]
+    title = "Gene Dai"
+    url = "https://digidai.github.io/"
+    favicon = "https://digidai.github.io/images/favicon-192x192.png"
+    updated = "2026-10-28T00:00:00Z"
