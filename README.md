@@ -44,6 +44,8 @@ Here is a simple (**yet not comprehensive)** breakdown of what may be approved a
 - Links to companies or websites representing personal companies, whose primary purpose is to sell or promote a product.
 - Sites that contain Not Safe For Work (NSFW) material (e.g., nudity, gore, disturbing imagery). While we're all adults here, the directory is designed to be fit for consumption anywhere (home, workplace, school, public transit). It would be a very unpleasant surprise to randomly stumble across content that may be classified as inappropriate just by clicking a blog link.
 - Sites that contain or allude to hate speech, abuse, or otherwise harmful material.
+- Sites about politics or religion.
+- Favicon or RSS feed URLs on a different host name than the site itself, such as a CDN or a feed service. `www.example.com` and `example.com` count as the same host.
 - Sites that have a primary purpose other than being a personal page (e.g., podcasts, streaming pages, project pages).
 - Site is in a language other than English.
 - Site or content is AI-generated.

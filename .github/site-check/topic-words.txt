@@ -1,0 +1,21 @@
+# Words that point to a site about politics or religion. BlogScroll does not list those sites.
+# One regular expression per line, matched as whole words in lowercase text. Any match sends the
+# submission to a maintainer (check:review). It never blocks or counts as spam, because a word
+# alone can be innocent. Leave out words that are common in tech writing ("agnostic", "leader
+# election", "the gospel of TDD").
+# Politics
+politics|political|politicians?|geopolitics|geopolitical
+elections|electoral|ballots?|voters?|voting rights|democracy
+democrats?|republicans?|gop|maga|tories|labour party|donald trump|trump administration
+liberals|conservatives|progressives|leftists?|left-wing|right-wing|far-right|far-left
+partisan|bipartisan|parliament|senate|senators?|congress(?:man|woman|men|women)
+socialism|communism|fascism|marxism|marxists?|anarchism|libertarians?
+abortion|pro-life|pro-choice|immigration policy|gun control|activists?
+# Religion
+religion|religions|religious|theology|theological|atheism|atheists?
+church|churches|christianity|catholics?|catholicism|protestants?|evangelicals?
+jesus|bible|biblical|scriptures?|sermons?|pastors?|apologetics
+islam|islamic|muslims?|quran|koran|mosques?|imams?|hadith|sharia|allah
+judaism|torah|talmud|synagogues?|rabbis?
+hinduism|vedic|buddhism|buddhists?|sikhism
+prayers?|praying|worship|faith-based|devotional|spirituality|god's|praise god|word of god

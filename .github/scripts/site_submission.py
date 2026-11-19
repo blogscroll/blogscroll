@@ -15,6 +15,7 @@ Standard library only, so there is nothing to install.
 from __future__ import annotations
 
 import datetime as dt
+import functools
 import hashlib
 import html
 import http.client
@@ -41,6 +42,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CATEGORIES_DIR = ROOT / "web" / "data" / "categories"
 BLOCKLIST = ROOT / ".github" / "site-check" / "blocklist.txt"
 BLOCKED_TLDS = ROOT / ".github" / "site-check" / "blocked-tlds.txt"
+TOPIC_WORDS = ROOT / ".github" / "site-check" / "topic-words.txt"
 NOT_ACCEPTED = "Thank you for your submission. We will not be accepting it at this time."
 
 BOT_LOGIN = "github-actions[bot]"
@@ -154,18 +156,26 @@ def check_https_url(value: str, what: str, errors: list[str]) -> str:
     return host
 
 
-def validate(form: dict[str, str], category_override: str = "") -> Submission:
+def validate(form: dict[str, str], category_override: str = "", same_host: bool = True) -> Submission:
+    """same_host=False skips the favicon and feed host rule, for listed entries whose favicon did not change."""
     s = Submission(errors=[])
+
+    def site_url(value: str, what: str):
+        host = check_https_url(value, what, s.errors)
+        if same_host and host and s.host and site_host(host) != site_host(s.host):
+            s.errors.append(f"{what} must use the same host name as the site URL "
+                            f"({site_host(s.host)}, with or without www).")
+
     s.name = form["name"].strip()
     if not s.name or len(s.name) > 80 or re.search(r"[\x00-\x1f\x7f\ud800-\udfff]", s.name):
         s.errors.append("Site name must be 1 to 80 characters on one line.")
     s.url = form["url"].strip()
     s.host = check_https_url(s.url, "Site URL", s.errors)
     s.favicon = form["favicon"].strip()
-    check_https_url(s.favicon, "Favicon URL", s.errors)
     s.feed = form["feed"].strip()
-    if s.feed:
-        check_https_url(s.feed, "RSS feed URL", s.errors)
+    site_url(s.favicon, "Favicon URL")
+    if s.feed:  # optional
+        site_url(s.feed, "RSS feed URL")
     known = categories()
     s.category = category_override or form["category"].strip()
     if s.category not in known:
@@ -353,7 +363,7 @@ def domain_registered(domain: str) -> dt.datetime | None:
 class _PageParser(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.title, self._in_title, self.feeds = "", False, []
+        self.title, self._in_title, self.feeds, self.description = "", False, [], ""
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -361,6 +371,8 @@ class _PageParser(HTMLParser):
             self._in_title = True
         elif tag == "link" and "alternate" in (a.get("rel") or "") and "xml" in (a.get("type") or "") and a.get("href"):
             self.feeds.append(a["href"])
+        elif tag == "meta" and (a.get("name") or a.get("property") or "").lower() in ("description", "og:description"):
+            self.description = self.description or (a.get("content") or "")[:500]
 
     def handle_endtag(self, tag):
         if tag == "title":
@@ -379,6 +391,7 @@ class FeedStats:
     newest: dt.datetime | None
     oldest: dt.datetime | None
     authors: int
+    titles: list[str] = field(default_factory=list)
 
 
 def _parse_date(text: str | None) -> dt.datetime | None:
@@ -401,8 +414,9 @@ def _local(tag: str) -> str:
 def feed_stats(xml: bytes, now: dt.datetime) -> FeedStats:
     root = ElementTree.fromstring(xml)
     items = [el for el in root.iter() if _local(el.tag) in ("item", "entry")]
-    dates, authors = [], set()
+    dates, authors, titles = [], set(), []
     for item in items:
+        titles += ["".join(c.itertext()).strip()[:200] for c in item if _local(c.tag) == "title"][:1]
         for child in item.iter():
             if _local(child.tag) in ("pubDate", "published", "updated", "date") and (d := _parse_date(child.text)):
                 dates.append(d)
@@ -413,7 +427,7 @@ def feed_stats(xml: bytes, now: dt.datetime) -> FeedStats:
                 if name:
                     authors.add(name.lower())
     recent = lambda days: sum(1 for d in dates if dt.timedelta(0) <= now - d <= dt.timedelta(days=days))
-    return FeedStats(len(items), recent(7), recent(30), max(dates, default=None), min(dates, default=None), len(authors))
+    return FeedStats(len(items), recent(7), recent(30), max(dates, default=None), min(dates, default=None), len(authors), titles)
 
 
 # ---------------------------------------------------------------- GitHub API
@@ -493,6 +507,7 @@ class Signal:
     level: str
     detail: str
     blocking: bool = False  # policy block: the issue is closed, whatever the other signals say
+    review: bool = False    # a maintainer must look, whatever the other signals say
 
 
 def verdict(signals: list[Signal]) -> str:
@@ -502,7 +517,7 @@ def verdict(signals: list[Signal]) -> str:
     warns = sum(s.level == WARN for s in signals)
     if fails >= 2 or fails * 3 + warns >= 6:
         return "check:likely-spam"
-    if fails or warns >= 2:
+    if fails or warns >= 2 or any(s.review for s in signals):
         return "check:review"
     return "check:clean"
 
@@ -528,6 +543,7 @@ class Context:
     listing: Listing
     existing: bool = False  # a PR that changes an entry that is already listed
     page: _PageParser = field(default_factory=_PageParser)
+    feed_titles: list[str] = field(default_factory=list)
 
 
 def sig_duplicate(c: Context):
@@ -628,6 +644,7 @@ def sig_feed(c: Context):
     if resp.status != 200:
         return WARN, f"Feed returned HTTP {resp.status}."
     st = feed_stats(resp.body, c.now)
+    c.feed_titles = st.titles
     level = PASS
     notes = [f"{st.items} items", f"{st.last_7_days} in the last 7 days", f"{st.authors or 'no'} named author(s)"]
     if st.last_7_days > 14 or (st.last_7_days > 7 and st.authors >= 3):
@@ -643,6 +660,30 @@ def sig_feed(c: Context):
     return level, ", ".join(notes) + "."
 
 
+@functools.lru_cache(maxsize=1)
+def _topic_re() -> re.Pattern:
+    return re.compile(r"\b(?:" + "|".join(f"(?:{w})" for w in sorted(_list_file(TOPIC_WORDS))) + r")\b")
+
+
+def topic_words(text: str) -> set[str]:
+    """Politics and religion words in the text. Whole words only, so 'Godot' or 'churn' do not count."""
+    return {m.group(0) for m in _topic_re().finditer(text.lower())}
+
+
+def sig_topic(c: Context):
+    """BlogScroll does not list sites about politics or religion. A word alone can be innocent
+    ('leader election'), so a match is never spam or a block: it sends the site to a maintainer."""
+    site = topic_words(" ".join([c.sub.name, c.sub.host.replace(".", " ").replace("-", " "),
+                                 c.page.title, c.page.description]))
+    posts = [t for t in c.feed_titles if topic_words(t)]
+    notes = [", ".join(f"`{w}`" for w in sorted(site)) + " in the site name, title or description"] if site else []
+    if posts:
+        notes.append(f"{len(posts)} of {len(c.feed_titles)} recent post titles, e.g. {safe_text(posts[0], 80)}")
+    if not notes:
+        return PASS, "No politics or religion words found."
+    return [Signal("Politics and religion", WARN, "; ".join(notes) + ".", review=True)]
+
+
 # (name, function, level if the function raises). Order matters: the home page finds the feed link.
 SIGNALS: list[tuple[str, Callable, str]] = [
     ("Duplicate", sig_duplicate, SKIP),
@@ -653,6 +694,7 @@ SIGNALS: list[tuple[str, Callable, str]] = [
     ("Home page", sig_home, FAIL),
     ("Favicon", sig_favicon, WARN),
     ("Feed", sig_feed, WARN),
+    ("Politics and religion", sig_topic, SKIP),  # after Home page and Feed: it reads what they found
 ]
 
 
@@ -767,7 +809,9 @@ def pr_entries(gh: GitHub, pr: dict, files: list[dict]) -> list[PREntry]:
                 continue
             form = {"name": str(blog.get("title", "")), "url": str(blog.get("url", "")),
                     "favicon": str(blog.get("favicon", "")), "feed": "", "category": cat, "notes": ""}
-            out.append(PREntry(key, validate(form), key in base))
+            old = base.get(key)
+            sub = validate(form, same_host=not old or old.get("favicon") != blog.get("favicon"))
+            out.append(PREntry(key, sub, old is not None))
     return out
 
 
