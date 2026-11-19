@@ -1,0 +1,18 @@
+# Country TLDs that BlogScroll does not accept. A submission that uses one (site, favicon, feed,
+# or the domain the home page redirects to) is closed by the submission check, and approval refuses it.
+# Basis: the US Commerce "foreign adversaries" list (15 CFR 791.4), plus Belarus.
+# Non-Latin TLDs are in punycode.
+ru            # Russia
+su            # Soviet Union, still used by Russian sites
+xn--p1ai      # .рф Russia
+ir            # Iran
+xn--mgba3a4f16a  # .ایران Iran
+kp            # North Korea
+cu            # Cuba
+cn            # China
+xn--fiqs8s    # .中国 China
+xn--fiqz9s    # .中國 China
+hk            # Hong Kong
+ve            # Venezuela
+by            # Belarus
+xn--90ais     # .бел Belarus

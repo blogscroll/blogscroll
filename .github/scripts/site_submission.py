@@ -37,6 +37,8 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[2]
 CATEGORIES_DIR = ROOT / "web" / "data" / "categories"
 BLOCKLIST = ROOT / ".github" / "site-check" / "blocklist.txt"
+BLOCKED_TLDS = ROOT / ".github" / "site-check" / "blocked-tlds.txt"
+NOT_ACCEPTED = "Thank you for your submission. We will not be accepting it at this time."
 
 BOT_LOGIN = "github-actions[bot]"
 APPROVED = "approved"
@@ -45,6 +47,7 @@ LABELS = {
     "check:clean": ("0e8a16", "Automated submission check found no problems"),
     "check:review": ("fbca04", "Automated submission check found something to look at"),
     "check:likely-spam": ("b60205", "Automated submission check found strong spam signals"),
+    "check:blocked": ("000000", "Blocked by policy: country TLD or blocklisted domain"),
 }
 USER_AGENT = "BlogScroll submission check (+https://blogscroll.com)"
 PAGE_BYTES, FEED_BYTES = 1_000_000, 5_000_000
@@ -200,6 +203,41 @@ class Listing:
                 if host:
                     listing.hosts[site_host(host)] = cat
         return listing
+
+
+def _list_file(path: Path) -> set[str]:
+    """Non-comment entries of a config file, lowercased. Text after # is a comment."""
+    return {line.split("#", 1)[0].strip().lower() for line in path.read_text(encoding="utf-8").splitlines()} - {""}
+
+
+def ascii_host(host: str) -> str:
+    """Punycode form of a host, so .рф and .xn--p1ai compare equal."""
+    try:
+        return host.encode("idna").decode("ascii").lower()
+    except UnicodeError:
+        return host.lower()
+
+
+def blocked_country(host: str) -> bool:
+    return ascii_host(host).rstrip(".").rsplit(".", 1)[-1] in _list_file(BLOCKED_TLDS)
+
+
+def blocked_domain(host: str) -> bool:
+    entries = _list_file(BLOCKLIST)
+    return host.lower() in entries or registrable_domain(host.lower()) in entries
+
+
+def policy_blocks(s: Submission) -> list[str]:
+    """Reasons this submission is not accepted at all. No network: only the submitted URLs."""
+    reasons = []
+    for what, url in (("Site URL", s.url), ("Favicon URL", s.favicon), ("RSS feed URL", s.feed)):
+        host = (urllib.parse.urlsplit(url).hostname or "").lower() if url else ""
+        if host and blocked_country(host):
+            tld = ascii_host(host).rstrip(".").rsplit(".", 1)[-1]
+            reasons.append(f"{what} uses a country domain (`.{tld}`) that BlogScroll does not accept.")
+    if s.host and blocked_domain(s.host):
+        reasons.append("The domain is on the blocklist.")
+    return reasons
 
 
 def toml_string(value: str) -> str:
@@ -438,9 +476,12 @@ class Signal:
     name: str
     level: str
     detail: str
+    blocking: bool = False  # policy block: the issue is closed, whatever the other signals say
 
 
 def verdict(signals: list[Signal]) -> str:
+    if any(s.blocking for s in signals):
+        return "check:blocked"
     fails = sum(s.level == FAIL for s in signals)
     warns = sum(s.level == WARN for s in signals)
     if fails >= 2 or fails * 3 + warns >= 6:
@@ -477,11 +518,9 @@ def sig_duplicate(c: Context):
     return FAIL if cat else PASS, f"Already listed in `{cat}`." if cat else "Not listed yet."
 
 
-def sig_blocklist(c: Context):
-    lines = BLOCKLIST.read_text().splitlines()
-    blocked = {l.strip().lower() for l in lines if l.strip() and not l.startswith("#")}
-    hit = c.sub.host in blocked or registrable_domain(c.sub.host) in blocked
-    return FAIL if hit else PASS, "Domain is on the blocklist." if hit else "Not on the blocklist."
+def sig_policy(c: Context):
+    reasons = policy_blocks(c.sub)
+    return (FAIL, " ".join(reasons), True) if reasons else (PASS, "No blocked country domain, not on the blocklist.")
 
 
 def sig_name(c: Context):
@@ -530,6 +569,8 @@ def sig_home(c: Context):
     affiliates = len(re.findall(r"[?&](?:tag|ref|aff|affiliate|aff_id)=", lower))
     detail = ", ".join(f"`{p}`" for p in phrases) or "No guest-post or sponsor text."
     return [
+        Signal("Home page", FAIL, f"Redirects to {safe_text(final)}, a blocked domain.", True)
+        if blocked_country(final) or blocked_domain(final) else
         Signal("Home page", WARN if moved else PASS,
                f"Redirects to {safe_text(final)}." if moved else f"Loads. Title: {safe_text(c.page.title)}."),
         Signal("Page content", FAIL if len(phrases) >= 2 else WARN if phrases or affiliates >= 5 else PASS,
@@ -570,7 +611,6 @@ def sig_feed(c: Context):
 # (name, function, level if the function raises). Order matters: the home page finds the feed link.
 SIGNALS: list[tuple[str, Callable, str]] = [
     ("Duplicate", sig_duplicate, SKIP),
-    ("Blocklist", sig_blocklist, SKIP),
     ("Name and domain", sig_name, SKIP),
     ("Submitter account", sig_account, SKIP),
     ("Earlier submissions", sig_history, SKIP),
@@ -582,7 +622,8 @@ SIGNALS: list[tuple[str, Callable, str]] = [
 
 
 def collect_signals(c: Context) -> list[Signal]:
-    out = [Signal("Form", FAIL if c.sub.errors else PASS, " ".join(c.sub.errors) or "All fields are valid.")]
+    out = [Signal("Form", FAIL if c.sub.errors else PASS, " ".join(c.sub.errors) or "All fields are valid."),
+           Signal("Policy", *sig_policy(c))]  # always, even when the site URL is invalid
     if not c.sub.host:
         return out
     for name, fn, on_error in SIGNALS:
@@ -596,7 +637,7 @@ def collect_signals(c: Context) -> list[Signal]:
 
 def render_report(signals: list[Signal], label: str, fingerprint: str) -> str:
     title = {"check:clean": "✅ No problems found", "check:review": "⚠️ Needs a look",
-             "check:likely-spam": "❌ Likely spam"}[label]
+             "check:likely-spam": "❌ Likely spam", "check:blocked": "⛔ Blocked by policy"}[label]
     rows = "\n".join(f"| {ICON[s.level]} | {s.name} | {s.detail} |" for s in signals)
     return (
         f"{COMMENT_MARKER} {fingerprint} -->\n### Submission check: {title}\n\n"
@@ -634,6 +675,9 @@ def cmd_check() -> int:
         gh.call("PATCH", f"/repos/{gh.repo}/issues/comments/{mine['id']}", {"body": report})
     else:
         gh.comment(n, report)
+    if label == "check:blocked":
+        gh.comment(n, NOT_ACCEPTED)
+        gh.call("PATCH", f"/repos/{gh.repo}/issues/{n}", {"state": "closed", "state_reason": "not_planned"})
     return 0
 
 
@@ -675,7 +719,7 @@ def cmd_approve() -> int:
         if n in listing.markers:  # added by an earlier run that stopped before it closed the issue
             done.append(n)
             continue
-        problem = "; ".join(sub.errors) or approval_problem(gh, issue, sub)
+        problem = "; ".join(sub.errors + policy_blocks(sub)) or approval_problem(gh, issue, sub)
         if not problem and site_host(sub.host) in listing.hosts:
             problem = "This site is already listed."
         if not problem and sub.key in listing.keys:

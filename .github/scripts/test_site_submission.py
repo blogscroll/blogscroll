@@ -1,4 +1,5 @@
 import datetime as dt
+import re
 import sys
 import tomllib
 import unittest
@@ -187,9 +188,42 @@ class SignalTests(unittest.TestCase):
         boom = mock.Mock(side_effect=OSError("down"))
         with mock.patch.object(ss, "SIGNALS", [(n, boom, lvl) for n, _, lvl in ss.SIGNALS]):
             signals = ss.collect_signals(ctx)
-        self.assertEqual(len(signals), 1 + len(ss.SIGNALS))
+        self.assertEqual(len(signals), 2 + len(ss.SIGNALS))
         self.assertIn("Could not check", signals[-1].detail)
         self.assertIn(s.fingerprint(), ss.render_report(signals, ss.verdict(signals), s.fingerprint()))
+
+
+class PolicyTests(unittest.TestCase):
+    def test_country_tlds(self):
+        for host in ("example.ru", "a.b.cn", "site.su", "пример.рф", "x.xn--p1ai", "news.hk", "blog.by", "site.ir"):
+            self.assertTrue(ss.blocked_country(host), host)
+        for host in ("example.com", "russia-fan.com", "ru.example.org", "example.io", "cnn.com"):
+            self.assertFalse(ss.blocked_country(host), host)
+
+    def test_policy_checks_favicon_and_feed_too(self):
+        s = ss.validate(ss.parse_form(FORM))
+        self.assertEqual(ss.policy_blocks(s), [])
+        s.favicon, s.feed = "https://cdn.example.cn/icon.png", "https://feeds.example.ru/rss"
+        self.assertEqual(len(ss.policy_blocks(s)), 2)
+
+    def test_policy_applies_to_invalid_non_ascii_url(self):
+        s = ss.validate(ss.parse_form(FORM.replace("https://www.Example.org/blog", "https://пример.рф")))
+        self.assertTrue(s.errors)
+        self.assertTrue(ss.policy_blocks(s))
+
+    def test_blocklisted_domain_and_subdomain(self):
+        self.assertTrue(ss.blocked_domain("www.durablepicks.com"))
+        self.assertTrue(ss.blocked_domain("huumanupgrade.blogspot.com"))
+        self.assertFalse(ss.blocked_domain("other.blogspot.com"))
+
+    def test_blocked_verdict_wins(self):
+        sig = [ss.Signal("Policy", ss.FAIL, "x", True), ss.Signal("Feed", ss.PASS, "")]
+        self.assertEqual(ss.verdict(sig), "check:blocked")
+
+    def test_tld_file_is_clean(self):
+        entries = ss._list_file(ss.BLOCKED_TLDS)
+        self.assertTrue(entries)
+        self.assertTrue(all(re.fullmatch(r"[a-z0-9-]+", e) for e in entries), entries)
 
 
 class FakeGitHub:
