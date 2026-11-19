@@ -341,6 +341,35 @@ class PullRequestTests(unittest.TestCase):
         self.assertFalse(planted.startswith(ss.marker_line("pr:abc") + "\n"))
 
 
+class CheckCommandTests(unittest.TestCase):
+    def run_check(self, event, issue):
+        gh = mock.Mock()
+        gh.issue.return_value = issue
+        with mock.patch.object(ss, "env_github", return_value=gh), \
+             mock.patch.object(ss, "check_issue", return_value=("check:clean", "r", [])), \
+             mock.patch.object(ss, "publish") as publish, mock.patch.object(ss, "ensure_labels"), \
+             mock.patch.object(ss.Listing, "load"), \
+             mock.patch.object(ss.Path, "read_text", return_value=__import__("json").dumps(event)), \
+             mock.patch.dict(ss.os.environ, {"GITHUB_EVENT_PATH": "e"}):
+            code = ss.cmd_check()
+        return code, gh.issue.call_args.args[0], publish.called
+
+    def test_run_workflow_checks_the_given_issue(self):
+        issue = {"number": 682, "state": "open", "body": FORM}
+        self.assertEqual(self.run_check({"inputs": {"issue": "682"}}, issue), (0, 682, True))
+
+    def test_only_open_site_requests(self):
+        for issue in ({"state": "closed", "body": FORM}, {"state": "open", "body": "hi"},
+                      {"state": "open", "body": FORM, "pull_request": {}}):
+            self.assertEqual(self.run_check({"inputs": {"issue": "5"}}, issue), (1, 5, False))
+            self.assertEqual(self.run_check({"issue": {"number": 5}}, issue), (0, 5, False))
+
+    def test_issue_number_must_be_whole(self):
+        with mock.patch.object(ss, "env_github"), mock.patch.dict(ss.os.environ, {"GITHUB_EVENT_PATH": "e"}), \
+             mock.patch.object(ss.Path, "read_text", return_value='{"inputs": {"issue": "12.5"}}'):
+            self.assertEqual(ss.cmd_check(), 1)
+
+
 class FormTemplateTests(unittest.TestCase):
     def test_dropdown_matches_category_folders(self):
         form = (ss.ROOT / ".github" / "ISSUE_TEMPLATE" / "1-site-request.yml").read_text()

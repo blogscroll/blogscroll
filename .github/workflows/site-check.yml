@@ -6,17 +6,24 @@ name: Site submission check
 on:
   issues:
     types: [opened, edited, reopened, labeled]
+  workflow_dispatch:  # Actions > Site submission check > Run workflow: check one issue again
+    inputs:
+      issue:
+        description: Issue number
+        required: true
+        type: number
 
 permissions: {}
 
 concurrency:
-  group: site-check-${{ github.event.issue.number }}
+  group: site-check-${{ github.event.issue.number || inputs.issue }}
   cancel-in-progress: false
 
 jobs:
   check:
     # Runs again when a category:<name> label is added, because that changes the category.
     if: >-
+      github.event_name == 'workflow_dispatch' ||
       github.event.issue.state == 'open' && contains(github.event.issue.body, '### Site URL') &&
       (github.event.action != 'labeled' || startsWith(github.event.label.name, 'category:'))
     # GitHub-hosted on purpose: this job fetches URLs that strangers submit.
