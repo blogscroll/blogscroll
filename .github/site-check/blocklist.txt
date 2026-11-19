@@ -1,0 +1,16 @@
+# Domains that the submission check marks as blocked. One registrable domain or host per line.
+# Seeded from submissions closed as spam in November 2026.
+ailorde.com
+durablepicks.com
+everydaycontentment.com
+extrahustles.com
+firenomics.com
+hackedself.com
+huumanupgrade.blogspot.com
+mobidevices.com
+pastagi.com
+poketdev.com
+readdarktales.com
+sagemindai.io
+searchnatural.co.uk
+stumbletowardthelight.com

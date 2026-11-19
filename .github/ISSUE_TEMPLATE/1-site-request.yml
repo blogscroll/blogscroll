@@ -64,6 +64,7 @@ body:
       description: Which category does your site belong to?
       options:
         - design-and-ux
+        - finance
         - personal
         - photo-video-production
         - technology
