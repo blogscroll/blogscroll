@@ -248,7 +248,7 @@ class ApprovalTests(unittest.TestCase):
     def setUp(self):
         self.sub = ss.validate(ss.parse_form(FORM))
         self.issue = {"number": 7}
-        self.good = f"{ss.COMMENT_MARKER} {self.sub.fingerprint()} -->"
+        self.good = ss.marker_line(self.sub.fingerprint()) + "\n### Submission check"
 
     def test_maintainer_role_is_accepted(self):
         self.assertEqual(ss.approval_problem(FakeGitHub("maintain", self.good), self.issue, self.sub), "")
@@ -266,6 +266,79 @@ class ApprovalTests(unittest.TestCase):
 
     def test_no_check_is_refused(self):
         self.assertIn("no submission check", ss.approval_problem(FakeGitHub("admin", None), self.issue, self.sub))
+
+
+BASE_TOML = """[blogs]
+    [blogs.dendev]
+    title = "Den"
+    url = "https://den.dev"
+    favicon = "https://den.dev/f.ico"
+    updated = "2024-09-01T14:00:00Z"
+"""
+
+
+class FakePRGitHub:
+    repo = "blogscroll/blogscroll"
+
+    def __init__(self, head_toml, files=("web/data/categories/technology/list.toml",)):
+        self.head_toml, self.files = head_toml, files
+
+    def pages(self, path):
+        return [{"filename": f, "status": "modified"} for f in self.files]
+
+    def raw(self, path):
+        return self.head_toml
+
+
+PR = {"number": 5, "user": {"login": "u"}, "head": {"sha": "abc", "repo": {"full_name": "fork/blogscroll"}},
+      "base": {"sha": "def"}}
+TECH = (ss.CATEGORIES_DIR / "technology" / "list.toml").read_text(encoding="utf-8")
+NEW_ENTRY = """
+    [blogs.exampleorg]
+    title = "Example"
+    url = "https://example.org"
+    favicon = "https://example.org/f.ico"
+    updated = "2026-11-01T00:00:00Z"
+"""
+
+
+class PullRequestTests(unittest.TestCase):
+    def entries(self, head, files=("web/data/categories/technology/list.toml",)):
+        gh = FakePRGitHub(head, files)
+        return ss.pr_entries(gh, PR, gh.pages(""))
+
+    def test_new_and_changed_entries_are_found_against_main(self):
+        head = TECH.replace('url = "https://den.dev"', 'url = "https://den.dev/"') + NEW_ENTRY
+        found = [(e.key, e.existing) for e in self.entries(head)]
+        self.assertEqual(found, [("dendev", True), ("exampleorg", False)])
+
+    def test_unchanged_and_removed_files_are_ignored(self):
+        self.assertEqual(self.entries(TECH), [])
+        gh = FakePRGitHub(TECH)
+        files = [{"filename": "web/data/categories/technology/list.toml", "status": "removed"}]
+        self.assertEqual(ss.pr_entries(gh, PR, files), [])
+
+    def test_invalid_toml_is_reported(self):
+        entries = self.entries('[blogs]\n  title = "$TS\n')
+        self.assertEqual(len(entries), 1)
+        self.assertIsNone(entries[0].sub)
+        self.assertIn("not valid TOML", entries[0].error)
+
+    def test_pr_without_list_changes_is_skipped(self):
+        self.assertIsNone(ss.check_pr(FakePRGitHub(TECH, files=("README.md",)), PR, ss.Listing({}, set(), set()), NOW))
+
+    def test_other_files_fail_and_blocked_entry_wins(self):
+        head = TECH + NEW_ENTRY.replace("example.org", "example.ru").replace("exampleorg", "exampleru")
+        gh = FakePRGitHub(head, files=("web/data/categories/technology/list.toml", ".github/workflows/x.yml"))
+        with mock.patch.object(ss, "SIGNALS", []):
+            label, report, signals = ss.check_pr(gh, PR, ss.Listing({}, set(), set()), NOW)
+        self.assertEqual(label, "check:blocked")
+        self.assertTrue(report.startswith(ss.marker_line("pr:abc") + "\n"))
+        self.assertIn("Other files", [s.name for s in signals])
+
+    def test_marker_must_be_the_first_line(self):
+        planted = "x\n" + ss.marker_line("pr:abc")
+        self.assertFalse(planted.startswith(ss.marker_line("pr:abc") + "\n"))
 
 
 class FormTemplateTests(unittest.TestCase):

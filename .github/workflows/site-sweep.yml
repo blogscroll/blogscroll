@@ -1,0 +1,45 @@
+name: Site submission sweep
+
+# Checks open site-request issues that have no check yet, and every new or changed entry in
+# open fork PRs. Fork PRs are read through the API as data; their code is never checked out.
+# Manual runs are a dry run unless "post" is on: the results then appear only in the run summary.
+
+on:
+  workflow_dispatch:
+    inputs:
+      post:
+        description: Post results (comments, labels, closing blocked items)
+        type: boolean
+        default: false
+      recheck:
+        description: Check items again even if they already have a current check
+        type: boolean
+        default: false
+  schedule:
+    - cron: '23 6 * * *'  # daily: catches fork PRs, which the issue check does not see
+
+permissions: {}
+
+concurrency:
+  group: site-sweep
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    # GitHub-hosted on purpose: this job fetches URLs that strangers submit.
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - run: python3 .github/scripts/site_submission.py sweep
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SWEEP_POST: ${{ github.event_name == 'schedule' || inputs.post }}
+          SWEEP_RECHECK: ${{ inputs.recheck }}

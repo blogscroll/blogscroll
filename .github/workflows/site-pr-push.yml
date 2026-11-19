@@ -1,0 +1,27 @@
+name: Site PR pushed
+
+# A check label describes one commit. When a fork PR gets new commits, remove the label so a
+# stale "check:clean" is never shown. The daily sweep checks the new commit.
+# pull_request_target is used only to get a token that can edit labels on fork PRs. This job
+# checks out nothing and runs no code from the PR; the PR number is the only input it uses.
+
+on:
+  pull_request_target:
+    types: [synchronize]
+
+permissions: {}
+
+jobs:
+  clear:
+    if: github.event.pull_request.head.repo.full_name != github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions:
+      pull-requests: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        # Fails only before the labels exist (no sweep has posted yet); then there is nothing to clear.
+        run: gh pr edit "$PR" --remove-label check:clean,check:review,check:likely-spam,check:blocked || echo "No check labels to remove."

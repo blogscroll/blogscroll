@@ -3,6 +3,9 @@
 
   site_submission.py check    Post or update the "Submission check" comment and set a check:* label.
   site_submission.py approve  Add every open site request labeled "approved" to its list.toml.
+  site_submission.py sweep    Check open site requests that have no check yet, and every new or
+                              changed entry in open fork PRs. Posts only if SWEEP_POST=true;
+                              otherwise it writes a table to the run summary.
 
 `check` reads the issue from $GITHUB_EVENT_PATH. `approve` reads the current issues from the API.
 Issue text is untrusted: it is parsed as data and never passed to a shell.
@@ -446,6 +449,19 @@ class GitHub:
             page += 1
         return out
 
+    def raw(self, path: str) -> str:
+        """A file's content through the contents API, as text. Never executed, only parsed."""
+        req = urllib.request.Request(
+            f"https://api.github.com{path}",
+            headers={"Authorization": f"Bearer {self.token}", "Accept": "application/vnd.github.raw",
+                     "X-GitHub-Api-Version": "2022-11-28", "User-Agent": USER_AGENT},
+        )
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            data = resp.read(FEED_BYTES + 1)
+        if len(data) > FEED_BYTES:
+            raise ValueError("file is larger than 5 MB")
+        return data.decode("utf-8")
+
     def issue(self, n: int) -> dict:
         return self.call("GET", f"/repos/{self.repo}/issues/{n}")
 
@@ -510,10 +526,13 @@ class Context:
     gh: GitHub
     now: dt.datetime
     listing: Listing
+    existing: bool = False  # a PR that changes an entry that is already listed
     page: _PageParser = field(default_factory=_PageParser)
 
 
 def sig_duplicate(c: Context):
+    if c.existing:
+        return PASS, "Changes an entry that is already listed."
     cat = c.listing.hosts.get(site_host(c.sub.host))
     return FAIL if cat else PASS, f"Already listed in `{cat}`." if cat else "Not listed yet."
 
@@ -531,6 +550,20 @@ def sig_name(c: Context):
     return WARN if notes else PASS, ", ".join(notes) or "Nothing unusual."
 
 
+_PER_LOGIN: dict[tuple[str, str], tuple] = {}
+
+
+def per_login(fn):
+    """One lookup per user per run: PRs with many entries share the result."""
+    def wrapper(c: Context):
+        key = (fn.__name__, c.login)
+        if key not in _PER_LOGIN:
+            _PER_LOGIN[key] = fn(c)
+        return _PER_LOGIN[key]
+    return wrapper
+
+
+@per_login
 def sig_account(c: Context):
     user = c.gh.call("GET", f"/users/{urllib.parse.quote(c.login)}") or {}
     age = c.now - dt.datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
@@ -538,7 +571,9 @@ def sig_account(c: Context):
     return level, f"Created {age_text(age)} ago, {user.get('public_repos', 0)} public repos."
 
 
+@per_login
 def sig_history(c: Context):
+    time.sleep(2.1)  # the search API allows 30 calls per minute
     q = urllib.parse.quote(f'repo:{c.gh.repo} is:issue author:{c.login} is:closed reason:"not planned"')
     closed = (c.gh.call("GET", f"/search/issues?q={q}&per_page=1") or {}).get("total_count", 0)
     level = FAIL if closed >= 2 else WARN if closed else PASS
@@ -635,13 +670,22 @@ def collect_signals(c: Context) -> list[Signal]:
     return out
 
 
-def render_report(signals: list[Signal], label: str, fingerprint: str) -> str:
-    title = {"check:clean": "✅ No problems found", "check:review": "⚠️ Needs a look",
-             "check:likely-spam": "❌ Likely spam", "check:blocked": "⛔ Blocked by policy"}[label]
+TITLES = {"check:clean": "✅ No problems found", "check:review": "⚠️ Needs a look",
+          "check:likely-spam": "❌ Likely spam", "check:blocked": "⛔ Blocked by policy"}
+
+
+def table(signals: list[Signal]) -> str:
     rows = "\n".join(f"| {ICON[s.level]} | {s.name} | {s.detail} |" for s in signals)
+    return f"| | Signal | Result |\n|---|---|---|\n{rows}\n"
+
+
+def marker_line(tag: str) -> str:
+    return f"{COMMENT_MARKER} {tag} -->"
+
+
+def render_report(signals: list[Signal], label: str, fingerprint: str) -> str:
     return (
-        f"{COMMENT_MARKER} {fingerprint} -->\n### Submission check: {title}\n\n"
-        f"| | Signal | Result |\n|---|---|---|\n{rows}\n\n"
+        f"{marker_line(fingerprint)}\n### Submission check: {TITLES[label]}\n\n{table(signals)}\n"
         "<sub>Automated and informational only. A maintainer makes the decision. "
         "This check runs again when the issue is edited.</sub>\n"
     )
@@ -653,31 +697,169 @@ def env_github() -> GitHub:
     return GitHub(os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_TOKEN"])
 
 
-def cmd_check() -> int:
-    gh = env_github()
-    n = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())["issue"]["number"]
-    issue = gh.issue(n)  # current state, not the event payload
-    sub = submission_of(issue)
-    ctx = Context(sub, issue["user"]["login"], gh, dt.datetime.now(dt.timezone.utc), Listing.load())
-    signals = collect_signals(ctx)
-    label = verdict(signals)
-    report = render_report(signals, label, sub.fingerprint())
-    print(report)
+SEVERITY = ["check:clean", "check:review", "check:likely-spam", "check:blocked"]
 
+
+def ensure_labels(gh: GitHub):
     for name, (color, desc) in LABELS.items():
         gh.call("POST", f"/repos/{gh.repo}/labels", {"name": name, "color": color, "description": desc}, ok=(422,))
+
+
+def publish(gh: GitHub, item: dict, label: str, report: str, is_pr: bool, mine: dict | None):
+    """Set the check label, create or update the one check comment, and close blocked items."""
+    n = item["number"]
     for old in LABELS:
-        if old != label and any(l["name"] == old for l in issue.get("labels", [])):
+        if old != label and any(l["name"] == old for l in item.get("labels", [])):
             gh.remove_label(n, old)
     gh.call("POST", f"/repos/{gh.repo}/issues/{n}/labels", {"labels": [label]})
-    mine = gh.check_comment(n)
     if mine:
         gh.call("PATCH", f"/repos/{gh.repo}/issues/comments/{mine['id']}", {"body": report})
     else:
         gh.comment(n, report)
     if label == "check:blocked":
         gh.comment(n, NOT_ACCEPTED)
-        gh.call("PATCH", f"/repos/{gh.repo}/issues/{n}", {"state": "closed", "state_reason": "not_planned"})
+        if is_pr:
+            gh.call("PATCH", f"/repos/{gh.repo}/pulls/{n}", {"state": "closed"})
+        else:
+            gh.call("PATCH", f"/repos/{gh.repo}/issues/{n}", {"state": "closed", "state_reason": "not_planned"})
+
+
+def check_issue(gh: GitHub, issue: dict, listing: Listing, now: dt.datetime) -> tuple[str, str, list[Signal]]:
+    sub = submission_of(issue)
+    signals = collect_signals(Context(sub, issue["user"]["login"], gh, now, listing))
+    label = verdict(signals)
+    return label, render_report(signals, label, sub.fingerprint()), signals
+
+
+MAX_PR_ENTRIES = 20
+LIST_FILE = re.compile(r"web/data/categories/([a-z0-9-]+)/list\.toml")
+
+
+@dataclass
+class PREntry:
+    key: str
+    sub: Submission | None
+    existing: bool = False
+    error: str = ""
+
+
+def pr_entries(gh: GitHub, pr: dict, files: list[dict]) -> list[PREntry]:
+    """Every new or changed entry in the PR's list files, compared with main.
+
+    The PR's files are read through the API at its head commit and parsed as TOML; nothing is
+    checked out or run. The base repo serves PR commits, so this works after a fork is deleted."""
+    out: list[PREntry] = []
+    for f in files:
+        m = LIST_FILE.fullmatch(f["filename"])
+        if not m or f.get("status") == "removed":
+            continue
+        cat = m.group(1)
+        local = ROOT / f["filename"]
+        base = tomllib.loads(local.read_text(encoding="utf-8")).get("blogs", {}) if local.is_file() else {}
+        path = urllib.parse.quote(f["filename"])
+        try:
+            new = tomllib.loads(gh.raw(f"/repos/{gh.repo}/contents/{path}?ref={pr['head']['sha']}"))
+        except tomllib.TOMLDecodeError as e:
+            out.append(PREntry(cat, None, error=f"`{cat}/list.toml` is not valid TOML: {safe_text(str(e), 80)}"))
+            continue
+        for key, blog in new.get("blogs", {}).items():
+            if not isinstance(blog, dict) or base.get(key) == blog:
+                continue
+            form = {"name": str(blog.get("title", "")), "url": str(blog.get("url", "")),
+                    "favicon": str(blog.get("favicon", "")), "feed": "", "category": cat, "notes": ""}
+            out.append(PREntry(key, validate(form), key in base))
+    return out
+
+
+def check_pr(gh: GitHub, pr: dict, listing: Listing, now: dt.datetime) -> tuple[str, str, list[Signal]] | None:
+    """The check for a fork PR, or None if it changes no site list."""
+    files = gh.pages(f"/repos/{gh.repo}/pulls/{pr['number']}/files")
+    if not any(LIST_FILE.fullmatch(f["filename"]) for f in files):
+        return None
+    entries = pr_entries(gh, pr, files)
+    other = [f["filename"] for f in files if not LIST_FILE.fullmatch(f["filename"])]
+    general = []
+    if other:
+        general.append(Signal("Other files", FAIL, "Also changes " + ", ".join(safe_text(o, 60) for o in other[:5])
+                              + (f" and {len(other) - 5} more." if len(other) > 5 else ".")))
+    if len(entries) > MAX_PR_ENTRIES:
+        general.append(Signal("Size", WARN, f"{len(entries)} entries; only the first {MAX_PR_ENTRIES} are checked."))
+    sections, labels, all_signals = [], [verdict(general)] if general else [], list(general)
+    if general:
+        sections.append(table(general))
+    for entry in entries[:MAX_PR_ENTRIES]:
+        signals = ([Signal("File", FAIL, entry.error)] if entry.sub is None else
+                   collect_signals(Context(entry.sub, pr["user"]["login"], gh, now, listing, entry.existing)))
+        labels.append(verdict(signals))
+        all_signals += signals
+        sections.append(f"#### {safe_text(entry.key, 60)}\n\n{table(signals)}")
+    label = max(labels or ["check:review"], key=SEVERITY.index)
+    body = "\n".join(sections) or "This PR changes no site entries.\n"
+    if len(body) > 60_000:
+        body = body[:60_000] + "\n\n(Report cut to fit a comment.)\n"
+    report = (f"{marker_line('pr:' + pr['head']['sha'])}\n### Submission check: {TITLES[label]}\n\n"
+              f"Checked at commit `{pr['head']['sha'][:7]}`. A new push removes the label until the next check.\n\n"
+              f"{body}\n<sub>Automated and informational only. A maintainer makes the decision. "
+              "New site requests should use the issue form.</sub>\n")
+    return label, report, all_signals
+
+
+def cmd_check() -> int:
+    gh = env_github()
+    n = json.loads(Path(os.environ["GITHUB_EVENT_PATH"]).read_text())["issue"]["number"]
+    issue = gh.issue(n)  # current state, not the event payload
+    label, report, _ = check_issue(gh, issue, Listing.load(), dt.datetime.now(dt.timezone.utc))
+    print(report)
+    ensure_labels(gh)
+    publish(gh, issue, label, report, False, gh.check_comment(n))
+    return 0
+
+
+def cmd_sweep() -> int:
+    gh, post = env_github(), os.environ.get("SWEEP_POST") == "true"
+    recheck = os.environ.get("SWEEP_RECHECK") == "true"
+    listing, now = Listing.load(), dt.datetime.now(dt.timezone.utc)
+    if post:
+        ensure_labels(gh)
+    rows: list[tuple[int, int, str]] = []
+    for item in gh.pages(f"/repos/{gh.repo}/issues?state=open"):
+        n, is_pr = item["number"], "pull_request" in item
+        kind = "PR" if is_pr else "Issue"
+        if not is_pr and "### Site URL" not in (item.get("body") or ""):
+            continue
+        try:
+            mine = gh.check_comment(n)
+            if is_pr:
+                pr = gh.call("GET", f"/repos/{gh.repo}/pulls/{n}")
+                if (pr["head"].get("repo") or {}).get("full_name") == gh.repo:
+                    continue  # maintainer branches, including the approve workflow's own PRs
+                if mine and mine["body"].startswith(marker_line("pr:" + pr["head"]["sha"]) + "\n") and not recheck:
+                    continue  # already checked at this commit
+                result = check_pr(gh, pr, listing, now)
+                if result is None:
+                    continue  # not a site submission
+            else:
+                if mine and not recheck:
+                    continue  # edits re-run the check, so an existing check is current
+                result = check_issue(gh, item, listing, now)
+            label, report, signals = result
+            if post:
+                publish(gh, item, label, report, is_pr, mine)
+            reasons = ", ".join(dict.fromkeys(s.name for s in signals if s.level in (FAIL, WARN))) or "-"
+            rows.append((SEVERITY.index(label), n, f"| {kind} [#{n}]({item['html_url']}) | `{label}` | {reasons} |"))
+            print(f"#{n}: {label}")
+        except Exception as e:  # noqa: BLE001 - one bad item must not stop the sweep
+            rows.append((1, n, f"| {kind} [#{n}]({item['html_url']}) | error | {type(e).__name__} |"))
+            print(f"#{n}: {type(e).__name__}: {e}", file=sys.stderr)
+    errors = sum(1 for r in rows if "| error |" in r[2])
+    mode = "Posted to each item." if post else "Dry run: nothing was posted. Run again with **post** to comment and label."
+    summary = (f"## Submission sweep\n\n{mode} Checked {len(rows) - errors} item(s), {errors} error(s).\n\n"
+               "| Item | Result | Signals to look at |\n|---|---|---|\n" +
+               "\n".join(r for _, _, r in sorted(rows, key=lambda r: (-r[0], r[1]))) + "\n")
+    print(summary)
+    if os.environ.get("GITHUB_STEP_SUMMARY"):
+        with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as f:
+            f.write(summary)
     return 0
 
 
@@ -694,7 +876,7 @@ def approval_problem(gh: GitHub, issue: dict, sub: Submission) -> str:
     check = gh.check_comment(n)
     if not check:
         return "There is no submission check yet. Wait for it, then add the label again."
-    if f"{COMMENT_MARKER} {sub.fingerprint()} -->" not in check["body"]:
+    if not check["body"].startswith(marker_line(sub.fingerprint()) + "\n"):
         return "The submission changed after the last check. Read the new check, then add the label again."
     if check["updated_at"] > events[-1]["created_at"]:
         return "The check was updated after the label was added. Read it, then add the label again."
@@ -743,7 +925,7 @@ def cmd_approve() -> int:
 if __name__ == "__main__":
     if sys.version_info < (3, 11):
         sys.exit("Python 3.11 or later is required (tomllib).")
-    commands = {"check": cmd_check, "approve": cmd_approve}
+    commands = {"check": cmd_check, "approve": cmd_approve, "sweep": cmd_sweep}
     if len(sys.argv) != 2 or sys.argv[1] not in commands:
         sys.exit(__doc__)
     sys.exit(commands[sys.argv[1]]())
